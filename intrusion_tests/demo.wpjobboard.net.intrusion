@@ -1,0 +1,1286 @@
+#################################
+ TEST CASE NAME : test_cat_group
+ COMMAND : cat /etc/group
+ URL : https://demo.wpjobboard.net/
+#################################
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Page not found | wpjobboard.net</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://demo.wpjobboard.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Feed" href="https://demo.wpjobboard.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Comments Feed" href="https://demo.wpjobboard.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.wpjobboard.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpjb-glyphs-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.4.0'></script>
+<link rel='https://api.w.org/' href='https://demo.wpjobboard.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.wpjobboard.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.wpjobboard.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+</head>
+
+<body class="error404 wp-embed-responsive custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://demo.wpjobboard.net/" title="wpjobboard.net" rel="home">wpjobboard.net</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="https://demo.wpjobboard.net/">Home</a></li>
+<li id="menu-item-2972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2972"><a href="https://demo.wpjobboard.net/jobs/">Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2973"><a href="https://demo.wpjobboard.net/jobs/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://demo.wpjobboard.net/jobs/post-a-job/">Post a Job</a></li>
+<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2970"><a href="https://demo.wpjobboard.net/resumes/">Resumes</a>
+<ul class="sub-menu">
+	<li id="menu-item-2971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2971"><a href="https://demo.wpjobboard.net/resumes/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2968"><a href="https://demo.wpjobboard.net/employer-panel/">Employer Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="https://demo.wpjobboard.net/employer-panel/employer-registration/">Employer Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2966"><a href="https://demo.wpjobboard.net/candidate-panel/">Candidate Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="https://demo.wpjobboard.net/candidate-panel/candidate-registration/">Candidate Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-196"><a href="https://demo.wpjobboard.net/more/">More …</a>
+<ul class="sub-menu">
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://demo.wpjobboard.net/more/maps/">Maps</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://demo.wpjobboard.net/more/companies/">Companies</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://demo.wpjobboard.net/more/general-application/">General Application</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<article id="post-0" class="post error404 no-results not-found">
+				<header class="entry-header">
+					<h1 class="entry-title">This is somewhat embarrassing, isn&rsquo;t it?</h1>
+				</header>
+
+				<div class="entry-content">
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="https://demo.wpjobboard.net/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style type="text/css">.wpjb-form select { padding: 0.428571rem }
+#wpjb-main img { border-radius: 0px; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) }
+table.wpjb-table { font-size: 13px }
+.entry-content .wpjb a:visited { color: #21759b }
+footer.entry-meta { display: none }
+.nav-single { display: none }
+.wpjb-col-title a { text-decoration: none; color: #21759b !important; }
+.wpjb-widget .wpjb-custom-menu-link a { text-decoration: none; }
+</style><script>
+    jQuery(document).ready(function () {
+		jQuery.post('https://demo.wpjobboard.net?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script><script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_cat_passwd
+ COMMAND : cat /tmp/passwd 2>&1
+ URL : https://demo.wpjobboard.net/
+#################################
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Page not found | wpjobboard.net</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://demo.wpjobboard.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Feed" href="https://demo.wpjobboard.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Comments Feed" href="https://demo.wpjobboard.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.wpjobboard.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpjb-glyphs-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.4.0'></script>
+<link rel='https://api.w.org/' href='https://demo.wpjobboard.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.wpjobboard.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.wpjobboard.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+</head>
+
+<body class="error404 wp-embed-responsive custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://demo.wpjobboard.net/" title="wpjobboard.net" rel="home">wpjobboard.net</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="https://demo.wpjobboard.net/">Home</a></li>
+<li id="menu-item-2972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2972"><a href="https://demo.wpjobboard.net/jobs/">Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2973"><a href="https://demo.wpjobboard.net/jobs/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://demo.wpjobboard.net/jobs/post-a-job/">Post a Job</a></li>
+<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2970"><a href="https://demo.wpjobboard.net/resumes/">Resumes</a>
+<ul class="sub-menu">
+	<li id="menu-item-2971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2971"><a href="https://demo.wpjobboard.net/resumes/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2968"><a href="https://demo.wpjobboard.net/employer-panel/">Employer Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="https://demo.wpjobboard.net/employer-panel/employer-registration/">Employer Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2966"><a href="https://demo.wpjobboard.net/candidate-panel/">Candidate Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="https://demo.wpjobboard.net/candidate-panel/candidate-registration/">Candidate Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-196"><a href="https://demo.wpjobboard.net/more/">More …</a>
+<ul class="sub-menu">
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://demo.wpjobboard.net/more/maps/">Maps</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://demo.wpjobboard.net/more/companies/">Companies</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://demo.wpjobboard.net/more/general-application/">General Application</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<article id="post-0" class="post error404 no-results not-found">
+				<header class="entry-header">
+					<h1 class="entry-title">This is somewhat embarrassing, isn&rsquo;t it?</h1>
+				</header>
+
+				<div class="entry-content">
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="https://demo.wpjobboard.net/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style type="text/css">.wpjb-form select { padding: 0.428571rem }
+#wpjb-main img { border-radius: 0px; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) }
+table.wpjb-table { font-size: 13px }
+.entry-content .wpjb a:visited { color: #21759b }
+footer.entry-meta { display: none }
+.nav-single { display: none }
+.wpjb-col-title a { text-decoration: none; color: #21759b !important; }
+.wpjb-widget .wpjb-custom-menu-link a { text-decoration: none; }
+</style><script>
+    jQuery(document).ready(function () {
+		jQuery.post('https://demo.wpjobboard.net?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script><script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_cat_shadow
+ COMMAND : cat /tmp/shadow 2>&1
+ URL : https://demo.wpjobboard.net/
+#################################
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Page not found | wpjobboard.net</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://demo.wpjobboard.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Feed" href="https://demo.wpjobboard.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Comments Feed" href="https://demo.wpjobboard.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.wpjobboard.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpjb-glyphs-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.4.0'></script>
+<link rel='https://api.w.org/' href='https://demo.wpjobboard.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.wpjobboard.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.wpjobboard.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+</head>
+
+<body class="error404 wp-embed-responsive custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://demo.wpjobboard.net/" title="wpjobboard.net" rel="home">wpjobboard.net</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="https://demo.wpjobboard.net/">Home</a></li>
+<li id="menu-item-2972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2972"><a href="https://demo.wpjobboard.net/jobs/">Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2973"><a href="https://demo.wpjobboard.net/jobs/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://demo.wpjobboard.net/jobs/post-a-job/">Post a Job</a></li>
+<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2970"><a href="https://demo.wpjobboard.net/resumes/">Resumes</a>
+<ul class="sub-menu">
+	<li id="menu-item-2971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2971"><a href="https://demo.wpjobboard.net/resumes/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2968"><a href="https://demo.wpjobboard.net/employer-panel/">Employer Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="https://demo.wpjobboard.net/employer-panel/employer-registration/">Employer Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2966"><a href="https://demo.wpjobboard.net/candidate-panel/">Candidate Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="https://demo.wpjobboard.net/candidate-panel/candidate-registration/">Candidate Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-196"><a href="https://demo.wpjobboard.net/more/">More …</a>
+<ul class="sub-menu">
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://demo.wpjobboard.net/more/maps/">Maps</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://demo.wpjobboard.net/more/companies/">Companies</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://demo.wpjobboard.net/more/general-application/">General Application</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<article id="post-0" class="post error404 no-results not-found">
+				<header class="entry-header">
+					<h1 class="entry-title">This is somewhat embarrassing, isn&rsquo;t it?</h1>
+				</header>
+
+				<div class="entry-content">
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="https://demo.wpjobboard.net/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style type="text/css">.wpjb-form select { padding: 0.428571rem }
+#wpjb-main img { border-radius: 0px; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) }
+table.wpjb-table { font-size: 13px }
+.entry-content .wpjb a:visited { color: #21759b }
+footer.entry-meta { display: none }
+.nav-single { display: none }
+.wpjb-col-title a { text-decoration: none; color: #21759b !important; }
+.wpjb-widget .wpjb-custom-menu-link a { text-decoration: none; }
+</style><script>
+    jQuery(document).ready(function () {
+		jQuery.post('https://demo.wpjobboard.net?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script><script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_ls_etc
+ COMMAND : ls -l /etc/
+ URL : https://demo.wpjobboard.net/
+#################################
+<html>
+<head>
+<style type="text/css">
+	body{background-color:#f4f9fa}
+	.centered{text-align:center}
+	.container{border:1px solid #e2e2e2;width:1200px;margin:50px auto}
+	.header{height:120px;background-color:#fbfdfd;padding-top:40px;}
+	.header h1{font: bold 130% Arial, Helvetica, sans-serif;
+color:#5278af;margin:0;padding:0}
+	.header h2{font: bold 80% Tahoma, Verdana, sans-serif;
+color:#5278af;margin:0;padding:0}
+	.line{height:15px;background-color:#eef6f7}
+	.error-container{background-color:#fff;font:normal 80% Tahoma, Verdana,
+sans-serif;color:#000;text-align:justify;padding:30px}
+	.error-container li{padding-bottom:10px}
+	.error-container a:link, .error-container a:visited{font:normal 100%
+Tahoma, Verdana, sans-serif;color:#5278af;text-decoration:underline}
+	.error-container a:hover{color:#5278af;text-decoration:none}
+</style>
+<title>Access Denied</title>
+</head>
+<body>
+<div class="centered">
+	<div class="container">
+		<div class="header">
+			<h1>The page you are trying to access is restricted due to a security rule.</h1>
+	<br>
+			<h2>If you believe the security rule is affecting the normal operation of your website, contact your host support team and provide detailed instructions how to recreate this error.
+<br>
+They will be able to assist you with rectifying the problem and adjusting the security configuration if needed.</h2>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_ls_home
+ COMMAND : ls -laR /home/
+ URL : https://demo.wpjobboard.net/
+#################################
+<html>
+<head>
+<style type="text/css">
+	body{background-color:#f4f9fa}
+	.centered{text-align:center}
+	.container{border:1px solid #e2e2e2;width:1200px;margin:50px auto}
+	.header{height:120px;background-color:#fbfdfd;padding-top:40px;}
+	.header h1{font: bold 130% Arial, Helvetica, sans-serif;
+color:#5278af;margin:0;padding:0}
+	.header h2{font: bold 80% Tahoma, Verdana, sans-serif;
+color:#5278af;margin:0;padding:0}
+	.line{height:15px;background-color:#eef6f7}
+	.error-container{background-color:#fff;font:normal 80% Tahoma, Verdana,
+sans-serif;color:#000;text-align:justify;padding:30px}
+	.error-container li{padding-bottom:10px}
+	.error-container a:link, .error-container a:visited{font:normal 100%
+Tahoma, Verdana, sans-serif;color:#5278af;text-decoration:underline}
+	.error-container a:hover{color:#5278af;text-decoration:none}
+</style>
+<title>Access Denied</title>
+</head>
+<body>
+<div class="centered">
+	<div class="container">
+		<div class="header">
+			<h1>The page you are trying to access is restricted due to a security rule.</h1>
+	<br>
+			<h2>If you believe the security rule is affecting the normal operation of your website, contact your host support team and provide detailed instructions how to recreate this error.
+<br>
+They will be able to assist you with rectifying the problem and adjusting the security configuration if needed.</h2>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_ls
+ COMMAND : ls
+ URL : https://demo.wpjobboard.net/
+#################################
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Page not found | wpjobboard.net</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://demo.wpjobboard.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Feed" href="https://demo.wpjobboard.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Comments Feed" href="https://demo.wpjobboard.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.wpjobboard.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpjb-glyphs-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.4.0'></script>
+<link rel='https://api.w.org/' href='https://demo.wpjobboard.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.wpjobboard.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.wpjobboard.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+</head>
+
+<body class="error404 wp-embed-responsive custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://demo.wpjobboard.net/" title="wpjobboard.net" rel="home">wpjobboard.net</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="https://demo.wpjobboard.net/">Home</a></li>
+<li id="menu-item-2972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2972"><a href="https://demo.wpjobboard.net/jobs/">Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2973"><a href="https://demo.wpjobboard.net/jobs/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://demo.wpjobboard.net/jobs/post-a-job/">Post a Job</a></li>
+<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2970"><a href="https://demo.wpjobboard.net/resumes/">Resumes</a>
+<ul class="sub-menu">
+	<li id="menu-item-2971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2971"><a href="https://demo.wpjobboard.net/resumes/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2968"><a href="https://demo.wpjobboard.net/employer-panel/">Employer Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="https://demo.wpjobboard.net/employer-panel/employer-registration/">Employer Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2966"><a href="https://demo.wpjobboard.net/candidate-panel/">Candidate Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="https://demo.wpjobboard.net/candidate-panel/candidate-registration/">Candidate Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-196"><a href="https://demo.wpjobboard.net/more/">More …</a>
+<ul class="sub-menu">
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://demo.wpjobboard.net/more/maps/">Maps</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://demo.wpjobboard.net/more/companies/">Companies</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://demo.wpjobboard.net/more/general-application/">General Application</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<article id="post-0" class="post error404 no-results not-found">
+				<header class="entry-header">
+					<h1 class="entry-title">This is somewhat embarrassing, isn&rsquo;t it?</h1>
+				</header>
+
+				<div class="entry-content">
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="https://demo.wpjobboard.net/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style type="text/css">.wpjb-form select { padding: 0.428571rem }
+#wpjb-main img { border-radius: 0px; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) }
+table.wpjb-table { font-size: 13px }
+.entry-content .wpjb a:visited { color: #21759b }
+footer.entry-meta { display: none }
+.nav-single { display: none }
+.wpjb-col-title a { text-decoration: none; color: #21759b !important; }
+.wpjb-widget .wpjb-custom-menu-link a { text-decoration: none; }
+</style><script>
+    jQuery(document).ready(function () {
+		jQuery.post('https://demo.wpjobboard.net?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script><script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_ls_var
+ COMMAND : ls -lR /var/
+ URL : https://demo.wpjobboard.net/
+#################################
+<html><meta http-equiv="refresh" content="0;/.well-known/captcha/"></meta></head></html>#################################
+#################################
+ TEST CASE NAME : test_my_groups
+ COMMAND : groups travis
+ URL : https://demo.wpjobboard.net/
+#################################
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Page not found | wpjobboard.net</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://demo.wpjobboard.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Feed" href="https://demo.wpjobboard.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Comments Feed" href="https://demo.wpjobboard.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.wpjobboard.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpjb-glyphs-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.4.0'></script>
+<link rel='https://api.w.org/' href='https://demo.wpjobboard.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.wpjobboard.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.wpjobboard.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+</head>
+
+<body class="error404 wp-embed-responsive custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://demo.wpjobboard.net/" title="wpjobboard.net" rel="home">wpjobboard.net</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="https://demo.wpjobboard.net/">Home</a></li>
+<li id="menu-item-2972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2972"><a href="https://demo.wpjobboard.net/jobs/">Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2973"><a href="https://demo.wpjobboard.net/jobs/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://demo.wpjobboard.net/jobs/post-a-job/">Post a Job</a></li>
+<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2970"><a href="https://demo.wpjobboard.net/resumes/">Resumes</a>
+<ul class="sub-menu">
+	<li id="menu-item-2971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2971"><a href="https://demo.wpjobboard.net/resumes/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2968"><a href="https://demo.wpjobboard.net/employer-panel/">Employer Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="https://demo.wpjobboard.net/employer-panel/employer-registration/">Employer Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2966"><a href="https://demo.wpjobboard.net/candidate-panel/">Candidate Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="https://demo.wpjobboard.net/candidate-panel/candidate-registration/">Candidate Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-196"><a href="https://demo.wpjobboard.net/more/">More …</a>
+<ul class="sub-menu">
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://demo.wpjobboard.net/more/maps/">Maps</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://demo.wpjobboard.net/more/companies/">Companies</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://demo.wpjobboard.net/more/general-application/">General Application</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<article id="post-0" class="post error404 no-results not-found">
+				<header class="entry-header">
+					<h1 class="entry-title">This is somewhat embarrassing, isn&rsquo;t it?</h1>
+				</header>
+
+				<div class="entry-content">
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="https://demo.wpjobboard.net/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style type="text/css">.wpjb-form select { padding: 0.428571rem }
+#wpjb-main img { border-radius: 0px; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) }
+table.wpjb-table { font-size: 13px }
+.entry-content .wpjb a:visited { color: #21759b }
+footer.entry-meta { display: none }
+.nav-single { display: none }
+.wpjb-col-title a { text-decoration: none; color: #21759b !important; }
+.wpjb-widget .wpjb-custom-menu-link a { text-decoration: none; }
+</style><script>
+    jQuery(document).ready(function () {
+		jQuery.post('https://demo.wpjobboard.net?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script><script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_process
+ COMMAND : ps -fix
+ URL : https://demo.wpjobboard.net/
+#################################
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Page not found | wpjobboard.net</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://demo.wpjobboard.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Feed" href="https://demo.wpjobboard.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Comments Feed" href="https://demo.wpjobboard.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.wpjobboard.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpjb-glyphs-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.4.0'></script>
+<link rel='https://api.w.org/' href='https://demo.wpjobboard.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.wpjobboard.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.wpjobboard.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+</head>
+
+<body class="error404 wp-embed-responsive custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://demo.wpjobboard.net/" title="wpjobboard.net" rel="home">wpjobboard.net</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="https://demo.wpjobboard.net/">Home</a></li>
+<li id="menu-item-2972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2972"><a href="https://demo.wpjobboard.net/jobs/">Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2973"><a href="https://demo.wpjobboard.net/jobs/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://demo.wpjobboard.net/jobs/post-a-job/">Post a Job</a></li>
+<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2970"><a href="https://demo.wpjobboard.net/resumes/">Resumes</a>
+<ul class="sub-menu">
+	<li id="menu-item-2971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2971"><a href="https://demo.wpjobboard.net/resumes/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2968"><a href="https://demo.wpjobboard.net/employer-panel/">Employer Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="https://demo.wpjobboard.net/employer-panel/employer-registration/">Employer Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2966"><a href="https://demo.wpjobboard.net/candidate-panel/">Candidate Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="https://demo.wpjobboard.net/candidate-panel/candidate-registration/">Candidate Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-196"><a href="https://demo.wpjobboard.net/more/">More …</a>
+<ul class="sub-menu">
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://demo.wpjobboard.net/more/maps/">Maps</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://demo.wpjobboard.net/more/companies/">Companies</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://demo.wpjobboard.net/more/general-application/">General Application</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<article id="post-0" class="post error404 no-results not-found">
+				<header class="entry-header">
+					<h1 class="entry-title">This is somewhat embarrassing, isn&rsquo;t it?</h1>
+				</header>
+
+				<div class="entry-content">
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="https://demo.wpjobboard.net/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style type="text/css">.wpjb-form select { padding: 0.428571rem }
+#wpjb-main img { border-radius: 0px; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) }
+table.wpjb-table { font-size: 13px }
+.entry-content .wpjb a:visited { color: #21759b }
+footer.entry-meta { display: none }
+.nav-single { display: none }
+.wpjb-col-title a { text-decoration: none; color: #21759b !important; }
+.wpjb-widget .wpjb-custom-menu-link a { text-decoration: none; }
+</style><script>
+    jQuery(document).ready(function () {
+		jQuery.post('https://demo.wpjobboard.net?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script><script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_uname
+ COMMAND : uname -a
+ URL : https://demo.wpjobboard.net/
+#################################
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Page not found | wpjobboard.net</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://demo.wpjobboard.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Feed" href="https://demo.wpjobboard.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wpjobboard.net &raquo; Comments Feed" href="https://demo.wpjobboard.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.wpjobboard.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://demo.wpjobboard.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wpjb-glyphs-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css'  href='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.4.0'></script>
+<link rel='https://api.w.org/' href='https://demo.wpjobboard.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.wpjobboard.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.wpjobboard.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+</head>
+
+<body class="error404 wp-embed-responsive custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://demo.wpjobboard.net/" title="wpjobboard.net" rel="home">wpjobboard.net</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="https://demo.wpjobboard.net/">Home</a></li>
+<li id="menu-item-2972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2972"><a href="https://demo.wpjobboard.net/jobs/">Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2973"><a href="https://demo.wpjobboard.net/jobs/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2974"><a href="https://demo.wpjobboard.net/jobs/post-a-job/">Post a Job</a></li>
+<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2970"><a href="https://demo.wpjobboard.net/resumes/">Resumes</a>
+<ul class="sub-menu">
+	<li id="menu-item-2971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2971"><a href="https://demo.wpjobboard.net/resumes/advanced-search/">Advanced Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2968"><a href="https://demo.wpjobboard.net/employer-panel/">Employer Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969"><a href="https://demo.wpjobboard.net/employer-panel/employer-registration/">Employer Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2966"><a href="https://demo.wpjobboard.net/candidate-panel/">Candidate Panel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="https://demo.wpjobboard.net/candidate-panel/candidate-registration/">Candidate Registration</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-196"><a href="https://demo.wpjobboard.net/more/">More …</a>
+<ul class="sub-menu">
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://demo.wpjobboard.net/more/maps/">Maps</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://demo.wpjobboard.net/more/companies/">Companies</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="https://demo.wpjobboard.net/more/general-application/">General Application</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<article id="post-0" class="post error404 no-results not-found">
+				<header class="entry-header">
+					<h1 class="entry-title">This is somewhat embarrassing, isn&rsquo;t it?</h1>
+				</header>
+
+				<div class="entry-content">
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="https://demo.wpjobboard.net/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style type="text/css">.wpjb-form select { padding: 0.428571rem }
+#wpjb-main img { border-radius: 0px; box-shadow: 0 0px 0px rgba(0, 0, 0, 0) }
+table.wpjb-table { font-size: 13px }
+.entry-content .wpjb a:visited { color: #21759b }
+footer.entry-meta { display: none }
+.nav-single { display: none }
+.wpjb-col-title a { text-decoration: none; color: #21759b !important; }
+.wpjb-widget .wpjb-custom-menu-link a { text-decoration: none; }
+</style><script>
+    jQuery(document).ready(function () {
+		jQuery.post('https://demo.wpjobboard.net?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script><script type='text/javascript' src='https://demo.wpjobboard.net/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='https://demo.wpjobboard.net/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+</body>
+</html>
+#################################
+#################################
+ TEST CASE NAME : test_whoami
+ COMMAND : whoami
+ URL : https://demo.wpjobboard.net/
+#################################
+<html><meta http-equiv="refresh" content="0;/.well-known/captcha/"></meta></head></html>#################################
