@@ -1,0 +1,25 @@
+{
+  "host": "demo.wpjobboard.net",
+  "port": 443,
+  "protocol": "http",
+  "isPublic": false,
+  "status": "READY",
+  "startTime": 1553417913972,
+  "testTime": 1553418025740,
+  "engineVersion": "1.33.1",
+  "criteriaVersion": "2009p",
+  "endpoints": [
+    {
+      "ipAddress": "185.56.85.244",
+      "serverName": "ip-185-56-85-244.siteground.com",
+      "statusMessage": "Ready",
+      "grade": "A",
+      "gradeTrustIgnored": "A",
+      "hasWarnings": false,
+      "isExceptional": false,
+      "progress": 100,
+      "duration": 111660,
+      "delegation": 1
+    }
+  ]
+}
