@@ -4,8 +4,8 @@
   "protocol": "http",
   "isPublic": false,
   "status": "READY",
-  "startTime": 1553443373687,
-  "testTime": 1553443553671,
+  "startTime": 1553426514647,
+  "testTime": 1553426694284,
   "engineVersion": "1.33.1",
   "criteriaVersion": "2009p",
   "endpoints": [
@@ -18,7 +18,7 @@
       "hasWarnings": false,
       "isExceptional": false,
       "progress": 100,
-      "duration": 89773,
+      "duration": 91390,
       "delegation": 1
     },
     {
@@ -30,7 +30,7 @@
       "hasWarnings": false,
       "isExceptional": false,
       "progress": 100,
-      "duration": 88970,
+      "duration": 87177,
       "delegation": 1
     }
   ]
