@@ -12,5 +12,82 @@ _______________________________________________________________
       @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
 _______________________________________________________________
 
+[32m[+][0m URL: https://demo.wpjobboard.net/
+[32m[+][0m Started: Sun Mar 24 10:47:20 2019
 
-Scan Aborted: The remote website is up, but does not seem to be running WordPress.
+Interesting Finding(s):
+
+[32m[+][0m https://demo.wpjobboard.net/
+ | Interesting Entries:
+ |  - server: nginx
+ |  - host-header: 192fc2e7e50945beb8231a492d6a8024
+ |  - x-proxy-cache: MISS
+ |  - alt-svc: quic=":443"; ma=86400; v="43,39"
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m https://demo.wpjobboard.net/xmlrpc.php
+ | Found By: Link Tag (Passive Detection)
+ | Confidence: 30%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m This site seems to be a multisite
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | Reference: http://codex.wordpress.org/Glossary#Multisite
+
+[32m[+][0m https://demo.wpjobboard.net/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.1.1 identified (Latest, released on 2019-03-13).
+ | Detected By: Emoji Settings (Passive Detection)
+ |  - https://demo.wpjobboard.net/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - https://demo.wpjobboard.net/, Match: 'WordPress 5.1.1'
+
+[32m[+][0m WordPress theme in use: twentytwelve
+ | Location: https://demo.wpjobboard.net/wp-content/themes/twentytwelve/
+ | Latest Version: 2.9
+ | Last Updated: 2019-02-21T00:00:00.000Z
+ | Readme: https://demo.wpjobboard.net/wp-content/themes/twentytwelve/readme.txt
+ | Changelog: https://demo.wpjobboard.net/wp-content/themes/twentytwelve/changelog.txt
+ | Style URL: https://demo.wpjobboard.net/wp-content/themes/twentytwelve/style.css?ver=5.1.1
+ |
+ | Detected By: Css Style (Passive Detection)
+ |
+ | The version could not be determined.
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+[32m[+][0m Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m wpjobboard
+ | Location: https://demo.wpjobboard.net/wp-content/plugins/wpjobboard/
+ |
+ | Detected By: Urls In Homepage (Passive Detection)
+ |
+ | The version could not be determined.
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+
+ Checking Config Backups -: |==================================================|
+
+[34m[i][0m No Config Backups Found.
+
+[32m[+][0m Finished: Sun Mar 24 10:47:23 2019
+[32m[+][0m Requests Done: 61
+[32m[+][0m Cached Requests: 4
+[32m[+][0m Data Sent: 12.053 KB
+[32m[+][0m Data Received: 60.303 KB
+[32m[+][0m Memory used: 91.215 MB
+[32m[+][0m Elapsed time: 00:00:02
