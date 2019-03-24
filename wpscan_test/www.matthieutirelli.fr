@@ -13,4 +13,4 @@ _______________________________________________________________
 _______________________________________________________________
 
 
-Scan Aborted: The url supplied 'https://www.matthieutirelli.fr/demo/' seems to be down (SSL peer certificate or SSH remote key was not OK)
+Scan Aborted: The url supplied 'https://www.matthieutirelli.fr/test/' seems to be down (SSL peer certificate or SSH remote key was not OK)
