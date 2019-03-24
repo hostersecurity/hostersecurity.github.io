@@ -1,0 +1,2495 @@
+#################################
+ TEST CASE NAME : test_cat_group
+ COMMAND : cat /etc/group
+ URL : https://pfotentourist.de/
+#################################
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5:
+disk:x:6:root,adm
+lp:x:7:lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:root
+floppy:x:11:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:man
+cron:x:16:cron
+console:x:17:
+audio:x:18:
+cdrom:x:19:
+dialout:x:20:root
+ftp:x:21:
+at:x:25:at
+tape:x:26:root
+video:x:27:root
+squid:x:31:squid
+gdm:x:32:gdm
+xfs:x:33:xfs
+games:x:35:
+named:x:40:named
+postgres:x:70:
+cdrw:x:80:
+apache:x:81:nobody
+nut:x:84:
+usb:x:85:
+vpopmail:x:89:
+users:x:100:games
+postfix:x:207:
+postdrop:x:208:
+smmsp:x:209:smmsp
+slocate:x:245:
+portage:x:250:portage
+utmp:x:406:
+nogroup:x:65533:
+nobody:x:99:
+domainfactory:x:502:
+domcgi:x:530:
+sshd:x:532:
+mailnull:x:47:
+mysql:x:101:
+crontab:x:533:
+ldap:x:439:
+input:x:99:
+#################################
+#################################
+ TEST CASE NAME : test_cat_passwd
+ COMMAND : cat /etc/passwd 2>&1
+ URL : https://pfotentourist.de/
+#################################
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/bin/false
+daemon:x:2:2:daemon:/sbin:/bin/false
+adm:x:3:4:adm:/var/adm:/bin/false
+lp:x:4:7:lp:/var/spool/lpd:/bin/false
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/bin/false
+news:x:9:13:news:/usr/lib/news:/bin/false
+uucp:x:10:14:uucp:/var/spool/uucppublic:/bin/false
+operator:x:11:0:operator:/root:/bin/bash
+man:x:13:15:man:/usr/man:/bin/false
+postmaster:x:14:12:postmaster:/var/spool/mail:/bin/false
+cron:x:16:16:cron:/var/spool/cron:/bin/false
+sshd:x:22:22:sshd:/dev/null:/bin/false
+at:x:25:25:at:/var/spool/cron/atjobs:/bin/false
+squid:x:31:31:Squid:/var/cache/squid:/bin/false
+gdm:x:32:32:GDM:/var/lib/gdm:/bin/false
+xfs:x:33:33:X Font Server:/etc/X11/fs:/bin/false
+games:x:35:35:games:/usr/games:/bin/false
+named:x:40:40:bind:/var/bind:/bin/false
+postgres:x:70:70::/var/lib/postgresql:/bin/bash
+nut:x:84:84:nut:/var/state/nut:/bin/false
+cyrus:x:85:12::/usr/cyrus:/bin/false
+vpopmail:x:89:89::/var/vpopmail:/bin/false
+postfix:x:207:207:postfix:/var/spool/postfix:/bin/false
+smmsp:x:209:209:smmsp:/var/spool/mqueue:/bin/false
+portage:x:250:250:portage:/var/tmp/portage:/bin/false
+guest:x:405:100:guest:/dev/null:/dev/null
+nobody:x:99:99:nobody:/:
+domainfactory:x:502:502::/home/domainfactory:/bin/bash
+domcgi:x:520:520::/home/domcgi:/bin/bash
+sshd:!!:59968:532:sshd privsep:/var/empty:/bin/false
+mailnull:!!:47:47::/var/spool/mqueue:/sbin/nologin
+mysql:x:100:101:MySQL server:/var/lib/mysql:/bin/bash
+ldap:x:439:439:added by portage for openldap:/usr/lib/openldap:/sbin/nologin
+ftp:x:99:81::/kunden:/bin/false
+#################################
+#################################
+ TEST CASE NAME : test_cat_shadow
+ COMMAND : cat /etc/shadow 2>&1
+ URL : https://pfotentourist.de/
+#################################
+cat: /etc/shadow: Permission denied
+#################################
+#################################
+ TEST CASE NAME : test_ls_etc
+ COMMAND : ls -l /etc/
+ URL : https://pfotentourist.de/
+#################################
+total 1896
+-rw-r--r-- 1 root root      4517 Sep  6  2017 DIR_COLORS
+drwxr-xr-x 2 root root      4096 Mar 20 08:13 ImageMagick-6
+drwxr-xr-x 2 root root      4096 Mar 20 08:15 ImageMagick-7
+drwxr-xr-x 4 root root      4096 Mar 20 08:12 X11
+drwxr-xr-x 3 root root      4096 Mar 20 08:14 bash
+drwxr-xr-x 3 root root      4096 Oct 13  2008 ca-certificates
+-rw-r--r-- 1 root root      6819 Sep  5  2017 ca-certificates.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:15 conf.d
+drwxr-x--- 2 root root      4096 Mar 20 08:14 cron.daily
+drwxr-x--- 2 root root      4096 Dec  5  2007 cron.hourly
+drwxr-x--- 2 root root      4096 Dec  5  2007 cron.monthly
+drwxr-x--- 2 root root      4096 Dec  5  2007 cron.weekly
+-rw-r--r-- 1 root root       611 Oct  7  2010 crontab
+-rw-r--r-- 1 root root      3108 Nov  4  2014 csh.cshrc
+-rw-r--r-- 1 root root       990 Feb 25 16:19 csh.env
+-rw-r--r-- 1 root root      1948 Nov  4  2014 csh.login
+drwxr-xr-x 2 root root      4096 Sep  5  2017 default
+drwxr-xr-x 2 root root      4096 Oct  6  2010 devfs.d
+-rw-r--r-- 1 root root      2116 Oct  7  2015 dispatch-conf.conf
+-rw-r--r-- 1 root root      3095 Nov  4  2014 drirc
+-rw-r--r-- 1 root root       138 Sep  6  2017 e2fsck.conf
+drwxr-xr-x 2 root root      4096 Nov  5  2014 eclean
+drwxr-xr-x 2 root root      4096 Nov  4  2014 eixrc
+-rw-r--r-- 1 root root      1304 Mar 20  2012 eixrc.backup.0000
+drwxr-xr-x 2 root root      4096 Nov  4  2014 emacs
+drwxr-xr-x 5 root root      4096 Mar 20 08:14 env.d
+-rw-r--r-- 1 root root        97 Sep  5  2017 environment
+drwxr-xr-x 3 root root      4096 Mar 20 08:12 eselect
+-rw-r--r-- 1 root root      1718 Oct  8  2010 etc-update.conf
+-rw-r--r-- 1 root root       399 Sep  1  2016 filesystems
+drwxr-xr-x 4 root root      4096 Mar 20 08:14 fonts
+-rw-r--r-- 1 root root        72 Oct  8  2010 fstab
+-rw-r--r-- 1 root root       407 Jul 13  2015 ftpusers
+-rw-r--r-- 1 root root      2688 May 17  2011 gai.conf
+-rw-r--r-- 1 root root       226 Nov  6  2014 gemrc
+-rw-r--r-- 1 root root        31 Sep  6  2017 gentoo-release
+-rw-r--r-- 1 root root       792 Nov  5  2014 group
+-rw------- 1 root root       780 Oct  8  2010 group-
+-r-------- 1 root root       641 Nov  5  2014 gshadow
+-rw------- 1 root root       631 Oct  9  2009 gshadow-
+-rw-r--r-- 1 root root       935 Sep  6  2017 host.conf
+-rw-r--r-- 1 root root       810 Mar 20 08:16 hosts
+-rw-r--r-- 1 root root       585 Sep  7  2017 hosts.allow
+drwxr-xr-x 6 root root      4096 Mar 24 09:35 httpd
+drwxr-xr-x 2 root root      4096 Mar 20 08:16 init.d
+-rw-r--r-- 1 root root      1645 Oct 13  2008 inittab
+-rw-r--r-- 1 root root      2163 Sep  1  2016 inputrc
+drwxr-xr-x 2 root root      4096 Sep  6  2017 iproute2
+-rw-r--r-- 1 root root        30 Sep  1  2016 issue
+-rw-r--r-- 1 root root       701 Sep  1  2016 issue.logo
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 joe
+drwxr-xr-x 3 root root      4096 Sep  5  2017 kernel
+-rw-r--r-- 1 root root     55199 Feb 25 16:19 ld.so.cache
+-rw-r--r-- 1 root root       210 Nov  3  2014 ld.so.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:14 ld.so.conf.d
+-rw-r--r-- 1 root root       155 Mar 20 08:16 ldap.conf
+drwxr-xr-x 2 root root      4096 Nov  4  2014 lftp
+drwxr-xr-x 2 root root      4096 Mar 20 08:14 local.d
+-rw-r--r-- 1 root root      1119 Sep  6  2017 locale.gen
+lrwxrwxrwx 1 root root        33 Sep  1  2017 localtime -> /usr/share/zoneinfo/Europe/Berlin
+-rw-r--r-- 1 root root      8869 Oct 13  2008 login.defs
+-rw-r--r-- 1 root root       858 Nov  4  2014 logrotate.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 logrotate.d
+drwxr-xr-x 2 root root      4096 Mar 20 08:11 lynx
+-rw-r--r-- 1 root root    159567 Nov  4  2014 lynx.cfg
+-rw-r--r-- 1 root root      3581 Nov  4  2014 lynx.lss
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 mail
+-rw-r--r-- 1 root root       112 Dec 13  2004 mail.rc
+-rw-r--r-- 1 root root      2317 Oct 11  2011 mailcap
+-rw-r--r-- 1 root root       720 Sep  5  2017 make.conf
+lrwxrwxrwx 1 root root        40 Sep  1  2017 make.globals -> ../usr/share/portage/config/make.globals
+lrwxrwxrwx 1 root root        46 Sep  1  2017 make.profile -> ../usr/portage/profiles/default/linux/x86/13.0
+-rw-r--r-- 1 root root      4663 Oct  7  2010 man.conf
+-rw-r--r-- 1 root root      5177 Sep  5  2017 man_db.conf
+drwxr-xr-x 3 root root      4096 Mar 20 08:13 mc
+-rw-r--r-- 1 root root     65355 Sep  5  2017 mime.types
+-rw-r--r-- 1 root root       965 Sep  6  2017 mke2fs.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 modprobe.d
+drwxr-xr-x 2 root root      4096 Oct  7  2010 modules.d
+-rw-r--r-- 1 root root        23 Nov 19  2007 mtab
+lrwxrwxrwx 1 root root        21 Sep  1  2017 my.cnf -> /etc/mysql-500/my.cnf
+lrwxrwxrwx 1 root root         9 Sep  1  2017 mysql -> mysql-500
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 mysql-500
+-rw-r--r-- 1 root root      8777 Sep  5  2017 nanorc
+-rw-r--r-- 1 root root       196 Dec  5  2007 networks
+-rw-r--r-- 1 root root       502 Aug  4  2016 nsswitch.conf
+-rw-r--r-- 1 root root      1312 Nov  4  2014 nsswitch.ldap
+drwxr-xr-x 4 root root      4096 Mar 20 08:13 openldap
+drwxr-xr-x 2 root root      4096 Jul 18  2004 opt
+-rw-r--r-- 1 root root       190 Sep  1  2016 os-release
+drwxr-xr-x 2 root root      4096 Mar 20 08:14 pam.d
+-rw-r--r-- 1 root root         3 Sep 28  2009 papersize
+-rw-r--r-- 1 root root      1664 Nov  9 16:38 passwd
+-rw------- 1 root root      1633 Oct 13  2008 passwd-
+drwx--x--x 4 root root      4096 Mar 22 09:35 php.ini
+drwxr-xr-x 9 root portage   4096 Mar 20 08:14 portage
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 postgresql-9.0
+drwxr-xr-x 2 root root      4096 Mar 20  2012 postgresql-9.1
+drwxr-xr-x 2 root root      4096 Nov  4  2014 postgresql-9.3
+-rw-r--r-- 1 root root    381400 Mar 19 00:30 prelink.cache
+-rw-r--r-- 1 root root       979 Nov  4  2014 prelink.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:14 prelink.conf.d
+-rw-r--r-- 1 root root       954 Oct 13  2017 profile
+-rw-r--r-- 1 root root      1014 Sep 28  2009 profile.csh
+drwxr-xr-x 2 root root      4096 Sep  7  2017 profile.d
+-rw-r--r-- 1 root root       992 Feb 25 16:19 profile.env
+-rw-r--r-- 1 root root      6108 Sep  1  2016 protocols
+-rw-r--r-- 1 root root       134 Nov  9  2004 pwdb.conf
+drwxr-xr-x 2 root root      4096 Sep  6  2017 python-exec
+-rw-r--r-- 1 root root     10078 Sep  6  2017 rc.conf
+-rw-r--r-- 1 root root        74 Mar 20 08:16 resolv.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:14 revdep-rebuild
+-rwxr-xr-x 1 root root       263 Sep  6  2017 rmt
+-rw-r--r-- 1 root root      1634 Sep  6  2017 rpc
+-rw-r--r-- 1 root root       405 Nov  4  2014 rsyncd.conf
+drwxr-xr-x 8 root root      4096 Mar 20 08:12 runlevels
+-rw-r--r-- 1 root root      2834 Sep  5  2017 sandbox.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:13 sandbox.d
+drwxr-xr-x 5 root root      4096 Mar 24 09:35 security
+-rw-r--r-- 1 root root      2948 Nov  9  2004 serial.conf
+-rw-r--r-- 1 root root     36475 Sep  1  2016 services
+drwxr-xr-x 2 root root      4096 Mar 20 08:14 sgml
+-rw------- 1 root root       410 Oct  8  2010 shadow
+-rw------- 1 root root       384 Oct 13  2008 shadow-
+-rw-r--r-- 1 root root       119 Aug 19  2008 shells
+-rw-r--r-- 1 root root         5 Mar 20 08:16 sid
+drwxr-xr-x 3 root root      4096 Mar 20 08:14 skel
+-rw-r--r-- 1 root root      1437 Nov  5  2014 slsh.rc
+drwxr-xr-x 2 root root      4096 Mar 24 03:10 ssh
+drwxr-xr-x 6 root root      4096 Mar 20 08:14 ssl
+-rw-r--r-- 1 root root      1458 May 15  2007 sysctl.conf
+drwxr-xr-x 2 root root      4096 Sep  6  2017 sysctl.d
+-rw-r--r-- 1 root root      2332 Dec 20  2004 syslog.conf
+drwxr-xr-x 3 root root      4096 Nov  4  2014 systemd
+drwxr-xr-x 2 root root      4096 Nov  4  2014 t1lib
+-rw-r--r-- 1 root root    625272 Jun  3  2000 termcap
+drwxr-xr-x 9 root root      4096 Mar 20 08:12 terminfo
+drwxr-xr-x 3 root root      4096 Mar 20 08:14 udev
+-rw-r--r-- 1 root root      4138 Sep  6  2017 udhcpd.conf
+-rw-r--r-- 1 root root       632 Nov  9  2004 updatedb.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:11 vim
+-rw-r--r-- 1 root root      4925 Oct 27  2017 wgetrc
+-rw-r--r-- 1 root root       382 Nov  4  2014 whois.conf
+-rw-r--r-- 1 root root      1010 Oct  7  2010 xinetd.conf
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 xinetd.d
+drwxr-xr-x 2 root root      4096 Mar 20 08:14 xml
+drwxr-xr-x 2 root root      4096 Mar 20 08:12 zsh
+#################################
+#################################
+ TEST CASE NAME : test_ls_home
+ COMMAND : ls -laR /home/
+ URL : https://pfotentourist.de/
+#################################
+/home/:
+total 8
+drwxr-xr-x  2 root   root 4096 Jul 18  2004 .
+drwxr-xr-x 24 daemon root 4096 Mar 20 08:12 ..
+-rw-r--r--  1 root   root    0 Nov  9  2004 .keep
+#################################
+#################################
+ TEST CASE NAME : test_ls
+ COMMAND : ls
+ URL : https://pfotentourist.de/
+#################################
+index.php
+license.txt
+liesmich.html
+magic_hostersecurity.php
+readme.html
+tellmemore.php
+test.php
+wp-activate.php
+wp-admin
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
+wp-content
+wp-cron.php
+wp-includes
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+#################################
+#################################
+ TEST CASE NAME : test_ls_var
+ COMMAND : ls -lR /var/
+ URL : https://pfotentourist.de/
+#################################
+/var/:
+total 56
+drwxr-xr-x  9 root root 4096 Mar 20 08:12 cache
+drw-------  2 root root 4096 Mar 20 21:46 cronjobs
+drwxr-xr-x  4 root root 4096 Mar 20 08:15 db
+drwxr-xr-x  3 root root 4096 Oct 24  2017 db_sik
+drwxr-xr-x  2 root root 4096 Oct 24  2017 empty
+drwxr-xr-x 17 root root 4096 Mar 20 08:14 lib
+drwxrwxr-x  3 root uucp 4096 Jul 18  2004 lock
+drwxr-xr-x  6 root root 4096 Mar 24 06:06 log
+lrwxrwxrwx  1 root root   15 Sep  1  2017 mail -> /var/spool/mail
+drwxr-xr-x  6 root root 4096 Mar 24 18:00 run
+drwxr-xr-x  6 root root 4096 Mar 20 08:12 spool
+drwxr-xr-x  2 root root 4096 Jul 18  2004 state
+drwxrwxrwt  2 root root 4096 Mar 24 13:05 tmp
+drwxr-xr-x  2 root root 4096 Mar 24 06:01 traffic
+drwxr-xr-x  8 root root 4096 Mar 20 08:12 www
+
+/var/cache:
+total 2036
+drwxrwxr-x  3 root    portage    4096 Feb 25 16:19 edb
+drwxrwxr-x  2 portage portage    4096 Nov  4  2014 eix
+-rw-rw-r--  1 portage portage 2054883 Feb 17  2009 eix.previous
+drwxr-xr-x  2 root    root       4096 Mar 20 08:11 fontconfig
+drwxr-xr-x  2 nobody  nobody     4096 Nov 11  2004 httpd
+drwx------  2 root    root       4096 Mar 20 08:12 ldconfig
+drwxrwxr-x 19 root    man        4096 Oct  8  2010 man
+drwx------  2 root    root       4096 Mar 20 08:15 revdep-rebuild
+
+/var/cache/edb:
+total 24
+-rw-rw-r-- 1 root portage    0 Nov  9  2004 config
+-rw-r--r-- 1 root root       4 Feb 25 16:19 counter
+drwxrwsr-x 2 root portage 4096 Sep  5  2017 dep
+-rw-r--r-- 1 root portage 8235 Feb 25 16:19 mtimedb
+-rw-rw-r-- 1 root portage  238 Feb  3  2005 virtuals
+
+/var/cache/edb/dep:
+total 0
+
+/var/cache/eix:
+total 0
+
+/var/cache/fontconfig:
+total 400
+-rw-r--r-- 1 root root    128 Sep 28  2009 0251a5afa6ac727a1e32b7d4d4aa7cf0-x86.cache-2
+-rw-r--r-- 1 root root 125896 Sep 28  2009 17090aa38d5c6f09fb8c5c354938f1d7-x86.cache-2
+-rw-r--r-- 1 root root  51160 Sep 28  2009 221fd1126b80b777db535aea535e87ba-x86.cache-2
+-rw-r--r-- 1 root root     80 Sep 28  2009 2d31a572ce6667f6a0da9c8dc611898b-x86.cache-2
+-rw-r--r-- 1 root root     72 Sep 28  2009 381d52a8332a3716e2e045310969c5af-x86.cache-2
+-rw-r--r-- 1 root root    568 Sep 28  2009 3830d5c3ddfd5cd38a049b759396e72e-x86.cache-2
+-rw-r--r-- 1 root root     72 Sep 28  2009 4b172ca7f111e3cffadc3636415fead9-x86.cache-2
+-rw-r--r-- 1 root root  76168 Sep 28  2009 4b5cf4386f1cde02a336ba961b4ac82d-x86.cache-2
+-rw-r--r-- 1 root root     88 Sep 28  2009 5ca8086aeacc9c68e81a71e7ef846b3b-x86.cache-2
+-rw-r--r-- 1 root root   8112 Sep 28  2009 76fa4b957c916922374347f144bde9da-x86.cache-2
+-rw-r--r-- 1 root root  33624 Sep 28  2009 87f5e051180a7a75f16eb6fe7dbd3749-x86.cache-2
+-rw-r--r-- 1 root root  53136 Sep 28  2009 8d4af663993b81a124ee82e610bb31f9-x86.cache-2
+-rw-r--r-- 1 root root    128 Sep 28  2009 a1c95d6dfc9a7b34f44445cf81166004-x86.cache-2
+-rw-r--r-- 1 root root     72 Sep 28  2009 a98d8961fa319a64d3cfd8640c79e62d-x86.cache-2
+-rw-r--r-- 1 root root     72 Sep 28  2009 d62e99ef547d1d24cdb1bd22ec1a2976-x86.cache-2
+-rw-r--r-- 1 root root     72 Sep 28  2009 df311e82a1a24c41a75c2c930223552e-x86.cache-2
+-rw-r--r-- 1 root root   9552 Sep 28  2009 f6b893a7224233d96cb72fd88691c0b4-x86.cache-2
+
+/var/cache/httpd:
+total 0
+
+/var/cache/man:
+total 68
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat0p
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat1
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat1p
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat2
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat3
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat3p
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat4
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat5
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat6
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat7
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat8
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cat9
+drwxrwxr-x 2 root man 4096 Oct  8  2010 catl
+drwxrwxr-x 2 root man 4096 Oct  8  2010 catn
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cato
+drwxrwxr-x 2 root man 4096 Oct  8  2010 catp
+drwxrwxr-x 2 root man 4096 Oct  8  2010 cattcl
+
+/var/cache/man/cat0p:
+total 0
+
+/var/cache/man/cat1:
+total 44
+-r--rw-r-- 1 root man  1517 Dec  8  2004 chage.1.bz2
+-r--rw-r-- 1 root man   951 Dec  8  2004 chfn.1.bz2
+-r--rw-r-- 1 root man  2772 Dec  8  2004 chmod.1.bz2
+-r--rw-r-- 1 root man   452 Dec  8  2004 expiry.1.bz2
+-r--rw-r-- 1 root man  5763 Dec  8  2004 find.1.bz2
+-r--rw-r-- 1 root man 16704 Dec  8  2004 wget.1.bz2
+
+/var/cache/man/cat1p:
+total 0
+
+/var/cache/man/cat2:
+total 8
+-r--rw-r-- 1 root man 1991 Dec  8  2004 chmod.2.bz2
+-r--rw-r-- 1 root man 3448 May 13  2005 getrlimit.2.bz2
+
+/var/cache/man/cat3:
+total 4
+-r--rw-r-- 1 root man 924 May 13  2005 ulimit.3.bz2
+
+/var/cache/man/cat3p:
+total 0
+
+/var/cache/man/cat4:
+total 0
+
+/var/cache/man/cat5:
+total 0
+
+/var/cache/man/cat6:
+total 0
+
+/var/cache/man/cat7:
+total 0
+
+/var/cache/man/cat8:
+total 8
+-r--rw-r-- 1 root man 1429 Jun 29  2005 ipcrm.8.bz2
+-r--rw-r-- 1 root man 4003 Nov 25  2004 prelink.8.bz2
+
+/var/cache/man/cat9:
+total 0
+
+/var/cache/man/catl:
+total 0
+
+/var/cache/man/catn:
+total 0
+
+/var/cache/man/cato:
+total 0
+
+/var/cache/man/catp:
+total 0
+
+/var/cache/man/cattcl:
+total 0
+
+/var/db:
+total 16
+-rw-r--r--  1 root root 5350 Sep  6  2017 Makefile
+drwxr-x---  2 root root 4096 Feb 25 16:19 pkg
+drwxr-x--- 35 root root 4096 Oct 24  2017 pkg_old
+
+/var/db_sik:
+total 12
+-rw-r--r--  1 root root 5350 Sep  6  2017 Makefile
+drwxr-x--- 35 root root 4096 Oct 24  2017 pkg
+
+/var/empty:
+total 0
+
+/var/lib:
+total 60
+drwxr-xr-x 2 root  root    4096 Sep  5  2017 arpd
+drwxr-xr-x 4 root  root    4096 Mar 20 08:11 eselect
+drwxr-xr-x 3 root  root    4096 Oct 13  2008 games
+drwxr-xr-x 3 root  root    4096 Feb 17  2009 gentoo
+drwxr-xr-x 2 root  root    4096 Sep 15  2011 init.d
+drwxr-xr-x 2 root  root    4096 Sep  5  2017 ip6tables
+drwxr-xr-x 2 root  root    4096 Sep  5  2017 iptables
+drwxr-xr-x 2 root  root    4096 Mar 20 08:11 misc
+drwxr-xr-x 2 mysql mysql   4096 Mar 20 08:19 mysql
+drwxr-x--- 2 mysql mysql   4096 Mar 10  2006 mysql-500
+drwx------ 2 ldap  ldap    4096 Mar 20 08:13 openldap-data
+drwxrws--- 2 root  portage 4096 Mar 20 08:14 portage
+drwxr-xr-x 2 root  root    4096 Mar 20 08:18 run
+drwxr-x--- 2 root  slocate 4096 Feb 12 09:42 slocate
+drwxr-xr-x 2 root  root    4096 Mar 20 08:11 xkb
+
+/var/lib/arpd:
+total 0
+
+/var/lib/eselect:
+total 8
+drwxr-xr-x 2 root root 4096 Mar 20 08:11 env
+drwxr-xr-x 2 root root 4096 Mar 10  2006 mysql
+
+/var/lib/eselect/env:
+total 4
+-rw-r--r-- 1 root root 416 Sep 28  2009 ld-mtimedb
+
+/var/lib/eselect/mysql:
+total 4
+-rw-r--r-- 1 root root 2227 Mar 10  2006 mysql-500.filelist
+
+/var/lib/games:
+total 4
+drwxr-xr-x 2 games games 4096 Mar 20  2012 emacs
+
+/var/lib/games/emacs:
+total 0
+-rw-r--r-- 1 root root 0 Oct 13  2008 snake-scores
+-rw-r--r-- 1 root root 0 Oct 13  2008 tetris-scores
+
+/var/lib/gentoo:
+total 4
+drwxrwxr-x 2 root portage 4096 Mar 20 08:14 news
+
+/var/lib/gentoo/news:
+total 12
+-rw-rw-r-- 1 root portage 1194 Sep  6  2017 news-gentoo.read
+-rw-rw-r-- 1 root portage 1791 Feb 25 15:56 news-gentoo.skip
+-rw-rw-r-- 1 root portage  548 Feb 25 15:56 news-gentoo.unread
+
+/var/lib/init.d:
+total 0
+
+/var/lib/ip6tables:
+total 0
+
+/var/lib/iptables:
+total 0
+
+/var/lib/misc:
+total 0
+-rw-r--r-- 1 root root 0 Nov  4  2014 prelink.force
+-rw-r--r-- 1 root root 0 Nov  4  2014 prelink.full
+-rw-r--r-- 1 root root 0 Nov  4  2014 prelink.quick
+
+/var/lib/mysql:
+total 0
+srwxrwxrwx 1 mysql mysql 0 Mar 20 08:19 mysql.sock
+srwxrwxrwx 1 mysql mysql 0 Mar 20 08:19 mysql4.sock
+srwxrwxrwx 1 mysql mysql 0 Mar 20 08:19 mysql5.sock
+
+/var/lib/run:
+total 0
+
+/var/lib/xkb:
+total 4
+-rw-r--r-- 1 root root 644 Nov  5  2014 README.compiled
+
+/var/lock:
+total 4
+drwxr-xr-x 2 root root 4096 Jul 18  2004 subsys
+
+/var/lock/subsys:
+total 0
+
+/var/log:
+total 4720
+-rw-r--r-- 1 root    root         6598 Aug  4  2011 Xorg.0.log.old
+drwxr-x--- 4 root    root         4096 Mar 24 05:30 httpd
+-rw------- 1 root    root    211887172 Mar 24 12:22 lastlog
+-rw-r----- 1 root    root          249 Dec 20  2004 messages
+drwxr-xr-x 2 root    root         4096 Dec  5  2007 news
+drwxrwsr-x 3 portage portage      4096 Dec  5  2007 portage
+-rw------- 1 root    root         2363 Mar 24 18:22 pureftpd.log
+drwxrwx--- 2 root    portage      4096 Mar 20 08:11 sandbox
+-rw--w---- 1 root    nobody    4182669 Mar 24 18:25 suexec
+-rw------- 1 root    root       460619 Mar 24 05:29 suexec.1.gz
+-rw------- 1 root    root       122537 Mar 23 05:30 suexec.2.gz
+-rw-r----- 1 root    root          249 Dec 20  2004 syslog
+-rw-rw-r-- 1 root    utmp         4608 Mar 24 12:22 wtmp
+
+/var/log/news:
+total 0
+
+/var/log/portage:
+total 4
+drwxrws--- 2 portage portage 4096 Mar 20 08:12 elog
+
+/var/run:
+total 24
+srwx------ 1 nobody root     0 Mar 24 10:22 fpcgisock
+-rw-r--r-- 1 root   root     6 Mar 24 10:22 httpd.pid
+drwxr-xr-x 2 mysql  mysql 4096 Mar 20 08:16 mysqld
+drwxr-xr-x 2 root   root  4096 Dec 10  2014 nscd
+drwx------ 2 root   root  4096 Mar 24 18:23 pure-ftpd
+-rw-r--r-- 1 root   root     6 Mar 24 06:01 pure-ftpd.pid
+drwxr-x--- 2 root   root  4096 Aug  1  2017 ssl_mutex
+-rw-rw-r-- 1 root   utmp     0 Mar 24 18:00 utmp
+
+/var/run/mysqld:
+total 0
+lrwxrwxrwx 1 root root 25 Sep  1  2017 mysqld.sock -> /var/lib/mysql/mysql.sock
+
+/var/run/nscd:
+total 4
+-rw-r--r-- 1 root root 5 Dec 10  2014 nscd.pid
+
+/var/spool:
+total 16
+drwxrwx--- 2 smmsp smmsp 4096 Mar 24 17:20 clientmqueue
+drwxr-x--- 3 root  cron  4096 Mar 20 08:11 cron
+drwxrwxr-x 2 root  mail  4096 Nov  4  2014 mail
+drwx------ 2 root  root  4096 Mar 20 08:11 mqueue
+
+/var/spool/mail:
+total 0
+
+/var/state:
+total 0
+
+/var/tmp:
+total 0
+
+/var/traffic:
+total 12
+-rw------- 1 root root 12288 Mar 24 18:25 webtraffic.db
+-rw------- 1 root root     0 Jan 14  2011 webtraffic.db.lock
+-rw------- 1 root root     0 Mar 21 06:01 webtraffic_move.db.lock
+
+/var/www:
+total 36
+drwxr-xr-x  2 root root  4096 Mar 20 08:14 build
+drwxr-xr-x  2 root root  4096 Nov 11  2004 cgi-bin
+drwxr-xr-x  3 root root  4096 Jun 15  2010 error
+drwxr-xr-x  2 root root  4096 Nov 11  2004 html
+drwxr-xr-x  3 root root  4096 Mar 20 08:11 icons
+drwxr-sr-x 14 root root 16384 Mar 20 08:14 manual
+
+/var/www/build:
+total 40
+-rwxr-xr-x 1 root root  942 Oct  9 14:16 config.nice
+-rw-r--r-- 1 root root 2877 Oct  9 14:16 config_vars.mk
+-rwxr-xr-x 1 root root 3095 Oct  9 14:16 instdso.sh
+-rw-r--r-- 1 root root 1060 Oct  9 14:16 library.mk
+-rw-r--r-- 1 root root  951 Oct  9 14:16 ltlib.mk
+-rwxr-xr-x 1 root root 1660 Oct  9 14:16 mkdir.sh
+-rw-r--r-- 1 root root 1032 Oct  9 14:16 program.mk
+-rw-r--r-- 1 root root 7603 Oct  9 14:16 rules.mk
+-rw-r--r-- 1 root root 1276 Oct  9 14:16 special.mk
+
+/var/www/cgi-bin:
+total 8
+-rw-r--r-- 1 root root 268 Nov 11  2004 printenv
+-rw-r--r-- 1 root root 757 Nov 11  2004 test-cgi
+
+/var/www/error:
+total 192
+-rw-r--r-- 1 root root  9108 Apr 28  2010 HTTP_BAD_GATEWAY.html.var
+-rw-r--r-- 1 root root  6633 Apr 28  2010 HTTP_BAD_REQUEST.html.var
+-rw-r--r-- 1 root root 11193 Apr 28  2010 HTTP_FORBIDDEN.html.var
+-rw-r--r-- 1 root root 12700 Apr 28  2010 HTTP_GONE.html.var
+-rw-r--r-- 1 root root 12846 Apr 28  2010 HTTP_INTERNAL_SERVER_ERROR.html.var
+-rw-r--r-- 1 root root  7539 Apr 28  2010 HTTP_LENGTH_REQUIRED.html.var
+-rw-r--r-- 1 root root  6773 Apr 28  2010 HTTP_METHOD_NOT_ALLOWED.html.var
+-rw-r--r-- 1 root root 13255 Apr 28  2010 HTTP_NOT_FOUND.html.var
+-rw-r--r-- 1 root root  6336 Apr 28  2010 HTTP_NOT_IMPLEMENTED.html.var
+-rw-r--r-- 1 root root  6565 Apr 28  2010 HTTP_PRECONDITION_FAILED.html.var
+-rw-r--r-- 1 root root  7802 Apr 28  2010 HTTP_REQUEST_ENTITY_TOO_LARGE.html.var
+-rw-r--r-- 1 root root  7099 Apr 28  2010 HTTP_REQUEST_TIME_OUT.html.var
+-rw-r--r-- 1 root root  7103 Apr 28  2010 HTTP_REQUEST_URI_TOO_LARGE.html.var
+-rw-r--r-- 1 root root  7822 Apr 28  2010 HTTP_SERVICE_UNAVAILABLE.html.var
+-rw-r--r-- 1 root root 13035 Apr 28  2010 HTTP_UNAUTHORIZED.html.var
+-rw-r--r-- 1 root root  6353 Apr 28  2010 HTTP_UNSUPPORTED_MEDIA_TYPE.html.var
+-rw-r--r-- 1 root root  7009 Apr 28  2010 HTTP_VARIANT_ALSO_VARIES.html.var
+-rw-r--r-- 1 root root  1979 Apr 28  2010 README
+-rw-r--r-- 1 root root  4256 Apr 28  2010 contact.html.var
+drwxr-xr-x 2 root root  4096 Apr 28  2010 include
+
+/var/www/error/include:
+total 12
+-rw-r--r-- 1 root root 343 Apr 28  2010 bottom.html
+-rw-r--r-- 1 root root   9 Apr 28  2010 spacer.html
+-rw-r--r-- 1 root root 969 Apr 28  2010 top.html
+
+/var/www/html:
+total 128
+-rw-r--r-- 1 501 dialout 2326 Jul  3  1996 apache_pb.gif
+-rw-r--r-- 1 501 dialout 1884 Jun 26  2001 index.html.ca
+-rw-r--r-- 1 501 dialout 1583 Jun 27  2001 index.html.cz
+-rw-r--r-- 1 501 dialout 2274 Sep 17  2001 index.html.de
+-rw-r--r-- 1 501 dialout 1557 Jun 27  2001 index.html.dk
+-rw-r--r-- 1 501 dialout 1877 Jun 27  2001 index.html.ee
+-rw-r--r-- 1 501 dialout 1677 Jun 27  2001 index.html.el
+-rw-r--r-- 1 501 dialout 1456 May  4  2001 index.html.en
+-rw-r--r-- 1 501 dialout 1799 Jun 27  2001 index.html.es
+-rw-r--r-- 1 501 dialout 1525 Jun 27  2001 index.html.fr
+-rw-r--r-- 1 501 dialout 3706 Jun 27  2001 index.html.he.iso8859-8
+-rw-r--r-- 1 501 dialout 2585 Feb  2  2004 index.html.hu
+-rw-r--r-- 1 501 dialout 1847 Nov  7  2001 index.html.it
+-rw-r--r-- 1 501 dialout 1799 Dec 14  2001 index.html.ja.jis
+-rw-r--r-- 1 501 dialout 1333 Jun 28  2001 index.html.kr.iso-kr
+-rw-r--r-- 1 501 dialout 1896 May 21  2002 index.html.lb.utf8
+-rw-r--r-- 1 501 dialout 2007 Jun 28  2001 index.html.nl
+-rw-r--r-- 1 501 dialout 1534 Sep  6  2001 index.html.nn
+-rw-r--r-- 1 501 dialout 1526 Jun 28  2001 index.html.no
+-rw-r--r-- 1 501 dialout 1497 Jun 28  2001 index.html.po.iso-pl
+-rw-r--r-- 1 501 dialout 1842 Jun 28  2001 index.html.pt
+-rw-r--r-- 1 501 dialout 2035 Mar 22  2001 index.html.pt-br
+-rw-r--r-- 1 501 dialout 1591 Jun 28  2001 index.html.ru.cp-1251
+-rw-r--r-- 1 501 dialout 1585 Jun 28  2001 index.html.ru.cp866
+-rw-r--r-- 1 501 dialout 1589 Jun 28  2001 index.html.ru.iso-ru
+-rw-r--r-- 1 501 dialout 1585 Jun 28  2001 index.html.ru.koi8-r
+-rw-r--r-- 1 501 dialout 3134 Jan 27  2001 index.html.ru.ucs2
+-rw-r--r-- 1 501 dialout 6268 Jan 27  2001 index.html.ru.ucs4
+-rw-r--r-- 1 501 dialout 2318 Jun 28  2001 index.html.ru.utf8
+-rw-r--r-- 1 501 dialout 1700 Jun 28  2001 index.html.se
+-rw-r--r-- 1 501 dialout 1062 May 14  2003 index.html.zh-tw.big5
+
+/var/www/icons:
+total 628
+-rw-rw-r-- 1 root root   246 Nov 24  2004 a.gif
+-rw-rw-r-- 1 root root   293 Nov 24  2004 a.png
+-rw-rw-r-- 1 root root   242 Nov 24  2004 alert.black.gif
+-rw-rw-r-- 1 root root   279 Nov 24  2004 alert.black.png
+-rw-rw-r-- 1 root root   247 Nov 24  2004 alert.red.gif
+-rw-rw-r-- 1 root root   298 Nov 24  2004 alert.red.png
+-rw-rw-r-- 1 root root  2326 Nov 24  2004 apache_pb.gif
+-rw-rw-r-- 1 root root  1385 Nov 24  2004 apache_pb.png
+-rw-rw-r-- 1 root root   216 Nov 24  2004 back.gif
+-rw-rw-r-- 1 root root   284 Nov 24  2004 back.png
+-rw-rw-r-- 1 root root   233 Nov 24  2004 ball.gray.gif
+-rw-rw-r-- 1 root root   277 Nov 24  2004 ball.gray.png
+-rw-rw-r-- 1 root root   205 Nov 24  2004 ball.red.gif
+-rw-rw-r-- 1 root root   265 Nov 24  2004 ball.red.png
+-rw-rw-r-- 1 root root   246 Nov 24  2004 binary.gif
+-rw-rw-r-- 1 root root   296 Nov 24  2004 binary.png
+-rw-rw-r-- 1 root root   246 Nov 24  2004 binhex.gif
+-rw-rw-r-- 1 root root   304 Nov 24  2004 binhex.png
+-rw-rw-r-- 1 root root   148 Nov 24  2004 blank.gif
+-rw-rw-r-- 1 root root   195 Nov 24  2004 blank.png
+-rw-rw-r-- 1 root root   308 Nov 24  2004 bomb.gif
+-rw-rw-r-- 1 root root   356 Nov 24  2004 bomb.png
+-rw-rw-r-- 1 root root   251 Nov 24  2004 box1.gif
+-rw-rw-r-- 1 root root   308 Nov 24  2004 box1.png
+-rw-rw-r-- 1 root root   268 Nov 24  2004 box2.gif
+-rw-rw-r-- 1 root root   322 Nov 24  2004 box2.png
+-rw-rw-r-- 1 root root   247 Nov 24  2004 broken.gif
+-rw-rw-r-- 1 root root   305 Nov 24  2004 broken.png
+-rw-rw-r-- 1 root root   235 Nov 24  2004 burst.gif
+-rw-rw-r-- 1 root root   314 Nov 24  2004 burst.png
+-rw-rw-r-- 1 root root   242 Nov 24  2004 c.gif
+-rw-rw-r-- 1 root root   285 Nov 24  2004 c.png
+-rw-rw-r-- 1 root root   251 Nov 24  2004 comp.blue.gif
+-rw-rw-r-- 1 root root   313 Nov 24  2004 comp.blue.png
+-rw-rw-r-- 1 root root   246 Nov 24  2004 comp.gray.gif
+-rw-rw-r-- 1 root root   304 Nov 24  2004 comp.gray.png
+-rw-rw-r-- 1 root root  1038 Nov 24  2004 compressed.gif
+-rw-rw-r-- 1 root root   315 Nov 24  2004 compressed.png
+-rw-rw-r-- 1 root root   214 Nov 24  2004 continued.gif
+-rw-rw-r-- 1 root root   272 Nov 24  2004 continued.png
+-rw-rw-r-- 1 root root   225 Nov 24  2004 dir.gif
+-rw-rw-r-- 1 root root   272 Nov 24  2004 dir.png
+-rw-rw-r-- 1 root root   167 Nov 24  2004 diskimg.gif
+-rw-rw-r-- 1 root root   202 Nov 24  2004 diskimg.png
+-rw-rw-r-- 1 root root   163 Nov 24  2004 down.gif
+-rw-rw-r-- 1 root root   232 Nov 24  2004 down.png
+-rw-rw-r-- 1 root root   238 Nov 24  2004 dvi.gif
+-rw-rw-r-- 1 root root   290 Nov 24  2004 dvi.png
+-rw-rw-r-- 1 root root   236 Nov 24  2004 f.gif
+-rw-rw-r-- 1 root root   282 Nov 24  2004 f.png
+-rw-rw-r-- 1 root root   225 Nov 24  2004 folder.gif
+-rw-rw-r-- 1 root root   242 Nov 24  2004 folder.open.gif
+-rw-rw-r-- 1 root root   305 Nov 24  2004 folder.open.png
+-rw-rw-r-- 1 root root   272 Nov 24  2004 folder.png
+-rw-rw-r-- 1 root root   243 Nov 24  2004 folder.sec.gif
+-rw-rw-r-- 1 root root   290 Nov 24  2004 folder.sec.png
+-rw-rw-r-- 1 root root   219 Nov 24  2004 forward.gif
+-rw-rw-r-- 1 root root   284 Nov 24  2004 forward.png
+-rw-rw-r-- 1 root root   221 Nov 24  2004 generic.gif
+-rw-rw-r-- 1 root root   260 Nov 24  2004 generic.png
+-rw-rw-r-- 1 root root   220 Nov 24  2004 generic.red.gif
+-rw-rw-r-- 1 root root   262 Nov 24  2004 generic.red.png
+-rw-rw-r-- 1 root root   249 Nov 24  2004 generic.sec.gif
+-rw-rw-r-- 1 root root   279 Nov 24  2004 generic.sec.png
+-rw-rw-r-- 1 root root   217 Nov 24  2004 hand.right.gif
+-rw-rw-r-- 1 root root   280 Nov 24  2004 hand.right.png
+-rw-rw-r-- 1 root root   223 Nov 24  2004 hand.up.gif
+-rw-rw-r-- 1 root root   280 Nov 24  2004 hand.up.png
+-rw-rw-r-- 1 root root 11977 Nov 24  2004 icon.sheet.gif
+-rw-rw-r-- 1 root root  8898 Nov 24  2004 icon.sheet.png
+-rw-rw-r-- 1 root root   274 Nov 24  2004 image1.gif
+-rw-rw-r-- 1 root root   307 Nov 24  2004 image1.png
+-rw-rw-r-- 1 root root   309 Nov 24  2004 image2.gif
+-rw-rw-r-- 1 root root   355 Nov 24  2004 image2.png
+-rw-rw-r-- 1 root root   286 Nov 24  2004 image3.gif
+-rw-rw-r-- 1 root root   323 Nov 24  2004 image3.png
+-rw-rw-r-- 1 root root   268 Nov 24  2004 index.gif
+-rw-rw-r-- 1 root root   316 Nov 24  2004 index.png
+-rw-rw-r-- 1 root root   276 Nov 24  2004 layout.gif
+-rw-rw-r-- 1 root root   306 Nov 24  2004 layout.png
+-rw-rw-r-- 1 root root   172 Nov 24  2004 left.gif
+-rw-rw-r-- 1 root root   235 Nov 24  2004 left.png
+-rw-rw-r-- 1 root root   249 Nov 24  2004 link.gif
+-rw-rw-r-- 1 root root   297 Nov 24  2004 link.png
+-rw-rw-r-- 1 root root   243 Nov 24  2004 movie.gif
+-rw-rw-r-- 1 root root   258 Nov 24  2004 movie.png
+-rw-rw-r-- 1 root root   237 Nov 24  2004 p.gif
+-rw-rw-r-- 1 root root   284 Nov 24  2004 p.png
+-rw-rw-r-- 1 root root   251 Nov 24  2004 patch.gif
+-rw-rw-r-- 1 root root   295 Nov 24  2004 patch.png
+-rw-rw-r-- 1 root root   249 Nov 24  2004 pdf.gif
+-rw-rw-r-- 1 root root   289 Nov 24  2004 pdf.png
+-rw-rw-r-- 1 root root   188 Nov 24  2004 pie0.gif
+-rw-rw-r-- 1 root root   242 Nov 24  2004 pie0.png
+-rw-rw-r-- 1 root root   198 Nov 24  2004 pie1.gif
+-rw-rw-r-- 1 root root   261 Nov 24  2004 pie1.png
+-rw-rw-r-- 1 root root   198 Nov 24  2004 pie2.gif
+-rw-rw-r-- 1 root root   253 Nov 24  2004 pie2.png
+-rw-rw-r-- 1 root root   191 Nov 24  2004 pie3.gif
+-rw-rw-r-- 1 root root   256 Nov 24  2004 pie3.png
+-rw-rw-r-- 1 root root   193 Nov 24  2004 pie4.gif
+-rw-rw-r-- 1 root root   239 Nov 24  2004 pie4.png
+-rw-rw-r-- 1 root root   189 Nov 24  2004 pie5.gif
+-rw-rw-r-- 1 root root   258 Nov 24  2004 pie5.png
+-rw-rw-r-- 1 root root   186 Nov 24  2004 pie6.gif
+-rw-rw-r-- 1 root root   253 Nov 24  2004 pie6.png
+-rw-rw-r-- 1 root root   185 Nov 24  2004 pie7.gif
+-rw-rw-r-- 1 root root   258 Nov 24  2004 pie7.png
+-rw-rw-r-- 1 root root   173 Nov 24  2004 pie8.gif
+-rw-rw-r-- 1 root root   233 Nov 24  2004 pie8.png
+-rw-rw-r-- 1 root root   254 Nov 24  2004 portal.gif
+-rw-rw-r-- 1 root root   303 Nov 24  2004 portal.png
+-rw-rw-r-- 1 root root   244 Nov 24  2004 ps.gif
+-rw-rw-r-- 1 root root   287 Nov 24  2004 ps.png
+-rw-rw-r-- 1 root root   267 Nov 24  2004 quill.gif
+-rw-rw-r-- 1 root root   315 Nov 24  2004 quill.png
+-rw-rw-r-- 1 root root   172 Nov 24  2004 right.gif
+-rw-rw-r-- 1 root root   233 Nov 24  2004 right.png
+-rw-rw-r-- 1 root root   258 Nov 24  2004 screw1.gif
+-rw-rw-r-- 1 root root   312 Nov 24  2004 screw1.png
+-rw-rw-r-- 1 root root   263 Nov 24  2004 screw2.gif
+-rw-rw-r-- 1 root root   318 Nov 24  2004 screw2.png
+-rw-rw-r-- 1 root root   242 Nov 24  2004 script.gif
+-rw-rw-r-- 1 root root   275 Nov 24  2004 script.png
+drwxrwxr-x 2 root root  4096 Jul 27  2006 small
+-rw-rw-r-- 1 root root   248 Nov 24  2004 sound1.gif
+-rw-rw-r-- 1 root root   310 Nov 24  2004 sound1.png
+-rw-rw-r-- 1 root root   221 Nov 24  2004 sound2.gif
+-rw-rw-r-- 1 root root   297 Nov 24  2004 sound2.png
+-rw-rw-r-- 1 root root   285 Nov 24  2004 sphere1.gif
+-rw-rw-r-- 1 root root   326 Nov 24  2004 sphere1.png
+-rw-rw-r-- 1 root root   264 Nov 24  2004 sphere2.gif
+-rw-rw-r-- 1 root root   322 Nov 24  2004 sphere2.png
+-rw-rw-r-- 1 root root   219 Nov 24  2004 tar.gif
+-rw-rw-r-- 1 root root   261 Nov 24  2004 tar.png
+-rw-rw-r-- 1 root root   251 Nov 24  2004 tex.gif
+-rw-rw-r-- 1 root root   295 Nov 24  2004 tex.png
+-rw-rw-r-- 1 root root   229 Nov 24  2004 text.gif
+-rw-rw-r-- 1 root root   273 Nov 24  2004 text.png
+-rw-rw-r-- 1 root root   242 Nov 24  2004 transfer.gif
+-rw-rw-r-- 1 root root   319 Nov 24  2004 transfer.png
+-rw-rw-r-- 1 root root   245 Nov 24  2004 unknown.gif
+-rw-rw-r-- 1 root root   291 Nov 24  2004 unknown.png
+-rw-rw-r-- 1 root root   164 Nov 24  2004 up.gif
+-rw-rw-r-- 1 root root   234 Nov 24  2004 up.png
+-rw-rw-r-- 1 root root   236 Nov 24  2004 uu.gif
+-rw-rw-r-- 1 root root   280 Nov 24  2004 uu.png
+-rw-rw-r-- 1 root root   236 Nov 24  2004 uuencoded.gif
+-rw-rw-r-- 1 root root   280 Nov 24  2004 uuencoded.png
+-rw-rw-r-- 1 root root   228 Nov 24  2004 world1.gif
+-rw-rw-r-- 1 root root   315 Nov 24  2004 world1.png
+-rw-rw-r-- 1 root root   261 Nov 24  2004 world2.gif
+-rw-rw-r-- 1 root root   339 Nov 24  2004 world2.png
+
+/var/www/icons/small:
+total 260
+-rw-rw-r-- 1 root root  300 Nov 24  2004 README.txt
+-rw-rw-r-- 1 root root  129 Nov 24  2004 back.gif
+-rw-rw-r-- 1 root root  238 Nov 24  2004 back.png
+-rw-rw-r-- 1 root root  134 Nov 24  2004 binary.gif
+-rw-rw-r-- 1 root root  242 Nov 24  2004 binary.png
+-rw-rw-r-- 1 root root  131 Nov 24  2004 binhex.gif
+-rw-rw-r-- 1 root root  248 Nov 24  2004 binhex.png
+-rw-rw-r-- 1 root root   55 Nov 24  2004 blank.gif
+-rw-rw-r-- 1 root root   90 Nov 24  2004 blank.png
+-rw-rw-r-- 1 root root  139 Nov 24  2004 broken.gif
+-rw-rw-r-- 1 root root  254 Nov 24  2004 broken.png
+-rw-rw-r-- 1 root root  128 Nov 24  2004 burst.gif
+-rw-rw-r-- 1 root root  194 Nov 24  2004 burst.png
+-rw-rw-r-- 1 root root  130 Nov 24  2004 comp1.gif
+-rw-rw-r-- 1 root root  197 Nov 24  2004 comp1.png
+-rw-rw-r-- 1 root root  131 Nov 24  2004 comp2.gif
+-rw-rw-r-- 1 root root  194 Nov 24  2004 comp2.png
+-rw-rw-r-- 1 root root  128 Nov 24  2004 compressed.gif
+-rw-rw-r-- 1 root root  189 Nov 24  2004 compressed.png
+-rw-rw-r-- 1 root root  114 Nov 24  2004 continued.gif
+-rw-rw-r-- 1 root root  214 Nov 24  2004 continued.png
+-rw-rw-r-- 1 root root  132 Nov 24  2004 dir.gif
+-rw-rw-r-- 1 root root  175 Nov 24  2004 dir.png
+-rw-rw-r-- 1 root root  122 Nov 24  2004 dir2.gif
+-rw-rw-r-- 1 root root  161 Nov 24  2004 dir2.png
+-rw-rw-r-- 1 root root  191 Nov 24  2004 doc.gif
+-rw-rw-r-- 1 root root  269 Nov 24  2004 doc.png
+-rw-rw-r-- 1 root root  125 Nov 24  2004 forward.gif
+-rw-rw-r-- 1 root root  244 Nov 24  2004 forward.png
+-rw-rw-r-- 1 root root  116 Nov 24  2004 generic.gif
+-rw-rw-r-- 1 root root  182 Nov 24  2004 generic.png
+-rw-rw-r-- 1 root root  127 Nov 24  2004 generic2.gif
+-rw-rw-r-- 1 root root  158 Nov 24  2004 generic2.png
+-rw-rw-r-- 1 root root  113 Nov 24  2004 generic3.gif
+-rw-rw-r-- 1 root root  147 Nov 24  2004 generic3.png
+-rw-rw-r-- 1 root root  126 Nov 24  2004 image.gif
+-rw-rw-r-- 1 root root  178 Nov 24  2004 image.png
+-rw-rw-r-- 1 root root  138 Nov 24  2004 image2.gif
+-rw-rw-r-- 1 root root  186 Nov 24  2004 image2.png
+-rw-rw-r-- 1 root root  145 Nov 24  2004 index.gif
+-rw-rw-r-- 1 root root  206 Nov 24  2004 index.png
+-rw-rw-r-- 1 root root  187 Nov 24  2004 key.gif
+-rw-rw-r-- 1 root root  254 Nov 24  2004 key.png
+-rw-rw-r-- 1 root root  134 Nov 24  2004 movie.gif
+-rw-rw-r-- 1 root root  202 Nov 24  2004 movie.png
+-rw-rw-r-- 1 root root  182 Nov 24  2004 patch.gif
+-rw-rw-r-- 1 root root  250 Nov 24  2004 patch.png
+-rw-rw-r-- 1 root root  184 Nov 24  2004 ps.gif
+-rw-rw-r-- 1 root root  254 Nov 24  2004 ps.png
+-rw-rw-r-- 1 root root 3811 Nov 24  2004 rainbow.gif
+-rw-rw-r-- 1 root root 2418 Nov 24  2004 rainbow.png
+-rw-rw-r-- 1 root root  130 Nov 24  2004 sound.gif
+-rw-rw-r-- 1 root root  176 Nov 24  2004 sound.png
+-rw-rw-r-- 1 root root  119 Nov 24  2004 sound2.gif
+-rw-rw-r-- 1 root root  236 Nov 24  2004 sound2.png
+-rw-rw-r-- 1 root root  132 Nov 24  2004 tar.gif
+-rw-rw-r-- 1 root root  227 Nov 24  2004 tar.png
+-rw-rw-r-- 1 root root  128 Nov 24  2004 text.gif
+-rw-rw-r-- 1 root root  202 Nov 24  2004 text.png
+-rw-rw-r-- 1 root root  124 Nov 24  2004 transfer.gif
+-rw-rw-r-- 1 root root  186 Nov 24  2004 transfer.png
+-rw-rw-r-- 1 root root  131 Nov 24  2004 unknown.gif
+-rw-rw-r-- 1 root root  226 Nov 24  2004 unknown.png
+-rw-rw-r-- 1 root root  125 Nov 24  2004 uu.gif
+-rw-rw-r-- 1 root root  217 Nov 24  2004 uu.png
+
+/var/www/manual:
+total 5024
+-rw-r--r-- 1 root root   102 May  9  2011 BUILDING
+-rw-r--r-- 1 root root 11358 Nov 20  2004 LICENSE
+-rw-r--r-- 1 root root   543 Nov  9  2011 bind.html
+-rw-r--r-- 1 root root 15348 May 31  2018 bind.html.de
+-rw-r--r-- 1 root root 15562 Mar 30  2018 bind.html.en
+-rw-r--r-- 1 root root 16728 Sep 18  2018 bind.html.fr
+-rw-rw-r-- 1 root root  5859 Jul 27  2006 bind.html.html
+-rw-rw-r-- 1 root root  6519 Jul 27  2006 bind.html.ja.jis
+-rw-r--r-- 1 root root 14682 Jan  4  2018 bind.html.ja.utf8
+-rw-r--r-- 1 root root 11210 Jan  4  2018 bind.html.ko.euc-kr
+-rw-r--r-- 1 root root 16600 May  8  2018 bind.html.tr.utf8
+-rw-r--r-- 1 root root   297 Nov  9  2011 caching.html
+-rw-r--r-- 1 root root 51884 Jul 20  2018 caching.html.en
+-rw-r--r-- 1 root root 61878 Jul 31  2018 caching.html.fr
+-rw-r--r-- 1 root root 55998 Sep 17  2018 caching.html.tr.utf8
+-rw-r--r-- 1 root root   585 Nov  9  2011 configuring.html
+-rw-r--r-- 1 root root 16731 Jan  4  2018 configuring.html.de
+-rw-r--r-- 1 root root 17781 Jan  4  2018 configuring.html.en
+-rw-r--r-- 1 root root 19135 Sep 18  2018 configuring.html.fr
+-rw-rw-r-- 1 root root 10855 Jul 27  2006 configuring.html.html
+-rw-rw-r-- 1 root root 11232 Jul 27  2006 configuring.html.ja.jis
+-rw-r--r-- 1 root root 17392 Jan  4  2018 configuring.html.ja.utf8
+-rw-r--r-- 1 root root 14039 Jan  4  2018 configuring.html.ko.euc-kr
+-rw-r--r-- 1 root root 19007 Jan  4  2018 configuring.html.tr.utf8
+-rw-r--r-- 1 root root   534 Nov  9  2011 content-negotiation.html
+-rw-r--r-- 1 root root 34570 Jan  4  2018 content-negotiation.html.en
+-rw-r--r-- 1 root root 39002 Sep 18  2018 content-negotiation.html.fr
+-rw-rw-r-- 1 root root 27397 Jul 27  2006 content-negotiation.html.html
+-rw-rw-r-- 1 root root 29585 Jul 27  2006 content-negotiation.html.ja.jis
+-rw-r--r-- 1 root root 41952 Jan  4  2018 content-negotiation.html.ja.utf8
+-rw-r--r-- 1 root root 29162 Jan  4  2018 content-negotiation.html.ko.euc-kr
+-rw-r--r-- 1 root root 37970 Jan  4  2018 content-negotiation.html.tr.utf8
+-rw-r--r-- 1 root root 35051 Jul 10  2018 convenience.map
+-rw-r--r-- 1 root root   591 Nov  9  2011 custom-error.html
+-rw-r--r-- 1 root root 13909 Jan  4  2018 custom-error.html.en
+-rw-r--r-- 1 root root 13300 Sep 18  2018 custom-error.html.es
+-rw-r--r-- 1 root root 14742 Sep 18  2018 custom-error.html.fr
+-rw-rw-r-- 1 root root  6899 Jul 27  2006 custom-error.html.html
+-rw-rw-r-- 1 root root  7335 Jul 27  2006 custom-error.html.ja.jis
+-rw-r--r-- 1 root root 13532 Jan  4  2018 custom-error.html.ja.utf8
+-rw-r--r-- 1 root root 11796 Jan  4  2018 custom-error.html.ko.euc-kr
+-rw-r--r-- 1 root root 14506 Jan  4  2018 custom-error.html.tr.utf8
+-rw-rw-r-- 1 root root 22024 Jul 27  2006 cygwin.html
+drwxr-sr-x 2 root root  4096 Mar 20 08:14 developer
+-rw-r--r-- 1 root root   494 Nov  9  2011 dns-caveats.html
+-rw-r--r-- 1 root root 12673 Jan  4  2018 dns-caveats.html.en
+-rw-r--r-- 1 root root 13604 Sep 18  2018 dns-caveats.html.fr
+-rw-rw-r-- 1 root root  9274 Jul 27  2006 dns-caveats.html.html
+-rw-rw-r-- 1 root root  9848 Jul 27  2006 dns-caveats.html.ja.jis
+-rw-r--r-- 1 root root 17792 Jan  4  2018 dns-caveats.html.ja.utf8
+-rw-r--r-- 1 root root 13795 Jan  4  2018 dns-caveats.html.ko.euc-kr
+-rw-r--r-- 1 root root 13096 Jan  4  2018 dns-caveats.html.tr.utf8
+-rw-r--r-- 1 root root   454 Nov  9  2011 dso.html
+-rw-r--r-- 1 root root 19735 Jan  4  2018 dso.html.en
+-rw-r--r-- 1 root root 22413 Sep 18  2018 dso.html.fr
+-rw-r--r-- 1 root root 23840 Jan  4  2018 dso.html.ja.utf8
+-rw-r--r-- 1 root root 16992 Jan  4  2018 dso.html.ko.euc-kr
+-rw-r--r-- 1 root root 21994 Jan  4  2018 dso.html.tr.utf8
+-rw-rw-r-- 1 root root 16762 Jul 27  2006 ebcdic.html
+-rw-r--r-- 1 root root   454 Nov  9  2011 env.html
+-rw-r--r-- 1 root root 31289 Jan  4  2018 env.html.en
+-rw-r--r-- 1 root root 35409 Jul 16  2018 env.html.fr
+-rw-rw-r-- 1 root root 14712 Jul 27  2006 env.html.html
+-rw-rw-r-- 1 root root 15366 Jul 27  2006 env.html.ja.jis
+-rw-r--r-- 1 root root 31293 Jan  4  2018 env.html.ja.utf8
+-rw-r--r-- 1 root root 22675 Jan  4  2018 env.html.ko.euc-kr
+-rw-r--r-- 1 root root 33395 Jan  4  2018 env.html.tr.utf8
+-rw-r--r-- 1 root root   204 Nov  9  2011 expr.html
+-rw-r--r-- 1 root root 36653 Jul 26  2018 expr.html.en
+-rw-r--r-- 1 root root 40722 Jul 31  2018 expr.html.fr
+drwxr-sr-x 2 root root  4096 Mar 20 08:14 faq
+-rw-r--r-- 1 root root   555 Nov  9  2011 filter.html
+-rw-r--r-- 1 root root 15287 Jan  4  2018 filter.html.en
+-rw-r--r-- 1 root root 17051 Sep 18  2018 filter.html.es
+-rw-r--r-- 1 root root 17036 Jul 16  2018 filter.html.fr
+-rw-r--r-- 1 root root  9454 Jan  4  2018 filter.html.ja.utf8
+-rw-r--r-- 1 root root  8569 Jan  4  2018 filter.html.ko.euc-kr
+-rw-r--r-- 1 root root 16532 Jan  4  2018 filter.html.tr.utf8
+-rw-rw-r-- 1 root root   123 Jul 27  2006 footer.html
+-rw-r--r-- 1 root root   226 Oct 30  2013 getting-started.html
+-rw-r--r-- 1 root root 15386 Jan  4  2018 getting-started.html.en
+-rw-r--r-- 1 root root 17196 Sep 18  2018 getting-started.html.fr
+-rw-r--r-- 1 root root   655 Nov  9  2011 glossary.html
+-rw-r--r-- 1 root root 34612 Jan  4  2018 glossary.html.de
+-rw-r--r-- 1 root root 30740 Jan  4  2018 glossary.html.en
+-rw-r--r-- 1 root root 31622 Sep 18  2018 glossary.html.es
+-rw-r--r-- 1 root root 34385 Sep 18  2018 glossary.html.fr
+-rw-r--r-- 1 root root 32799 Jan  4  2018 glossary.html.ja.utf8
+-rw-r--r-- 1 root root 21382 Jan  4  2018 glossary.html.ko.euc-kr
+-rw-r--r-- 1 root root 33900 Jan  4  2018 glossary.html.tr.utf8
+-rw-r--r-- 1 root root   654 Feb  5  2014 handler.html
+-rw-r--r-- 1 root root 12072 Jan  4  2018 handler.html.en
+-rw-r--r-- 1 root root 12730 Sep 18  2018 handler.html.es
+-rw-r--r-- 1 root root 12821 Sep 18  2018 handler.html.fr
+-rw-rw-r-- 1 root root  6627 Jul 27  2006 handler.html.html
+-rw-rw-r-- 1 root root  6867 Jul 27  2006 handler.html.ja.jis
+-rw-r--r-- 1 root root 13684 Jan  4  2018 handler.html.ja.utf8
+-rw-r--r-- 1 root root 11624 Jan  4  2018 handler.html.ko.euc-kr
+-rw-r--r-- 1 root root 11084 Jan  3  2012 handler.html.ru.koi8-r
+-rw-r--r-- 1 root root 12686 Jan  4  2018 handler.html.tr.utf8
+-rw-r--r-- 1 root root  9542 Jan  3  2012 handler.html.zh-cn
+-rw-r--r-- 1 root root 11613 Jan  4  2018 handler.html.zh-cn.utf8
+-rw-rw-r-- 1 root root   316 Jul 27  2006 header.html
+drwxr-sr-x 2 root root  4096 Mar 20 08:15 howto
+drwxr-sr-x 2 root root  4096 Mar 20 08:14 images
+-rw-r--r-- 1 root root   901 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  8789 Jan  4  2018 index.html.da
+-rw-r--r-- 1 root root  9226 Jan  4  2018 index.html.de
+-rw-r--r-- 1 root root  9164 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  9573 Sep 18  2018 index.html.es
+-rw-r--r-- 1 root root  9497 Sep 18  2018 index.html.fr
+-rw-rw-r-- 1 root root  9480 Jul 27  2006 index.html.html
+-rw-rw-r-- 1 root root  9429 Jul 27  2006 index.html.ja.jis
+-rw-r--r-- 1 root root  9617 Jan  4  2018 index.html.ja.utf8
+-rw-r--r-- 1 root root  8257 Jan  4  2018 index.html.ko.euc-kr
+-rw-r--r-- 1 root root  8921 Jan  4  2018 index.html.pt-br
+-rw-r--r-- 1 root root  9396 Feb 13  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root  7751 Jan  3  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  8893 Jan  4  2018 index.html.zh-cn.utf8
+-rw-rw-r-- 1 root root 36508 Jul 27  2006 install-tpf.html
+-rw-rw-r-- 1 root root 20268 Jul 27  2006 install-ztpf.html
+-rw-r--r-- 1 root root   648 Nov  9  2011 install.html
+-rw-r--r-- 1 root root 25487 Jan  4  2018 install.html.de
+-rw-r--r-- 1 root root 27634 Feb 21  2018 install.html.en
+-rw-r--r-- 1 root root 28838 Sep 18  2018 install.html.es
+-rw-r--r-- 1 root root 29803 Sep 18  2018 install.html.fr
+-rw-rw-r-- 1 root root 17924 Jul 27  2006 install.html.html
+-rw-rw-r-- 1 root root 19824 Jul 27  2006 install.html.ja.jis
+-rw-r--r-- 1 root root 28239 Jan  4  2018 install.html.ja.utf8
+-rw-r--r-- 1 root root 20308 Jan  4  2018 install.html.ko.euc-kr
+-rw-r--r-- 1 root root 29755 May  8  2018 install.html.tr.utf8
+-rw-r--r-- 1 root root   655 Nov  9  2011 invoking.html
+-rw-r--r-- 1 root root 13956 Jan  4  2018 invoking.html.de
+-rw-r--r-- 1 root root 12851 Jan  4  2018 invoking.html.en
+-rw-r--r-- 1 root root 14238 Aug  1  2018 invoking.html.es
+-rw-r--r-- 1 root root 14299 Jul 16  2018 invoking.html.fr
+-rw-rw-r-- 1 root root  6359 Jul 27  2006 invoking.html.html
+-rw-rw-r-- 1 root root  6557 Jul 27  2006 invoking.html.ja.jis
+-rw-r--r-- 1 root root 14384 Jan  4  2018 invoking.html.ja.utf8
+-rw-r--r-- 1 root root 11131 Jan  4  2018 invoking.html.ko.euc-kr
+-rw-r--r-- 1 root root 11760 Jan  3  2012 invoking.html.ru.koi8-r
+-rw-r--r-- 1 root root 13704 Jan  4  2018 invoking.html.tr.utf8
+-rw-rw-r-- 1 root root  4290 Jul 27  2006 keepalive.html.en
+-rw-rw-r-- 1 root root  4406 Jul 27  2006 keepalive.html.html
+-rw-rw-r-- 1 root root  5117 Jul 27  2006 keepalive.html.ja.jis
+-rw-r--r-- 1 root root   123 Nov  9  2011 license.html
+-rw-r--r-- 1 root root 15872 Jan  4  2018 license.html.en
+-rw-rw-r-- 1 root root  2869 Jul 27  2006 location.html.en
+-rw-rw-r-- 1 root root  2985 Jul 27  2006 location.html.html
+-rw-rw-r-- 1 root root  3110 Jul 27  2006 location.html.ja.jis
+-rw-r--r-- 1 root root   459 Nov  9  2011 logs.html
+-rw-r--r-- 1 root root 40196 Jan  4  2018 logs.html.en
+-rw-r--r-- 1 root root 44938 Sep 18  2018 logs.html.fr
+-rw-r--r-- 1 root root 41095 Jan  4  2018 logs.html.ja.utf8
+-rw-r--r-- 1 root root 29727 Jan  4  2018 logs.html.ko.euc-kr
+-rw-r--r-- 1 root root 43856 Jan  4  2018 logs.html.tr.utf8
+-rw-rw-r-- 1 root root  3642 Jul 27  2006 man-template.html
+drwxr-sr-x 2 root root  4096 Mar 20 08:15 misc
+drwxr-sr-x 3 root root 36864 Mar 20 08:15 mod
+-rw-rw-r-- 1 root root 15985 Jul 27  2006 mpeix.html
+-rw-r--r-- 1 root root   709 Feb  5  2014 mpm.html
+-rw-r--r-- 1 root root 11124 Jan  4  2018 mpm.html.de
+-rw-r--r-- 1 root root 13578 Jan  4  2018 mpm.html.en
+-rw-r--r-- 1 root root 10432 Sep 18  2018 mpm.html.es
+-rw-r--r-- 1 root root 14590 Sep 18  2018 mpm.html.fr
+-rw-r--r-- 1 root root 11986 Jan  4  2018 mpm.html.ja.utf8
+-rw-r--r-- 1 root root 10009 Jan  4  2018 mpm.html.ko.euc-kr
+-rw-r--r-- 1 root root 14525 Jan  4  2018 mpm.html.tr.utf8
+-rw-r--r-- 1 root root  7734 Jan  3  2012 mpm.html.zh-cn
+-rw-r--r-- 1 root root 11537 Jan  4  2018 mpm.html.zh-cn.utf8
+-rw-rw-r-- 1 root root  5112 Jul 27  2006 multilogs.html
+-rw-rw-r-- 1 root root 14949 Jul 27  2006 netware.html
+-rw-rw-r-- 1 root root  6236 Jul 27  2006 new_features_1_0.html
+-rw-rw-r-- 1 root root 10931 Jul 27  2006 new_features_1_1.html
+-rw-rw-r-- 1 root root 10810 Jul 27  2006 new_features_1_2.html
+-rw-rw-r-- 1 root root 38994 Jul 27  2006 new_features_1_3.html.en
+-rw-rw-r-- 1 root root 39110 Jul 27  2006 new_features_1_3.html.html
+-rw-rw-r-- 1 root root 44926 Jul 27  2006 new_features_1_3.html.ja.jis
+-rw-r--r-- 1 root root   816 Nov  9  2011 new_features_2_0.html
+-rw-r--r-- 1 root root 17763 Jan  4  2018 new_features_2_0.html.de
+-rw-r--r-- 1 root root 16134 Jan  4  2018 new_features_2_0.html.en
+-rw-r--r-- 1 root root 19675 Jul 16  2018 new_features_2_0.html.fr
+-rw-r--r-- 1 root root 19211 Jan  4  2018 new_features_2_0.html.ja.utf8
+-rw-r--r-- 1 root root 15083 Jan  4  2018 new_features_2_0.html.ko.euc-kr
+-rw-r--r-- 1 root root 16985 Jan  4  2018 new_features_2_0.html.pt-br
+-rw-r--r-- 1 root root 17535 Jan  4  2018 new_features_2_0.html.ru.koi8-r
+-rw-r--r-- 1 root root 17991 Jan  4  2018 new_features_2_0.html.tr.utf8
+-rw-r--r-- 1 root root   525 Nov  9  2011 new_features_2_2.html
+-rw-r--r-- 1 root root 19028 Jan  4  2018 new_features_2_2.html.en
+-rw-r--r-- 1 root root 22324 Jul 16  2018 new_features_2_2.html.fr
+-rw-r--r-- 1 root root 20140 Jan 11  2012 new_features_2_2.html.ja.utf8
+-rw-r--r-- 1 root root  9691 Jan  4  2018 new_features_2_2.html.ko.euc-kr
+-rw-r--r-- 1 root root 10577 Jan  4  2018 new_features_2_2.html.pt-br
+-rw-r--r-- 1 root root 20909 Jan  4  2018 new_features_2_2.html.tr.utf8
+-rw-r--r-- 1 root root   324 Dec 17  2011 new_features_2_4.html
+-rw-r--r-- 1 root root 27512 Jan  4  2018 new_features_2_4.html.en
+-rw-r--r-- 1 root root 30511 Sep 18  2018 new_features_2_4.html.fr
+-rw-r--r-- 1 root root 29909 Jan  4  2018 new_features_2_4.html.tr.utf8
+drwxr-sr-x 2 root root  4096 Mar 20 08:15 platform
+-rw-rw-r-- 1 root root  2880 Jul 27  2006 process-model.html.en
+-rw-rw-r-- 1 root root  2996 Jul 27  2006 process-model.html.html
+-rw-rw-r-- 1 root root  3252 Jul 27  2006 process-model.html.ja.jis
+drwxr-sr-x 2 root root  4096 Mar 20 08:15 programs
+-rw-rw-r-- 1 root root 22674 Jul 27  2006 readme-tpf.html
+drwxr-sr-x 2 root root  4096 Mar 20 08:14 rewrite
+-rw-r--r-- 1 root root   479 Nov  9  2011 sections.html
+-rw-r--r-- 1 root root 37699 Sep  5  2018 sections.html.en
+-rw-r--r-- 1 root root 43601 Aug 28  2018 sections.html.fr
+-rw-rw-r-- 1 root root  6424 Jul 27  2006 sections.html.html
+-rw-rw-r-- 1 root root  6841 Jul 27  2006 sections.html.ja.jis
+-rw-r--r-- 1 root root 33595 Jan  4  2018 sections.html.ja.utf8
+-rw-r--r-- 1 root root 25727 Jan  4  2018 sections.html.ko.euc-kr
+-rw-r--r-- 1 root root 41745 Sep 17  2018 sections.html.tr.utf8
+-rw-r--r-- 1 root root   494 Nov  9  2011 server-wide.html
+-rw-r--r-- 1 root root 12170 Jan  4  2018 server-wide.html.en
+-rw-r--r-- 1 root root 12645 Sep 18  2018 server-wide.html.fr
+-rw-rw-r-- 1 root root 11683 Jul 27  2006 server-wide.html.html
+-rw-rw-r-- 1 root root 12457 Jul 27  2006 server-wide.html.ja.jis
+-rw-r--r-- 1 root root 12310 Jan  4  2018 server-wide.html.ja.utf8
+-rw-r--r-- 1 root root 10663 Jan  4  2018 server-wide.html.ko.euc-kr
+-rw-r--r-- 1 root root 12698 Jan  4  2018 server-wide.html.tr.utf8
+-rw-r--r-- 1 root root   741 Feb  5  2014 sitemap.html
+-rw-r--r-- 1 root root 26340 Feb 19  2018 sitemap.html.de
+-rw-r--r-- 1 root root 26361 Feb 19  2018 sitemap.html.en
+-rw-r--r-- 1 root root 26256 Aug  1  2018 sitemap.html.es
+-rw-r--r-- 1 root root 27829 Jul 16  2018 sitemap.html.fr
+-rw-r--r-- 1 root root 26820 Feb 19  2018 sitemap.html.ja.utf8
+-rw-r--r-- 1 root root 23463 Mar  3  2018 sitemap.html.ko.euc-kr
+-rw-r--r-- 1 root root 27303 Feb 19  2018 sitemap.html.tr.utf8
+-rw-r--r-- 1 root root 18661 Jan  9  2012 sitemap.html.zh-cn
+-rw-r--r-- 1 root root 24340 Feb 19  2018 sitemap.html.zh-cn.utf8
+-rw-r--r-- 1 root root   210 Oct 28  2012 socache.html
+-rw-r--r-- 1 root root  9528 Jan  4  2018 socache.html.en
+-rw-r--r-- 1 root root 10155 Sep 18  2018 socache.html.fr
+-rw-rw-r-- 1 root root 12289 Jul 27  2006 sourcereorg.html
+drwxr-sr-x 2 root root  4096 Mar 20 08:14 ssl
+-rw-r--r-- 1 root root   655 Nov  9  2011 stopping.html
+-rw-r--r-- 1 root root 19616 Jan  4  2018 stopping.html.de
+-rw-r--r-- 1 root root 17817 Jan  4  2018 stopping.html.en
+-rw-r--r-- 1 root root 19789 Aug  1  2018 stopping.html.es
+-rw-r--r-- 1 root root 21010 Jul 16  2018 stopping.html.fr
+-rw-rw-r-- 1 root root  9647 Jul 27  2006 stopping.html.html
+-rw-r--r-- 1 root root 20462 Jan  4  2018 stopping.html.ja.utf8
+-rw-r--r-- 1 root root 15022 Jan  4  2018 stopping.html.ko.euc-kr
+-rw-r--r-- 1 root root 20019 Jan  4  2018 stopping.html.tr.utf8
+drwxr-sr-x 7 root root  4096 Mar 20 08:14 style
+-rw-r--r-- 1 root root   469 Nov  9  2011 suexec.html
+-rw-r--r-- 1 root root 29420 May 31  2018 suexec.html.en
+-rw-r--r-- 1 root root 32658 Sep 18  2018 suexec.html.fr
+-rw-rw-r-- 1 root root 23172 Jul 27  2006 suexec.html.html
+-rw-rw-r-- 1 root root 24562 Jul 27  2006 suexec.html.ja.jis
+-rw-r--r-- 1 root root 34006 Jan  4  2018 suexec.html.ja.utf8
+-rw-r--r-- 1 root root 24667 Jan  4  2018 suexec.html.ko.euc-kr
+-rw-r--r-- 1 root root 31930 Jan  4  2018 suexec.html.tr.utf8
+-rw-rw-r-- 1 root root  7631 Jul 27  2006 suexec_1_2.html
+-rw-rw-r-- 1 root root  2814 Jul 27  2006 unixware.html
+-rw-r--r-- 1 root root   214 Nov  9  2011 upgrading.html
+-rw-r--r-- 1 root root  7878 Jan  9  2012 upgrading.html.de
+-rw-r--r-- 1 root root 30712 Jan  4  2018 upgrading.html.en
+-rw-r--r-- 1 root root 33856 Sep 18  2018 upgrading.html.fr
+-rw-r--r-- 1 root root 11687 Jan 11  2012 upgrading.html.ja.utf8
+-rw-rw-r-- 1 root root 15141 Jul 27  2006 upgrading_to_1_3.html
+-rw-r--r-- 1 root root   489 Nov  9  2011 urlmapping.html
+-rw-r--r-- 1 root root 26648 Jan  4  2018 urlmapping.html.en
+-rw-r--r-- 1 root root 28783 Sep 18  2018 urlmapping.html.fr
+-rw-r--r-- 1 root root 26320 Jan  4  2018 urlmapping.html.ja.utf8
+-rw-r--r-- 1 root root 19792 Jan  4  2018 urlmapping.html.ko.euc-kr
+-rw-r--r-- 1 root root 28629 Jan  4  2018 urlmapping.html.tr.utf8
+drwxr-sr-x 2 root root  4096 Mar 20 08:14 vhosts
+-rw-rw-r-- 1 root root 11633 Jul 27  2006 win_compiling.html.en
+-rw-rw-r-- 1 root root 11749 Jul 27  2006 win_compiling.html.html
+-rw-rw-r-- 1 root root 13195 Jul 27  2006 win_compiling.html.ja.jis
+-rw-rw-r-- 1 root root 18681 Jul 27  2006 win_service.html.en
+-rw-rw-r-- 1 root root 18797 Jul 27  2006 win_service.html.html
+-rw-rw-r-- 1 root root 21652 Jul 27  2006 win_service.html.ja.jis
+-rw-rw-r-- 1 root root 27470 Jul 27  2006 windows.html.en
+-rw-rw-r-- 1 root root 27586 Jul 27  2006 windows.html.html
+-rw-rw-r-- 1 root root 31275 Jul 27  2006 windows.html.ja.jis
+
+/var/www/manual/developer:
+total 404
+-rw-r--r-- 1 root root   119 Nov  9  2011 API.html
+-rw-r--r-- 1 root root 65388 Jan  4  2018 API.html.en
+-rw-r--r-- 1 root root   125 Nov  9  2011 debugging.html
+-rw-r--r-- 1 root root  4479 Jan  4  2018 debugging.html.en
+-rw-r--r-- 1 root root   224 Feb  5  2014 documenting.html
+-rw-r--r-- 1 root root  6970 Jan  4  2018 documenting.html.en
+-rw-r--r-- 1 root root  4835 Jan  3  2012 documenting.html.zh-cn
+-rw-r--r-- 1 root root  6855 Jan  4  2018 documenting.html.zh-cn.utf8
+-rw-r--r-- 1 root root   123 Nov  9  2011 filters.html
+-rw-r--r-- 1 root root 14928 Jan  4  2018 filters.html.en
+-rw-r--r-- 1 root root   121 Nov  9  2011 hooks.html
+-rw-r--r-- 1 root root 13671 Jan  4  2018 hooks.html.en
+-rw-r--r-- 1 root root   212 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  6065 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  5207 Jan  9  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  6107 Jan  4  2018 index.html.zh-cn.utf8
+-rw-r--r-- 1 root root   124 Apr 14  2012 modguide.html
+-rw-r--r-- 1 root root 71810 Jan  4  2018 modguide.html.en
+-rw-r--r-- 1 root root   210 Nov  9  2011 modules.html
+-rw-r--r-- 1 root root 14808 Jan  4  2018 modules.html.en
+-rw-r--r-- 1 root root 16167 Jan  4  2018 modules.html.ja.utf8
+-rw-r--r-- 1 root root   127 Nov  9  2011 new_api_2_4.html
+-rw-r--r-- 1 root root 29899 Jan  4  2018 new_api_2_4.html.en
+-rw-r--r-- 1 root root   130 Nov  9  2011 output-filters.html
+-rw-r--r-- 1 root root 30350 Jul  1  2018 output-filters.html.en
+-rw-r--r-- 1 root root   123 Nov  9  2011 request.html
+-rw-r--r-- 1 root root 15358 Jan  4  2018 request.html.en
+-rw-r--r-- 1 root root   129 Nov  9  2011 thread_safety.html
+-rw-r--r-- 1 root root 18061 Jan  4  2018 thread_safety.html.en
+
+/var/www/manual/faq:
+total 28
+-rw-r--r-- 1 root root  467 Jun  4  2016 index.html
+-rw-r--r-- 1 root root 3686 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root 3785 Sep 18  2018 index.html.es
+-rw-r--r-- 1 root root 3688 Sep 18  2018 index.html.fr
+-rw-r--r-- 1 root root 3693 Jan  4  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root 2866 Jan  3  2012 index.html.zh-cn
+-rw-r--r-- 1 root root 3652 Jan  4  2018 index.html.zh-cn.utf8
+
+/var/www/manual/howto:
+total 1196
+-rw-r--r-- 1 root root   294 Aug  1  2018 access.html
+-rw-r--r-- 1 root root 13809 Sep  5  2018 access.html.en
+-rw-r--r-- 1 root root 14812 Sep 18  2018 access.html.es
+-rw-r--r-- 1 root root 14893 Sep 18  2018 access.html.fr
+-rw-r--r-- 1 root root   543 Apr  1  2017 auth.html
+-rw-r--r-- 1 root root 37732 Jan  4  2018 auth.html.en
+-rw-r--r-- 1 root root 41739 Sep 18  2018 auth.html.es
+-rw-r--r-- 1 root root 40437 Sep 18  2018 auth.html.fr
+-rw-r--r-- 1 root root 45185 Jan  4  2018 auth.html.ja.utf8
+-rw-r--r-- 1 root root 21053 Jan  4  2018 auth.html.ko.euc-kr
+-rw-r--r-- 1 root root 39346 Jan  4  2018 auth.html.tr.utf8
+-rw-r--r-- 1 root root   454 Apr  1  2017 cgi.html
+-rw-r--r-- 1 root root 31011 Jan  4  2018 cgi.html.en
+-rw-r--r-- 1 root root 34877 Sep 18  2018 cgi.html.es
+-rw-r--r-- 1 root root 34570 Sep 18  2018 cgi.html.fr
+-rw-rw-r-- 1 root root 22671 Jul 27  2006 cgi.html.html
+-rw-rw-r-- 1 root root 24393 Jul 27  2006 cgi.html.ja.jis
+-rw-r--r-- 1 root root 36813 Jan  4  2018 cgi.html.ja.utf8
+-rw-r--r-- 1 root root 26429 Jan  4  2018 cgi.html.ko.euc-kr
+-rw-rw-r-- 1 root root   205 Jul 27  2006 footer.html
+-rw-rw-r-- 1 root root   319 Jul 27  2006 header.html
+-rw-r--r-- 1 root root   573 Apr  1  2017 htaccess.html
+-rw-r--r-- 1 root root 28066 Jan  4  2018 htaccess.html.en
+-rw-r--r-- 1 root root 29368 Sep 18  2018 htaccess.html.es
+-rw-r--r-- 1 root root 30708 Sep 18  2018 htaccess.html.fr
+-rw-r--r-- 1 root root 28899 Jan  4  2018 htaccess.html.ja.utf8
+-rw-r--r-- 1 root root 20659 Jan  4  2018 htaccess.html.ko.euc-kr
+-rw-r--r-- 1 root root 24454 Jan  4  2018 htaccess.html.pt-br
+-rw-r--r-- 1 root root   291 Apr  1  2017 http2.html
+-rw-r--r-- 1 root root 26274 Jun 24  2018 http2.html.en
+-rw-r--r-- 1 root root 27900 Sep 18  2018 http2.html.es
+-rw-r--r-- 1 root root 29697 Sep 18  2018 http2.html.fr
+-rw-r--r-- 1 root root   555 Apr  1  2017 index.html
+-rw-r--r-- 1 root root  8632 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  8056 Sep 18  2018 index.html.es
+-rw-r--r-- 1 root root  9007 Sep 18  2018 index.html.fr
+-rw-r--r-- 1 root root  7994 Jan  4  2018 index.html.ja.utf8
+-rw-r--r-- 1 root root  6438 Jan  4  2018 index.html.ko.euc-kr
+-rw-r--r-- 1 root root  5884 Jan  9  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  6622 Jan  4  2018 index.html.zh-cn.utf8
+-rw-r--r-- 1 root root   585 Apr  1  2017 public_html.html
+-rw-r--r-- 1 root root 13669 Jan  4  2018 public_html.html.en
+-rw-r--r-- 1 root root 14164 Sep 18  2018 public_html.html.es
+-rw-r--r-- 1 root root 14549 Sep 18  2018 public_html.html.fr
+-rw-r--r-- 1 root root 15393 Jan  4  2018 public_html.html.ja.utf8
+-rw-r--r-- 1 root root 11466 Jan  4  2018 public_html.html.ko.euc-kr
+-rw-r--r-- 1 root root 14632 Jan  4  2018 public_html.html.tr.utf8
+-rw-r--r-- 1 root root   222 Jul 17  2018 reverse_proxy.html
+-rw-r--r-- 1 root root 20587 Sep  5  2018 reverse_proxy.html.en
+-rw-r--r-- 1 root root 22219 Sep 18  2018 reverse_proxy.html.fr
+-rw-r--r-- 1 root root   454 Aug  1  2018 ssi.html
+-rw-r--r-- 1 root root 26191 Sep  5  2018 ssi.html.en
+-rw-r--r-- 1 root root 26885 Sep 18  2018 ssi.html.es
+-rw-r--r-- 1 root root 28063 Sep 18  2018 ssi.html.fr
+-rw-rw-r-- 1 root root 21465 Jul 27  2006 ssi.html.html
+-rw-rw-r-- 1 root root 22444 Jul 27  2006 ssi.html.ja.jis
+-rw-r--r-- 1 root root 31322 Aug  1  2018 ssi.html.ja.utf8
+-rw-r--r-- 1 root root 22828 Aug  1  2018 ssi.html.ko.euc-kr
+
+/var/www/manual/images:
+total 1668
+-rw-r--r-- 1 root root   4084 Nov 20  2004 apache_header.gif
+-rw-r--r-- 1 root root   1806 Aug 20  1998 apache_pb.gif
+-rw-r--r-- 1 root root 321860 Feb 24  2016 bal-man-b.png
+-rw-r--r-- 1 root root 374905 Feb 24  2016 bal-man-w.png
+-rw-r--r-- 1 root root 255941 Feb 24  2016 bal-man.png
+-rw-r--r-- 1 root root  74459 Apr  9  2012 build_a_mod_2.png
+-rw-r--r-- 1 root root  51249 Apr  9  2012 build_a_mod_3.png
+-rw-r--r-- 1 root root  40188 Apr  9  2012 build_a_mod_4.png
+-rw-r--r-- 1 root root  16515 Aug 23  2005 caching_fig1.gif
+-rw-r--r-- 1 root root  13452 Sep 11  2007 caching_fig1.png
+-rw-r--r-- 1 root root  11460 Jul 10  2008 caching_fig1.tr.png
+-rw-rw-r-- 1 root root  23291 Jan  6  2005 custom_errordocs.gif
+-rw-r--r-- 1 root root  17167 Sep 11  2007 custom_errordocs.png
+-rw-r--r-- 1 root root     56 Nov 20  2004 down.gif
+-rw-r--r-- 1 root root   1086 Feb 12  2016 favicon.ico
+-rw-r--r-- 1 root root   3656 Feb 12  2016 feather.gif
+-rw-r--r-- 1 root root   7108 Oct 21  1999 feather.jpg
+-rw-r--r-- 1 root root  21145 Sep  7  2017 feather.png
+-rw-r--r-- 1 root root   2411 Sep 11  2007 filter_arch.png
+-rw-r--r-- 1 root root   2502 Jul 10  2008 filter_arch.tr.png
+-rw-r--r-- 1 root root   1465 Nov 20  2004 home.gif
+-rw-r--r-- 1 root root   1540 Nov 20  2004 index.gif
+-rw-r--r-- 1 root root     60 Nov 20  2004 left.gif
+-rw-r--r-- 1 root root   2392 Nov 20  2004 mod_filter_new.gif
+-rw-r--r-- 1 root root   1052 Sep 11  2007 mod_filter_new.png
+-rw-r--r-- 1 root root   1326 Jul 10  2008 mod_filter_new.tr.png
+-rw-r--r-- 1 root root   1230 Nov 20  2004 mod_filter_old.gif
+-rw-r--r-- 1 root root    738 Jan 29  2014 mod_filter_old.png
+-rw-rw-r-- 1 root root   2151 Jan  6  2005 mod_rewrite_fig1.fig
+-rw-r--r-- 1 root root   3525 Nov 20  2004 mod_rewrite_fig1.gif
+-rw-r--r-- 1 root root   1700 Sep 11  2007 mod_rewrite_fig1.png
+-rw-rw-r-- 1 root root   1760 Jan  6  2005 mod_rewrite_fig2.fig
+-rw-r--r-- 1 root root   2553 Nov 20  2004 mod_rewrite_fig2.gif
+-rw-r--r-- 1 root root   1381 Sep 11  2007 mod_rewrite_fig2.png
+-rw-r--r-- 1 root root   2007 Aug 20  1998 mod_ssl_sb.gif
+-rw-r--r-- 1 root root   2063 Mar  4  1999 openssl_ics.gif
+-rw-r--r-- 1 root root     61 Nov 20  2004 pixel.gif
+-rw-r--r-- 1 root root  11702 Feb 24  2016 reverse-proxy-arch.png
+-rw-r--r-- 1 root root  37163 Apr 11  2012 rewrite_backreferences.png
+-rw-r--r-- 1 root root 106807 Apr 20  2012 rewrite_process_uri.png
+-rw-r--r-- 1 root root  40325 Jun 19  2011 rewrite_rule_flow.png
+-rw-r--r-- 1 root root     59 Nov 20  2004 right.gif
+-rw-r--r-- 1 root root   5738 Nov 20  2004 ssl_intro_fig1.gif
+-rw-r--r-- 1 root root   3331 Sep 11  2007 ssl_intro_fig1.png
+-rw-r--r-- 1 root root   2700 Nov 20  2004 ssl_intro_fig2.gif
+-rw-r--r-- 1 root root   1208 Sep 11  2007 ssl_intro_fig2.png
+-rw-r--r-- 1 root root   4020 Nov 20  2004 ssl_intro_fig3.gif
+-rw-r--r-- 1 root root   2568 Sep 11  2007 ssl_intro_fig3.png
+-rw-r--r-- 1 root root   6083 Nov 20  2004 sub.gif
+-rw-r--r-- 1 root root  44876 Jun 19  2011 syntax_rewritecond.png
+-rw-r--r-- 1 root root  53367 Jun 19  2011 syntax_rewriterule.png
+-rw-r--r-- 1 root root     57 Nov 20  2004 up.gif
+
+/var/www/manual/misc:
+total 948
+-rw-rw-r-- 1 root root  53673 Jul 27  2006 API.html
+-rw-rw-r-- 1 root root 155322 Jul 27  2006 FAQ.html
+-rw-rw-r-- 1 root root   3991 Jan  6  2005 HTTP_Features.tsv
+-rw-rw-r-- 1 root root   4096 Jul 27  2006 client_block_api.html
+-rw-rw-r-- 1 root root   5918 Jul 27  2006 compat_notes.html
+-rw-rw-r-- 1 root root  21315 Jul 27  2006 custom_errordocs.html
+-rw-rw-r-- 1 root root   9703 Jul 27  2006 descriptors.html
+-rw-rw-r-- 1 root root  17954 Jul 27  2006 fin_wait_2.html
+-rw-rw-r-- 1 root root    204 Jul 27  2006 footer.html
+-rw-rw-r-- 1 root root    319 Jul 27  2006 header.html
+-rw-rw-r-- 1 root root   8867 Jul 27  2006 howto.html
+-rw-r--r-- 1 root root    555 Aug  1  2018 index.html
+-rw-r--r-- 1 root root   5166 Sep  5  2018 index.html.en
+-rw-r--r-- 1 root root   5639 Sep 18  2018 index.html.es
+-rw-r--r-- 1 root root   5467 Sep 18  2018 index.html.fr
+-rw-r--r-- 1 root root   5263 Sep 18  2018 index.html.ko.euc-kr
+-rw-r--r-- 1 root root   5396 Sep 17  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root   4646 Jan  9  2012 index.html.zh-cn
+-rw-r--r-- 1 root root   4864 Sep 18  2018 index.html.zh-cn.utf8
+-rw-rw-r-- 1 root root  15844 Jul 27  2006 known_client_problems.html
+-rw-rw-r-- 1 root root   4158 Jul 27  2006 nopgp.html
+-rw-r--r-- 1 root root    236 Dec 26  2012 password_encryptions.html
+-rw-r--r-- 1 root root  12738 Jan  4  2018 password_encryptions.html.en
+-rw-r--r-- 1 root root  13630 Sep 18  2018 password_encryptions.html.fr
+-rw-rw-r-- 1 root root  11644 Jul 27  2006 perf-bsd44.html
+-rw-rw-r-- 1 root root  13499 Jul 27  2006 perf-dec.html
+-rw-rw-r-- 1 root root   4616 Jul 27  2006 perf-hp.html
+-rw-r--r-- 1 root root    403 Nov  9  2011 perf-tuning.html
+-rw-r--r-- 1 root root  50681 Jan  4  2018 perf-tuning.html.en
+-rw-r--r-- 1 root root  57699 Sep 18  2018 perf-tuning.html.fr
+-rw-r--r-- 1 root root  47878 Jan  4  2018 perf-tuning.html.ko.euc-kr
+-rw-r--r-- 1 root root  57480 Jan  4  2018 perf-tuning.html.tr.utf8
+-rw-rw-r-- 1 root root   5682 Jul 27  2006 perf.html
+-rw-r--r-- 1 root root    333 Dec 21  2012 relevant_standards.html
+-rw-r--r-- 1 root root  12437 Jan  4  2018 relevant_standards.html.en
+-rw-r--r-- 1 root root  13248 Sep 18  2018 relevant_standards.html.fr
+-rw-r--r-- 1 root root  11367 Jan  4  2018 relevant_standards.html.ko.euc-kr
+-rw-r--r-- 1 root root    223 May  6  2008 rewriteguide.html
+-rw-r--r-- 1 root root   2840 Jan  3  2012 rewriteguide.html.en
+-rw-r--r-- 1 root root  64162 Jan  3  2012 rewriteguide.html.ko.euc-kr
+-rw-r--r-- 1 root root    411 Nov  9  2011 security_tips.html
+-rw-r--r-- 1 root root  27271 Jan  4  2018 security_tips.html.en
+-rw-r--r-- 1 root root  29145 Sep 18  2018 security_tips.html.fr
+-rw-r--r-- 1 root root  18972 Jan  4  2018 security_tips.html.ko.euc-kr
+-rw-r--r-- 1 root root  29915 Jan  4  2018 security_tips.html.tr.utf8
+-rw-rw-r-- 1 root root   5793 Jul 27  2006 tutorials.html
+-rw-rw-r-- 1 root root  12234 Jul 27  2006 vif-info.html
+-rw-rw-r-- 1 root root   2499 Jul 27  2006 windoz_keepalive.html
+
+/var/www/manual/mod:
+total 15500
+-rw-r--r-- 1 root root    375 May  6  2008 beos.html
+-rw-r--r-- 1 root root   7516 Jan  3  2012 beos.html.de
+-rw-r--r-- 1 root root   7421 Jan  3  2012 beos.html.en
+-rw-r--r-- 1 root root   7996 Jan  3  2012 beos.html.es
+-rw-r--r-- 1 root root   7193 Jan  3  2012 beos.html.ko.euc-kr
+-rw-r--r-- 1 root root    540 Nov  9  2011 core.html
+-rw-r--r-- 1 root root 233392 Sep 18  2018 core.html.de
+-rw-r--r-- 1 root root 287828 Sep 18  2018 core.html.en
+-rw-r--r-- 1 root root 260626 Sep 18  2018 core.html.es
+-rw-r--r-- 1 root root 314370 Sep 18  2018 core.html.fr
+-rw-rw-r-- 1 root root 173820 Jul 27  2006 core.html.html
+-rw-rw-r-- 1 root root 189104 Jul 27  2006 core.html.ja.jis
+-rw-r--r-- 1 root root 253477 Sep 18  2018 core.html.ja.utf8
+-rw-r--r-- 1 root root 308238 Sep 17  2018 core.html.tr.utf8
+-rw-r--r-- 1 root root    603 Apr  1  2017 directive-dict.html
+-rw-r--r-- 1 root root  18224 Jan  4  2018 directive-dict.html.en
+-rw-r--r-- 1 root root  19179 Sep 18  2018 directive-dict.html.es
+-rw-r--r-- 1 root root  19386 Sep 18  2018 directive-dict.html.fr
+-rw-rw-r-- 1 root root  12667 Jul 27  2006 directive-dict.html.html
+-rw-rw-r-- 1 root root  11970 Jul 27  2006 directive-dict.html.ja.jis
+-rw-r--r-- 1 root root  20546 Jan  4  2018 directive-dict.html.ja.utf8
+-rw-r--r-- 1 root root  16030 Jan  4  2018 directive-dict.html.ko.euc-kr
+-rw-r--r-- 1 root root  19566 Jan  4  2018 directive-dict.html.tr.utf8
+-rw-r--r-- 1 root root    765 Feb  5  2014 directives.html
+-rw-r--r-- 1 root root  55233 Jun 21  2018 directives.html.de
+-rw-r--r-- 1 root root  55176 May 31  2018 directives.html.en
+-rw-r--r-- 1 root root  55336 Sep 18  2018 directives.html.es
+-rw-r--r-- 1 root root  55274 Sep 18  2018 directives.html.fr
+-rw-rw-r-- 1 root root  18187 Jul 27  2006 directives.html.html
+-rw-rw-r-- 1 root root  18155 Jul 27  2006 directives.html.ja.jis
+-rw-r--r-- 1 root root  55374 Jun 21  2018 directives.html.ja.utf8
+-rw-r--r-- 1 root root  55016 Jun 21  2018 directives.html.ko.euc-kr
+-rw-r--r-- 1 root root  34189 Jan  3  2012 directives.html.ru.koi8-r
+-rw-r--r-- 1 root root  55201 Jun 21  2018 directives.html.tr.utf8
+-rw-r--r-- 1 root root  33998 Jan  3  2012 directives.html.zh-cn
+-rw-r--r-- 1 root root  55037 Jun 21  2018 directives.html.zh-cn.utf8
+-rw-r--r-- 1 root root    206 Nov  9  2011 event.html
+-rw-r--r-- 1 root root  29532 Jan  8  2018 event.html.en
+-rw-r--r-- 1 root root  31749 Sep 18  2018 event.html.fr
+-rw-rw-r-- 1 root root    204 Jul 27  2006 footer.html
+-rw-rw-r-- 1 root root    319 Jul 27  2006 header.html
+-rw-rw-r-- 1 root root   8301 Aug  9  2006 index-bytype.html.en
+-rw-rw-r-- 1 root root   9891 Jul 27  2006 index-bytype.html.fr
+-rw-rw-r-- 1 root root   8268 Jul 27  2006 index-bytype.html.html
+-rw-rw-r-- 1 root root   9249 Jul 27  2006 index-bytype.html.ja.jis
+-rw-r--r-- 1 root root    725 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  23262 Sep 18  2018 index.html.de
+-rw-r--r-- 1 root root  23070 Sep  5  2018 index.html.en
+-rw-r--r-- 1 root root  23449 Sep 18  2018 index.html.es
+-rw-r--r-- 1 root root  25063 Sep 18  2018 index.html.fr
+-rw-rw-r-- 1 root root   7755 Jul 27  2006 index.html.html
+-rw-rw-r-- 1 root root   8830 Jul 27  2006 index.html.ja.jis
+-rw-r--r-- 1 root root  24372 Sep 18  2018 index.html.ja.utf8
+-rw-r--r-- 1 root root  22502 Sep 18  2018 index.html.ko.euc-kr
+-rw-r--r-- 1 root root  23348 Sep 17  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root  15653 Jan  3  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  22949 Sep 18  2018 index.html.zh-cn.utf8
+-rw-rw-r-- 1 root root  14030 Jul 27  2006 mod_access.html.en
+-rw-rw-r-- 1 root root  14146 Jul 27  2006 mod_access.html.html
+-rw-rw-r-- 1 root root  14860 Jul 27  2006 mod_access.html.ja.jis
+-rw-r--r-- 1 root root    327 Nov  9  2011 mod_access_compat.html
+-rw-r--r-- 1 root root  29099 Jan  4  2018 mod_access_compat.html.en
+-rw-r--r-- 1 root root  31603 Sep 18  2018 mod_access_compat.html.fr
+-rw-r--r-- 1 root root  31243 Jan  4  2018 mod_access_compat.html.ja.utf8
+-rw-r--r-- 1 root root    494 Nov  9  2011 mod_actions.html
+-rw-r--r-- 1 root root  13917 Jan  4  2018 mod_actions.html.de
+-rw-r--r-- 1 root root  13033 Jan  4  2018 mod_actions.html.en
+-rw-r--r-- 1 root root  13574 Sep 18  2018 mod_actions.html.fr
+-rw-rw-r-- 1 root root   6555 Jul 27  2006 mod_actions.html.html
+-rw-rw-r-- 1 root root   7111 Jul 27  2006 mod_actions.html.ja.jis
+-rw-r--r-- 1 root root  14779 Jan  4  2018 mod_actions.html.ja.utf8
+-rw-r--r-- 1 root root  12666 Jan  4  2018 mod_actions.html.ko.euc-kr
+-rw-r--r-- 1 root root    484 Nov  9  2011 mod_alias.html
+-rw-r--r-- 1 root root  37709 Jan  4  2018 mod_alias.html.en
+-rw-r--r-- 1 root root  40674 Sep 18  2018 mod_alias.html.fr
+-rw-rw-r-- 1 root root  15541 Jul 27  2006 mod_alias.html.html
+-rw-rw-r-- 1 root root  17053 Jul 27  2006 mod_alias.html.ja.jis
+-rw-r--r-- 1 root root  29237 Jan  4  2018 mod_alias.html.ja.utf8
+-rw-r--r-- 1 root root  23501 Jan  4  2018 mod_alias.html.ko.euc-kr
+-rw-r--r-- 1 root root  40276 Jan  4  2018 mod_alias.html.tr.utf8
+-rw-r--r-- 1 root root    228 Jan  2  2013 mod_allowmethods.html
+-rw-r--r-- 1 root root   8294 Sep 18  2018 mod_allowmethods.html.en
+-rw-r--r-- 1 root root   8571 Sep 18  2018 mod_allowmethods.html.fr
+-rw-r--r-- 1 root root    391 Nov  9  2011 mod_asis.html
+-rw-r--r-- 1 root root   9118 Jan  4  2018 mod_asis.html.en
+-rw-r--r-- 1 root root   9367 Sep 18  2018 mod_asis.html.fr
+-rw-rw-r-- 1 root root   3745 Jul 27  2006 mod_asis.html.html
+-rw-rw-r-- 1 root root   3939 Jul 27  2006 mod_asis.html.ja.jis
+-rw-r--r-- 1 root root   9977 Jan  4  2018 mod_asis.html.ja.utf8
+-rw-r--r-- 1 root root   8677 Jan  4  2018 mod_asis.html.ko.euc-kr
+-rw-rw-r-- 1 root root  13425 Jul 27  2006 mod_auth.html.en
+-rw-rw-r-- 1 root root  13541 Jul 27  2006 mod_auth.html.html
+-rw-rw-r-- 1 root root  13949 Jul 27  2006 mod_auth.html.ja.jis
+-rw-rw-r-- 1 root root  11379 Jul 27  2006 mod_auth_anon.html
+-rw-r--r-- 1 root root    415 Nov  9  2011 mod_auth_basic.html
+-rw-r--r-- 1 root root  20046 Mar 18  2018 mod_auth_basic.html.en
+-rw-r--r-- 1 root root  21921 Sep 18  2018 mod_auth_basic.html.fr
+-rw-r--r-- 1 root root  16713 Mar 18  2018 mod_auth_basic.html.ja.utf8
+-rw-r--r-- 1 root root  14170 Mar 18  2018 mod_auth_basic.html.ko.euc-kr
+-rw-rw-r-- 1 root root  10289 Jul 27  2006 mod_auth_db.html
+-rw-rw-r-- 1 root root   9777 Jul 27  2006 mod_auth_dbm.html
+-rw-r--r-- 1 root root    324 Nov  9  2011 mod_auth_digest.html
+-rw-r--r-- 1 root root  20604 Jan  4  2018 mod_auth_digest.html.en
+-rw-r--r-- 1 root root  22224 Sep 18  2018 mod_auth_digest.html.fr
+-rw-r--r-- 1 root root  20899 Jan  4  2018 mod_auth_digest.html.ko.euc-kr
+-rw-r--r-- 1 root root    222 Dec 31  2012 mod_auth_form.html
+-rw-r--r-- 1 root root  51570 Jan  4  2018 mod_auth_form.html.en
+-rw-r--r-- 1 root root  55421 Sep 18  2018 mod_auth_form.html.fr
+-rw-r--r-- 1 root root    226 Oct 21  2010 mod_authn_alias.html
+-rw-r--r-- 1 root root   8413 Jan  3  2012 mod_authn_alias.html.en
+-rw-r--r-- 1 root root   8781 Jan  3  2012 mod_authn_alias.html.fr
+-rw-r--r-- 1 root root    415 Dec 31  2012 mod_authn_anon.html
+-rw-r--r-- 1 root root  16900 Jan  4  2018 mod_authn_anon.html.en
+-rw-r--r-- 1 root root  18297 Sep 18  2018 mod_authn_anon.html.fr
+-rw-r--r-- 1 root root  18917 Jan  4  2018 mod_authn_anon.html.ja.utf8
+-rw-r--r-- 1 root root  16437 Jan  4  2018 mod_authn_anon.html.ko.euc-kr
+-rw-r--r-- 1 root root    224 Nov  9  2011 mod_authn_core.html
+-rw-r--r-- 1 root root  16445 Jan  4  2018 mod_authn_core.html.en
+-rw-r--r-- 1 root root  17318 Sep 18  2018 mod_authn_core.html.fr
+-rw-r--r-- 1 root root    222 Dec 31  2012 mod_authn_dbd.html
+-rw-r--r-- 1 root root  15880 Jan  4  2018 mod_authn_dbd.html.en
+-rw-r--r-- 1 root root  17032 Sep 18  2018 mod_authn_dbd.html.fr
+-rw-r--r-- 1 root root    411 Dec 31  2012 mod_authn_dbm.html
+-rw-r--r-- 1 root root  12998 Jan  4  2018 mod_authn_dbm.html.en
+-rw-r--r-- 1 root root  13842 Sep 18  2018 mod_authn_dbm.html.fr
+-rw-r--r-- 1 root root  13381 Jan  4  2018 mod_authn_dbm.html.ja.utf8
+-rw-r--r-- 1 root root  11357 Jan  4  2018 mod_authn_dbm.html.ko.euc-kr
+-rw-r--r-- 1 root root    330 May  6  2008 mod_authn_default.html
+-rw-r--r-- 1 root root   5668 Jan  3  2012 mod_authn_default.html.en
+-rw-r--r-- 1 root root   6095 Jan  3  2012 mod_authn_default.html.ja.utf8
+-rw-r--r-- 1 root root   5361 Jan  3  2012 mod_authn_default.html.ko.euc-kr
+-rw-r--r-- 1 root root    415 Nov  9  2011 mod_authn_file.html
+-rw-r--r-- 1 root root  11700 Jan  4  2018 mod_authn_file.html.en
+-rw-r--r-- 1 root root  12467 Sep 18  2018 mod_authn_file.html.fr
+-rw-r--r-- 1 root root  12741 Jan  4  2018 mod_authn_file.html.ja.utf8
+-rw-r--r-- 1 root root  10791 Jan  4  2018 mod_authn_file.html.ko.euc-kr
+-rw-r--r-- 1 root root    230 Dec 31  2012 mod_authn_socache.html
+-rw-r--r-- 1 root root  19038 Jan  4  2018 mod_authn_socache.html.en
+-rw-r--r-- 1 root root  20740 Sep 18  2018 mod_authn_socache.html.fr
+-rw-r--r-- 1 root root    226 Jul 17  2018 mod_authnz_fcgi.html
+-rw-r--r-- 1 root root  27638 Sep  5  2018 mod_authnz_fcgi.html.en
+-rw-r--r-- 1 root root  29782 Sep 18  2018 mod_authnz_fcgi.html.fr
+-rw-r--r-- 1 root root    226 Nov  9  2011 mod_authnz_ldap.html
+-rw-r--r-- 1 root root  85813 Feb 13  2018 mod_authnz_ldap.html.en
+-rw-r--r-- 1 root root  93541 Sep 18  2018 mod_authnz_ldap.html.fr
+-rw-r--r-- 1 root root    224 Jan 20  2013 mod_authz_core.html
+-rw-r--r-- 1 root root  37763 Jul  6  2018 mod_authz_core.html.en
+-rw-r--r-- 1 root root  40435 Sep 18  2018 mod_authz_core.html.fr
+-rw-r--r-- 1 root root    222 Jan  2  2013 mod_authz_dbd.html
+-rw-r--r-- 1 root root  18635 Jan  4  2018 mod_authz_dbd.html.en
+-rw-r--r-- 1 root root  20263 Sep 18  2018 mod_authz_dbd.html.fr
+-rw-r--r-- 1 root root    318 Jan  2  2013 mod_authz_dbm.html
+-rw-r--r-- 1 root root  13178 Jan  4  2018 mod_authz_dbm.html.en
+-rw-r--r-- 1 root root  13997 Sep 18  2018 mod_authz_dbm.html.fr
+-rw-r--r-- 1 root root  10640 Jan  4  2018 mod_authz_dbm.html.ko.euc-kr
+-rw-r--r-- 1 root root    330 May  6  2008 mod_authz_default.html
+-rw-r--r-- 1 root root   5761 Jan  3  2012 mod_authz_default.html.en
+-rw-r--r-- 1 root root   6214 Jan  3  2012 mod_authz_default.html.ja.utf8
+-rw-r--r-- 1 root root   5485 Jan  3  2012 mod_authz_default.html.ko.euc-kr
+-rw-r--r-- 1 root root    435 Jan  2  2013 mod_authz_groupfile.html
+-rw-r--r-- 1 root root  10660 Jan  4  2018 mod_authz_groupfile.html.en
+-rw-r--r-- 1 root root  11141 Sep 18  2018 mod_authz_groupfile.html.fr
+-rw-r--r-- 1 root root  10135 Jan  4  2018 mod_authz_groupfile.html.ja.utf8
+-rw-r--r-- 1 root root   9013 Jan  4  2018 mod_authz_groupfile.html.ko.euc-kr
+-rw-r--r-- 1 root root    224 Nov  9  2011 mod_authz_host.html
+-rw-r--r-- 1 root root  13590 Jan  4  2018 mod_authz_host.html.en
+-rw-r--r-- 1 root root  14381 Sep 18  2018 mod_authz_host.html.fr
+-rw-r--r-- 1 root root  21372 Jan  3  2012 mod_authz_host.html.ja.utf8
+-rw-r--r-- 1 root root  16873 Jan  3  2012 mod_authz_host.html.ko.euc-kr
+-rw-r--r-- 1 root root    419 Nov  9  2011 mod_authz_owner.html
+-rw-r--r-- 1 root root  11571 Jan  4  2018 mod_authz_owner.html.en
+-rw-r--r-- 1 root root  12135 Sep 18  2018 mod_authz_owner.html.fr
+-rw-r--r-- 1 root root  13240 Jan  4  2018 mod_authz_owner.html.ja.utf8
+-rw-r--r-- 1 root root  11365 Jan  4  2018 mod_authz_owner.html.ko.euc-kr
+-rw-r--r-- 1 root root    415 Nov  9  2011 mod_authz_user.html
+-rw-r--r-- 1 root root   8308 Jan  4  2018 mod_authz_user.html.en
+-rw-r--r-- 1 root root   8543 Sep 18  2018 mod_authz_user.html.fr
+-rw-r--r-- 1 root root   7566 Jan  4  2018 mod_authz_user.html.ja.utf8
+-rw-r--r-- 1 root root   7016 Jan  4  2018 mod_authz_user.html.ko.euc-kr
+-rw-r--r-- 1 root root    504 Nov  9  2011 mod_autoindex.html
+-rw-r--r-- 1 root root  62791 Jan  4  2018 mod_autoindex.html.en
+-rw-r--r-- 1 root root  68787 Sep 18  2018 mod_autoindex.html.fr
+-rw-rw-r-- 1 root root  39418 Jul 27  2006 mod_autoindex.html.html
+-rw-rw-r-- 1 root root  42842 Jul 27  2006 mod_autoindex.html.ja.jis
+-rw-r--r-- 1 root root  66476 Jan  4  2018 mod_autoindex.html.ja.utf8
+-rw-r--r-- 1 root root  51394 Jan  4  2018 mod_autoindex.html.ko.euc-kr
+-rw-r--r-- 1 root root  67700 Jan  4  2018 mod_autoindex.html.tr.utf8
+-rw-r--r-- 1 root root    216 Jul 17  2018 mod_brotli.html
+-rw-r--r-- 1 root root  21657 Sep  5  2018 mod_brotli.html.en
+-rw-r--r-- 1 root root  22886 Sep 18  2018 mod_brotli.html.fr
+-rw-rw-r-- 1 root root   4664 Jul 27  2006 mod_browser.html
+-rw-r--r-- 1 root root    216 Nov  9  2011 mod_buffer.html
+-rw-r--r-- 1 root root   9285 Jan  4  2018 mod_buffer.html.en
+-rw-r--r-- 1 root root   9726 Sep 18  2018 mod_buffer.html.fr
+-rw-r--r-- 1 root root    395 Nov  9  2011 mod_cache.html
+-rw-r--r-- 1 root root  69611 Jan  4  2018 mod_cache.html.en
+-rw-r--r-- 1 root root  74923 Sep 18  2018 mod_cache.html.fr
+-rw-r--r-- 1 root root  53739 Jan  4  2018 mod_cache.html.ja.utf8
+-rw-r--r-- 1 root root  39437 Jan  4  2018 mod_cache.html.ko.euc-kr
+-rw-r--r-- 1 root root    415 Nov  9  2011 mod_cache_disk.html
+-rw-r--r-- 1 root root  20589 Jan  4  2018 mod_cache_disk.html.en
+-rw-r--r-- 1 root root  21625 Sep 18  2018 mod_cache_disk.html.fr
+-rw-r--r-- 1 root root  18807 Jan  4  2018 mod_cache_disk.html.ja.utf8
+-rw-r--r-- 1 root root  16099 Jan  4  2018 mod_cache_disk.html.ko.euc-kr
+-rw-r--r-- 1 root root    230 Nov 11  2013 mod_cache_socache.html
+-rw-r--r-- 1 root root  18726 Jan  4  2018 mod_cache_socache.html.en
+-rw-r--r-- 1 root root  19383 Sep 18  2018 mod_cache_socache.html.fr
+-rw-r--r-- 1 root root    318 Jan 20  2013 mod_cern_meta.html
+-rw-r--r-- 1 root root  11270 Jan  4  2018 mod_cern_meta.html.en
+-rw-r--r-- 1 root root  11773 Sep 18  2018 mod_cern_meta.html.fr
+-rw-r--r-- 1 root root  10796 Jan  4  2018 mod_cern_meta.html.ko.euc-kr
+-rw-r--r-- 1 root root    387 Jan 27  2013 mod_cgi.html
+-rw-r--r-- 1 root root  18870 Jan  4  2018 mod_cgi.html.en
+-rw-r--r-- 1 root root  20387 Sep 18  2018 mod_cgi.html.fr
+-rw-rw-r-- 1 root root   9411 Jul 27  2006 mod_cgi.html.html
+-rw-rw-r-- 1 root root  10181 Jul 27  2006 mod_cgi.html.ja.jis
+-rw-r--r-- 1 root root  20198 Jan  4  2018 mod_cgi.html.ja.utf8
+-rw-r--r-- 1 root root  16705 Jan  4  2018 mod_cgi.html.ko.euc-kr
+-rw-r--r-- 1 root root    391 Jan 27  2013 mod_cgid.html
+-rw-r--r-- 1 root root  11823 Jan  4  2018 mod_cgid.html.en
+-rw-r--r-- 1 root root  12275 Sep 18  2018 mod_cgid.html.fr
+-rw-r--r-- 1 root root  12467 Jan  4  2018 mod_cgid.html.ja.utf8
+-rw-r--r-- 1 root root  10930 Jan  4  2018 mod_cgid.html.ko.euc-kr
+-rw-r--r-- 1 root root    327 Jan 27  2013 mod_charset_lite.html
+-rw-r--r-- 1 root root  15726 Jan  4  2018 mod_charset_lite.html.en
+-rw-r--r-- 1 root root  16820 Sep 18  2018 mod_charset_lite.html.fr
+-rw-r--r-- 1 root root  14620 Jan  4  2018 mod_charset_lite.html.ko.euc-kr
+-rw-rw-r-- 1 root root   2250 Jul 27  2006 mod_cookies.html
+-rw-r--r-- 1 root root    212 Jan 27  2013 mod_data.html
+-rw-r--r-- 1 root root   7677 Jan  4  2018 mod_data.html.en
+-rw-r--r-- 1 root root   7847 Sep 18  2018 mod_data.html.fr
+-rw-r--r-- 1 root root    387 Jan 20  2013 mod_dav.html
+-rw-r--r-- 1 root root  18345 Jan  4  2018 mod_dav.html.en
+-rw-r--r-- 1 root root  19759 Sep 18  2018 mod_dav.html.fr
+-rw-r--r-- 1 root root  21158 Jan  4  2018 mod_dav.html.ja.utf8
+-rw-r--r-- 1 root root  18142 Jan  4  2018 mod_dav.html.ko.euc-kr
+-rw-r--r-- 1 root root    399 Jan 20  2013 mod_dav_fs.html
+-rw-r--r-- 1 root root   9416 Jan  4  2018 mod_dav_fs.html.en
+-rw-r--r-- 1 root root   9934 Sep 18  2018 mod_dav_fs.html.fr
+-rw-r--r-- 1 root root   9476 Jan  4  2018 mod_dav_fs.html.ja.utf8
+-rw-r--r-- 1 root root   9144 Jan  4  2018 mod_dav_fs.html.ko.euc-kr
+-rw-r--r-- 1 root root    312 Jan 20  2013 mod_dav_lock.html
+-rw-r--r-- 1 root root   9999 Jan  4  2018 mod_dav_lock.html.en
+-rw-r--r-- 1 root root  10526 Sep 18  2018 mod_dav_lock.html.fr
+-rw-r--r-- 1 root root  10763 Jan  4  2018 mod_dav_lock.html.ja.utf8
+-rw-r--r-- 1 root root    210 Dec 28  2012 mod_dbd.html
+-rw-r--r-- 1 root root  25306 Jan  4  2018 mod_dbd.html.en
+-rw-r--r-- 1 root root  27287 Sep 18  2018 mod_dbd.html.fr
+-rw-r--r-- 1 root root   4123 Aug 27  1999 mod_define.html
+-rw-r--r-- 1 root root    403 Nov  9  2011 mod_deflate.html
+-rw-r--r-- 1 root root  29089 Jan  4  2018 mod_deflate.html.en
+-rw-r--r-- 1 root root  30966 Sep 18  2018 mod_deflate.html.fr
+-rw-r--r-- 1 root root  31756 Jan  4  2018 mod_deflate.html.ja.utf8
+-rw-r--r-- 1 root root  26748 Jan  4  2018 mod_deflate.html.ko.euc-kr
+-rw-r--r-- 1 root root    216 Dec 31  2012 mod_dialup.html
+-rw-r--r-- 1 root root   7681 Jan  4  2018 mod_dialup.html.en
+-rw-r--r-- 1 root root   7974 Sep 18  2018 mod_dialup.html.fr
+-rw-rw-r-- 1 root root   5545 Jul 27  2006 mod_digest.html
+-rw-r--r-- 1 root root    474 Nov  9  2011 mod_dir.html
+-rw-r--r-- 1 root root  22663 Jan  4  2018 mod_dir.html.en
+-rw-r--r-- 1 root root  24472 Sep 18  2018 mod_dir.html.fr
+-rw-rw-r-- 1 root root   4871 Jul 27  2006 mod_dir.html.html
+-rw-rw-r-- 1 root root   5390 Jul 27  2006 mod_dir.html.ja.jis
+-rw-r--r-- 1 root root  20131 Jan  4  2018 mod_dir.html.ja.utf8
+-rw-r--r-- 1 root root  16925 Jan  4  2018 mod_dir.html.ko.euc-kr
+-rw-r--r-- 1 root root  23824 Jan  4  2018 mod_dir.html.tr.utf8
+-rw-r--r-- 1 root root    321 May  6  2008 mod_disk_cache.html
+-rw-r--r-- 1 root root  12425 Jan  3  2012 mod_disk_cache.html.en
+-rw-r--r-- 1 root root  13112 Jan  3  2012 mod_disk_cache.html.ja.utf8
+-rw-r--r-- 1 root root  11136 Jan  3  2012 mod_disk_cache.html.ko.euc-kr
+-rw-rw-r-- 1 root root   4268 Jul 27  2006 mod_dld.html
+-rw-r--r-- 1 root root    306 Jul  1  2012 mod_dumpio.html
+-rw-r--r-- 1 root root   9854 Jan  4  2018 mod_dumpio.html.en
+-rw-r--r-- 1 root root  10200 Sep 18  2018 mod_dumpio.html.fr
+-rw-r--r-- 1 root root  10567 Jan  4  2018 mod_dumpio.html.ja.utf8
+-rw-r--r-- 1 root root    391 Nov  9  2011 mod_echo.html
+-rw-r--r-- 1 root root   7631 Jan  4  2018 mod_echo.html.en
+-rw-r--r-- 1 root root   7758 Sep 18  2018 mod_echo.html.fr
+-rw-r--r-- 1 root root   8074 Jan  4  2018 mod_echo.html.ja.utf8
+-rw-r--r-- 1 root root   7733 Jan  4  2018 mod_echo.html.ko.euc-kr
+-rw-r--r-- 1 root root    474 Nov  9  2011 mod_env.html
+-rw-r--r-- 1 root root  11886 Jan  4  2018 mod_env.html.en
+-rw-r--r-- 1 root root  12338 Sep 18  2018 mod_env.html.fr
+-rw-rw-r-- 1 root root   5668 Jul 27  2006 mod_env.html.html
+-rw-rw-r-- 1 root root   5841 Jul 27  2006 mod_env.html.ja.jis
+-rw-r--r-- 1 root root  11342 Jan  4  2018 mod_env.html.ja.utf8
+-rw-r--r-- 1 root root  10143 Jan  4  2018 mod_env.html.ko.euc-kr
+-rw-r--r-- 1 root root  12004 Jan  4  2018 mod_env.html.tr.utf8
+-rw-r--r-- 1 root root    312 Jan 20  2013 mod_example.html
+-rw-r--r-- 1 root root  10522 May 21  2014 mod_example.html.en
+-rw-r--r-- 1 root root  11128 May 21  2014 mod_example.html.fr
+-rw-r--r-- 1 root root  10106 May 21  2014 mod_example.html.ko.euc-kr
+-rw-r--r-- 1 root root    330 Oct  3  2014 mod_example_hooks.html
+-rw-r--r-- 1 root root  11475 Jan  4  2018 mod_example_hooks.html.en
+-rw-r--r-- 1 root root  12128 Sep 18  2018 mod_example_hooks.html.fr
+-rw-r--r-- 1 root root  11018 Jan  4  2018 mod_example_hooks.html.ko.euc-kr
+-rw-r--r-- 1 root root    403 Nov  9  2011 mod_expires.html
+-rw-r--r-- 1 root root  17120 Jan  4  2018 mod_expires.html.en
+-rw-r--r-- 1 root root  18060 Sep 18  2018 mod_expires.html.fr
+-rw-r--r-- 1 root root  18733 Jan  4  2018 mod_expires.html.ja.utf8
+-rw-r--r-- 1 root root  15445 Jan  4  2018 mod_expires.html.ko.euc-kr
+-rw-r--r-- 1 root root    415 Jan 27  2013 mod_ext_filter.html
+-rw-r--r-- 1 root root  18662 Jan  4  2018 mod_ext_filter.html.en
+-rw-r--r-- 1 root root  20013 Sep 18  2018 mod_ext_filter.html.fr
+-rw-r--r-- 1 root root  23410 Jan  4  2018 mod_ext_filter.html.ja.utf8
+-rw-r--r-- 1 root root  19400 Jan  4  2018 mod_ext_filter.html.ko.euc-kr
+-rw-r--r-- 1 root root    321 Jan 27  2013 mod_file_cache.html
+-rw-r--r-- 1 root root  15780 Jan  4  2018 mod_file_cache.html.en
+-rw-r--r-- 1 root root  17912 Sep 18  2018 mod_file_cache.html.fr
+-rw-r--r-- 1 root root  14802 Jan  4  2018 mod_file_cache.html.ko.euc-kr
+-rw-r--r-- 1 root root    216 Jan 20  2013 mod_filter.html
+-rw-r--r-- 1 root root  31972 Jan  4  2018 mod_filter.html.en
+-rw-r--r-- 1 root root  35265 Sep 18  2018 mod_filter.html.fr
+-rw-r--r-- 1 root root    403 Nov  9  2011 mod_headers.html
+-rw-r--r-- 1 root root  33147 Jan  4  2018 mod_headers.html.en
+-rw-r--r-- 1 root root  35875 Sep 18  2018 mod_headers.html.fr
+-rw-r--r-- 1 root root  25616 Jan  4  2018 mod_headers.html.ja.utf8
+-rw-r--r-- 1 root root  20011 Jan  4  2018 mod_headers.html.ko.euc-kr
+-rw-r--r-- 1 root root    222 Mar  4  2013 mod_heartbeat.html
+-rw-r--r-- 1 root root   9783 Jan  4  2018 mod_heartbeat.html.en
+-rw-r--r-- 1 root root  10010 Sep 18  2018 mod_heartbeat.html.fr
+-rw-r--r-- 1 root root    228 Mar  4  2013 mod_heartmonitor.html
+-rw-r--r-- 1 root root  11919 Sep  5  2018 mod_heartmonitor.html.en
+-rw-r--r-- 1 root root  12216 Sep 18  2018 mod_heartmonitor.html.fr
+-rw-r--r-- 1 root root    214 Jul 17  2018 mod_http2.html
+-rw-r--r-- 1 root root  59818 Sep  5  2018 mod_http2.html.en
+-rw-r--r-- 1 root root  62641 Sep 18  2018 mod_http2.html.fr
+-rw-r--r-- 1 root root    395 Nov  9  2011 mod_ident.html
+-rw-r--r-- 1 root root  10187 Jan  4  2018 mod_ident.html.en
+-rw-r--r-- 1 root root  10653 Sep 18  2018 mod_ident.html.fr
+-rw-r--r-- 1 root root  11142 Jan  4  2018 mod_ident.html.ja.utf8
+-rw-r--r-- 1 root root   9701 Jan  4  2018 mod_ident.html.ko.euc-kr
+-rw-r--r-- 1 root root    315 Mar  4  2013 mod_imagemap.html
+-rw-r--r-- 1 root root  21741 Jan  4  2018 mod_imagemap.html.en
+-rw-r--r-- 1 root root  23744 Sep 18  2018 mod_imagemap.html.fr
+-rw-r--r-- 1 root root  20246 Jan  4  2018 mod_imagemap.html.ko.euc-kr
+-rw-rw-r-- 1 root root  13899 Jul 27  2006 mod_imap.html
+-rw-r--r-- 1 root root    309 Mar  4  2013 mod_include.html
+-rw-r--r-- 1 root root  61208 Mar 25  2018 mod_include.html.en
+-rw-r--r-- 1 root root  65961 Sep 18  2018 mod_include.html.fr
+-rw-r--r-- 1 root root  56667 Jan  4  2018 mod_include.html.ja.utf8
+-rw-r--r-- 1 root root    391 Nov  9  2011 mod_info.html
+-rw-r--r-- 1 root root  14963 Jan  4  2018 mod_info.html.en
+-rw-r--r-- 1 root root  15797 Sep 18  2018 mod_info.html.fr
+-rw-rw-r-- 1 root root   4838 Jul 27  2006 mod_info.html.html
+-rw-rw-r-- 1 root root   5091 Jul 27  2006 mod_info.html.ja.jis
+-rw-r--r-- 1 root root  15488 Jan  4  2018 mod_info.html.ja.utf8
+-rw-r--r-- 1 root root  12901 Jan  4  2018 mod_info.html.ko.euc-kr
+-rw-r--r-- 1 root root    306 Dec 30  2012 mod_isapi.html
+-rw-r--r-- 1 root root  24014 Jan  4  2018 mod_isapi.html.en
+-rw-r--r-- 1 root root  25871 Sep 18  2018 mod_isapi.html.fr
+-rw-r--r-- 1 root root  22141 Jan  4  2018 mod_isapi.html.ko.euc-kr
+-rw-r--r-- 1 root root    242 Dec 25  2012 mod_lbmethod_bybusyness.html
+-rw-r--r-- 1 root root   8046 Jan  4  2018 mod_lbmethod_bybusyness.html.en
+-rw-r--r-- 1 root root   8411 Sep 18  2018 mod_lbmethod_bybusyness.html.fr
+-rw-r--r-- 1 root root    242 Dec 25  2012 mod_lbmethod_byrequests.html
+-rw-r--r-- 1 root root  12855 Apr 29  2018 mod_lbmethod_byrequests.html.en
+-rw-r--r-- 1 root root  13342 Sep 18  2018 mod_lbmethod_byrequests.html.fr
+-rw-r--r-- 1 root root    240 Dec 25  2012 mod_lbmethod_bytraffic.html
+-rw-r--r-- 1 root root   8406 Apr 29  2018 mod_lbmethod_bytraffic.html.en
+-rw-r--r-- 1 root root   8767 Sep 18  2018 mod_lbmethod_bytraffic.html.fr
+-rw-r--r-- 1 root root    240 Dec 25  2012 mod_lbmethod_heartbeat.html
+-rw-r--r-- 1 root root   8496 Apr 29  2018 mod_lbmethod_heartbeat.html.en
+-rw-r--r-- 1 root root   8833 Sep 18  2018 mod_lbmethod_heartbeat.html.fr
+-rw-r--r-- 1 root root    212 Nov  9  2011 mod_ldap.html
+-rw-r--r-- 1 root root  52961 Jan  4  2018 mod_ldap.html.en
+-rw-r--r-- 1 root root  57756 Sep 18  2018 mod_ldap.html.fr
+-rw-rw-r-- 1 root root   4059 Jul 27  2006 mod_log_agent.html
+-rw-rw-r-- 1 root root   5099 Jul 27  2006 mod_log_common.html
+-rw-r--r-- 1 root root    509 Mar 17  2013 mod_log_config.html
+-rw-r--r-- 1 root root  36078 Jan  4  2018 mod_log_config.html.en
+-rw-r--r-- 1 root root  38112 Sep 18  2018 mod_log_config.html.fr
+-rw-rw-r-- 1 root root  17872 Jul 27  2006 mod_log_config.html.html
+-rw-rw-r-- 1 root root  19359 Jul 27  2006 mod_log_config.html.ja.jis
+-rw-r--r-- 1 root root  34626 Jan  4  2018 mod_log_config.html.ja.utf8
+-rw-r--r-- 1 root root  26152 Jan  4  2018 mod_log_config.html.ko.euc-kr
+-rw-r--r-- 1 root root  37968 Jan  4  2018 mod_log_config.html.tr.utf8
+-rw-r--r-- 1 root root    222 Mar 17  2013 mod_log_debug.html
+-rw-r--r-- 1 root root  10365 Feb  7  2018 mod_log_debug.html.en
+-rw-r--r-- 1 root root  10901 Sep 18  2018 mod_log_debug.html.fr
+-rw-r--r-- 1 root root    420 Jul  1  2012 mod_log_forensic.html
+-rw-r--r-- 1 root root  13074 Jan  4  2018 mod_log_forensic.html.en
+-rw-r--r-- 1 root root  14574 Sep 18  2018 mod_log_forensic.html.fr
+-rw-rw-r-- 1 root root   6368 Jul 27  2006 mod_log_forensic.html.html
+-rw-r--r-- 1 root root  14538 Jan  4  2018 mod_log_forensic.html.ja.utf8
+-rw-r--r-- 1 root root  13580 Jan  4  2018 mod_log_forensic.html.tr.utf8
+-rw-rw-r-- 1 root root   5298 Jul 27  2006 mod_log_referer.html
+-rw-r--r-- 1 root root    484 Jan 20  2013 mod_logio.html
+-rw-r--r-- 1 root root  10634 Jan  4  2018 mod_logio.html.en
+-rw-r--r-- 1 root root  11199 Sep 18  2018 mod_logio.html.fr
+-rw-r--r-- 1 root root  10495 Jan  4  2018 mod_logio.html.ja.utf8
+-rw-r--r-- 1 root root   9455 Jan  4  2018 mod_logio.html.ko.euc-kr
+-rw-r--r-- 1 root root  10861 Jan 17  2018 mod_logio.html.tr.utf8
+-rw-r--r-- 1 root root    210 Feb 23  2012 mod_lua.html
+-rw-r--r-- 1 root root  91749 Sep  5  2018 mod_lua.html.en
+-rw-r--r-- 1 root root 100549 Sep 18  2018 mod_lua.html.fr
+-rw-r--r-- 1 root root    214 May 20  2013 mod_macro.html
+-rw-r--r-- 1 root root  15392 Jan  4  2018 mod_macro.html.en
+-rw-r--r-- 1 root root  16228 Sep 18  2018 mod_macro.html.fr
+-rw-r--r-- 1 root root    122 Mar  3  2018 mod_md.html
+-rw-r--r-- 1 root root  45358 Jun 29  2018 mod_md.html.en
+-rw-r--r-- 1 root root    318 May  6  2008 mod_mem_cache.html
+-rw-r--r-- 1 root root  16662 Jan  3  2012 mod_mem_cache.html.en
+-rw-r--r-- 1 root root  18108 Jan  3  2012 mod_mem_cache.html.ja.utf8
+-rw-r--r-- 1 root root  15034 Jan  3  2012 mod_mem_cache.html.ko.euc-kr
+-rw-r--r-- 1 root root    300 Feb 22  2013 mod_mime.html
+-rw-r--r-- 1 root root  66188 Jan  4  2018 mod_mime.html.en
+-rw-r--r-- 1 root root  71447 Sep 18  2018 mod_mime.html.fr
+-rw-rw-r-- 1 root root  28824 Jul 27  2006 mod_mime.html.html
+-rw-rw-r-- 1 root root  30996 Jul 27  2006 mod_mime.html.ja.jis
+-rw-r--r-- 1 root root  72272 Jan  4  2018 mod_mime.html.ja.utf8
+-rw-r--r-- 1 root root    224 Mar  4  2013 mod_mime_magic.html
+-rw-r--r-- 1 root root  17082 Jan  4  2018 mod_mime_magic.html.en
+-rw-r--r-- 1 root root  18081 Sep 18  2018 mod_mime_magic.html.fr
+-rw-rw-r-- 1 root root   5864 Jul 27  2006 mod_mmap_static.html
+-rw-r--r-- 1 root root    321 Nov  9  2011 mod_negotiation.html
+-rw-r--r-- 1 root root  21882 Jan  4  2018 mod_negotiation.html.en
+-rw-r--r-- 1 root root  23414 Sep 18  2018 mod_negotiation.html.fr
+-rw-rw-r-- 1 root root   9284 Jul 27  2006 mod_negotiation.html.html
+-rw-rw-r-- 1 root root   9665 Jul 27  2006 mod_negotiation.html.ja.jis
+-rw-r--r-- 1 root root  23071 Jan  4  2018 mod_negotiation.html.ja.utf8
+-rw-r--r-- 1 root root    216 Dec 26  2012 mod_nw_ssl.html
+-rw-r--r-- 1 root root   9736 Jan  4  2018 mod_nw_ssl.html.en
+-rw-r--r-- 1 root root  10011 Sep 18  2018 mod_nw_ssl.html.fr
+-rw-r--r-- 1 root root    224 Dec 26  2012 mod_privileges.html
+-rw-r--r-- 1 root root  30069 Jan  4  2018 mod_privileges.html.en
+-rw-r--r-- 1 root root  33070 Sep 18  2018 mod_privileges.html.fr
+-rw-r--r-- 1 root root    303 Nov  9  2011 mod_proxy.html
+-rw-r--r-- 1 root root 126084 Jun 27  2018 mod_proxy.html.en
+-rw-r--r-- 1 root root 140524 Sep 18  2018 mod_proxy.html.fr
+-rw-r--r-- 1 root root  92978 Jan  4  2018 mod_proxy.html.ja.utf8
+-rw-r--r-- 1 root root    315 Jan  2  2013 mod_proxy_ajp.html
+-rw-r--r-- 1 root root  31573 Jan  4  2018 mod_proxy_ajp.html.en
+-rw-r--r-- 1 root root  34178 Sep 18  2018 mod_proxy_ajp.html.fr
+-rw-r--r-- 1 root root  33022 Jan  4  2018 mod_proxy_ajp.html.ja.utf8
+-rw-r--r-- 1 root root    330 Dec 25  2012 mod_proxy_balancer.html
+-rw-r--r-- 1 root root  23530 Apr 29  2018 mod_proxy_balancer.html.en
+-rw-r--r-- 1 root root  26063 Sep 18  2018 mod_proxy_balancer.html.fr
+-rw-r--r-- 1 root root  19272 Jan  4  2018 mod_proxy_balancer.html.ja.utf8
+-rw-r--r-- 1 root root    327 Jan 20  2013 mod_proxy_connect.html
+-rw-r--r-- 1 root root  10302 Jan  4  2018 mod_proxy_connect.html.en
+-rw-r--r-- 1 root root  10772 Sep 18  2018 mod_proxy_connect.html.fr
+-rw-r--r-- 1 root root   9426 Jan  4  2018 mod_proxy_connect.html.ja.utf8
+-rw-r--r-- 1 root root    230 Jan 20  2013 mod_proxy_express.html
+-rw-r--r-- 1 root root  13980 Jan  4  2018 mod_proxy_express.html.en
+-rw-r--r-- 1 root root  14620 Sep 18  2018 mod_proxy_express.html.fr
+-rw-r--r-- 1 root root    224 Jul 24  2012 mod_proxy_fcgi.html
+-rw-r--r-- 1 root root  22848 Feb 11  2018 mod_proxy_fcgi.html.en
+-rw-r--r-- 1 root root  24868 Sep 18  2018 mod_proxy_fcgi.html.fr
+-rw-r--r-- 1 root root    228 Jan 20  2013 mod_proxy_fdpass.html
+-rw-r--r-- 1 root root   7681 Jan  4  2018 mod_proxy_fdpass.html.en
+-rw-r--r-- 1 root root   7889 Sep 18  2018 mod_proxy_fdpass.html.fr
+-rw-r--r-- 1 root root    222 Jan 20  2013 mod_proxy_ftp.html
+-rw-r--r-- 1 root root  18800 Sep  5  2018 mod_proxy_ftp.html.en
+-rw-r--r-- 1 root root  20618 Sep 18  2018 mod_proxy_ftp.html.fr
+-rw-r--r-- 1 root root  11795 Jan 11  2012 mod_proxy_ftp.html.ja.utf8
+-rw-r--r-- 1 root root    228 Jul 17  2018 mod_proxy_hcheck.html
+-rw-r--r-- 1 root root  17347 Sep  5  2018 mod_proxy_hcheck.html.en
+-rw-r--r-- 1 root root  18288 Sep 18  2018 mod_proxy_hcheck.html.fr
+-rw-r--r-- 1 root root    224 Jul 24  2012 mod_proxy_html.html
+-rw-r--r-- 1 root root  34425 Jun 21  2018 mod_proxy_html.html.en
+-rw-r--r-- 1 root root  38802 Sep 18  2018 mod_proxy_html.html.fr
+-rw-r--r-- 1 root root    224 Nov  9  2011 mod_proxy_http.html
+-rw-r--r-- 1 root root  12116 Jan  4  2018 mod_proxy_http.html.en
+-rw-r--r-- 1 root root  12911 Sep 18  2018 mod_proxy_http.html.fr
+-rw-r--r-- 1 root root  10206 Jan 11  2012 mod_proxy_http.html.ja.utf8
+-rw-r--r-- 1 root root    226 Jul 17  2018 mod_proxy_http2.html
+-rw-r--r-- 1 root root  10377 Sep  5  2018 mod_proxy_http2.html.en
+-rw-r--r-- 1 root root  10872 Sep 18  2018 mod_proxy_http2.html.fr
+-rw-r--r-- 1 root root    224 Jan 20  2013 mod_proxy_scgi.html
+-rw-r--r-- 1 root root  14982 Jan  4  2018 mod_proxy_scgi.html.en
+-rw-r--r-- 1 root root  15871 Sep 18  2018 mod_proxy_scgi.html.fr
+-rw-r--r-- 1 root root  11142 Jan 11  2012 mod_proxy_scgi.html.ja.utf8
+-rw-r--r-- 1 root root    131 Mar 21  2018 mod_proxy_uwsgi.html
+-rw-r--r-- 1 root root   8264 Mar  3  2018 mod_proxy_uwsgi.html.en
+-rw-r--r-- 1 root root    232 Jul 17  2018 mod_proxy_wstunnel.html
+-rw-r--r-- 1 root root   7652 Sep  5  2018 mod_proxy_wstunnel.html.en
+-rw-r--r-- 1 root root   7869 Sep 18  2018 mod_proxy_wstunnel.html.fr
+-rw-r--r-- 1 root root    222 Dec 26  2012 mod_ratelimit.html
+-rw-r--r-- 1 root root   7227 Jul  6  2018 mod_ratelimit.html.en
+-rw-r--r-- 1 root root   7532 Sep 18  2018 mod_ratelimit.html.fr
+-rw-r--r-- 1 root root    222 Jan 20  2013 mod_reflector.html
+-rw-r--r-- 1 root root   8746 Jan  4  2018 mod_reflector.html.en
+-rw-r--r-- 1 root root   9033 Sep 18  2018 mod_reflector.html.fr
+-rw-r--r-- 1 root root    220 Nov  9  2011 mod_remoteip.html
+-rw-r--r-- 1 root root  27257 Mar  3  2018 mod_remoteip.html.en
+-rw-r--r-- 1 root root  29682 Sep 18  2018 mod_remoteip.html.fr
+-rw-r--r-- 1 root root    224 Mar  4  2013 mod_reqtimeout.html
+-rw-r--r-- 1 root root  11960 Mar 30  2018 mod_reqtimeout.html.en
+-rw-r--r-- 1 root root  12478 Sep 18  2018 mod_reqtimeout.html.fr
+-rw-r--r-- 1 root root    309 Dec 26  2012 mod_request.html
+-rw-r--r-- 1 root root   9536 Jan  4  2018 mod_request.html.en
+-rw-r--r-- 1 root root  10077 Sep 18  2018 mod_request.html.fr
+-rw-r--r-- 1 root root   9917 Jan  4  2018 mod_request.html.tr.utf8
+-rw-r--r-- 1 root root    218 Nov  9  2011 mod_rewrite.html
+-rw-r--r-- 1 root root  77146 Mar 30  2018 mod_rewrite.html.en
+-rw-r--r-- 1 root root  82250 Sep 18  2018 mod_rewrite.html.fr
+-rw-rw-r-- 1 root root  86722 Jul 27  2006 mod_rewrite.html.html
+-rw-rw-r-- 1 root root  95452 Jul 27  2006 mod_rewrite.html.ja.jis
+-rw-r--r-- 1 root root    210 Nov  9  2011 mod_sed.html
+-rw-r--r-- 1 root root  11888 Jan  4  2018 mod_sed.html.en
+-rw-r--r-- 1 root root  12305 Sep 18  2018 mod_sed.html.fr
+-rw-r--r-- 1 root root    218 Aug  5  2012 mod_session.html
+-rw-r--r-- 1 root root  33173 Jan  4  2018 mod_session.html.en
+-rw-r--r-- 1 root root  35511 Sep 18  2018 mod_session.html.fr
+-rw-r--r-- 1 root root    232 Feb 22  2013 mod_session_cookie.html
+-rw-r--r-- 1 root root  14044 Jan  4  2018 mod_session_cookie.html.en
+-rw-r--r-- 1 root root  14713 Sep 18  2018 mod_session_cookie.html.fr
+-rw-r--r-- 1 root root    232 Feb 22  2013 mod_session_crypto.html
+-rw-r--r-- 1 root root  18211 Jan  4  2018 mod_session_crypto.html.en
+-rw-r--r-- 1 root root  19460 Sep 18  2018 mod_session_crypto.html.fr
+-rw-r--r-- 1 root root    226 Feb 22  2013 mod_session_dbd.html
+-rw-r--r-- 1 root root  25682 Jan  4  2018 mod_session_dbd.html.en
+-rw-r--r-- 1 root root  27374 Sep 18  2018 mod_session_dbd.html.fr
+-rw-r--r-- 1 root root    499 Nov  9  2011 mod_setenvif.html
+-rw-r--r-- 1 root root  21858 Jan  4  2018 mod_setenvif.html.en
+-rw-r--r-- 1 root root  23404 Sep 18  2018 mod_setenvif.html.fr
+-rw-rw-r-- 1 root root  13404 Jul 27  2006 mod_setenvif.html.html
+-rw-rw-r-- 1 root root  14075 Jul 27  2006 mod_setenvif.html.ja.jis
+-rw-r--r-- 1 root root  22174 Jan  4  2018 mod_setenvif.html.ja.utf8
+-rw-r--r-- 1 root root  17826 Jan  4  2018 mod_setenvif.html.ko.euc-kr
+-rw-r--r-- 1 root root  22700 Jan  4  2018 mod_setenvif.html.tr.utf8
+-rw-r--r-- 1 root root    230 Mar  4  2013 mod_slotmem_plain.html
+-rw-r--r-- 1 root root   8302 Apr 29  2018 mod_slotmem_plain.html.en
+-rw-r--r-- 1 root root   8624 Sep 18  2018 mod_slotmem_plain.html.fr
+-rw-r--r-- 1 root root    226 Mar  4  2013 mod_slotmem_shm.html
+-rw-r--r-- 1 root root   8914 Apr 29  2018 mod_slotmem_shm.html.en
+-rw-r--r-- 1 root root   9272 Sep 18  2018 mod_slotmem_shm.html.fr
+-rw-r--r-- 1 root root    469 Nov  9  2011 mod_so.html
+-rw-r--r-- 1 root root  13991 Jan  4  2018 mod_so.html.en
+-rw-r--r-- 1 root root  15326 Sep 18  2018 mod_so.html.fr
+-rw-rw-r-- 1 root root   7993 Jul 27  2006 mod_so.html.html
+-rw-rw-r-- 1 root root   9181 Jul 27  2006 mod_so.html.ja.jis
+-rw-r--r-- 1 root root  16687 Jan  4  2018 mod_so.html.ja.utf8
+-rw-r--r-- 1 root root  12693 Jan  4  2018 mod_so.html.ko.euc-kr
+-rw-r--r-- 1 root root  15368 Jan  4  2018 mod_so.html.tr.utf8
+-rw-r--r-- 1 root root    226 Feb 22  2013 mod_socache_dbm.html
+-rw-r--r-- 1 root root   6312 Jan  4  2018 mod_socache_dbm.html.en
+-rw-r--r-- 1 root root   6431 Sep 18  2018 mod_socache_dbm.html.fr
+-rw-r--r-- 1 root root    224 Feb 22  2013 mod_socache_dc.html
+-rw-r--r-- 1 root root   6363 Jan  4  2018 mod_socache_dc.html.en
+-rw-r--r-- 1 root root   6483 Sep 18  2018 mod_socache_dc.html.fr
+-rw-r--r-- 1 root root    236 Feb 22  2013 mod_socache_memcache.html
+-rw-r--r-- 1 root root   8866 Jan  4  2018 mod_socache_memcache.html.en
+-rw-r--r-- 1 root root   9340 Sep 18  2018 mod_socache_memcache.html.fr
+-rw-r--r-- 1 root root    230 Feb 22  2013 mod_socache_shmcb.html
+-rw-r--r-- 1 root root   6397 Jan  4  2018 mod_socache_shmcb.html.en
+-rw-r--r-- 1 root root   6529 Sep 18  2018 mod_socache_shmcb.html.fr
+-rw-r--r-- 1 root root    403 Jan 20  2013 mod_speling.html
+-rw-r--r-- 1 root root  11186 Jan  4  2018 mod_speling.html.en
+-rw-r--r-- 1 root root  11633 Sep 18  2018 mod_speling.html.fr
+-rw-rw-r-- 1 root root   5364 Jul 27  2006 mod_speling.html.html
+-rw-rw-r-- 1 root root   5790 Jul 27  2006 mod_speling.html.ja.jis
+-rw-r--r-- 1 root root  13362 Jan  4  2018 mod_speling.html.ja.utf8
+-rw-r--r-- 1 root root  10629 Jan  4  2018 mod_speling.html.ko.euc-kr
+drwxr-xr-x 2 root root   4096 Aug  9  2006 mod_ssl
+-rw-r--r-- 1 root root    210 Feb 17  2013 mod_ssl.html
+-rw-r--r-- 1 root root 183854 Jun 24  2018 mod_ssl.html.en
+-rw-r--r-- 1 root root 199141 Sep 18  2018 mod_ssl.html.fr
+-rw-r--r-- 1 root root    489 Nov  9  2011 mod_status.html
+-rw-r--r-- 1 root root  12219 Jan  4  2018 mod_status.html.en
+-rw-r--r-- 1 root root  13028 Sep 18  2018 mod_status.html.fr
+-rw-r--r-- 1 root root  11694 Jan  4  2018 mod_status.html.ja.utf8
+-rw-r--r-- 1 root root   9786 Jan  4  2018 mod_status.html.ko.euc-kr
+-rw-r--r-- 1 root root  12945 Jan  4  2018 mod_status.html.tr.utf8
+-rw-r--r-- 1 root root    224 Jan  2  2013 mod_substitute.html
+-rw-r--r-- 1 root root  14980 Jan  4  2018 mod_substitute.html.en
+-rw-r--r-- 1 root root  15791 Sep 18  2018 mod_substitute.html.fr
+-rw-r--r-- 1 root root    489 Feb 22  2013 mod_suexec.html
+-rw-r--r-- 1 root root   8308 Jan  4  2018 mod_suexec.html.en
+-rw-r--r-- 1 root root   8549 Sep 18  2018 mod_suexec.html.fr
+-rw-r--r-- 1 root root   9144 Jan  4  2018 mod_suexec.html.ja.utf8
+-rw-r--r-- 1 root root   8263 Jan  4  2018 mod_suexec.html.ko.euc-kr
+-rw-r--r-- 1 root root   8519 Jan  4  2018 mod_suexec.html.tr.utf8
+-rw-r--r-- 1 root root    411 Nov  9  2011 mod_unique_id.html
+-rw-r--r-- 1 root root  15512 Jan  4  2018 mod_unique_id.html.en
+-rw-r--r-- 1 root root  17558 Sep 18  2018 mod_unique_id.html.fr
+-rw-rw-r-- 1 root root  10767 Jul 27  2006 mod_unique_id.html.html
+-rw-rw-r-- 1 root root  11723 Jul 27  2006 mod_unique_id.html.ja.jis
+-rw-r--r-- 1 root root  18896 Jan  4  2018 mod_unique_id.html.ja.utf8
+-rw-r--r-- 1 root root  13408 Jan  4  2018 mod_unique_id.html.ko.euc-kr
+-rw-r--r-- 1 root root    303 Mar 17  2013 mod_unixd.html
+-rw-r--r-- 1 root root  13967 Jan  4  2018 mod_unixd.html.en
+-rw-r--r-- 1 root root  14914 Sep 18  2018 mod_unixd.html.fr
+-rw-r--r-- 1 root root  14683 Jan  4  2018 mod_unixd.html.tr.utf8
+-rw-r--r-- 1 root root    494 Feb 22  2013 mod_userdir.html
+-rw-r--r-- 1 root root  12383 Jan  4  2018 mod_userdir.html.en
+-rw-r--r-- 1 root root  13242 Sep 18  2018 mod_userdir.html.fr
+-rw-rw-r-- 1 root root   5647 Jul 27  2006 mod_userdir.html.html
+-rw-rw-r-- 1 root root   5955 Jul 27  2006 mod_userdir.html.ja.jis
+-rw-r--r-- 1 root root  13395 Jan  4  2018 mod_userdir.html.ja.utf8
+-rw-r--r-- 1 root root  11053 Jan  4  2018 mod_userdir.html.ko.euc-kr
+-rw-r--r-- 1 root root  12974 Jan  4  2018 mod_userdir.html.tr.utf8
+-rw-r--r-- 1 root root    222 Feb 22  2013 mod_usertrack.html
+-rw-r--r-- 1 root root  15629 Apr 29  2018 mod_usertrack.html.en
+-rw-r--r-- 1 root root  16399 Sep 18  2018 mod_usertrack.html.fr
+-rw-r--r-- 1 root root    403 Jul 17  2018 mod_version.html
+-rw-r--r-- 1 root root  10589 Sep  5  2018 mod_version.html.en
+-rw-r--r-- 1 root root  11155 Sep 18  2018 mod_version.html.fr
+-rw-r--r-- 1 root root  11140 Sep 18  2018 mod_version.html.ja.utf8
+-rw-r--r-- 1 root root  10528 Sep 18  2018 mod_version.html.ko.euc-kr
+-rw-r--r-- 1 root root    321 Mar  4  2013 mod_vhost_alias.html
+-rw-r--r-- 1 root root  21492 Jan  4  2018 mod_vhost_alias.html.en
+-rw-r--r-- 1 root root  22644 Sep 18  2018 mod_vhost_alias.html.fr
+-rw-r--r-- 1 root root  22016 Jan  4  2018 mod_vhost_alias.html.tr.utf8
+-rw-r--r-- 1 root root    220 Jul 17  2018 mod_watchdog.html
+-rw-r--r-- 1 root root   8226 Sep  5  2018 mod_watchdog.html.en
+-rw-r--r-- 1 root root   8490 Sep 18  2018 mod_watchdog.html.fr
+-rw-r--r-- 1 root root    218 Dec 26  2012 mod_xml2enc.html
+-rw-r--r-- 1 root root  15819 Jan  4  2018 mod_xml2enc.html.en
+-rw-r--r-- 1 root root  17250 Sep 18  2018 mod_xml2enc.html.fr
+-rw-r--r-- 1 root root    494 Mar 17  2013 module-dict.html
+-rw-r--r-- 1 root root   9451 Jan  4  2018 module-dict.html.en
+-rw-r--r-- 1 root root   9671 Sep 18  2018 module-dict.html.fr
+-rw-rw-r-- 1 root root   4554 Jul 27  2006 module-dict.html.html
+-rw-rw-r-- 1 root root   4867 Jul 27  2006 module-dict.html.ja.jis
+-rw-r--r-- 1 root root  10535 Jan  4  2018 module-dict.html.ja.utf8
+-rw-r--r-- 1 root root   8698 Jan  4  2018 module-dict.html.ko.euc-kr
+-rw-r--r-- 1 root root   9650 Jan  4  2018 module-dict.html.tr.utf8
+-rw-r--r-- 1 root root    486 Dec 25  2012 mpm_common.html
+-rw-r--r-- 1 root root  63417 Jan  4  2018 mpm_common.html.de
+-rw-r--r-- 1 root root  65887 Jan  4  2018 mpm_common.html.en
+-rw-r--r-- 1 root root  72113 Sep 18  2018 mpm_common.html.fr
+-rw-r--r-- 1 root root  68265 Jan  4  2018 mpm_common.html.ja.utf8
+-rw-r--r-- 1 root root  70573 Jan 17  2018 mpm_common.html.tr.utf8
+-rw-r--r-- 1 root root    218 Mar 17  2013 mpm_netware.html
+-rw-r--r-- 1 root root  10306 Jan  4  2018 mpm_netware.html.en
+-rw-r--r-- 1 root root  10779 Sep 18  2018 mpm_netware.html.fr
+-rw-r--r-- 1 root root    392 Mar 17  2013 mpm_winnt.html
+-rw-r--r-- 1 root root   8133 Jan  4  2018 mpm_winnt.html.de
+-rw-r--r-- 1 root root  11113 Jan  4  2018 mpm_winnt.html.en
+-rw-r--r-- 1 root root  11584 Sep 18  2018 mpm_winnt.html.fr
+-rw-r--r-- 1 root root   8427 Jan  4  2018 mpm_winnt.html.ja.utf8
+-rw-r--r-- 1 root root    212 Jan 20  2013 mpmt_os2.html
+-rw-r--r-- 1 root root   7968 Jan  4  2018 mpmt_os2.html.en
+-rw-r--r-- 1 root root   8139 Sep 18  2018 mpmt_os2.html.fr
+-rw-r--r-- 1 root root    125 Oct  5  2017 overrides.html
+-rw-r--r-- 1 root root  68891 Jul  6  2018 overrides.html.en
+-rw-r--r-- 1 root root    471 Dec 22  2012 prefork.html
+-rw-r--r-- 1 root root  16270 Jan  4  2018 prefork.html.de
+-rw-r--r-- 1 root root  16471 Jan  4  2018 prefork.html.en
+-rw-r--r-- 1 root root  17681 Sep 18  2018 prefork.html.fr
+-rw-r--r-- 1 root root  17388 Jan  4  2018 prefork.html.ja.utf8
+-rw-r--r-- 1 root root  17250 Jan  4  2018 prefork.html.tr.utf8
+-rw-r--r-- 1 root root    797 Feb  5  2014 quickreference.html
+-rw-r--r-- 1 root root 183492 Sep 18  2018 quickreference.html.de
+-rw-r--r-- 1 root root 182868 Sep 18  2018 quickreference.html.en
+-rw-r--r-- 1 root root 183075 Sep 18  2018 quickreference.html.es
+-rw-r--r-- 1 root root 194696 Sep 18  2018 quickreference.html.fr
+-rw-r--r-- 1 root root 186253 Sep 18  2018 quickreference.html.ja.utf8
+-rw-r--r-- 1 root root 179869 Sep 18  2018 quickreference.html.ko.euc-kr
+-rw-r--r-- 1 root root 113561 Jan  3  2012 quickreference.html.ru.koi8-r
+-rw-r--r-- 1 root root 185548 Sep 17  2018 quickreference.html.tr.utf8
+-rw-r--r-- 1 root root 113133 Jan  9  2012 quickreference.html.zh-cn
+-rw-r--r-- 1 root root 182723 Sep 18  2018 quickreference.html.zh-cn.utf8
+-rw-r--r-- 1 root root    466 Dec 21  2012 worker.html
+-rw-r--r-- 1 root root  15917 Jan  4  2018 worker.html.de
+-rw-r--r-- 1 root root  15784 Jan  4  2018 worker.html.en
+-rw-r--r-- 1 root root  16529 Sep 18  2018 worker.html.fr
+-rw-r--r-- 1 root root  17025 Jan  4  2018 worker.html.ja.utf8
+-rw-r--r-- 1 root root  16514 Jan  4  2018 worker.html.tr.utf8
+
+/var/www/manual/mod/mod_ssl:
+total 744
+-rw-r--r-- 1 root root   6331 Jan 23  2001 index.html
+-rw-r--r-- 1 root root    170 Jan 23  2001 ssl_compat.gfont000.gif
+-rw-r--r-- 1 root root  29018 Jan 23  2001 ssl_compat.html
+-rw-r--r-- 1 root root  17650 Dec  9  1999 ssl_compat.wml
+-rw-r--r-- 1 root root   1513 Jan 23  2001 ssl_cover.wml
+-rw-r--r-- 1 root root  20724 Apr 20  1999 ssl_cover_logo.jpg
+-rw-r--r-- 1 root root   6055 Apr 20  1999 ssl_cover_title.jpg
+-rw-r--r-- 1 root root    148 May  4  2001 ssl_faq.gfont000.gif
+-rw-r--r-- 1 root root  80996 May  4  2001 ssl_faq.html
+-rw-r--r-- 1 root root  56458 May  4  2001 ssl_faq.wml
+-rw-r--r-- 1 root root  15092 Jan 23  2001 ssl_glossary.html
+-rw-r--r-- 1 root root   6941 Feb 23  2000 ssl_glossary.wml
+-rw-r--r-- 1 root root    170 Jan 23  2001 ssl_howto.gfont000.gif
+-rw-r--r-- 1 root root  42082 Jan 23  2001 ssl_howto.html
+-rw-r--r-- 1 root root  10254 Jan 23  2001 ssl_howto.wml
+-rw-r--r-- 1 root root    156 Jan 23  2001 ssl_intro.gfont000.gif
+-rw-r--r-- 1 root root  43000 Jan 23  2001 ssl_intro.html
+-rw-r--r-- 1 root root  27675 Jan 23  2001 ssl_intro.wml
+-rw-r--r-- 1 root root   5738 Nov 14  1998 ssl_intro_fig1.gif
+-rw-r--r-- 1 root root   2700 Nov 14  1998 ssl_intro_fig2.gif
+-rw-r--r-- 1 root root   4020 Nov 14  1998 ssl_intro_fig3.gif
+-rw-r--r-- 1 root root    148 Jan 23  2001 ssl_overview.gfont000.gif
+-rw-r--r-- 1 root root  17576 Jan 23  2001 ssl_overview.html
+-rw-r--r-- 1 root root   7343 Sep 25  2000 ssl_overview.wml
+-rw-r--r-- 1 root root   7782 Apr 20  1999 ssl_overview_fig1.gif
+-rw-r--r-- 1 root root    148 Jan 23  2001 ssl_reference.gfont000.gif
+-rw-r--r-- 1 root root 108823 Jan 23  2001 ssl_reference.html
+-rw-r--r-- 1 root root  64718 Oct 16  2000 ssl_reference.wml
+-rw-r--r-- 1 root root   1094 Nov 14  1998 ssl_template.head-chapter.gif
+-rw-r--r-- 1 root root    366 Nov 14  1998 ssl_template.head-num-1.gif
+-rw-r--r-- 1 root root    580 Nov 14  1998 ssl_template.head-num-2.gif
+-rw-r--r-- 1 root root    610 Nov 14  1998 ssl_template.head-num-3.gif
+-rw-r--r-- 1 root root    507 Nov 14  1998 ssl_template.head-num-4.gif
+-rw-r--r-- 1 root root    592 Nov 14  1998 ssl_template.head-num-5.gif
+-rw-r--r-- 1 root root    627 Nov 14  1998 ssl_template.head-num-6.gif
+-rw-r--r-- 1 root root    483 Nov 14  1998 ssl_template.head-num-7.gif
+-rw-r--r-- 1 root root     35 Nov 14  1998 ssl_template.imgdot-1x1-000000.gif
+-rw-r--r-- 1 root root     43 Nov 14  1998 ssl_template.imgdot-1x1-transp.gif
+-rw-r--r-- 1 root root  10305 Jan 23  2001 ssl_template.inc
+-rw-r--r-- 1 root root    303 Nov 14  1998 ssl_template.navbut-next-n.gif
+-rw-r--r-- 1 root root    330 Nov 14  1998 ssl_template.navbut-next-s.gif
+-rw-r--r-- 1 root root    306 Nov 14  1998 ssl_template.navbut-prev-n.gif
+-rw-r--r-- 1 root root    331 Nov 14  1998 ssl_template.navbut-prev-s.gif
+-rw-r--r-- 1 root root   1419 Nov 14  1998 ssl_template.title-abstract.gif
+-rw-r--r-- 1 root root   2014 Nov 14  1998 ssl_template.title-compat.gif
+-rw-r--r-- 1 root root   1393 Nov 14  1998 ssl_template.title-faq.gif
+-rw-r--r-- 1 root root   1445 Nov 14  1998 ssl_template.title-gloss.gif
+-rw-r--r-- 1 root root   1192 Nov 14  1998 ssl_template.title-howto.gif
+-rw-r--r-- 1 root root   1769 Nov 14  1998 ssl_template.title-intro.gif
+-rw-r--r-- 1 root root   1473 Nov 14  1998 ssl_template.title-over.gif
+-rw-r--r-- 1 root root   1123 Nov 14  1998 ssl_template.title-preface.gif
+-rw-r--r-- 1 root root   1539 Nov 14  1998 ssl_template.title-ref.gif
+-rw-r--r-- 1 root root   2274 Nov 14  1998 ssl_template.title-toc.gif
+-rw-r--r-- 1 root root   1256 Nov 14  1998 ssl_template.title-tutor.gif
+
+/var/www/manual/platform:
+total 472
+-rw-r--r-- 1 root root   211 Nov  9  2011 ebcdic.html
+-rw-r--r-- 1 root root 24552 Jan  4  2018 ebcdic.html.en
+-rw-r--r-- 1 root root 22273 Jan  4  2018 ebcdic.html.ko.euc-kr
+-rw-r--r-- 1 root root   385 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  6213 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  6502 Sep 18  2018 index.html.fr
+-rw-r--r-- 1 root root  5516 Jan  4  2018 index.html.ko.euc-kr
+-rw-r--r-- 1 root root  4668 Jan  3  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  5557 Jan  4  2018 index.html.zh-cn.utf8
+-rw-r--r-- 1 root root   300 Mar 17  2013 netware.html
+-rw-r--r-- 1 root root 33480 Jan  4  2018 netware.html.en
+-rw-r--r-- 1 root root 35938 Sep 18  2018 netware.html.fr
+-rw-r--r-- 1 root root 26965 Jan  4  2018 netware.html.ko.euc-kr
+-rw-r--r-- 1 root root   300 Mar 17  2013 perf-hp.html
+-rw-r--r-- 1 root root  8483 Jan  4  2018 perf-hp.html.en
+-rw-r--r-- 1 root root  9151 Sep 18  2018 perf-hp.html.fr
+-rw-r--r-- 1 root root  7921 Jan  4  2018 perf-hp.html.ko.euc-kr
+-rw-r--r-- 1 root root   202 Jul 17  2018 rpm.html
+-rw-r--r-- 1 root root 12437 Sep  5  2018 rpm.html.en
+-rw-r--r-- 1 root root 13160 Sep 18  2018 rpm.html.fr
+-rw-r--r-- 1 root root   318 Mar 17  2013 win_compiling.html
+-rw-r--r-- 1 root root 27685 Jan  4  2018 win_compiling.html.en
+-rw-r--r-- 1 root root 31697 Sep 18  2018 win_compiling.html.fr
+-rw-r--r-- 1 root root 21794 Jan  4  2018 win_compiling.html.ko.euc-kr
+-rw-r--r-- 1 root root   300 May  7  2013 windows.html
+-rw-r--r-- 1 root root 33217 Jan  4  2018 windows.html.en
+-rw-r--r-- 1 root root 36987 Sep 18  2018 windows.html.fr
+-rw-r--r-- 1 root root 32515 Jan  4  2018 windows.html.ko.euc-kr
+
+/var/www/manual/programs:
+total 1228
+-rw-r--r-- 1 root root   367 Nov 23  2012 ab.html
+-rw-r--r-- 1 root root 18800 Jan  4  2018 ab.html.en
+-rw-r--r-- 1 root root 20375 Sep 18  2018 ab.html.fr
+-rw-r--r-- 1 root root 12686 Jan  4  2018 ab.html.ko.euc-kr
+-rw-r--r-- 1 root root 20510 Jan  4  2018 ab.html.tr.utf8
+-rw-r--r-- 1 root root   395 Nov 23  2012 apachectl.html
+-rw-r--r-- 1 root root 11634 Jan  4  2018 apachectl.html.en
+-rw-r--r-- 1 root root 12303 Sep 18  2018 apachectl.html.fr
+-rw-rw-r-- 1 root root  4857 Jul 27  2006 apachectl.html.html
+-rw-rw-r-- 1 root root  4996 Jul 27  2006 apachectl.html.ja.jis
+-rw-r--r-- 1 root root 10010 Jan  4  2018 apachectl.html.ko.euc-kr
+-rw-r--r-- 1 root root 13575 Jan  4  2018 apachectl.html.tr.utf8
+-rw-r--r-- 1 root root   375 Nov 23  2012 apxs.html
+-rw-r--r-- 1 root root 19816 Jan  4  2018 apxs.html.en
+-rw-r--r-- 1 root root 21653 Sep 18  2018 apxs.html.fr
+-rw-r--r-- 1 root root 17957 Jan  4  2018 apxs.html.ko.euc-kr
+-rw-r--r-- 1 root root 22352 Jan  4  2018 apxs.html.tr.utf8
+-rw-r--r-- 1 root root   395 Nov 23  2012 configure.html
+-rw-r--r-- 1 root root 37920 Jan  4  2018 configure.html.en
+-rw-r--r-- 1 root root 40066 Sep 18  2018 configure.html.fr
+-rw-r--r-- 1 root root 46525 Jan  4  2018 configure.html.ko.euc-kr
+-rw-r--r-- 1 root root 42490 Jan  4  2018 configure.html.tr.utf8
+-rw-r--r-- 1 root root   395 Nov 25  2012 dbmmanage.html
+-rw-r--r-- 1 root root 13634 Jan  4  2018 dbmmanage.html.en
+-rw-r--r-- 1 root root 14576 Sep 18  2018 dbmmanage.html.fr
+-rw-r--r-- 1 root root 11664 Jan  4  2018 dbmmanage.html.ko.euc-kr
+-rw-r--r-- 1 root root 15074 Jan  4  2018 dbmmanage.html.tr.utf8
+-rw-r--r-- 1 root root   309 Nov 25  2012 fcgistarter.html
+-rw-r--r-- 1 root root  6661 Jan  4  2018 fcgistarter.html.en
+-rw-r--r-- 1 root root  6757 Sep 18  2018 fcgistarter.html.fr
+-rw-r--r-- 1 root root  6804 Jan  4  2018 fcgistarter.html.tr.utf8
+-rw-rw-r-- 1 root root   205 Jul 27  2006 footer.html
+-rw-rw-r-- 1 root root   319 Jul 27  2006 header.html
+-rw-r--r-- 1 root root   407 Nov 25  2012 htcacheclean.html
+-rw-r--r-- 1 root root 14451 Jan  4  2018 htcacheclean.html.en
+-rw-r--r-- 1 root root 15562 Sep 18  2018 htcacheclean.html.fr
+-rw-r--r-- 1 root root  9136 Jan  4  2018 htcacheclean.html.ko.euc-kr
+-rw-r--r-- 1 root root 15325 Jan  4  2018 htcacheclean.html.tr.utf8
+-rw-r--r-- 1 root root   291 Nov 25  2012 htdbm.html
+-rw-r--r-- 1 root root 18804 Jan  4  2018 htdbm.html.en
+-rw-r--r-- 1 root root 20557 Sep 18  2018 htdbm.html.fr
+-rw-r--r-- 1 root root 20125 Jan  4  2018 htdbm.html.tr.utf8
+-rw-r--r-- 1 root root   391 Nov 25  2012 htdigest.html
+-rw-r--r-- 1 root root  8170 Jan  4  2018 htdigest.html.en
+-rw-r--r-- 1 root root  8689 Sep 18  2018 htdigest.html.fr
+-rw-r--r-- 1 root root  7414 Jan  4  2018 htdigest.html.ko.euc-kr
+-rw-r--r-- 1 root root  8618 Jan  4  2018 htdigest.html.tr.utf8
+-rw-r--r-- 1 root root   391 Nov 25  2012 htpasswd.html
+-rw-r--r-- 1 root root 17341 Jan  4  2018 htpasswd.html.en
+-rw-r--r-- 1 root root 19257 Sep 18  2018 htpasswd.html.fr
+-rw-rw-r-- 1 root root  9259 Jul 27  2006 htpasswd.html.html
+-rw-rw-r-- 1 root root 10149 Jul 27  2006 htpasswd.html.ja.jis
+-rw-r--r-- 1 root root 13749 Jan  4  2018 htpasswd.html.ko.euc-kr
+-rw-r--r-- 1 root root 18569 Jan  4  2018 htpasswd.html.tr.utf8
+-rw-r--r-- 1 root root   379 Dec 26  2012 httpd.html
+-rw-r--r-- 1 root root 12241 Jan  4  2018 httpd.html.en
+-rw-r--r-- 1 root root 12963 Sep 18  2018 httpd.html.fr
+-rw-rw-r-- 1 root root  6686 Jul 27  2006 httpd.html.html
+-rw-rw-r-- 1 root root  7063 Jul 27  2006 httpd.html.ja.jis
+-rw-r--r-- 1 root root 11317 Jan  4  2018 httpd.html.ko.euc-kr
+-rw-r--r-- 1 root root 14155 Jan  4  2018 httpd.html.tr.utf8
+-rw-r--r-- 1 root root   303 Dec 26  2012 httxt2dbm.html
+-rw-r--r-- 1 root root  7901 Jan  4  2018 httxt2dbm.html.en
+-rw-r--r-- 1 root root  8200 Sep 18  2018 httxt2dbm.html.fr
+-rw-r--r-- 1 root root  8180 Jan  4  2018 httxt2dbm.html.tr.utf8
+-rw-r--r-- 1 root root   555 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  6749 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  7220 Sep 18  2018 index.html.es
+-rw-r--r-- 1 root root  7037 Sep 18  2018 index.html.fr
+-rw-rw-r-- 1 root root  2583 Jul 27  2006 index.html.html
+-rw-rw-r-- 1 root root  2610 Jul 27  2006 index.html.ja.jis
+-rw-r--r-- 1 root root  6566 Jan 11  2012 index.html.ja.utf8
+-rw-r--r-- 1 root root  5621 Jan  4  2018 index.html.ko.euc-kr
+-rw-r--r-- 1 root root  6203 Jan  9  2012 index.html.ru.koi8-r
+-rw-r--r-- 1 root root  7252 Jan  4  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root  6023 Jan  9  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  6680 Jan  4  2018 index.html.zh-cn.utf8
+-rw-r--r-- 1 root root   230 Jul 17  2018 log_server_status.html
+-rw-r--r-- 1 root root  6144 Sep  5  2018 log_server_status.html.en
+-rw-r--r-- 1 root root  6351 Sep 18  2018 log_server_status.html.fr
+-rw-r--r-- 1 root root   399 Nov 25  2012 logresolve.html
+-rw-r--r-- 1 root root  6992 Jan  4  2018 logresolve.html.en
+-rw-r--r-- 1 root root  7289 Sep 18  2018 logresolve.html.fr
+-rw-r--r-- 1 root root  6878 Jan  4  2018 logresolve.html.ko.euc-kr
+-rw-r--r-- 1 root root  7196 Jan  4  2018 logresolve.html.tr.utf8
+-rw-r--r-- 1 root root   379 Nov 25  2012 other.html
+-rw-r--r-- 1 root root  5309 Jan  4  2018 other.html.en
+-rw-r--r-- 1 root root  5383 Sep 18  2018 other.html.fr
+-rw-r--r-- 1 root root  6751 Jan  4  2018 other.html.ko.euc-kr
+-rw-r--r-- 1 root root  5347 Jan  4  2018 other.html.tr.utf8
+-rw-r--r-- 1 root root   399 Nov 25  2012 rotatelogs.html
+-rw-r--r-- 1 root root 15717 Apr 29  2018 rotatelogs.html.en
+-rw-r--r-- 1 root root 17229 Sep 18  2018 rotatelogs.html.fr
+-rw-r--r-- 1 root root 10136 Jan  4  2018 rotatelogs.html.ko.euc-kr
+-rw-r--r-- 1 root root 17165 May  8  2018 rotatelogs.html.tr.utf8
+-rw-r--r-- 1 root root   222 Jul 17  2018 split-logfile.html
+-rw-r--r-- 1 root root  5909 Sep  5  2018 split-logfile.html.en
+-rw-r--r-- 1 root root  6233 Sep 18  2018 split-logfile.html.fr
+-rw-r--r-- 1 root root   383 Jul 17  2018 suexec.html
+-rw-r--r-- 1 root root  6840 Sep  5  2018 suexec.html.en
+-rw-r--r-- 1 root root  6994 Sep 18  2018 suexec.html.fr
+-rw-rw-r-- 1 root root  1943 Jul 27  2006 suexec.html.html
+-rw-rw-r-- 1 root root  1965 Jul 27  2006 suexec.html.ja.jis
+-rw-r--r-- 1 root root  6819 Sep 18  2018 suexec.html.ko.euc-kr
+-rw-r--r-- 1 root root  7118 Sep 17  2018 suexec.html.tr.utf8
+
+/var/www/manual/rewrite:
+total 704
+-rw-r--r-- 1 root root   208 Mar 10  2012 access.html
+-rw-r--r-- 1 root root 14489 Jan  4  2018 access.html.en
+-rw-r--r-- 1 root root 15085 Sep 18  2018 access.html.fr
+-rw-r--r-- 1 root root   212 Mar 10  2012 advanced.html
+-rw-r--r-- 1 root root 16029 Jan  4  2018 advanced.html.en
+-rw-r--r-- 1 root root 17415 Sep 18  2018 advanced.html.fr
+-rw-r--r-- 1 root root   206 Mar 10  2012 avoid.html
+-rw-r--r-- 1 root root 16175 Jan  4  2018 avoid.html.en
+-rw-r--r-- 1 root root 17359 Sep 18  2018 avoid.html.fr
+-rw-r--r-- 1 root root   206 Nov  9  2011 flags.html
+-rw-r--r-- 1 root root 41479 Jan  4  2018 flags.html.en
+-rw-r--r-- 1 root root 45416 Sep 18  2018 flags.html.fr
+-rw-r--r-- 1 root root   212 Mar 10  2012 htaccess.html
+-rw-r--r-- 1 root root  5629 Jan  4  2018 htaccess.html.en
+-rw-r--r-- 1 root root  5767 Sep 18  2018 htaccess.html.fr
+-rw-r--r-- 1 root root   382 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  6709 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  7318 Sep 18  2018 index.html.fr
+-rw-r--r-- 1 root root  7011 Jan  4  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root  5775 Jan  9  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  6372 Jan  4  2018 index.html.zh-cn.utf8
+-rw-r--r-- 1 root root   206 Nov  9  2011 intro.html
+-rw-r--r-- 1 root root 21785 Jan  4  2018 intro.html.en
+-rw-r--r-- 1 root root 23964 Sep 18  2018 intro.html.fr
+-rw-r--r-- 1 root root   206 Oct 28  2012 proxy.html
+-rw-r--r-- 1 root root  7670 Jan  4  2018 proxy.html.en
+-rw-r--r-- 1 root root  7969 Sep 18  2018 proxy.html.fr
+-rw-r--r-- 1 root root   214 Oct 28  2012 remapping.html
+-rw-r--r-- 1 root root 28715 Jan  4  2018 remapping.html.en
+-rw-r--r-- 1 root root 30665 Sep 18  2018 remapping.html.fr
+-rw-r--r-- 1 root root   129 May  6  2008 rewrite_flags.html
+-rw-r--r-- 1 root root 19398 Mar  7  2010 rewrite_flags.html.en
+-rw-r--r-- 1 root root   129 May  6  2008 rewrite_guide.html
+-rw-r--r-- 1 root root 29958 Sep 16  2009 rewrite_guide.html.en
+-rw-r--r-- 1 root root   138 May  6  2008 rewrite_guide_advanced.html
+-rw-r--r-- 1 root root 49993 Aug 17  2009 rewrite_guide_advanced.html.en
+-rw-r--r-- 1 root root   129 May  6  2008 rewrite_intro.html
+-rw-r--r-- 1 root root 17232 Jan  6  2009 rewrite_intro.html.en
+-rw-r--r-- 1 root root   128 May  6  2008 rewrite_tech.html
+-rw-r--r-- 1 root root 10265 Jan  6  2009 rewrite_tech.html.en
+-rw-r--r-- 1 root root   216 Oct 29  2012 rewritemap.html
+-rw-r--r-- 1 root root 24981 Apr  1  2018 rewritemap.html.en
+-rw-r--r-- 1 root root 27409 Sep 18  2018 rewritemap.html.fr
+-rw-r--r-- 1 root root   204 Nov  9  2011 tech.html
+-rw-r--r-- 1 root root 13144 Jan  4  2018 tech.html.en
+-rw-r--r-- 1 root root 14358 Sep 18  2018 tech.html.fr
+-rw-r--r-- 1 root root   208 Nov 23  2012 vhosts.html
+-rw-r--r-- 1 root root 12464 Jan  4  2018 vhosts.html.en
+-rw-r--r-- 1 root root 13416 Sep 18  2018 vhosts.html.fr
+
+/var/www/manual/ssl:
+total 396
+-rw-r--r-- 1 root root   467 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  5088 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  5230 Sep 18  2018 index.html.fr
+-rw-r--r-- 1 root root  5308 Jan  4  2018 index.html.ja.utf8
+-rw-r--r-- 1 root root  5230 Jan  4  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root  4197 Jan  3  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  5076 Jan  4  2018 index.html.zh-cn.utf8
+-rw-r--r-- 1 root root   216 Nov  9  2011 ssl_compat.html
+-rw-r--r-- 1 root root 21757 Jan  4  2018 ssl_compat.html.en
+-rw-r--r-- 1 root root 22476 Sep 18  2018 ssl_compat.html.fr
+-rw-r--r-- 1 root root   210 Nov  9  2011 ssl_faq.html
+-rw-r--r-- 1 root root 49960 Jan  4  2018 ssl_faq.html.en
+-rw-r--r-- 1 root root 55851 Sep 18  2018 ssl_faq.html.fr
+-rw-r--r-- 1 root root   214 Nov  9  2011 ssl_howto.html
+-rw-r--r-- 1 root root 23130 Jan  4  2018 ssl_howto.html.en
+-rw-r--r-- 1 root root 25343 Sep 18  2018 ssl_howto.html.fr
+-rw-r--r-- 1 root root   303 Nov  9  2011 ssl_intro.html
+-rw-r--r-- 1 root root 35590 Jan  4  2018 ssl_intro.html.en
+-rw-r--r-- 1 root root 39841 Sep 18  2018 ssl_intro.html.fr
+-rw-r--r-- 1 root root 41673 Jan  4  2018 ssl_intro.html.ja.utf8
+
+/var/www/manual/style:
+total 56
+-rw-r--r-- 1 root root  481 Feb  1  2014 build.properties
+-rw-r--r-- 1 root root 5875 Nov 26  2017 common.dtd
+drwxr-sr-x 2 root root 4096 Mar 20 08:14 css
+-rw-r--r-- 1 root root 1247 Feb  1  2014 faq.dtd
+drwxr-sr-x 2 root root 4096 Sep 18  2018 lang
+-rw-r--r-- 1 root root  907 Jul 12  2006 lang.dtd
+drwxr-sr-x 2 root root 4096 Sep 18  2018 latex
+-rw-r--r-- 1 root root 1082 Feb  1  2014 manualpage.dtd
+-rw-r--r-- 1 root root 2844 Nov 26  2017 modulesynopsis.dtd
+drwxr-sr-x 2 root root 4096 Sep 18  2018 scripts
+-rw-r--r-- 1 root root 1425 Feb  1  2014 sitemap.dtd
+-rw-r--r-- 1 root root  925 Jul 10  2018 version.ent
+drwxr-sr-x 3 root root 4096 Sep 18  2018 xsl
+
+/var/www/manual/style/css:
+total 56
+-rw-r--r-- 1 root root   915 Jul 12  2006 manual-chm.css
+-rw-r--r-- 1 root root  3065 Jul 12  2006 manual-loose-100pc.css
+-rw-r--r-- 1 root root 13200 Jul 12  2006 manual-print.css
+-rw-r--r-- 1 root root   885 Jul 12  2006 manual-zip-100pc.css
+-rw-r--r-- 1 root root   874 Jul 12  2006 manual-zip.css
+-rw-r--r-- 1 root root 19081 Sep  8  2017 manual.css
+-rw-r--r-- 1 root root  3616 Feb 27  2013 prettify.css
+
+/var/www/manual/style/lang:
+total 0
+
+/var/www/manual/style/latex:
+total 4
+-rw-r--r-- 1 root root 2582 Jul 12  2006 atbeginend.sty
+
+/var/www/manual/style/scripts:
+total 116
+-rw-r--r-- 1 root root   167 Feb  3  2014 MINIFY
+-rw-r--r-- 1 root root 73579 Jan 14  2018 prettify.js
+-rw-r--r-- 1 root root 38314 Jan 14  2018 prettify.min.js
+
+/var/www/manual/style/xsl:
+total 4
+drwxr-sr-x 2 root root 4096 Sep 18  2018 util
+
+/var/www/manual/style/xsl/util:
+total 0
+
+/var/www/manual/vhosts:
+total 808
+-rw-r--r-- 1 root root   387 Nov  9  2011 details.html
+-rw-r--r-- 1 root root 18843 Jan  4  2018 details.html.en
+-rw-r--r-- 1 root root 21162 Sep 18  2018 details.html.fr
+-rw-r--r-- 1 root root 20349 Jan  4  2018 details.html.ko.euc-kr
+-rw-r--r-- 1 root root 19587 Jan  4  2018 details.html.tr.utf8
+-rw-rw-r-- 1 root root 17599 Jul 27  2006 details_1_2.html
+-rw-r--r-- 1 root root   479 Nov  9  2011 examples.html
+-rw-r--r-- 1 root root 24943 Jan  4  2018 examples.html.en
+-rw-r--r-- 1 root root 26835 Sep 18  2018 examples.html.fr
+-rw-r--r-- 1 root root 32239 Jan  4  2018 examples.html.ja.utf8
+-rw-r--r-- 1 root root 25744 Jan  4  2018 examples.html.ko.euc-kr
+-rw-r--r-- 1 root root 26553 Jan  4  2018 examples.html.tr.utf8
+-rw-r--r-- 1 root root   484 Nov  9  2011 fd-limits.html
+-rw-r--r-- 1 root root  8997 Jan  4  2018 fd-limits.html.en
+-rw-r--r-- 1 root root  9914 Sep 18  2018 fd-limits.html.fr
+-rw-rw-r-- 1 root root  3078 Jul 27  2006 fd-limits.html.html
+-rw-rw-r-- 1 root root  3368 Jul 27  2006 fd-limits.html.ja.jis
+-rw-r--r-- 1 root root 10531 Jan  4  2018 fd-limits.html.ja.utf8
+-rw-r--r-- 1 root root  8626 Jan  4  2018 fd-limits.html.ko.euc-kr
+-rw-r--r-- 1 root root  9544 Jan  4  2018 fd-limits.html.tr.utf8
+-rw-rw-r-- 1 root root   204 Jul 27  2006 footer.html
+-rw-rw-r-- 1 root root   319 Jul 27  2006 header.html
+-rw-rw-r-- 1 root root  8691 Jul 27  2006 host.html
+-rw-r--r-- 1 root root   640 Feb  5  2014 index.html
+-rw-r--r-- 1 root root  8595 Jan  4  2018 index.html.de
+-rw-r--r-- 1 root root  8008 Jan  4  2018 index.html.en
+-rw-r--r-- 1 root root  8411 Sep 18  2018 index.html.fr
+-rw-rw-r-- 1 root root  3442 Jul 27  2006 index.html.html
+-rw-rw-r-- 1 root root  3507 Jul 27  2006 index.html.ja.jis
+-rw-r--r-- 1 root root  9171 Jan  4  2018 index.html.ja.utf8
+-rw-r--r-- 1 root root  7711 Jan  4  2018 index.html.ko.euc-kr
+-rw-r--r-- 1 root root  7966 Jan  3  2012 index.html.ru.koi8-r
+-rw-r--r-- 1 root root  8296 Jan  4  2018 index.html.tr.utf8
+-rw-r--r-- 1 root root  7265 Jan  3  2012 index.html.zh-cn
+-rw-r--r-- 1 root root  7656 Jan  4  2018 index.html.zh-cn.utf8
+-rw-r--r-- 1 root root   479 Nov  9  2011 ip-based.html
+-rw-r--r-- 1 root root 13592 Jan  4  2018 ip-based.html.en
+-rw-r--r-- 1 root root 13407 Sep 18  2018 ip-based.html.fr
+-rw-r--r-- 1 root root 14283 Jan  4  2018 ip-based.html.ja.utf8
+-rw-r--r-- 1 root root 11490 Jan  4  2018 ip-based.html.ko.euc-kr
+-rw-r--r-- 1 root root 14733 Jan  4  2018 ip-based.html.tr.utf8
+-rw-r--r-- 1 root root   375 Nov  9  2011 mass.html
+-rw-r--r-- 1 root root 18722 Jan  4  2018 mass.html.en
+-rw-r--r-- 1 root root 20176 Sep 18  2018 mass.html.fr
+-rw-r--r-- 1 root root 21095 Jan  4  2018 mass.html.ko.euc-kr
+-rw-r--r-- 1 root root 19914 Feb 13  2018 mass.html.tr.utf8
+-rw-r--r-- 1 root root   579 Nov  9  2011 name-based.html
+-rw-r--r-- 1 root root 21419 Jan  4  2018 name-based.html.de
+-rw-r--r-- 1 root root 17181 Jan  4  2018 name-based.html.en
+-rw-r--r-- 1 root root 18615 Sep 18  2018 name-based.html.fr
+-rw-rw-r-- 1 root root 11044 Jul 27  2006 name-based.html.html
+-rw-rw-r-- 1 root root 12730 Jul 27  2006 name-based.html.ja.jis
+-rw-r--r-- 1 root root 23723 Jan  4  2018 name-based.html.ja.utf8
+-rw-r--r-- 1 root root 18007 Jan  4  2018 name-based.html.ko.euc-kr
+-rw-r--r-- 1 root root 17983 Jan  4  2018 name-based.html.tr.utf8
+-rw-rw-r-- 1 root root 17599 Jul 27  2006 vhosts-in-depth.html
+-rw-rw-r-- 1 root root  9681 Jul 27  2006 virtual-host.html
+#################################
+#################################
+ TEST CASE NAME : test_my_groups
+ COMMAND : groups
+ URL : https://pfotentourist.de/
+#################################
+nobody
+#################################
+#################################
+ TEST CASE NAME : test_process
+ COMMAND : ps -fix
+ URL : https://pfotentourist.de/
+#################################
+#################################
+#################################
+ TEST CASE NAME : test_uname
+ COMMAND : uname -a
+ URL : https://pfotentourist.de/
+#################################
+Linux zimljansker.ispgateway.de 3.18.114-pvops-xen-x64 #1 SMP Sat Jul 7 08:00:06 CEST 2018 x86_64 GNU/Linux
+#################################
+#################################
+ TEST CASE NAME : test_whoami
+ COMMAND : whoami
+ URL : https://pfotentourist.de/
+#################################
+u472741
+#################################
