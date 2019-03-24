@@ -3,9 +3,20 @@
   "port": 443,
   "protocol": "http",
   "isPublic": false,
-  "status": "DNS",
-  "statusMessage": "Resolving domain names",
-  "startTime": 1553425084861,
+  "status": "IN_PROGRESS",
+  "startTime": 1553439198527,
   "engineVersion": "1.33.1",
-  "criteriaVersion": "2009p"
+  "criteriaVersion": "2009p",
+  "endpoints": [
+    {
+      "ipAddress": "109.234.164.33",
+      "serverName": "109-234-164-33.reverse.odns.fr",
+      "statusMessage": "In progress",
+      "statusDetails": "TESTING_SUITES",
+      "statusDetailsMessage": "Determining available cipher suites",
+      "progress": 14,
+      "eta": 122,
+      "delegation": 2
+    }
+  ]
 }
