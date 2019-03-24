@@ -40,3 +40,5 @@ We create a blog article about the results and promote the role models as well a
    * Issue 2: Writing files possible (change index.html / index.php)
    * Hints: check for availability of Apache modules like mod_perl, mod_php, etc.
 * Are there possibilities to easily DoS the hosting platform without having a bot net?
+
+[See the full checklist](checklist.md)
