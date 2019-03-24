@@ -1,0 +1,88 @@
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.4.5
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+[32m[+][0m URL: http://blog.pfotentourist.de/
+[32m[+][0m Started: Sun Mar 24 10:20:46 2019
+
+Interesting Finding(s):
+
+[32m[+][0m http://blog.pfotentourist.de/
+ | Interesting Entries:
+ |  - Server: Apache/2.4.35
+ |  - X-Powered-By: PHP/7.2.3
+ |  - Upgrade: h2c
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://blog.pfotentourist.de/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://blog.pfotentourist.de/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://blog.pfotentourist.de/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.0.4 identified (Latest, released on 2019-03-13).
+ | Detected By: Rss Generator (Passive Detection)
+ |  - http://blog.pfotentourist.de/feed/, <generator>https://wordpress.org/?v=5.0.4</generator>
+ |  - http://blog.pfotentourist.de/comments/feed/, <generator>https://wordpress.org/?v=5.0.4</generator>
+
+[32m[+][0m WordPress theme in use: twentyseventeen
+ | Location: http://blog.pfotentourist.de/wp-content/themes/twentyseventeen/
+ | Last Updated: 2019-02-21T00:00:00.000Z
+ | Readme: http://blog.pfotentourist.de/wp-content/themes/twentyseventeen/README.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.1
+ | Style URL: http://blog.pfotentourist.de/wp-content/themes/twentyseventeen/style.css?ver=5.0.4
+ | Style Name: Twenty Seventeen
+ | Style URI: https://wordpress.org/themes/twentyseventeen/
+ | Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a fo...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Detected By: Css Style (Passive Detection)
+ |
+ | Version: 2.0 (80% confidence)
+ | Detected By: Style (Passive Detection)
+ |  - http://blog.pfotentourist.de/wp-content/themes/twentyseventeen/style.css?ver=5.0.4, Match: 'Version: 2.0'
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+
+[34m[i][0m No plugins Found.
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+
+ Checking Config Backups -: |==================================================|
+
+[34m[i][0m No Config Backups Found.
+
+[32m[+][0m Finished: Sun Mar 24 10:21:03 2019
+[32m[+][0m Requests Done: 52
+[32m[+][0m Cached Requests: 4
+[32m[+][0m Data Sent: 10.312 KB
+[32m[+][0m Data Received: 959.475 KB
+[32m[+][0m Memory used: 72.605 MB
+[32m[+][0m Elapsed time: 00:00:16

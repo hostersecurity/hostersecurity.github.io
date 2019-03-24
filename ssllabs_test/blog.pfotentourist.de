@@ -1,0 +1,29 @@
+{
+  "host": "blog.pfotentourist.de",
+  "port": 443,
+  "protocol": "http",
+  "isPublic": false,
+  "status": "READY",
+  "startTime": 1553422863637,
+  "testTime": 1553422877486,
+  "engineVersion": "1.33.1",
+  "criteriaVersion": "2009p",
+  "cacheExpiryTime": 1553423477486,
+  "certHostnames": [],
+  "endpoints": [
+    {
+      "ipAddress": "2a00:1158:1000:300:0:0:0:5ae",
+      "serverName": "zimljansker.ispgateway.de",
+      "statusMessage": "Certificate not valid for domain name",
+      "duration": 6749,
+      "delegation": 1
+    },
+    {
+      "ipAddress": "134.119.45.174",
+      "serverName": "zimljansker.ispgateway.de",
+      "statusMessage": "Certificate not valid for domain name",
+      "duration": 6712,
+      "delegation": 1
+    }
+  ]
+}
