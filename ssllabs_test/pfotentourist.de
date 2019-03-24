@@ -3,35 +3,9 @@
   "port": 443,
   "protocol": "http",
   "isPublic": false,
-  "status": "READY",
-  "startTime": 1553446646931,
-  "testTime": 1553446975469,
+  "status": "DNS",
+  "statusMessage": "Resolving domain names",
+  "startTime": 1553458501655,
   "engineVersion": "1.33.1",
-  "criteriaVersion": "2009p",
-  "endpoints": [
-    {
-      "ipAddress": "2a00:1158:1000:300:0:0:0:5ae",
-      "serverName": "zimljansker.ispgateway.de",
-      "statusMessage": "Ready",
-      "grade": "A",
-      "gradeTrustIgnored": "A",
-      "hasWarnings": false,
-      "isExceptional": false,
-      "progress": 100,
-      "duration": 163313,
-      "delegation": 1
-    },
-    {
-      "ipAddress": "134.119.45.174",
-      "serverName": "zimljansker.ispgateway.de",
-      "statusMessage": "Ready",
-      "grade": "A",
-      "gradeTrustIgnored": "A",
-      "hasWarnings": false,
-      "isExceptional": false,
-      "progress": 100,
-      "duration": 165217,
-      "delegation": 1
-    }
-  ]
+  "criteriaVersion": "2009p"
 }
