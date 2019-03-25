@@ -3,9 +3,35 @@
   "port": 443,
   "protocol": "http",
   "isPublic": false,
-  "status": "DNS",
-  "statusMessage": "Resolving domain names",
+  "status": "READY",
   "startTime": 1553510052842,
+  "testTime": 1553510232517,
   "engineVersion": "1.33.1",
-  "criteriaVersion": "2009p"
+  "criteriaVersion": "2009p",
+  "endpoints": [
+    {
+      "ipAddress": "2a00:d0c0:200:0:b9:1a:9c:72",
+      "serverName": "lovas.uberspace.de",
+      "statusMessage": "Ready",
+      "grade": "A",
+      "gradeTrustIgnored": "A",
+      "hasWarnings": false,
+      "isExceptional": false,
+      "progress": 100,
+      "duration": 90601,
+      "delegation": 1
+    },
+    {
+      "ipAddress": "185.26.156.165",
+      "serverName": "lovas.uberspace.de",
+      "statusMessage": "Ready",
+      "grade": "A",
+      "gradeTrustIgnored": "A",
+      "hasWarnings": false,
+      "isExceptional": false,
+      "progress": 100,
+      "duration": 88051,
+      "delegation": 1
+    }
+  ]
 }
