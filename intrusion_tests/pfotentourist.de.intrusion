@@ -319,7 +319,7 @@ drwxr-xr-x 17 root root 4096 Mar 20 08:14 lib
 drwxrwxr-x  3 root uucp 4096 Jul 18  2004 lock
 drwxr-xr-x  6 root root 4096 Mar 24 06:06 log
 lrwxrwxrwx  1 root root   15 Sep  1  2017 mail -> /var/spool/mail
-drwxr-xr-x  6 root root 4096 Mar 24 18:00 run
+drwxr-xr-x  6 root root 4096 Mar 24 21:00 run
 drwxr-xr-x  6 root root 4096 Mar 20 08:12 spool
 drwxr-xr-x  2 root root 4096 Jul 18  2004 state
 drwxrwxrwt  2 root root 4096 Mar 24 13:05 tmp
@@ -559,7 +559,7 @@ drwxr-xr-x 2 root root 4096 Jul 18  2004 subsys
 total 0
 
 /var/log:
-total 4720
+total 5552
 -rw-r--r-- 1 root    root         6598 Aug  4  2011 Xorg.0.log.old
 drwxr-x--- 4 root    root         4096 Mar 24 05:30 httpd
 -rw------- 1 root    root    211887172 Mar 24 12:22 lastlog
@@ -568,7 +568,7 @@ drwxr-xr-x 2 root    root         4096 Dec  5  2007 news
 drwxrwsr-x 3 portage portage      4096 Dec  5  2007 portage
 -rw------- 1 root    root         2363 Mar 24 18:22 pureftpd.log
 drwxrwx--- 2 root    portage      4096 Mar 20 08:11 sandbox
--rw--w---- 1 root    nobody    4182669 Mar 24 18:25 suexec
+-rw--w---- 1 root    nobody    5037405 Mar 24 21:15 suexec
 -rw------- 1 root    root       460619 Mar 24 05:29 suexec.1.gz
 -rw------- 1 root    root       122537 Mar 23 05:30 suexec.2.gz
 -rw-r----- 1 root    root          249 Dec 20  2004 syslog
@@ -587,10 +587,10 @@ srwx------ 1 nobody root     0 Mar 24 10:22 fpcgisock
 -rw-r--r-- 1 root   root     6 Mar 24 10:22 httpd.pid
 drwxr-xr-x 2 mysql  mysql 4096 Mar 20 08:16 mysqld
 drwxr-xr-x 2 root   root  4096 Dec 10  2014 nscd
-drwx------ 2 root   root  4096 Mar 24 18:23 pure-ftpd
+drwx------ 2 root   root  4096 Mar 24 21:10 pure-ftpd
 -rw-r--r-- 1 root   root     6 Mar 24 06:01 pure-ftpd.pid
 drwxr-x--- 2 root   root  4096 Aug  1  2017 ssl_mutex
--rw-rw-r-- 1 root   utmp     0 Mar 24 18:00 utmp
+-rw-rw-r-- 1 root   utmp     0 Mar 24 21:00 utmp
 
 /var/run/mysqld:
 total 0
@@ -602,7 +602,7 @@ total 4
 
 /var/spool:
 total 16
-drwxrwx--- 2 smmsp smmsp 4096 Mar 24 17:20 clientmqueue
+drwxrwx--- 2 smmsp smmsp 4096 Mar 24 19:25 clientmqueue
 drwxr-x--- 3 root  cron  4096 Mar 20 08:11 cron
 drwxrwxr-x 2 root  mail  4096 Nov  4  2014 mail
 drwx------ 2 root  root  4096 Mar 20 08:11 mqueue
@@ -618,7 +618,7 @@ total 0
 
 /var/traffic:
 total 12
--rw------- 1 root root 12288 Mar 24 18:25 webtraffic.db
+-rw------- 1 root root 12288 Mar 24 21:15 webtraffic.db
 -rw------- 1 root root     0 Jan 14  2011 webtraffic.db.lock
 -rw------- 1 root root     0 Mar 21 06:01 webtraffic_move.db.lock
 
