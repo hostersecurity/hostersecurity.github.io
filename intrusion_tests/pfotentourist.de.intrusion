@@ -559,20 +559,20 @@ drwxr-xr-x 2 root root 4096 Jul 18  2004 subsys
 total 0
 
 /var/log:
-total 2032
+total 2116
 -rw-r--r-- 1 root    root         6598 Aug  4  2011 Xorg.0.log.old
 drwxr-x--- 4 root    root         4096 Mar 25 05:30 httpd
--rw------- 1 root    root    211887172 Mar 25 11:15 lastlog
+-rw------- 1 root    root    211887172 Mar 25 11:44 lastlog
 -rw-r----- 1 root    root          249 Dec 20  2004 messages
 drwxr-xr-x 2 root    root         4096 Dec  5  2007 news
 drwxrwsr-x 3 portage portage      4096 Dec  5  2007 portage
 -rw------- 1 root    root            0 Mar 25 06:06 pureftpd.log
 drwxrwx--- 2 root    portage      4096 Mar 20 08:11 sandbox
--rw--w---- 1 root    nobody     924293 Mar 25 11:34 suexec
+-rw--w---- 1 root    nobody    1010195 Mar 25 11:47 suexec
 -rw------- 1 root    root       633938 Mar 25 05:29 suexec.1.gz
 -rw------- 1 root    root       460619 Mar 24 05:29 suexec.2.gz
 -rw-r----- 1 root    root          249 Dec 20  2004 syslog
--rw-rw-r-- 1 root    utmp         4992 Mar 25 11:15 wtmp
+-rw-rw-r-- 1 root    utmp         5376 Mar 25 11:44 wtmp
 
 /var/log/news:
 total 0
@@ -582,15 +582,15 @@ total 4
 drwxrws--- 2 portage portage 4096 Mar 20 08:12 elog
 
 /var/run:
-total 24
+total 28
 srwx------ 1 nobody root     0 Mar 25 05:30 fpcgisock
 -rw-r--r-- 1 root   root     6 Mar 25 05:30 httpd.pid
 drwxr-xr-x 2 mysql  mysql 4096 Mar 20 08:16 mysqld
 drwxr-xr-x 2 root   root  4096 Dec 10  2014 nscd
-drwx------ 2 root   root  4096 Mar 25 11:27 pure-ftpd
+drwx------ 2 root   root  4096 Mar 25 11:46 pure-ftpd
 -rw-r--r-- 1 root   root     6 Mar 25 06:02 pure-ftpd.pid
 drwxr-x--- 2 root   root  4096 Aug  1  2017 ssl_mutex
--rw-rw-r-- 1 root   utmp     0 Mar 25 11:30 utmp
+-rw-rw-r-- 1 root   utmp   384 Mar 25 11:44 utmp
 
 /var/run/mysqld:
 total 0
@@ -618,7 +618,7 @@ total 0
 
 /var/traffic:
 total 12
--rw------- 1 root root 12288 Mar 25 11:34 webtraffic.db
+-rw------- 1 root root 12288 Mar 25 11:47 webtraffic.db
 -rw------- 1 root root     0 Jan 14  2011 webtraffic.db.lock
 -rw------- 1 root root     0 Mar 21 06:01 webtraffic_move.db.lock
 

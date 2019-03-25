@@ -1,0 +1,22 @@
+{
+  "host": "jlsoft.hpress.de",
+  "port": 443,
+  "protocol": "http",
+  "isPublic": false,
+  "status": "READY",
+  "startTime": 1553510309832,
+  "testTime": 1553510317128,
+  "engineVersion": "1.33.1",
+  "criteriaVersion": "2009p",
+  "cacheExpiryTime": 1553510917128,
+  "certHostnames": [],
+  "endpoints": [
+    {
+      "ipAddress": "159.69.43.4",
+      "serverName": "kite.hpress.de",
+      "statusMessage": "Certificate not valid for domain name",
+      "duration": 6846,
+      "delegation": 1
+    }
+  ]
+}
