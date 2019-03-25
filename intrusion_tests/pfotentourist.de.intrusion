@@ -157,7 +157,7 @@ drwxr-xr-x 4 root root      4096 Mar 20 08:14 fonts
 -rw-r--r-- 1 root root       935 Sep  6  2017 host.conf
 -rw-r--r-- 1 root root       810 Mar 20 08:16 hosts
 -rw-r--r-- 1 root root       585 Sep  7  2017 hosts.allow
-drwxr-xr-x 6 root root      4096 Mar 24 09:35 httpd
+drwxr-xr-x 6 root root      4096 Mar 25 11:32 httpd
 drwxr-xr-x 2 root root      4096 Mar 20 08:16 init.d
 -rw-r--r-- 1 root root      1645 Oct 13  2008 inittab
 -rw-r--r-- 1 root root      2163 Sep  1  2016 inputrc
@@ -232,7 +232,7 @@ drwxr-xr-x 2 root root      4096 Mar 20 08:14 revdep-rebuild
 drwxr-xr-x 8 root root      4096 Mar 20 08:12 runlevels
 -rw-r--r-- 1 root root      2834 Sep  5  2017 sandbox.conf
 drwxr-xr-x 2 root root      4096 Mar 20 08:13 sandbox.d
-drwxr-xr-x 5 root root      4096 Mar 24 09:35 security
+drwxr-xr-x 5 root root      4096 Mar 25 11:32 security
 -rw-r--r-- 1 root root      2948 Nov  9  2004 serial.conf
 -rw-r--r-- 1 root root     36475 Sep  1  2016 services
 drwxr-xr-x 2 root root      4096 Mar 20 08:14 sgml
@@ -242,7 +242,7 @@ drwxr-xr-x 2 root root      4096 Mar 20 08:14 sgml
 -rw-r--r-- 1 root root         5 Mar 20 08:16 sid
 drwxr-xr-x 3 root root      4096 Mar 20 08:14 skel
 -rw-r--r-- 1 root root      1437 Nov  5  2014 slsh.rc
-drwxr-xr-x 2 root root      4096 Mar 24 03:10 ssh
+drwxr-xr-x 2 root root      4096 Mar 25 03:10 ssh
 drwxr-xr-x 6 root root      4096 Mar 20 08:14 ssl
 -rw-r--r-- 1 root root      1458 May 15  2007 sysctl.conf
 drwxr-xr-x 2 root root      4096 Sep  6  2017 sysctl.d
@@ -311,19 +311,19 @@ xmlrpc.php
 /var/:
 total 56
 drwxr-xr-x  9 root root 4096 Mar 20 08:12 cache
-drw-------  2 root root 4096 Mar 20 21:46 cronjobs
+drw-------  2 root root 4096 Mar 25 02:07 cronjobs
 drwxr-xr-x  4 root root 4096 Mar 20 08:15 db
 drwxr-xr-x  3 root root 4096 Oct 24  2017 db_sik
 drwxr-xr-x  2 root root 4096 Oct 24  2017 empty
 drwxr-xr-x 17 root root 4096 Mar 20 08:14 lib
 drwxrwxr-x  3 root uucp 4096 Jul 18  2004 lock
-drwxr-xr-x  6 root root 4096 Mar 24 06:06 log
+drwxr-xr-x  6 root root 4096 Mar 25 06:06 log
 lrwxrwxrwx  1 root root   15 Sep  1  2017 mail -> /var/spool/mail
-drwxr-xr-x  6 root root 4096 Mar 24 21:00 run
+drwxr-xr-x  6 root root 4096 Mar 25 11:30 run
 drwxr-xr-x  6 root root 4096 Mar 20 08:12 spool
 drwxr-xr-x  2 root root 4096 Jul 18  2004 state
 drwxrwxrwt  2 root root 4096 Mar 24 13:05 tmp
-drwxr-xr-x  2 root root 4096 Mar 24 06:01 traffic
+drwxr-xr-x  2 root root 4096 Mar 25 06:01 traffic
 drwxr-xr-x  8 root root 4096 Mar 20 08:12 www
 
 /var/cache:
@@ -559,20 +559,20 @@ drwxr-xr-x 2 root root 4096 Jul 18  2004 subsys
 total 0
 
 /var/log:
-total 5552
+total 2068
 -rw-r--r-- 1 root    root         6598 Aug  4  2011 Xorg.0.log.old
-drwxr-x--- 4 root    root         4096 Mar 24 05:30 httpd
--rw------- 1 root    root    211887172 Mar 24 12:22 lastlog
+drwxr-x--- 4 root    root         4096 Mar 25 05:30 httpd
+-rw------- 1 root    root    211887172 Mar 25 11:15 lastlog
 -rw-r----- 1 root    root          249 Dec 20  2004 messages
 drwxr-xr-x 2 root    root         4096 Dec  5  2007 news
 drwxrwsr-x 3 portage portage      4096 Dec  5  2007 portage
--rw------- 1 root    root         2363 Mar 24 18:22 pureftpd.log
+-rw------- 1 root    root            0 Mar 25 06:06 pureftpd.log
 drwxrwx--- 2 root    portage      4096 Mar 20 08:11 sandbox
--rw--w---- 1 root    nobody    5037405 Mar 24 21:15 suexec
--rw------- 1 root    root       460619 Mar 24 05:29 suexec.1.gz
--rw------- 1 root    root       122537 Mar 23 05:30 suexec.2.gz
+-rw--w---- 1 root    nobody     961450 Mar 25 11:38 suexec
+-rw------- 1 root    root       633938 Mar 25 05:29 suexec.1.gz
+-rw------- 1 root    root       460619 Mar 24 05:29 suexec.2.gz
 -rw-r----- 1 root    root          249 Dec 20  2004 syslog
--rw-rw-r-- 1 root    utmp         4608 Mar 24 12:22 wtmp
+-rw-rw-r-- 1 root    utmp         4992 Mar 25 11:15 wtmp
 
 /var/log/news:
 total 0
@@ -583,14 +583,14 @@ drwxrws--- 2 portage portage 4096 Mar 20 08:12 elog
 
 /var/run:
 total 24
-srwx------ 1 nobody root     0 Mar 24 10:22 fpcgisock
--rw-r--r-- 1 root   root     6 Mar 24 10:22 httpd.pid
+srwx------ 1 nobody root     0 Mar 25 05:30 fpcgisock
+-rw-r--r-- 1 root   root     6 Mar 25 05:30 httpd.pid
 drwxr-xr-x 2 mysql  mysql 4096 Mar 20 08:16 mysqld
 drwxr-xr-x 2 root   root  4096 Dec 10  2014 nscd
-drwx------ 2 root   root  4096 Mar 24 21:10 pure-ftpd
--rw-r--r-- 1 root   root     6 Mar 24 06:01 pure-ftpd.pid
+drwx------ 2 root   root  4096 Mar 25 11:27 pure-ftpd
+-rw-r--r-- 1 root   root     6 Mar 25 06:02 pure-ftpd.pid
 drwxr-x--- 2 root   root  4096 Aug  1  2017 ssl_mutex
--rw-rw-r-- 1 root   utmp     0 Mar 24 21:00 utmp
+-rw-rw-r-- 1 root   utmp     0 Mar 25 11:30 utmp
 
 /var/run/mysqld:
 total 0
@@ -602,7 +602,7 @@ total 4
 
 /var/spool:
 total 16
-drwxrwx--- 2 smmsp smmsp 4096 Mar 24 19:25 clientmqueue
+drwxrwx--- 2 smmsp smmsp 4096 Mar 25 11:20 clientmqueue
 drwxr-x--- 3 root  cron  4096 Mar 20 08:11 cron
 drwxrwxr-x 2 root  mail  4096 Nov  4  2014 mail
 drwx------ 2 root  root  4096 Mar 20 08:11 mqueue
@@ -618,7 +618,7 @@ total 0
 
 /var/traffic:
 total 12
--rw------- 1 root root 12288 Mar 24 21:15 webtraffic.db
+-rw------- 1 root root 12288 Mar 25 11:38 webtraffic.db
 -rw------- 1 root root     0 Jan 14  2011 webtraffic.db.lock
 -rw------- 1 root root     0 Mar 21 06:01 webtraffic_move.db.lock
 
