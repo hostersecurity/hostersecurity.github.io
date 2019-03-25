@@ -13,7 +13,7 @@ _______________________________________________________________
 _______________________________________________________________
 
 [32m[+][0m URL: https://hsecure.uber.space/
-[32m[+][0m Started: Sun Mar 24 20:13:43 2019
+[32m[+][0m Started: Mon Mar 25 10:33:19 2019
 
 Interesting Finding(s):
 
@@ -85,10 +85,10 @@ Interesting Finding(s):
 
 [34m[i][0m No Config Backups Found.
 
-[32m[+][0m Finished: Sun Mar 24 20:13:50 2019
+[32m[+][0m Finished: Mon Mar 25 10:33:26 2019
 [32m[+][0m Requests Done: 51
 [32m[+][0m Cached Requests: 5
 [32m[+][0m Data Sent: 9.79 KB
 [32m[+][0m Data Received: 572.286 KB
-[32m[+][0m Memory used: 81.434 MB
+[32m[+][0m Memory used: 84.652 MB
 [32m[+][0m Elapsed time: 00:00:06

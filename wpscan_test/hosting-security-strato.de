@@ -12,50 +12,40 @@ _______________________________________________________________
       @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
 _______________________________________________________________
 
-[32m[+][0m URL: https://pfotentourist.de/
-[32m[+][0m Started: Mon Mar 25 10:32:41 2019
+[32m[+][0m URL: http://hosting-security-strato.de/
+[32m[+][0m Started: Mon Mar 25 10:33:40 2019
 
 Interesting Finding(s):
 
-[32m[+][0m https://pfotentourist.de/
+[32m[+][0m http://hosting-security-strato.de/
  | Interesting Entries:
- |  - server: Apache/2.4.35
- |  - x-powered-by: PHP/7.2.3
+ |  - Server: Apache/2.4.37 (Unix)
+ |  - X-Powered-By: PHP/7.2.15
  | Found By: Headers (Passive Detection)
  | Confidence: 100%
 
-[32m[+][0m https://pfotentourist.de/xmlrpc.php
- | Found By: Direct Access (Aggressive Detection)
- | Confidence: 100%
- | References:
- |  - http://codex.wordpress.org/XML-RPC_Pingback_API
- |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
- |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
- |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
- |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
-
-[32m[+][0m https://pfotentourist.de/readme.html
+[32m[+][0m http://hosting-security-strato.de/readme.html
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 100%
 
-[32m[+][0m https://pfotentourist.de/wp-cron.php
+[32m[+][0m http://hosting-security-strato.de/wp-cron.php
  | Found By: Direct Access (Aggressive Detection)
  | Confidence: 60%
  | References:
  |  - https://www.iplocation.net/defend-wordpress-from-ddos
  |  - https://github.com/wpscanteam/wpscan/issues/1299
 
-[32m[+][0m WordPress version 5.0.4 identified (Latest, released on 2019-03-13).
+[32m[+][0m WordPress version 5.1.1 identified (Latest, released on 2019-03-13).
  | Detected By: Rss Generator (Passive Detection)
- |  - https://pfotentourist.de/feed/, <generator>https://wordpress.org/?v=5.0.4</generator>
- |  - https://pfotentourist.de/comments/feed/, <generator>https://wordpress.org/?v=5.0.4</generator>
+ |  - http://hosting-security-strato.de/?feed=rss2, <generator>https://wordpress.org/?v=5.1.1</generator>
+ |  - http://hosting-security-strato.de/?feed=comments-rss2, <generator>https://wordpress.org/?v=5.1.1</generator>
 
 [32m[+][0m WordPress theme in use: twentyseventeen
- | Location: https://pfotentourist.de/wp-content/themes/twentyseventeen/
+ | Location: http://hosting-security-strato.de/wp-content/themes/twentyseventeen/
+ | Latest Version: 2.1 (up to date)
  | Last Updated: 2019-02-21T00:00:00.000Z
- | Readme: https://pfotentourist.de/wp-content/themes/twentyseventeen/README.txt
- | [33m[!][0m The version is out of date, the latest version is 2.1
- | Style URL: https://pfotentourist.de/wp-content/themes/twentyseventeen/style.css?ver=5.0.4
+ | Readme: http://hosting-security-strato.de/wp-content/themes/twentyseventeen/README.txt
+ | Style URL: http://hosting-security-strato.de/wp-content/themes/twentyseventeen/style.css?ver=5.1.1
  | Style Name: Twenty Seventeen
  | Style URI: https://wordpress.org/themes/twentyseventeen/
  | Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a fo...
@@ -64,9 +54,9 @@ Interesting Finding(s):
  |
  | Detected By: Css Style (Passive Detection)
  |
- | Version: 2.0 (80% confidence)
+ | Version: 2.1 (80% confidence)
  | Detected By: Style (Passive Detection)
- |  - https://pfotentourist.de/wp-content/themes/twentyseventeen/style.css?ver=5.0.4, Match: 'Version: 2.0'
+ |  - http://hosting-security-strato.de/wp-content/themes/twentyseventeen/style.css?ver=5.1.1, Match: 'Version: 2.1'
 
 [32m[+][0m Enumerating All Plugins (via Passive Methods)
 
@@ -78,10 +68,10 @@ Interesting Finding(s):
 
 [34m[i][0m No Config Backups Found.
 
-[32m[+][0m Finished: Mon Mar 25 10:32:58 2019
+[32m[+][0m Finished: Mon Mar 25 10:33:51 2019
 [32m[+][0m Requests Done: 52
 [32m[+][0m Cached Requests: 4
-[32m[+][0m Data Sent: 9.918 KB
-[32m[+][0m Data Received: 950.533 KB
-[32m[+][0m Memory used: 77.641 MB
-[32m[+][0m Elapsed time: 00:00:17
+[32m[+][0m Data Sent: 8.66 KB
+[32m[+][0m Data Received: 295.821 KB
+[32m[+][0m Memory used: 78.074 MB
+[32m[+][0m Elapsed time: 00:00:11
