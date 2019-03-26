@@ -1,0 +1,25 @@
+{
+  "host": "hostersecurity.online",
+  "port": 443,
+  "protocol": "http",
+  "isPublic": true,
+  "status": "READY",
+  "startTime": 1553613282045,
+  "testTime": 1553613419266,
+  "engineVersion": "1.33.1",
+  "criteriaVersion": "2009p",
+  "endpoints": [
+    {
+      "ipAddress": "54.36.91.62",
+      "serverName": "cluster027.hosting.ovh.net",
+      "statusMessage": "Ready",
+      "grade": "A",
+      "gradeTrustIgnored": "A",
+      "hasWarnings": false,
+      "isExceptional": false,
+      "progress": 100,
+      "duration": 136745,
+      "delegation": 1
+    }
+  ]
+}
