@@ -3,34 +3,25 @@
   "port": 443,
   "protocol": "http",
   "isPublic": false,
-  "status": "READY",
-  "startTime": 1553510248530,
-  "testTime": 1553510578751,
+  "status": "IN_PROGRESS",
+  "startTime": 1553613664917,
   "engineVersion": "1.33.1",
   "criteriaVersion": "2009p",
   "endpoints": [
     {
       "ipAddress": "2a00:1158:1000:300:0:0:0:5ae",
       "serverName": "zimljansker.ispgateway.de",
-      "statusMessage": "Ready",
-      "grade": "A",
-      "gradeTrustIgnored": "A",
-      "hasWarnings": false,
-      "isExceptional": false,
-      "progress": 100,
-      "duration": 164190,
+      "statusMessage": "In progress",
+      "statusDetails": "TESTING_SUITES",
+      "statusDetailsMessage": "Determining available cipher suites",
+      "progress": 40,
+      "eta": 71,
       "delegation": 1
     },
     {
       "ipAddress": "134.119.45.174",
       "serverName": "zimljansker.ispgateway.de",
-      "statusMessage": "Ready",
-      "grade": "A",
-      "gradeTrustIgnored": "A",
-      "hasWarnings": false,
-      "isExceptional": false,
-      "progress": 100,
-      "duration": 165337,
+      "statusMessage": "Pending",
       "delegation": 1
     }
   ]

@@ -1,0 +1,3160 @@
+#################################
+ TEST CASE NAME : test_cat_group
+ COMMAND : cat /etc/group
+ URL : https://hostersecurity.online/
+#################################
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+input:x:101:
+systemd-journal:x:102:
+systemd-timesync:x:103:
+systemd-network:x:104:
+systemd-resolve:x:105:
+systemd-bus-proxy:x:106:
+crontab:x:107:
+netdev:x:108:
+messagebus:x:109:
+ssh:x:110:
+ssl-cert:x:111:
+postfix:x:114:
+postdrop:x:116:
+adm:x:4:ovhossec
+ovhnogroup:x:99:
+ovh:x:500:
+ovhadmin:x:151:
+ovhcron:x:158:
+ovhossec:x:117:ovhossec
+#################################
+#################################
+ TEST CASE NAME : test_cat_passwd
+ COMMAND : cat /etc/passwd 2>&1
+ URL : https://hostersecurity.online/
+#################################
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:103:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:104:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:105:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+systemd-bus-proxy:x:103:106:systemd Bus Proxy,,,:/run/systemd:/bin/false
+sshd:x:104:65534::/var/run/sshd:/usr/sbin/nologin
+bind:x:105:110::/var/cache/bind:/bin/false
+messagebus:x:106:111::/var/run/dbus:/bin/false
+postfix:x:108:114::/var/spool/postfix:/bin/false
+puppet:x:107:112:Puppet configuration management daemon,,,:/var/lib/puppet:/bin/false
+autohosting:x:495:495::/home/ovh:/bin/false
+ovhnobody:x:99:99::/nonexistent:/bin/false
+beamium:x:209:209::/opt/beamium:/bin/sh
+ovh:x:500:100:ovh:/home/ovh:/bin/bash
+adminrobot:x:490:490:adminrobot:/home/ovh:/bin/false
+ovhcron:x:158:151:ovhcron:/home.admin/ovhcron:/bin/bash
+ntp:x:109:113::/home/ntp:/bin/false
+redis:x:110:115::/var/lib/redis:/bin/false
+statd:x:111:65534::/var/lib/nfs:/bin/false
+_ossec:x:499:496::/var/ossec:/bin/false
+serf:x:112:118::/nonexistent:/bin/false
+oco:x:113:119::/usr/local/oco:/bin/false
+debian-transmission:x:114:120::/var/lib/transmission-daemon:/bin/false
+hostersepx:x:83798:100:hostersepx:/homez.382/hostersepx:/bin/ovh_nossh
+#################################
+#################################
+ TEST CASE NAME : test_cat_shadow
+ COMMAND : cat /etc/shadow 2>&1
+ URL : https://hostersecurity.online/
+#################################
+cat: /etc/shadow: Permission denied
+#################################
+#################################
+ TEST CASE NAME : test_ls_etc
+ COMMAND : ls -l /etc/
+ URL : https://hostersecurity.online/
+#################################
+#################################
+#################################
+ TEST CASE NAME : test_ls_home
+ COMMAND : ls -laR /home/
+ URL : https://hostersecurity.online/
+#################################
+/home/:
+total 29
+drwxr-xr-x   4 root       root    80 Mar 26 15:01 .
+drwxr-xr-x+ 16 root       root  4096 Mar 20 09:12 ..
+drwxr-xr-x   3 root       root    60 Mar 26 15:01 h
+drwx---r-x+  3 hostersepx users    7 Mar 25 15:56 hostersepx
+
+/home/h:
+total 0
+drwxr-xr-x 3 root root 60 Mar 26 15:01 .
+drwxr-xr-x 4 root root 80 Mar 26 15:01 ..
+drwxr-xr-x 3 root root 60 Mar 26 15:01 o
+
+/home/h/o:
+total 0
+drwxr-xr-x 3 root root 60 Mar 26 15:01 .
+drwxr-xr-x 3 root root 60 Mar 26 15:01 ..
+drwxr-xr-x 2 root root 60 Mar 26 15:01 s
+
+/home/h/o/s:
+total 0
+drwxr-xr-x 2 root root 60 Mar 26 15:01 .
+drwxr-xr-x 3 root root 60 Mar 26 15:01 ..
+lrwxrwxrwx 1 root root 16 Mar 26 15:01 hostersepx -> /home/hostersepx
+
+/home/hostersepx:
+total 51
+drwx---r-x+ 3 hostersepx users   7 Mar 25 15:56 .
+drwxr-xr-x  4 root       root   80 Mar 26 15:01 ..
+-rw-r--r--+ 1 hostersepx users  24 Jul 30  2018 .bash_logout
+-rw-r--r--+ 1 hostersepx users 236 Jul 30  2018 .bash_profile
+-rw-r--r--+ 1 hostersepx users 131 Jul 30  2018 .bashrc
+-rw-r--r--+ 1 hostersepx users 205 Jan 17 21:31 .ovhconfig
+drwxr-xr-x+ 5 hostersepx users  25 Mar 26 15:16 www
+
+/home/hostersepx/www:
+total 261
+drwxr-xr-x+  5 hostersepx users    25 Mar 26 15:16 .
+drwx---r-x+  3 hostersepx users     7 Mar 25 15:56 ..
+lrwxrwxrwx   1 ovh        users    38 Jul 30  2018 index.html.ovh.old -> /home/ovh/shared/__ovh/fr/welcome.html
+-rw-r--r--+  1 hostersepx users   418 Sep 25  2013 index.php
+-rw-r--r--+  1 hostersepx users 19935 Mar 25 15:56 license.txt
+-rw----r--+  1 hostersepx users   138 Mar 26 15:11 magic_hostersecurity.php
+-rw----r--+  1 hostersepx users    68 Mar 26 15:16 malware.txt
+-rw-r--r--+  1 hostersepx users  9091 Mar 25 15:56 readme.html
+-rw-r--r--+  1 hostersepx users  6878 Dec 13 01:30 wp-activate.php
+drwxr-xr-x+  9 hostersepx users    91 Jan  9 18:32 wp-admin
+-rw-r--r--+  1 hostersepx users   364 Dec 19  2015 wp-blog-header.php
+-rw-r--r--+  1 hostersepx users  1889 May  2  2018 wp-comments-post.php
+-rw-r--r--+  1 hostersepx users  3600 Mar 25 15:56 wp-config-sample.php
+-rw-r--r--+  1 hostersepx users  3217 Mar 25 15:56 wp-config.php
+drwxr-xr-x+  7 hostersepx users     8 Mar 26 15:04 wp-content
+-rw-r--r--+  1 hostersepx users  3669 Aug 20  2017 wp-cron.php
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 wp-includes
+-rw-r--r--+  1 hostersepx users  2422 Nov 21  2016 wp-links-opml.php
+-rw-r--r--+  1 hostersepx users  3306 Aug 22  2017 wp-load.php
+-rw-r--r--+  1 hostersepx users 37296 Dec 13 00:28 wp-login.php
+-rw-r--r--+  1 hostersepx users  8048 Jan 11  2017 wp-mail.php
+-rw-r--r--+  1 hostersepx users 17421 Oct 23 07:04 wp-settings.php
+-rw-r--r--+  1 hostersepx users 30091 Apr 29  2018 wp-signup.php
+-rw-r--r--+  1 hostersepx users  4620 Oct 23  2017 wp-trackback.php
+-rw-r--r--+  1 hostersepx users  3065 Aug 31  2016 xmlrpc.php
+
+/home/hostersepx/www/wp-admin:
+total 1074
+drwxr-xr-x+ 9 hostersepx users    91 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users    25 Mar 26 15:16 ..
+-rw-r--r--+ 1 hostersepx users 33694 Mar 25 15:56 about.php
+-rw-r--r--+ 1 hostersepx users  4339 Oct 23 11:04 admin-ajax.php
+-rw-r--r--+ 1 hostersepx users  2608 Jan  9  2017 admin-footer.php
+-rw-r--r--+ 1 hostersepx users   405 Jul  6  2016 admin-functions.php
+-rw-r--r--+ 1 hostersepx users  7673 Oct 22 03:14 admin-header.php
+-rw-r--r--+ 1 hostersepx users  1686 Feb 25  2016 admin-post.php
+-rw-r--r--+ 1 hostersepx users 10531 Oct 24  2017 admin.php
+-rw-r--r--+ 1 hostersepx users  3567 Sep 21  2017 async-upload.php
+-rw-r--r--+ 1 hostersepx users 10459 Oct  4  2016 comment.php
+-rw-r--r--+ 1 hostersepx users  4895 Nov 22 15:24 credits.php
+drwxr-xr-x+ 3 hostersepx users   103 Jan  9 18:32 css
+-rw-r--r--+ 1 hostersepx users 19901 Jul 27  2017 custom-background.php
+-rw-r--r--+ 1 hostersepx users 46397 Mar  9  2018 custom-header.php
+-rw-r--r--+ 1 hostersepx users  9480 Mar  9  2018 customize.php
+-rw-r--r--+ 1 hostersepx users 13969 Mar  9  2018 edit-comments.php
+-rw-r--r--+ 1 hostersepx users 27513 Oct 29 08:29 edit-form-advanced.php
+-rw-r--r--+ 1 hostersepx users 13127 Jan  7 20:59 edit-form-blocks.php
+-rw-r--r--+ 1 hostersepx users  7365 Oct 29 08:29 edit-form-comment.php
+-rw-r--r--+ 1 hostersepx users  6040 Oct 29 08:29 edit-link-form.php
+-rw-r--r--+ 1 hostersepx users  9300 Sep 27  2017 edit-tag-form.php
+-rw-r--r--+ 1 hostersepx users 20493 Mar  9  2018 edit-tags.php
+-rw-r--r--+ 1 hostersepx users 16702 Nov 23 08:35 edit.php
+-rw-r--r--+ 1 hostersepx users 10709 Oct  4  2016 export.php
+-rw-r--r--+ 1 hostersepx users  5065 Nov 22 18:03 freedoms.php
+drwxr-xr-x+ 2 hostersepx users    69 Jan  9 18:32 images
+-rw-r--r--+ 1 hostersepx users  7194 Oct  4  2016 import.php
+drwxr-xr-x+ 2 hostersepx users    97 Jan  9 18:32 includes
+-rw-r--r--+ 1 hostersepx users  6153 Oct 23 11:04 index.php
+-rw-r--r--+ 1 hostersepx users  5750 Oct 14  2015 install-helper.php
+-rw-r--r--+ 1 hostersepx users 16160 Sep  4  2017 install.php
+drwxr-xr-x+ 3 hostersepx users    90 Jan  9 18:32 js
+-rw-r--r--+ 1 hostersepx users   700 Jun 29  2016 link-add.php
+-rw-r--r--+ 1 hostersepx users  3924 Dec  7  2016 link-manager.php
+-rw-r--r--+ 1 hostersepx users  2401 Oct 24  2016 link-parse-opml.php
+-rw-r--r--+ 1 hostersepx users  2625 Jul 10  2016 link.php
+-rw-r--r--+ 1 hostersepx users  1612 Nov  8 09:24 load-scripts.php
+-rw-r--r--+ 1 hostersepx users  2207 Oct 11 03:23 load-styles.php
+drwxr-xr-x+ 2 hostersepx users     3 Jan  9 18:32 maint
+-rw-r--r--+ 1 hostersepx users  3097 Oct  4  2016 media-new.php
+-rw-r--r--+ 1 hostersepx users  3343 Mar  9  2018 media-upload.php
+-rw-r--r--+ 1 hostersepx users  5265 Dec  7  2016 media.php
+-rw-r--r--+ 1 hostersepx users  9502 Sep  9  2017 menu-header.php
+-rw-r--r--+ 1 hostersepx users 13670 May 10  2018 menu.php
+-rw-r--r--+ 1 hostersepx users   320 Sep 25  2013 moderation.php
+-rw-r--r--+ 1 hostersepx users   211 Sep 25  2013 ms-admin.php
+-rw-r--r--+ 1 hostersepx users  3997 Oct 19  2017 ms-delete-site.php
+-rw-r--r--+ 1 hostersepx users   231 Sep 25  2013 ms-edit.php
+-rw-r--r--+ 1 hostersepx users   236 Sep 25  2013 ms-options.php
+-rw-r--r--+ 1 hostersepx users   228 Sep 25  2013 ms-sites.php
+-rw-r--r--+ 1 hostersepx users   230 Sep 25  2013 ms-themes.php
+-rw-r--r--+ 1 hostersepx users   232 Sep 25  2013 ms-upgrade-network.php
+-rw-r--r--+ 1 hostersepx users   228 Sep 25  2013 ms-users.php
+-rw-r--r--+ 1 hostersepx users  4618 Oct  9  2017 my-sites.php
+-rw-r--r--+ 1 hostersepx users 40804 Nov 30 20:25 nav-menus.php
+drwxr-xr-x+ 2 hostersepx users    31 Jan  9 18:32 network
+-rw-r--r--+ 1 hostersepx users  5322 Aug 22  2017 network.php
+-rw-r--r--+ 1 hostersepx users 14745 Jul 24  2018 options-discussion.php
+-rw-r--r--+ 1 hostersepx users 15004 Jan 24  2018 options-general.php
+-rw-r--r--+ 1 hostersepx users   488 May 13  2016 options-head.php
+-rw-r--r--+ 1 hostersepx users  6058 Mar 20  2018 options-media.php
+-rw-r--r--+ 1 hostersepx users 18208 Oct 25  2017 options-permalink.php
+-rw-r--r--+ 1 hostersepx users  8353 Sep 10  2017 options-reading.php
+-rw-r--r--+ 1 hostersepx users  8290 Oct 24  2017 options-writing.php
+-rw-r--r--+ 1 hostersepx users 11689 Jul 24  2018 options.php
+-rw-r--r--+ 1 hostersepx users 13022 Oct 24  2017 plugin-editor.php
+-rw-r--r--+ 1 hostersepx users  6216 Aug 22  2017 plugin-install.php
+-rw-r--r--+ 1 hostersepx users 22769 Oct 23 11:04 plugins.php
+-rw-r--r--+ 1 hostersepx users  2698 Oct 24 06:46 post-new.php
+-rw-r--r--+ 1 hostersepx users  9084 Jan  7 20:59 post.php
+-rw-r--r--+ 1 hostersepx users  2306 Mar  9  2018 press-this.php
+-rw-r--r--+ 1 hostersepx users  7922 Jul 19  2018 privacy.php
+-rw-r--r--+ 1 hostersepx users   296 Sep 25  2013 profile.php
+-rw-r--r--+ 1 hostersepx users  5039 Nov 21  2016 revision.php
+-rw-r--r--+ 1 hostersepx users 15162 Oct 18  2017 setup-config.php
+-rw-r--r--+ 1 hostersepx users  2113 Mar  9  2018 term.php
+-rw-r--r--+ 1 hostersepx users 14396 Nov 27  2017 theme-editor.php
+-rw-r--r--+ 1 hostersepx users 14921 Jan 15  2018 theme-install.php
+-rw-r--r--+ 1 hostersepx users 21323 Mar  9  2018 themes.php
+-rw-r--r--+ 1 hostersepx users  2581 May  9  2018 tools.php
+-rw-r--r--+ 1 hostersepx users 31217 Oct  4  2017 update-core.php
+-rw-r--r--+ 1 hostersepx users 10235 Oct  9  2017 update.php
+-rw-r--r--+ 1 hostersepx users   340 Jul  6  2016 upgrade-functions.php
+-rw-r--r--+ 1 hostersepx users  4512 Dec  8  2015 upgrade.php
+-rw-r--r--+ 1 hostersepx users 13225 Mar 31  2017 upload.php
+drwxr-xr-x+ 2 hostersepx users    11 Jan  9 18:32 user
+-rw-r--r--+ 1 hostersepx users 27582 Sep 19  2017 user-edit.php
+-rw-r--r--+ 1 hostersepx users 21692 Mar  9  2018 user-new.php
+-rw-r--r--+ 1 hostersepx users 18334 Mar  9  2018 users.php
+-rw-r--r--+ 1 hostersepx users 18476 Mar  9  2018 widgets.php
+
+/home/hostersepx/www/wp-admin/css:
+total 1940
+drwxr-xr-x+ 3 hostersepx users   103 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    91 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 11620 Dec  5 22:25 about-rtl.css
+-rw-r--r--+ 1 hostersepx users  8721 Dec  5 22:25 about-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 11611 Dec  5 22:25 about.css
+-rw-r--r--+ 1 hostersepx users  8712 Dec  5 22:25 about.min.css
+-rw-r--r--+ 1 hostersepx users 19024 Oct 22 05:04 admin-menu-rtl.css
+-rw-r--r--+ 1 hostersepx users 15399 Oct 22 05:04 admin-menu-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 19010 Oct 22 05:04 admin-menu.css
+-rw-r--r--+ 1 hostersepx users 15385 Oct 22 05:04 admin-menu.min.css
+-rw-r--r--+ 1 hostersepx users  1585 Oct 11 03:42 code-editor-rtl.css
+-rw-r--r--+ 1 hostersepx users  1435 Oct 11 03:42 code-editor-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  1581 Oct 11 03:42 code-editor.css
+-rw-r--r--+ 1 hostersepx users  1431 Oct 11 03:42 code-editor.min.css
+-rw-r--r--+ 1 hostersepx users  3350 Oct 22 05:04 color-picker-rtl.css
+-rw-r--r--+ 1 hostersepx users  2759 Oct 22 05:04 color-picker-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  3347 Oct 22 05:04 color-picker.css
+-rw-r--r--+ 1 hostersepx users  2756 Oct 22 05:04 color-picker.min.css
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 colors
+-rw-r--r--+ 1 hostersepx users 68900 Jan  7 20:59 common-rtl.css
+-rw-r--r--+ 1 hostersepx users 52555 Jan  7 20:59 common-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 68858 Jan  7 20:59 common.css
+-rw-r--r--+ 1 hostersepx users 52513 Jan  7 20:59 common.min.css
+-rw-r--r--+ 1 hostersepx users 69006 Oct 22 05:04 customize-controls-rtl.css
+-rw-r--r--+ 1 hostersepx users 57810 Oct 22 05:04 customize-controls-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 68961 Oct 22 05:04 customize-controls.css
+-rw-r--r--+ 1 hostersepx users 57765 Oct 22 05:04 customize-controls.min.css
+-rw-r--r--+ 1 hostersepx users 21992 Jan 12  2018 customize-nav-menus-rtl.css
+-rw-r--r--+ 1 hostersepx users 18104 Oct  9 02:52 customize-nav-menus-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 21981 Jan 12  2018 customize-nav-menus.css
+-rw-r--r--+ 1 hostersepx users 18093 Oct  9 02:52 customize-nav-menus.min.css
+-rw-r--r--+ 1 hostersepx users 12254 Jul 16  2017 customize-widgets-rtl.css
+-rw-r--r--+ 1 hostersepx users  9671 Oct  9 02:52 customize-widgets-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 12252 Jul 16  2017 customize-widgets.css
+-rw-r--r--+ 1 hostersepx users  9669 Oct  9 02:52 customize-widgets.min.css
+-rw-r--r--+ 1 hostersepx users 24131 Oct 23 11:04 dashboard-rtl.css
+-rw-r--r--+ 1 hostersepx users 19083 Oct 23 11:04 dashboard-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 24134 Oct 23 11:04 dashboard.css
+-rw-r--r--+ 1 hostersepx users 19086 Oct 23 11:04 dashboard.min.css
+-rw-r--r--+ 1 hostersepx users  6325 Jul 16  2017 deprecated-media-rtl.css
+-rw-r--r--+ 1 hostersepx users  5260 Oct  9 02:52 deprecated-media-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  6325 Jul 16  2017 deprecated-media.css
+-rw-r--r--+ 1 hostersepx users  5260 Oct  9 02:52 deprecated-media.min.css
+-rw-r--r--+ 1 hostersepx users 28640 Oct 22 05:04 edit-rtl.css
+-rw-r--r--+ 1 hostersepx users 22762 Oct 22 05:04 edit-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 28637 Oct 22 05:04 edit.css
+-rw-r--r--+ 1 hostersepx users 22759 Oct 22 05:04 edit.min.css
+-rw-r--r--+ 1 hostersepx users   612 Nov 17  2013 farbtastic-rtl.css
+-rw-r--r--+ 1 hostersepx users   538 Aug 19  2017 farbtastic-rtl.min.css
+-rw-r--r--+ 1 hostersepx users   611 Nov 17  2013 farbtastic.css
+-rw-r--r--+ 1 hostersepx users   537 Aug 19  2017 farbtastic.min.css
+-rw-r--r--+ 1 hostersepx users 28222 Oct 22 05:04 forms-rtl.css
+-rw-r--r--+ 1 hostersepx users 21872 Oct 22 05:04 forms-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 28210 Oct 22 05:04 forms.css
+-rw-r--r--+ 1 hostersepx users 21860 Oct 22 05:04 forms.min.css
+-rw-r--r--+ 1 hostersepx users 12006 Oct  2  2017 ie-rtl.css
+-rw-r--r--+ 1 hostersepx users 10350 Oct  9 02:52 ie-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 11999 Oct  2  2017 ie.css
+-rw-r--r--+ 1 hostersepx users 10343 Oct  9 02:52 ie.min.css
+-rw-r--r--+ 1 hostersepx users  7021 Sep 29  2017 install-rtl.css
+-rw-r--r--+ 1 hostersepx users  5871 Oct  9 02:52 install-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  7020 Sep 29  2017 install.css
+-rw-r--r--+ 1 hostersepx users  5870 Oct  9 02:52 install.min.css
+-rw-r--r--+ 1 hostersepx users  3692 Jun 17  2016 l10n-rtl.css
+-rw-r--r--+ 1 hostersepx users  2480 Oct  9 02:52 l10n-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  3689 Jun 17  2016 l10n.css
+-rw-r--r--+ 1 hostersepx users  2477 Oct  9 02:52 l10n.min.css
+-rw-r--r--+ 1 hostersepx users 39201 Oct 22 05:04 list-tables-rtl.css
+-rw-r--r--+ 1 hostersepx users 31733 Oct 22 05:04 list-tables-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 39175 Oct 22 05:04 list-tables.css
+-rw-r--r--+ 1 hostersepx users 31707 Oct 22 05:04 list-tables.min.css
+-rw-r--r--+ 1 hostersepx users  4250 May 15  2018 login-rtl.css
+-rw-r--r--+ 1 hostersepx users 27803 Oct 22 05:04 login-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  4237 May 15  2018 login.css
+-rw-r--r--+ 1 hostersepx users 27783 Oct 22 05:04 login.min.css
+-rw-r--r--+ 1 hostersepx users 23501 Oct 22 05:04 media-rtl.css
+-rw-r--r--+ 1 hostersepx users 19092 Oct 22 05:04 media-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 23489 Oct 22 05:04 media.css
+-rw-r--r--+ 1 hostersepx users 19080 Oct 22 05:04 media.min.css
+-rw-r--r--+ 1 hostersepx users 15346 Mar 18  2018 nav-menus-rtl.css
+-rw-r--r--+ 1 hostersepx users 12181 Oct  9 02:52 nav-menus-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 15317 Mar 18  2018 nav-menus.css
+-rw-r--r--+ 1 hostersepx users 12152 Oct  9 02:52 nav-menus.min.css
+-rw-r--r--+ 1 hostersepx users  9735 Oct 22 05:04 revisions-rtl.css
+-rw-r--r--+ 1 hostersepx users  8036 Oct 22 05:04 revisions-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  9724 Oct 22 05:04 revisions.css
+-rw-r--r--+ 1 hostersepx users  8025 Oct 22 05:04 revisions.min.css
+-rw-r--r--+ 1 hostersepx users  1023 Jul 16  2017 site-icon-rtl.css
+-rw-r--r--+ 1 hostersepx users   746 Aug 19  2017 site-icon-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  1021 Jul 16  2017 site-icon.css
+-rw-r--r--+ 1 hostersepx users   744 Aug 19  2017 site-icon.min.css
+-rw-r--r--+ 1 hostersepx users 39903 Oct 22 05:04 themes-rtl.css
+-rw-r--r--+ 1 hostersepx users 31501 Oct 22 05:04 themes-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 39883 Oct 22 05:04 themes.css
+-rw-r--r--+ 1 hostersepx users 31481 Oct 22 05:04 themes.min.css
+-rw-r--r--+ 1 hostersepx users 16082 Oct 22 05:04 widgets-rtl.css
+-rw-r--r--+ 1 hostersepx users 13194 Oct 22 05:04 widgets-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 16084 Oct 22 05:04 widgets.css
+-rw-r--r--+ 1 hostersepx users 13196 Oct 22 05:04 widgets.min.css
+-rw-r--r--+ 1 hostersepx users   421 Jun 29  2015 wp-admin-rtl.css
+-rw-r--r--+ 1 hostersepx users   512 Aug 19  2017 wp-admin-rtl.min.css
+-rw-r--r--+ 1 hostersepx users   365 Jun 29  2015 wp-admin.css
+-rw-r--r--+ 1 hostersepx users   456 Aug 19  2017 wp-admin.min.css
+
+/home/hostersepx/www/wp-admin/css/colors:
+total 98
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users   103 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 11726 May  6  2017 _admin.scss
+-rw-r--r--+ 1 hostersepx users  1497 Oct 23  2017 _mixins.scss
+-rw-r--r--+ 1 hostersepx users  1854 Apr  5  2015 _variables.scss
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 blue
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 coffee
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 ectoplasm
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 light
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 midnight
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 ocean
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 sunrise
+
+/home/hostersepx/www/wp-admin/css/colors/blue:
+total 80
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 12823 Oct 23  2017 colors-rtl.css
+-rw-r--r--+ 1 hostersepx users 11165 Oct  9 02:52 colors-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 12825 Oct 23  2017 colors.css
+-rw-r--r--+ 1 hostersepx users 11167 Oct  9 02:52 colors.min.css
+-rw-r--r--+ 1 hostersepx users   249 Feb  6  2014 colors.scss
+
+/home/hostersepx/www/wp-admin/css/colors/coffee:
+total 80
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 12847 Oct 23  2017 colors-rtl.css
+-rw-r--r--+ 1 hostersepx users 11189 Oct 23  2017 colors-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 12849 Oct 23  2017 colors.css
+-rw-r--r--+ 1 hostersepx users 11191 Oct 23  2017 colors.min.css
+-rw-r--r--+ 1 hostersepx users   135 Feb  6  2014 colors.scss
+
+/home/hostersepx/www/wp-admin/css/colors/ectoplasm:
+total 80
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 12847 Oct 23  2017 colors-rtl.css
+-rw-r--r--+ 1 hostersepx users 11189 Oct 23  2017 colors-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 12849 Oct 23  2017 colors.css
+-rw-r--r--+ 1 hostersepx users 11191 Oct 23  2017 colors.min.css
+-rw-r--r--+ 1 hostersepx users   157 Feb  6  2014 colors.scss
+
+/home/hostersepx/www/wp-admin/css/colors/light:
+total 80
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 13478 Oct 23  2017 colors-rtl.css
+-rw-r--r--+ 1 hostersepx users 11652 Oct  9 02:52 colors-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 13480 Oct 23  2017 colors.css
+-rw-r--r--+ 1 hostersepx users 11654 Oct  9 02:52 colors.min.css
+-rw-r--r--+ 1 hostersepx users  1119 Jul 15  2015 colors.scss
+
+/home/hostersepx/www/wp-admin/css/colors/midnight:
+total 80
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 12847 Oct 23  2017 colors-rtl.css
+-rw-r--r--+ 1 hostersepx users 11189 Oct 23  2017 colors-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 12849 Oct 23  2017 colors.css
+-rw-r--r--+ 1 hostersepx users 11191 Oct 23  2017 colors.min.css
+-rw-r--r--+ 1 hostersepx users   106 Feb  6  2014 colors.scss
+
+/home/hostersepx/www/wp-admin/css/colors/ocean:
+total 80
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 12847 Oct 23  2017 colors-rtl.css
+-rw-r--r--+ 1 hostersepx users 11189 Oct 23  2017 colors-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 12849 Oct 23  2017 colors.css
+-rw-r--r--+ 1 hostersepx users 11191 Oct 23  2017 colors.min.css
+-rw-r--r--+ 1 hostersepx users   157 Feb  6  2014 colors.scss
+
+/home/hostersepx/www/wp-admin/css/colors/sunrise:
+total 80
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 12847 Oct 23  2017 colors-rtl.css
+-rw-r--r--+ 1 hostersepx users 11189 Oct 23  2017 colors-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 12849 Oct 23  2017 colors.css
+-rw-r--r--+ 1 hostersepx users 11191 Oct 23  2017 colors.min.css
+-rw-r--r--+ 1 hostersepx users   166 Feb  6  2014 colors.scss
+
+/home/hostersepx/www/wp-admin/images:
+total 503
+drwxr-xr-x+ 2 hostersepx users    69 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    91 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users   147 Sep 27  2012 align-center-2x.png
+-rw-r--r--+ 1 hostersepx users   546 Sep 24  2012 align-center.png
+-rw-r--r--+ 1 hostersepx users   143 Sep 27  2012 align-left-2x.png
+-rw-r--r--+ 1 hostersepx users   554 Sep 24  2012 align-left.png
+-rw-r--r--+ 1 hostersepx users   121 Sep 27  2012 align-none-2x.png
+-rw-r--r--+ 1 hostersepx users   417 Sep 24  2012 align-none.png
+-rw-r--r--+ 1 hostersepx users   142 Sep 27  2012 align-right-2x.png
+-rw-r--r--+ 1 hostersepx users   509 Sep 24  2012 align-right.png
+-rw-r--r--+ 1 hostersepx users   863 Sep 27  2012 arrows-2x.png
+-rw-r--r--+ 1 hostersepx users   243 Nov  7  2012 arrows.png
+-rw-r--r--+ 1 hostersepx users 40170 Jul  5  2016 browser-rtl.png
+-rw-r--r--+ 1 hostersepx users 40626 Jun 30  2015 browser.png
+-rw-r--r--+ 1 hostersepx users   424 Oct 22 05:06 bubble_bg-2x.gif
+-rw-r--r--+ 1 hostersepx users   398 Oct 28  2014 bubble_bg.gif
+-rw-r--r--+ 1 hostersepx users   258 Feb 13  2014 comment-grey-bubble-2x.png
+-rw-r--r--+ 1 hostersepx users   114 Nov  7  2012 comment-grey-bubble.png
+-rw-r--r--+ 1 hostersepx users   996 Oct 28  2014 date-button-2x.gif
+-rw-r--r--+ 1 hostersepx users   400 Oct 28  2014 date-button.gif
+-rw-r--r--+ 1 hostersepx users   719 Nov  7  2012 generic.png
+-rw-r--r--+ 1 hostersepx users 21770 Oct 28  2014 icons32-2x.png
+-rw-r--r--+ 1 hostersepx users 21396 Nov 25  2014 icons32-vs-2x.png
+-rw-r--r--+ 1 hostersepx users  8007 Oct 28  2014 icons32-vs.png
+-rw-r--r--+ 1 hostersepx users  8023 Oct 28  2014 icons32.png
+-rw-r--r--+ 1 hostersepx users  7664 Oct 28  2014 imgedit-icons-2x.png
+-rw-r--r--+ 1 hostersepx users  4055 Nov 25  2014 imgedit-icons.png
+-rw-r--r--+ 1 hostersepx users  1523 Nov  7  2012 list-2x.png
+-rw-r--r--+ 1 hostersepx users  1003 Nov  7  2012 list.png
+-rw-r--r--+ 1 hostersepx users  1376 Oct 22 05:06 loading.gif
+-rw-r--r--+ 1 hostersepx users   360 Feb 13  2014 marker.png
+-rw-r--r--+ 1 hostersepx users  2001 Sep 24  2012 mask.png
+-rw-r--r--+ 1 hostersepx users   850 Nov  7  2012 media-button-2x.png
+-rw-r--r--+ 1 hostersepx users   200 Oct 28  2014 media-button-image.gif
+-rw-r--r--+ 1 hostersepx users   206 Oct 28  2014 media-button-music.gif
+-rw-r--r--+ 1 hostersepx users   248 Oct 28  2014 media-button-other.gif
+-rw-r--r--+ 1 hostersepx users   133 Oct 28  2014 media-button-video.gif
+-rw-r--r--+ 1 hostersepx users   323 Nov  7  2012 media-button.png
+-rw-r--r--+ 1 hostersepx users 12672 Oct 28  2014 menu-2x.png
+-rw-r--r--+ 1 hostersepx users 12453 Oct 28  2014 menu-vs-2x.png
+-rw-r--r--+ 1 hostersepx users  5086 Oct 28  2014 menu-vs.png
+-rw-r--r--+ 1 hostersepx users  5039 Oct 28  2014 menu.png
+-rw-r--r--+ 1 hostersepx users   755 Nov  7  2012 no.png
+-rw-r--r--+ 1 hostersepx users  2450 Oct 28  2014 post-formats-vs.png
+-rw-r--r--+ 1 hostersepx users  2157 Feb 13  2014 post-formats.png
+-rw-r--r--+ 1 hostersepx users  5111 Oct 28  2014 post-formats32-vs.png
+-rw-r--r--+ 1 hostersepx users  5142 Oct 28  2014 post-formats32.png
+-rw-r--r--+ 1 hostersepx users   151 Oct 22 05:06 resize-2x.gif
+-rw-r--r--+ 1 hostersepx users   150 Oct 22 05:06 resize-rtl-2x.gif
+-rw-r--r--+ 1 hostersepx users    70 Oct 22 05:06 resize-rtl.gif
+-rw-r--r--+ 1 hostersepx users    64 Oct 22 05:06 resize.gif
+-rw-r--r--+ 1 hostersepx users   120 Nov  7  2012 se.png
+-rw-r--r--+ 1 hostersepx users    97 Oct 28  2014 sort-2x.gif
+-rw-r--r--+ 1 hostersepx users    55 Oct 28  2014 sort.gif
+-rw-r--r--+ 1 hostersepx users  7536 Oct 22 05:06 spinner-2x.gif
+-rw-r--r--+ 1 hostersepx users  3656 Oct 22 05:06 spinner.gif
+-rw-r--r--+ 1 hostersepx users  1257 Nov  9  2012 stars-2x.png
+-rw-r--r--+ 1 hostersepx users   924 Nov  7  2012 stars.png
+-rw-r--r--+ 1 hostersepx users  3113 Feb 13  2014 w-logo-blue.png
+-rw-r--r--+ 1 hostersepx users  5395 Mar 10  2016 w-logo-white.png
+-rw-r--r--+ 1 hostersepx users  6047 Oct 28  2014 wheel.png
+-rw-r--r--+ 1 hostersepx users  1639 Mar  9  2016 wordpress-logo-white.svg
+-rw-r--r--+ 1 hostersepx users  2480 Nov  7  2012 wordpress-logo.png
+-rw-r--r--+ 1 hostersepx users  1521 Apr  5  2015 wordpress-logo.svg
+-rw-r--r--+ 1 hostersepx users  8875 Oct 22 05:06 wpspin_light-2x.gif
+-rw-r--r--+ 1 hostersepx users  2052 Oct 22 05:06 wpspin_light.gif
+-rw-r--r--+ 1 hostersepx users   825 Oct 28  2014 xit-2x.gif
+-rw-r--r--+ 1 hostersepx users   181 Oct 28  2014 xit.gif
+-rw-r--r--+ 1 hostersepx users   539 Sep 24  2012 yes.png
+
+/home/hostersepx/www/wp-admin/includes:
+total 2545
+drwxr-xr-x+ 2 hostersepx users     97 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users     91 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users   7235 Nov 22 19:40 admin-filters.php
+-rw-r--r--+ 1 hostersepx users   2948 Aug 31  2016 admin.php
+-rw-r--r--+ 1 hostersepx users 128658 Mar 25 15:56 ajax-actions.php
+-rw-r--r--+ 1 hostersepx users   9098 Mar  9  2018 bookmark.php
+-rw-r--r--+ 1 hostersepx users   3100 Jul 27  2017 class-automatic-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users   1896 Jul 27  2017 class-bulk-plugin-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users   1940 Jul 27  2017 class-bulk-theme-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users   5200 Jul 27  2017 class-bulk-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users  13385 Oct 18  2017 class-core-upgrader.php
+-rw-r--r--+ 1 hostersepx users   3257 Aug 22  2017 class-file-upload-upgrader.php
+-rw-r--r--+ 1 hostersepx users   5399 Aug 26  2016 class-ftp-pure.php
+-rw-r--r--+ 1 hostersepx users   8448 Aug 26  2016 class-ftp-sockets.php
+-rw-r--r--+ 1 hostersepx users  27106 Oct 31 18:15 class-ftp.php
+-rw-r--r--+ 1 hostersepx users   2184 Jul 27  2017 class-language-pack-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users  11065 Oct 18  2017 class-language-pack-upgrader.php
+-rw-r--r--+ 1 hostersepx users 195795 Jul 19  2016 class-pclzip.php
+-rw-r--r--+ 1 hostersepx users   4306 Sep 24  2017 class-plugin-installer-skin.php
+-rw-r--r--+ 1 hostersepx users   2556 Aug 22  2017 class-plugin-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users  14663 Oct 18  2017 class-plugin-upgrader.php
+-rw-r--r--+ 1 hostersepx users   4081 Oct  9  2017 class-theme-installer-skin.php
+-rw-r--r--+ 1 hostersepx users   3424 Oct  9  2017 class-theme-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users  19500 Oct 18  2017 class-theme-upgrader.php
+-rw-r--r--+ 1 hostersepx users   4214 Oct  2  2017 class-walker-category-checklist.php
+-rw-r--r--+ 1 hostersepx users   4929 Oct  2  2017 class-walker-nav-menu-checklist.php
+-rw-r--r--+ 1 hostersepx users  11204 Oct  2  2017 class-walker-nav-menu-edit.php
+-rw-r--r--+ 1 hostersepx users   3074 Jul 27  2017 class-wp-ajax-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users  34032 Oct 18  2017 class-wp-automatic-updater.php
+-rw-r--r--+ 1 hostersepx users  25638 Oct  2  2017 class-wp-comments-list-table.php
+-rw-r--r--+ 1 hostersepx users  15926 Jun 28  2018 class-wp-community-events.php
+-rw-r--r--+ 1 hostersepx users  22184 Jul 27  2017 class-wp-filesystem-base.php
+-rw-r--r--+ 1 hostersepx users  11222 Jul 27  2017 class-wp-filesystem-direct.php
+-rw-r--r--+ 1 hostersepx users  13465 Jul 27  2017 class-wp-filesystem-ftpext.php
+-rw-r--r--+ 1 hostersepx users  10586 Jul 27  2017 class-wp-filesystem-ftpsockets.php
+-rw-r--r--+ 1 hostersepx users  14963 Jul 27  2017 class-wp-filesystem-ssh2.php
+-rw-r--r--+ 1 hostersepx users   7342 Sep 28  2017 class-wp-importer.php
+-rw-r--r--+ 1 hostersepx users   5521 May 14  2018 class-wp-internal-pointers.php
+-rw-r--r--+ 1 hostersepx users   7602 Jul 27  2017 class-wp-links-list-table.php
+-rw-r--r--+ 1 hostersepx users   1068 Jul 27  2017 class-wp-list-table-compat.php
+-rw-r--r--+ 1 hostersepx users  37340 Jul 27  2017 class-wp-list-table.php
+-rw-r--r--+ 1 hostersepx users  22641 May  1  2018 class-wp-media-list-table.php
+-rw-r--r--+ 1 hostersepx users  15556 Aug 22  2017 class-wp-ms-sites-list-table.php
+-rw-r--r--+ 1 hostersepx users  20232 Oct  2  2017 class-wp-ms-themes-list-table.php
+-rw-r--r--+ 1 hostersepx users  12842 Mar  8  2018 class-wp-ms-users-list-table.php
+-rw-r--r--+ 1 hostersepx users  19508 Nov 30 16:23 class-wp-plugin-install-list-table.php
+-rw-r--r--+ 1 hostersepx users  32818 Oct  4  2017 class-wp-plugins-list-table.php
+-rw-r--r--+ 1 hostersepx users   1472 Oct 17  2015 class-wp-post-comments-list-table.php
+-rw-r--r--+ 1 hostersepx users  53277 Nov  1 02:35 class-wp-posts-list-table.php
+-rw-r--r--+ 1 hostersepx users  35219 Dec 13 01:30 class-wp-screen.php
+-rw-r--r--+ 1 hostersepx users   6043 Jul 27  2017 class-wp-site-icon.php
+-rw-r--r--+ 1 hostersepx users  17957 Oct  2  2017 class-wp-terms-list-table.php
+-rw-r--r--+ 1 hostersepx users  14520 Nov 30 20:25 class-wp-theme-install-list-table.php
+-rw-r--r--+ 1 hostersepx users   9267 Aug  3  2017 class-wp-themes-list-table.php
+-rw-r--r--+ 1 hostersepx users   5061 Jul 27  2017 class-wp-upgrader-skin.php
+-rw-r--r--+ 1 hostersepx users   1456 Dec  3  2016 class-wp-upgrader-skins.php
+-rw-r--r--+ 1 hostersepx users  33913 Nov 21  2017 class-wp-upgrader.php
+-rw-r--r--+ 1 hostersepx users  17282 Mar  8  2018 class-wp-users-list-table.php
+-rw-r--r--+ 1 hostersepx users   5726 Jun 29  2016 comment.php
+-rw-r--r--+ 1 hostersepx users  19684 Jul 18  2018 continents-cities.php
+-rw-r--r--+ 1 hostersepx users   2192 Oct  2  2017 credits.php
+-rw-r--r--+ 1 hostersepx users  57015 Oct 29 08:29 dashboard.php
+-rw-r--r--+ 1 hostersepx users  39173 Sep 26  2017 deprecated.php
+-rw-r--r--+ 1 hostersepx users   1411 May 22  2016 edit-tag-messages.php
+-rw-r--r--+ 1 hostersepx users  22966 Jun 27  2017 export.php
+-rw-r--r--+ 1 hostersepx users  82178 Jul 24  2018 file.php
+-rw-r--r--+ 1 hostersepx users  33553 Aug 22  2017 image-edit.php
+-rw-r--r--+ 1 hostersepx users  22259 Oct 18 04:15 image.php
+-rw-r--r--+ 1 hostersepx users   6246 Sep 27  2017 import.php
+-rw-r--r--+ 1 hostersepx users   2648 Aug 31  2016 list-table.php
+-rw-r--r--+ 1 hostersepx users 106323 Jan 15  2018 media.php
+-rw-r--r--+ 1 hostersepx users   8715 Jun 29  2016 menu.php
+-rw-r--r--+ 1 hostersepx users  59455 Nov 12 03:38 meta-boxes.php
+-rw-r--r--+ 1 hostersepx users  69476 Nov 22 19:40 misc.php
+-rw-r--r--+ 1 hostersepx users   1387 Sep 27  2017 ms-admin-filters.php
+-rw-r--r--+ 1 hostersepx users   2860 Jun 22  2017 ms-deprecated.php
+-rw-r--r--+ 1 hostersepx users  35406 Aug 22  2017 ms.php
+-rw-r--r--+ 1 hostersepx users  42469 Oct 24  2017 nav-menu.php
+-rw-r--r--+ 1 hostersepx users  23879 Oct 18  2017 network.php
+-rw-r--r--+ 1 hostersepx users   1222 Jan 25  2017 noop.php
+-rw-r--r--+ 1 hostersepx users   3832 Nov  9  2017 options.php
+-rw-r--r--+ 1 hostersepx users  31716 Dec 15 11:01 plugin-install.php
+-rw-r--r--+ 1 hostersepx users  69333 Oct 26 07:38 plugin.php
+-rw-r--r--+ 1 hostersepx users  71929 Dec 19 22:28 post.php
+-rw-r--r--+ 1 hostersepx users  14947 Sep 21  2017 revision.php
+-rw-r--r--+ 1 hostersepx users  36233 Jul 24  2018 schema.php
+-rw-r--r--+ 1 hostersepx users   6148 Jul  7  2016 screen.php
+-rw-r--r--+ 1 hostersepx users   7727 May 26  2016 taxonomy.php
+-rw-r--r--+ 1 hostersepx users  85967 Nov 27 06:39 template.php
+-rw-r--r--+ 1 hostersepx users   6286 Aug 22  2017 theme-install.php
+-rw-r--r--+ 1 hostersepx users  28334 Mar  8  2018 theme.php
+-rw-r--r--+ 1 hostersepx users   8551 Aug 22  2017 translation-install.php
+-rw-r--r--+ 1 hostersepx users  55807 Mar 25 15:56 update-core.php
+-rw-r--r--+ 1 hostersepx users  25873 Aug 22  2017 update.php
+-rw-r--r--+ 1 hostersepx users  97632 Nov 30 20:25 upgrade.php
+-rw-r--r--+ 1 hostersepx users  50052 Jul 17  2018 user.php
+-rw-r--r--+ 1 hostersepx users  10001 Sep 27  2017 widgets.php
+
+/home/hostersepx/www/wp-admin/js:
+total 1921
+drwxr-xr-x+ 3 hostersepx users     90 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users     91 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users   2918 Jul 29  2015 accordion.js
+-rw-r--r--+ 1 hostersepx users    835 Oct 10 04:11 accordion.min.js
+-rw-r--r--+ 1 hostersepx users  11447 Oct 24  2017 code-editor.js
+-rw-r--r--+ 1 hostersepx users   3169 Oct 10 04:11 code-editor.min.js
+-rw-r--r--+ 1 hostersepx users  10193 Sep  3  2017 color-picker.js
+-rw-r--r--+ 1 hostersepx users   3521 Oct 10 04:11 color-picker.min.js
+-rw-r--r--+ 1 hostersepx users   2788 Jun 15  2017 comment.js
+-rw-r--r--+ 1 hostersepx users   1247 Oct 10 04:11 comment.min.js
+-rw-r--r--+ 1 hostersepx users  32919 Oct 24  2017 common.js
+-rw-r--r--+ 1 hostersepx users  15421 Oct 10 04:11 common.min.js
+-rw-r--r--+ 1 hostersepx users   3364 Jun 15  2017 custom-background.js
+-rw-r--r--+ 1 hostersepx users   1148 Oct 10 04:11 custom-background.min.js
+-rw-r--r--+ 1 hostersepx users   1502 Nov 14  2013 custom-header.js
+-rw-r--r--+ 1 hostersepx users 289044 May  8  2018 customize-controls.js
+-rw-r--r--+ 1 hostersepx users 111792 Oct 10 04:11 customize-controls.min.js
+-rw-r--r--+ 1 hostersepx users 107440 Nov 12 04:23 customize-nav-menus.js
+-rw-r--r--+ 1 hostersepx users  46509 Oct 10 04:11 customize-nav-menus.min.js
+-rw-r--r--+ 1 hostersepx users  70351 Oct 13  2017 customize-widgets.js
+-rw-r--r--+ 1 hostersepx users  28389 Oct 10 04:11 customize-widgets.min.js
+-rw-r--r--+ 1 hostersepx users  16585 Oct 23 11:04 dashboard.js
+-rw-r--r--+ 1 hostersepx users   7067 Oct 23 11:04 dashboard.min.js
+-rw-r--r--+ 1 hostersepx users  27956 Oct  2  2017 edit-comments.js
+-rw-r--r--+ 1 hostersepx users  14936 Oct 10 04:11 edit-comments.min.js
+-rw-r--r--+ 1 hostersepx users  42847 Aug 24  2017 editor-expand.js
+-rw-r--r--+ 1 hostersepx users  13518 Oct 10 04:11 editor-expand.min.js
+-rw-r--r--+ 1 hostersepx users  45399 Jan 23  2018 editor.js
+-rw-r--r--+ 1 hostersepx users  13417 Oct 10 04:11 editor.min.js
+-rw-r--r--+ 1 hostersepx users   7689 Nov 11  2010 farbtastic.js
+-rw-r--r--+ 1 hostersepx users   5550 Oct  9  2015 gallery.js
+-rw-r--r--+ 1 hostersepx users   3815 Oct 10 04:11 gallery.min.js
+-rw-r--r--+ 1 hostersepx users  28474 Mar 24  2018 image-edit.js
+-rw-r--r--+ 1 hostersepx users   9754 Oct 10 04:11 image-edit.min.js
+-rw-r--r--+ 1 hostersepx users  16418 Oct  2  2017 inline-edit-post.js
+-rw-r--r--+ 1 hostersepx users   7266 Oct 10 04:11 inline-edit-post.min.js
+-rw-r--r--+ 1 hostersepx users   7593 Oct  2  2017 inline-edit-tax.js
+-rw-r--r--+ 1 hostersepx users   2815 Oct 10 04:11 inline-edit-tax.min.js
+-rw-r--r--+ 1 hostersepx users  23608 Oct 25  2016 iris.min.js
+-rw-r--r--+ 1 hostersepx users    625 Aug  4  2014 language-chooser.js
+-rw-r--r--+ 1 hostersepx users    374 Oct 10 04:11 language-chooser.min.js
+-rw-r--r--+ 1 hostersepx users   2247 Nov 15  2013 link.js
+-rw-r--r--+ 1 hostersepx users   1646 Oct 10 04:11 link.min.js
+-rw-r--r--+ 1 hostersepx users   1179 Aug 20  2016 media-gallery.js
+-rw-r--r--+ 1 hostersepx users    537 Oct 10 04:11 media-gallery.min.js
+-rw-r--r--+ 1 hostersepx users   1984 Jan 13  2016 media-upload.js
+-rw-r--r--+ 1 hostersepx users   1153 Oct 10 04:11 media-upload.min.js
+-rw-r--r--+ 1 hostersepx users   5239 Jun 15  2017 media.js
+-rw-r--r--+ 1 hostersepx users   1874 Oct 10 04:11 media.min.js
+-rw-r--r--+ 1 hostersepx users  42256 Aug  3  2017 nav-menu.js
+-rw-r--r--+ 1 hostersepx users  21123 Oct 10 04:11 nav-menu.min.js
+-rw-r--r--+ 1 hostersepx users   2407 Jul  1  2016 password-strength-meter.js
+-rw-r--r--+ 1 hostersepx users    784 Oct 10 04:11 password-strength-meter.min.js
+-rw-r--r--+ 1 hostersepx users   6963 Jan 16  2018 plugin-install.js
+-rw-r--r--+ 1 hostersepx users   2402 Oct 10 04:11 plugin-install.min.js
+-rw-r--r--+ 1 hostersepx users  37410 May  9  2018 post.js
+-rw-r--r--+ 1 hostersepx users  18379 Oct 10 04:11 post.min.js
+-rw-r--r--+ 1 hostersepx users  11908 Sep 22  2016 postbox.js
+-rw-r--r--+ 1 hostersepx users   4192 Oct 10 04:11 postbox.min.js
+-rw-r--r--+ 1 hostersepx users  33753 Feb 17  2017 revisions.js
+-rw-r--r--+ 1 hostersepx users  17926 Oct 10 04:11 revisions.min.js
+-rw-r--r--+ 1 hostersepx users    777 Jun  1  2015 set-post-thumbnail.js
+-rw-r--r--+ 1 hostersepx users    525 Oct 10 04:11 set-post-thumbnail.min.js
+-rw-r--r--+ 1 hostersepx users   5484 Dec  5  2013 svg-painter.js
+-rw-r--r--+ 1 hostersepx users   2410 Oct 10 04:11 svg-painter.min.js
+-rw-r--r--+ 1 hostersepx users   6887 Oct 24  2017 tags-box.js
+-rw-r--r--+ 1 hostersepx users   3163 Oct 10 04:11 tags-box.min.js
+-rw-r--r--+ 1 hostersepx users   5194 Mar 31  2017 tags-suggest.js
+-rw-r--r--+ 1 hostersepx users   2173 Oct 10 04:11 tags-suggest.min.js
+-rw-r--r--+ 1 hostersepx users   4482 Aug 24  2017 tags.js
+-rw-r--r--+ 1 hostersepx users   1711 Oct 10 04:11 tags.min.js
+-rw-r--r--+ 1 hostersepx users  24232 Oct 16  2017 theme-plugin-editor.js
+-rw-r--r--+ 1 hostersepx users  11108 Oct 10 04:11 theme-plugin-editor.min.js
+-rw-r--r--+ 1 hostersepx users  54364 Nov 24  2017 theme.js
+-rw-r--r--+ 1 hostersepx users  26678 Oct 10 04:11 theme.min.js
+-rw-r--r--+ 1 hostersepx users  81283 Jul 18  2018 updates.js
+-rw-r--r--+ 1 hostersepx users  35881 Oct 10 04:11 updates.min.js
+-rw-r--r--+ 1 hostersepx users  12513 Sep 21  2017 user-profile.js
+-rw-r--r--+ 1 hostersepx users   6359 Oct 10 04:11 user-profile.min.js
+-rw-r--r--+ 1 hostersepx users   1070 Jan 27  2014 user-suggest.js
+-rw-r--r--+ 1 hostersepx users    679 Oct 10 04:11 user-suggest.min.js
+drwxr-xr-x+ 2 hostersepx users     16 Jan  9 18:32 widgets
+-rw-r--r--+ 1 hostersepx users  22018 Jan 17  2018 widgets.js
+-rw-r--r--+ 1 hostersepx users  12141 Oct 10 04:11 widgets.min.js
+-rw-r--r--+ 1 hostersepx users   7762 Jan  6  2017 word-count.js
+-rw-r--r--+ 1 hostersepx users   1508 Oct 10 04:11 word-count.min.js
+-rw-r--r--+ 1 hostersepx users    684 May 13  2016 wp-fullscreen-stub.js
+-rw-r--r--+ 1 hostersepx users    331 Oct 10 04:11 wp-fullscreen-stub.min.js
+-rw-r--r--+ 1 hostersepx users   7579 May 10  2018 xfn.js
+-rw-r--r--+ 1 hostersepx users   3504 Oct 10 04:11 xfn.min.js
+
+/home/hostersepx/www/wp-admin/js/widgets:
+total 184
+drwxr-xr-x+ 2 hostersepx users    16 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    90 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 15091 Jan 15  2018 custom-html-widgets.js
+-rw-r--r--+ 1 hostersepx users  5578 Oct 10 04:11 custom-html-widgets.min.js
+-rw-r--r--+ 1 hostersepx users  3871 May 22  2017 media-audio-widget.js
+-rw-r--r--+ 1 hostersepx users  1440 Oct 10 04:11 media-audio-widget.min.js
+-rw-r--r--+ 1 hostersepx users  9951 Oct 19  2017 media-gallery-widget.js
+-rw-r--r--+ 1 hostersepx users  3779 Oct 10 04:11 media-gallery-widget.min.js
+-rw-r--r--+ 1 hostersepx users  5212 Sep 25  2017 media-image-widget.js
+-rw-r--r--+ 1 hostersepx users  2023 Oct 10 04:11 media-image-widget.min.js
+-rw-r--r--+ 1 hostersepx users  6594 Oct 19  2017 media-video-widget.js
+-rw-r--r--+ 1 hostersepx users  2705 Oct 10 04:11 media-video-widget.min.js
+-rw-r--r--+ 1 hostersepx users 41846 Oct 19  2017 media-widgets.js
+-rw-r--r--+ 1 hostersepx users 14422 Oct 10 04:11 media-widgets.min.js
+-rw-r--r--+ 1 hostersepx users 17766 Sep  9  2017 text-widgets.js
+-rw-r--r--+ 1 hostersepx users  5924 Oct 10 04:11 text-widgets.min.js
+
+/home/hostersepx/www/wp-admin/maint:
+total 18
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   91 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 7173 Jul  4  2016 repair.php
+
+/home/hostersepx/www/wp-admin/network:
+total 232
+drwxr-xr-x+ 2 hostersepx users    31 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    91 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users   263 Sep 27  2016 about.php
+-rw-r--r--+ 1 hostersepx users  1033 Sep 27  2016 admin.php
+-rw-r--r--+ 1 hostersepx users   267 Sep 27  2016 credits.php
+-rw-r--r--+ 1 hostersepx users   855 Sep 27  2016 edit.php
+-rw-r--r--+ 1 hostersepx users   269 Sep 27  2016 freedoms.php
+-rw-r--r--+ 1 hostersepx users  2838 May 18  2017 index.php
+-rw-r--r--+ 1 hostersepx users  4371 Aug 19  2017 menu.php
+-rw-r--r--+ 1 hostersepx users   279 Sep 27  2016 plugin-editor.php
+-rw-r--r--+ 1 hostersepx users   390 Sep 27  2016 plugin-install.php
+-rw-r--r--+ 1 hostersepx users   267 Sep 27  2016 plugins.php
+-rw-r--r--+ 1 hostersepx users   267 Nov  6  2017 privacy.php
+-rw-r--r--+ 1 hostersepx users   272 Sep 27  2016 profile.php
+-rw-r--r--+ 1 hostersepx users 20291 Jan 24  2018 settings.php
+-rw-r--r--+ 1 hostersepx users   265 Sep 27  2016 setup.php
+-rw-r--r--+ 1 hostersepx users  6889 Jul 17  2017 site-info.php
+-rw-r--r--+ 1 hostersepx users  9240 Jan 24  2018 site-new.php
+-rw-r--r--+ 1 hostersepx users  5391 Jul 17  2017 site-settings.php
+-rw-r--r--+ 1 hostersepx users  6392 Jul 17  2017 site-themes.php
+-rw-r--r--+ 1 hostersepx users 11479 Mar  9  2018 site-users.php
+-rw-r--r--+ 1 hostersepx users 12554 Aug  1  2017 sites.php
+-rw-r--r--+ 1 hostersepx users   277 Sep 27  2016 theme-editor.php
+-rw-r--r--+ 1 hostersepx users   387 Sep 27  2016 theme-install.php
+-rw-r--r--+ 1 hostersepx users 11736 Dec  9  2016 themes.php
+-rw-r--r--+ 1 hostersepx users   271 Sep 27  2016 update-core.php
+-rw-r--r--+ 1 hostersepx users   458 Sep 27  2016 update.php
+-rw-r--r--+ 1 hostersepx users  4684 Aug  1  2017 upgrade.php
+-rw-r--r--+ 1 hostersepx users   271 Sep 27  2016 user-edit.php
+-rw-r--r--+ 1 hostersepx users  4796 Oct  4  2016 user-new.php
+-rw-r--r--+ 1 hostersepx users  8718 Dec  9  2016 users.php
+
+/home/hostersepx/www/wp-admin/user:
+total 58
+drwxr-xr-x+ 2 hostersepx users  11 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users  91 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 275 Sep 25  2013 about.php
+-rw-r--r--+ 1 hostersepx users 842 May 22  2016 admin.php
+-rw-r--r--+ 1 hostersepx users 279 Sep 25  2013 credits.php
+-rw-r--r--+ 1 hostersepx users 281 Sep 25  2013 freedoms.php
+-rw-r--r--+ 1 hostersepx users 269 Nov  4  2014 index.php
+-rw-r--r--+ 1 hostersepx users 700 May  6  2014 menu.php
+-rw-r--r--+ 1 hostersepx users 279 Nov  6  2017 privacy.php
+-rw-r--r--+ 1 hostersepx users 270 Nov  4  2014 profile.php
+-rw-r--r--+ 1 hostersepx users 268 Nov  4  2014 user-edit.php
+
+/home/hostersepx/www/wp-content:
+total 40
+drwxr-xr-x+ 7 hostersepx users  8 Mar 26 15:04 .
+drwxr-xr-x+ 5 hostersepx users 25 Mar 26 15:16 ..
+-rw-r--r--+ 1 hostersepx users 28 Jan  8  2012 index.php
+drwxr-xr-x+ 4 hostersepx users 99 Feb 21 12:43 languages
+drwxr-xr-x+ 3 hostersepx users  5 Mar 26 07:02 plugins
+drwxr-xr-x+ 5 hostersepx users  6 Mar 26 07:02 themes
+drwxr-xr-x+ 2 hostersepx users  2 Mar 25 15:56 upgrade
+drwxr-xr-x+ 3 hostersepx users  3 Mar 25 15:56 uploads
+
+/home/hostersepx/www/wp-content/languages:
+total 12426
+drwxr-xr-x+ 4 hostersepx users     99 Feb 21 12:43 .
+drwxr-xr-x+ 7 hostersepx users      8 Mar 26 15:04 ..
+-rw-r--r--+ 1 hostersepx users 418857 Mar 25 15:56 admin-de_DE.mo
+-rw-r--r--+ 1 hostersepx users 566950 Mar 25 15:56 admin-de_DE.po
+-rw-r--r--+ 1 hostersepx users 406774 Mar 25 15:56 admin-es_ES.mo
+-rw-r--r--+ 1 hostersepx users 554862 Mar 25 15:56 admin-es_ES.po
+-rw-r--r--+ 1 hostersepx users 430058 Mar 25 15:56 admin-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users 578139 Mar 25 15:56 admin-fr_FR.po
+-rw-r--r--+ 1 hostersepx users 408329 Mar 25 15:56 admin-it_IT.mo
+-rw-r--r--+ 1 hostersepx users 556422 Mar 25 15:56 admin-it_IT.po
+-rw-r--r--+ 1 hostersepx users  48491 Mar 25 15:56 admin-network-de_DE.mo
+-rw-r--r--+ 1 hostersepx users  63953 Mar 25 15:56 admin-network-de_DE.po
+-rw-r--r--+ 1 hostersepx users  45795 Mar 25 15:56 admin-network-es_ES.mo
+-rw-r--r--+ 1 hostersepx users  61256 Mar 25 15:56 admin-network-es_ES.po
+-rw-r--r--+ 1 hostersepx users  48801 Mar 25 15:56 admin-network-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users  64258 Mar 25 15:56 admin-network-fr_FR.po
+-rw-r--r--+ 1 hostersepx users  45888 Mar 25 15:56 admin-network-it_IT.mo
+-rw-r--r--+ 1 hostersepx users  61341 Mar 25 15:56 admin-network-it_IT.po
+-rw-r--r--+ 1 hostersepx users  45597 Mar 25 15:56 admin-network-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users  61052 Mar 25 15:56 admin-network-nl_NL.po
+-rw-r--r--+ 1 hostersepx users 399460 Mar 25 15:56 admin-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users 547527 Mar 25 15:56 admin-nl_NL.po
+-rw-r--r--+ 1 hostersepx users  20664 Mar 25 15:56 continents-cities-de_DE.mo
+-rw-r--r--+ 1 hostersepx users  44049 Mar 25 15:56 continents-cities-de_DE.po
+-rw-r--r--+ 1 hostersepx users  20445 Mar 25 15:56 continents-cities-es_ES.mo
+-rw-r--r--+ 1 hostersepx users  43839 Mar 25 15:56 continents-cities-es_ES.po
+-rw-r--r--+ 1 hostersepx users  20969 Mar 25 15:56 continents-cities-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users  44436 Mar 25 15:56 continents-cities-fr_FR.po
+-rw-r--r--+ 1 hostersepx users  20398 Mar 25 15:56 continents-cities-it_IT.mo
+-rw-r--r--+ 1 hostersepx users  43784 Mar 25 15:56 continents-cities-it_IT.po
+-rw-r--r--+ 1 hostersepx users  20529 Mar 25 15:56 continents-cities-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users  43913 Mar 25 15:56 continents-cities-nl_NL.po
+-rw-r--r--+ 1 hostersepx users    362 Mar 25 15:56 de_DE-0ce75ad2f775d1cac9696967d484808c.json
+-rw-r--r--+ 1 hostersepx users    434 Mar 25 15:56 de_DE-1a0cd6a7128913b15c1a10dd68951869.json
+-rw-r--r--+ 1 hostersepx users    394 Mar 25 15:56 de_DE-1bba9045bb07c89671c88a3f328548e8.json
+-rw-r--r--+ 1 hostersepx users    603 Mar 25 15:56 de_DE-28b3c3d595952907e08d98287077426c.json
+-rw-r--r--+ 1 hostersepx users    250 Mar 25 15:56 de_DE-2c5d274ea625dd91556554ad82901529.json
+-rw-r--r--+ 1 hostersepx users    877 Mar 25 15:56 de_DE-68f2cec7514bf8563c723a4d675fcfe6.json
+-rw-r--r--+ 1 hostersepx users   4595 Mar 25 15:56 de_DE-7f13c36c641b114bf18cd0bcc9ecc7e0.json
+-rw-r--r--+ 1 hostersepx users   6970 Mar 25 15:56 de_DE-8860e58c20c6a2ab5876a0f07be43bd9.json
+-rw-r--r--+ 1 hostersepx users    284 Mar 25 15:56 de_DE-a25d1cc7bf7ca0b4e114f6bea64943f4.json
+-rw-r--r--+ 1 hostersepx users  19519 Mar 25 15:56 de_DE-bf0f094965d3d4a95b47babcb35fc136.json
+-rw-r--r--+ 1 hostersepx users  18245 Mar 25 15:56 de_DE-f8f49d9fc4a9cf7d78ec99285417bd9c.json
+-rw-r--r--+ 1 hostersepx users 326408 Mar 25 15:56 de_DE.mo
+-rw-r--r--+ 1 hostersepx users 553871 Mar 25 15:56 de_DE.po
+-rw-r--r--+ 1 hostersepx users    364 Mar 25 15:56 es_ES-0ce75ad2f775d1cac9696967d484808c.json
+-rw-r--r--+ 1 hostersepx users    421 Mar 25 15:56 es_ES-1a0cd6a7128913b15c1a10dd68951869.json
+-rw-r--r--+ 1 hostersepx users    392 Mar 25 15:56 es_ES-1bba9045bb07c89671c88a3f328548e8.json
+-rw-r--r--+ 1 hostersepx users    597 Mar 25 15:56 es_ES-28b3c3d595952907e08d98287077426c.json
+-rw-r--r--+ 1 hostersepx users    246 Mar 25 15:56 es_ES-2c5d274ea625dd91556554ad82901529.json
+-rw-r--r--+ 1 hostersepx users    887 Mar 25 15:56 es_ES-68f2cec7514bf8563c723a4d675fcfe6.json
+-rw-r--r--+ 1 hostersepx users   4552 Mar 25 15:56 es_ES-7f13c36c641b114bf18cd0bcc9ecc7e0.json
+-rw-r--r--+ 1 hostersepx users   6701 Mar 25 15:56 es_ES-8860e58c20c6a2ab5876a0f07be43bd9.json
+-rw-r--r--+ 1 hostersepx users    287 Mar 25 15:56 es_ES-a25d1cc7bf7ca0b4e114f6bea64943f4.json
+-rw-r--r--+ 1 hostersepx users  18868 Mar 25 15:56 es_ES-bf0f094965d3d4a95b47babcb35fc136.json
+-rw-r--r--+ 1 hostersepx users  18676 Mar 25 15:56 es_ES-f8f49d9fc4a9cf7d78ec99285417bd9c.json
+-rw-r--r--+ 1 hostersepx users 323260 Mar 25 15:56 es_ES.mo
+-rw-r--r--+ 1 hostersepx users 550821 Mar 25 15:56 es_ES.po
+-rw-r--r--+ 1 hostersepx users    396 Mar 25 15:56 fr_FR-0ce75ad2f775d1cac9696967d484808c.json
+-rw-r--r--+ 1 hostersepx users    426 Mar 25 15:56 fr_FR-1a0cd6a7128913b15c1a10dd68951869.json
+-rw-r--r--+ 1 hostersepx users    399 Mar 25 15:56 fr_FR-1bba9045bb07c89671c88a3f328548e8.json
+-rw-r--r--+ 1 hostersepx users    593 Mar 25 15:56 fr_FR-28b3c3d595952907e08d98287077426c.json
+-rw-r--r--+ 1 hostersepx users    250 Mar 25 15:56 fr_FR-2c5d274ea625dd91556554ad82901529.json
+-rw-r--r--+ 1 hostersepx users    918 Mar 25 15:56 fr_FR-68f2cec7514bf8563c723a4d675fcfe6.json
+-rw-r--r--+ 1 hostersepx users   4993 Mar 25 15:56 fr_FR-7f13c36c641b114bf18cd0bcc9ecc7e0.json
+-rw-r--r--+ 1 hostersepx users   7501 Mar 25 15:56 fr_FR-8860e58c20c6a2ab5876a0f07be43bd9.json
+-rw-r--r--+ 1 hostersepx users    303 Mar 25 15:56 fr_FR-a25d1cc7bf7ca0b4e114f6bea64943f4.json
+-rw-r--r--+ 1 hostersepx users  20694 Mar 25 15:56 fr_FR-bf0f094965d3d4a95b47babcb35fc136.json
+-rw-r--r--+ 1 hostersepx users  19699 Mar 25 15:56 fr_FR-f8f49d9fc4a9cf7d78ec99285417bd9c.json
+-rw-r--r--+ 1 hostersepx users 337022 Mar 25 15:56 fr_FR.mo
+-rw-r--r--+ 1 hostersepx users 564526 Mar 25 15:56 fr_FR.po
+-rw-r--r--+ 1 hostersepx users    381 Mar 25 15:56 it_IT-0ce75ad2f775d1cac9696967d484808c.json
+-rw-r--r--+ 1 hostersepx users    425 Mar 25 15:56 it_IT-1a0cd6a7128913b15c1a10dd68951869.json
+-rw-r--r--+ 1 hostersepx users    398 Mar 25 15:56 it_IT-1bba9045bb07c89671c88a3f328548e8.json
+-rw-r--r--+ 1 hostersepx users    579 Mar 25 15:56 it_IT-28b3c3d595952907e08d98287077426c.json
+-rw-r--r--+ 1 hostersepx users    252 Mar 25 15:56 it_IT-2c5d274ea625dd91556554ad82901529.json
+-rw-r--r--+ 1 hostersepx users    859 Mar 25 15:56 it_IT-68f2cec7514bf8563c723a4d675fcfe6.json
+-rw-r--r--+ 1 hostersepx users   4610 Mar 25 15:56 it_IT-7f13c36c641b114bf18cd0bcc9ecc7e0.json
+-rw-r--r--+ 1 hostersepx users   6699 Mar 25 15:56 it_IT-8860e58c20c6a2ab5876a0f07be43bd9.json
+-rw-r--r--+ 1 hostersepx users    291 Mar 25 15:56 it_IT-a25d1cc7bf7ca0b4e114f6bea64943f4.json
+-rw-r--r--+ 1 hostersepx users  18665 Mar 25 15:56 it_IT-bf0f094965d3d4a95b47babcb35fc136.json
+-rw-r--r--+ 1 hostersepx users  18191 Mar 25 15:56 it_IT-f8f49d9fc4a9cf7d78ec99285417bd9c.json
+-rw-r--r--+ 1 hostersepx users 320460 Mar 25 15:56 it_IT.mo
+-rw-r--r--+ 1 hostersepx users 547985 Mar 25 15:56 it_IT.po
+-rw-r--r--+ 1 hostersepx users    355 Mar 25 15:56 nl_NL-0ce75ad2f775d1cac9696967d484808c.json
+-rw-r--r--+ 1 hostersepx users    414 Mar 25 15:56 nl_NL-1a0cd6a7128913b15c1a10dd68951869.json
+-rw-r--r--+ 1 hostersepx users    384 Mar 25 15:56 nl_NL-1bba9045bb07c89671c88a3f328548e8.json
+-rw-r--r--+ 1 hostersepx users    579 Mar 25 15:56 nl_NL-28b3c3d595952907e08d98287077426c.json
+-rw-r--r--+ 1 hostersepx users    252 Mar 25 15:56 nl_NL-2c5d274ea625dd91556554ad82901529.json
+-rw-r--r--+ 1 hostersepx users    858 Mar 25 15:56 nl_NL-68f2cec7514bf8563c723a4d675fcfe6.json
+-rw-r--r--+ 1 hostersepx users   4425 Mar 25 15:56 nl_NL-7f13c36c641b114bf18cd0bcc9ecc7e0.json
+-rw-r--r--+ 1 hostersepx users   6403 Mar 25 15:56 nl_NL-8860e58c20c6a2ab5876a0f07be43bd9.json
+-rw-r--r--+ 1 hostersepx users    287 Mar 25 15:56 nl_NL-a25d1cc7bf7ca0b4e114f6bea64943f4.json
+-rw-r--r--+ 1 hostersepx users  18131 Mar 25 15:56 nl_NL-bf0f094965d3d4a95b47babcb35fc136.json
+-rw-r--r--+ 1 hostersepx users  17545 Mar 25 15:56 nl_NL-f8f49d9fc4a9cf7d78ec99285417bd9c.json
+-rw-r--r--+ 1 hostersepx users 315042 Mar 25 15:56 nl_NL.mo
+-rw-r--r--+ 1 hostersepx users 542564 Mar 25 15:56 nl_NL.po
+drwxr-xr-x+ 2 hostersepx users     20 Mar 25 15:56 plugins
+drwxr-xr-x+ 2 hostersepx users     32 Feb 21 12:43 themes
+
+/home/hostersepx/www/wp-content/languages/plugins:
+total 406
+drwxr-xr-x+ 2 hostersepx users    20 Mar 25 15:56 .
+drwxr-xr-x+ 4 hostersepx users    99 Feb 21 12:43 ..
+-rw-r--r--+ 1 hostersepx users 30138 Feb 21 12:42 akismet-de_DE.mo
+-rw-r--r--+ 1 hostersepx users 37169 Feb 21 12:42 akismet-de_DE.po
+-rw-r--r--+ 1 hostersepx users 29653 Feb 21 12:43 akismet-es_ES.mo
+-rw-r--r--+ 1 hostersepx users 36597 Feb 21 12:43 akismet-es_ES.po
+-rw-r--r--+ 1 hostersepx users 30953 Mar 25 15:56 akismet-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users 37897 Mar 25 15:56 akismet-fr_FR.po
+-rw-r--r--+ 1 hostersepx users 29610 Feb 21 12:42 akismet-it_IT.mo
+-rw-r--r--+ 1 hostersepx users 36548 Feb 21 12:42 akismet-it_IT.po
+-rw-r--r--+ 1 hostersepx users 28858 Feb 21 12:43 akismet-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users 35888 Feb 21 12:43 akismet-nl_NL.po
+-rw-r--r--+ 1 hostersepx users  1240 Mar 25 15:56 hello-dolly-de_DE.mo
+-rw-r--r--+ 1 hostersepx users  1567 Mar 25 15:56 hello-dolly-de_DE.po
+-rw-r--r--+ 1 hostersepx users  1287 Mar 25 15:56 hello-dolly-es_ES.mo
+-rw-r--r--+ 1 hostersepx users  1623 Mar 25 15:56 hello-dolly-es_ES.po
+-rw-r--r--+ 1 hostersepx users  1295 Mar 25 15:56 hello-dolly-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users  1631 Mar 25 15:56 hello-dolly-fr_FR.po
+-rw-r--r--+ 1 hostersepx users  1233 Mar 25 15:56 hello-dolly-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users  1559 Mar 25 15:56 hello-dolly-nl_NL.po
+
+/home/hostersepx/www/wp-content/languages/themes:
+total 332
+drwxr-xr-x+ 2 hostersepx users    32 Feb 21 12:43 .
+drwxr-xr-x+ 4 hostersepx users    99 Feb 21 12:43 ..
+-rw-r--r--+ 1 hostersepx users  7848 Mar 25 15:56 twentynineteen-de_DE.mo
+-rw-r--r--+ 1 hostersepx users 11547 Mar 25 15:56 twentynineteen-de_DE.po
+-rw-r--r--+ 1 hostersepx users  7796 Feb 21 12:43 twentynineteen-es_ES.mo
+-rw-r--r--+ 1 hostersepx users 11505 Feb 21 12:43 twentynineteen-es_ES.po
+-rw-r--r--+ 1 hostersepx users  7968 Mar 25 15:56 twentynineteen-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users 11675 Mar 25 15:56 twentynineteen-fr_FR.po
+-rw-r--r--+ 1 hostersepx users  7784 Feb 21 12:42 twentynineteen-it_IT.mo
+-rw-r--r--+ 1 hostersepx users 11485 Feb 21 12:42 twentynineteen-it_IT.po
+-rw-r--r--+ 1 hostersepx users  7610 Feb 21 12:43 twentynineteen-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users 11309 Feb 21 12:43 twentynineteen-nl_NL.po
+-rw-r--r--+ 1 hostersepx users  7284 Feb 21 12:42 twentyseventeen-de_DE.mo
+-rw-r--r--+ 1 hostersepx users 10447 Feb 21 12:42 twentyseventeen-de_DE.po
+-rw-r--r--+ 1 hostersepx users  7327 Feb 21 12:43 twentyseventeen-es_ES.mo
+-rw-r--r--+ 1 hostersepx users 10503 Feb 21 12:43 twentyseventeen-es_ES.po
+-rw-r--r--+ 1 hostersepx users  7541 Mar 25 15:56 twentyseventeen-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users 10715 Mar 25 15:56 twentyseventeen-fr_FR.po
+-rw-r--r--+ 1 hostersepx users  7297 Feb 21 12:42 twentyseventeen-it_IT.mo
+-rw-r--r--+ 1 hostersepx users 10465 Feb 21 12:42 twentyseventeen-it_IT.po
+-rw-r--r--+ 1 hostersepx users  7135 Mar 25 15:56 twentyseventeen-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users 10300 Mar 25 15:56 twentyseventeen-nl_NL.po
+-rw-r--r--+ 1 hostersepx users  6714 Feb 21 12:42 twentysixteen-de_DE.mo
+-rw-r--r--+ 1 hostersepx users  9804 Feb 21 12:42 twentysixteen-de_DE.po
+-rw-r--r--+ 1 hostersepx users  7169 Feb 21 12:43 twentysixteen-es_ES.mo
+-rw-r--r--+ 1 hostersepx users 10477 Feb 21 12:43 twentysixteen-es_ES.po
+-rw-r--r--+ 1 hostersepx users  7256 Mar 25 15:56 twentysixteen-fr_FR.mo
+-rw-r--r--+ 1 hostersepx users 10564 Mar 25 15:56 twentysixteen-fr_FR.po
+-rw-r--r--+ 1 hostersepx users  7124 Feb 21 12:42 twentysixteen-it_IT.mo
+-rw-r--r--+ 1 hostersepx users 10424 Feb 21 12:42 twentysixteen-it_IT.po
+-rw-r--r--+ 1 hostersepx users  6964 Mar 25 15:56 twentysixteen-nl_NL.mo
+-rw-r--r--+ 1 hostersepx users 10262 Mar 25 15:56 twentysixteen-nl_NL.po
+
+/home/hostersepx/www/wp-content/plugins:
+total 27
+drwxr-xr-x+ 3 hostersepx users    5 Mar 26 07:02 .
+drwxr-xr-x+ 7 hostersepx users    8 Mar 26 15:04 ..
+drwxr-xr-x+ 4 hostersepx users   15 Jan  9 18:33 akismet
+-rw-r--r--+ 1 hostersepx users 2283 Nov 15 23:38 hello.php
+-rw-r--r--+ 1 hostersepx users   28 Jun  5  2014 index.php
+
+/home/hostersepx/www/wp-content/plugins/akismet:
+total 204
+drwxr-xr-x+ 4 hostersepx users    15 Jan  9 18:33 .
+drwxr-xr-x+ 3 hostersepx users     5 Mar 26 07:02 ..
+-rw-r--r--+ 1 hostersepx users   629 May  9  2016 .htaccess
+-rw-r--r--+ 1 hostersepx users 18092 Aug 24  2015 LICENSE.txt
+drwxr-xr-x+ 3 hostersepx users     6 Jan  9 18:32 _inc
+-rw-r--r--+ 1 hostersepx users  2539 Nov 12 19:38 akismet.php
+-rw-r--r--+ 1 hostersepx users 48456 Sep 20  2018 class.akismet-admin.php
+-rw-r--r--+ 1 hostersepx users  4663 Jun 28  2018 class.akismet-cli.php
+-rw-r--r--+ 1 hostersepx users 11135 Oct 30 16:27 class.akismet-rest-api.php
+-rw-r--r--+ 1 hostersepx users  2856 Jul 13  2017 class.akismet-widget.php
+-rw-r--r--+ 1 hostersepx users 54682 Oct 26 18:10 class.akismet.php
+-rw-r--r--+ 1 hostersepx users    26 Mar 10  2014 index.php
+-rw-r--r--+ 1 hostersepx users 19283 Nov 12 19:38 readme.txt
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 views
+-rw-r--r--+ 1 hostersepx users  6437 Sep 23  2016 wrapper.php
+
+/home/hostersepx/www/wp-content/plugins/akismet/_inc:
+total 39
+drwxr-xr-x+ 3 hostersepx users     6 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users    15 Jan  9 18:33 ..
+-rw-r--r--+ 1 hostersepx users 11614 Apr 27  2018 akismet.css
+-rw-r--r--+ 1 hostersepx users  9928 Apr 27  2018 akismet.js
+-rw-r--r--+ 1 hostersepx users   700 Jul  2  2014 form.js
+drwxr-xr-x+ 2 hostersepx users     3 Jan  9 18:32 img
+
+/home/hostersepx/www/wp-content/plugins/akismet/_inc/img:
+total 10
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    6 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 5052 May  1  2017 logo-full-2x.png
+
+/home/hostersepx/www/wp-content/plugins/akismet/views:
+total 52
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users    15 Jan  9 18:33 ..
+-rw-r--r--+ 1 hostersepx users 11904 Jun 12  2018 config.php
+-rw-r--r--+ 1 hostersepx users   608 Jan 31  2017 get.php
+-rw-r--r--+ 1 hostersepx users 10243 Jun 12  2018 notice.php
+-rw-r--r--+ 1 hostersepx users  7283 Jul  6  2017 start.php
+-rw-r--r--+ 1 hostersepx users   744 Dec 15  2016 stats.php
+
+/home/hostersepx/www/wp-content/themes:
+total 47
+drwxr-xr-x+ 5 hostersepx users  6 Mar 26 07:02 .
+drwxr-xr-x+ 7 hostersepx users  8 Mar 26 15:04 ..
+-rw-r--r--+ 1 hostersepx users 28 Jun  5  2014 index.php
+drwxr-xr-x+ 8 hostersepx users 33 Jan  9 18:32 twentynineteen
+drwxr-xr-x+ 5 hostersepx users 22 Jan  9 18:32 twentyseventeen
+drwxr-xr-x+ 7 hostersepx users 25 Jan  9 18:32 twentysixteen
+
+/home/hostersepx/www/wp-content/themes/twentynineteen:
+total 937
+drwxr-xr-x+  8 hostersepx users     33 Jan  9 18:32 .
+drwxr-xr-x+  5 hostersepx users      6 Mar 26 07:02 ..
+-rw-r--r--+  1 hostersepx users    840 Oct 30 02:15 404.php
+-rw-r--r--+  1 hostersepx users   1229 Dec 15 11:03 archive.php
+drwxr-xr-x+  2 hostersepx users      4 Jan  9 18:32 classes
+-rw-r--r--+  1 hostersepx users   3988 Dec 15 11:12 comments.php
+drwxr-xr-x+  2 hostersepx users      4 Jan  9 18:32 fonts
+-rw-r--r--+  1 hostersepx users   1608 Nov 12 23:20 footer.php
+-rw-r--r--+  1 hostersepx users  10035 Jan  7 18:40 functions.php
+-rw-r--r--+  1 hostersepx users   1836 Dec 15 11:12 header.php
+-rw-r--r--+  1 hostersepx users   2914 Dec 15 11:03 image.php
+drwxr-xr-x+  2 hostersepx users      8 Jan  9 18:32 inc
+-rw-r--r--+  1 hostersepx users   1060 Dec 15 11:03 index.php
+drwxr-xr-x+  2 hostersepx users      7 Jan  9 18:32 js
+-rw-r--r--+  1 hostersepx users 151698 Nov 30 22:36 package-lock.json
+-rw-r--r--+  1 hostersepx users   1531 Nov 30 22:36 package.json
+-rw-r--r--+  1 hostersepx users    765 Oct 30 02:15 page.php
+-rw-r--r--+  1 hostersepx users    219 Nov 12 23:20 postcss.config.js
+-rw-r--r--+  1 hostersepx users   3969 Nov 19 21:27 print.css
+-rw-r--r--+  1 hostersepx users   3585 Nov 19 21:27 print.scss
+-rw-r--r--+  1 hostersepx users   1500 Jan  7 19:01 readme.txt
+drwxr-xr-x+ 13 hostersepx users     14 Jan  9 18:32 sass
+-rw-r--r--+  1 hostersepx users 175535 Dec  4 04:17 screenshot.png
+-rw-r--r--+  1 hostersepx users   1344 Nov 12 23:20 search.php
+-rw-r--r--+  1 hostersepx users   1785 Dec 15 11:09 single.php
+-rw-r--r--+  1 hostersepx users   3040 Nov 12 23:20 style-editor-customizer.css
+-rw-r--r--+  1 hostersepx users    342 Nov 12 23:20 style-editor-customizer.scss
+-rw-r--r--+  1 hostersepx users  25321 Dec 15 11:14 style-editor.css
+-rw-r--r--+  1 hostersepx users  12840 Dec 15 11:14 style-editor.scss
+-rw-r--r--+  1 hostersepx users 113831 Jan  7 19:01 style-rtl.css
+-rw-r--r--+  1 hostersepx users 114031 Jan  7 19:01 style.css
+-rw-r--r--+  1 hostersepx users   2797 Jan  7 19:01 style.scss
+drwxr-xr-x+  6 hostersepx users      6 Jan  9 18:32 template-parts
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/classes:
+total 74
+drwxr-xr-x+ 2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 8 hostersepx users    33 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 61380 Dec 15 11:03 class-twentynineteen-svg-icons.php
+-rw-r--r--+ 1 hostersepx users  3818 Dec 15 11:12 class-twentynineteen-walker-comment.php
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/fonts:
+total 18
+drwxr-xr-x+ 2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 8 hostersepx users   33 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1212 Nov 12 23:20 NonBreakingSpaceOverride.woff
+-rw-r--r--+ 1 hostersepx users  764 Nov 12 23:20 NonBreakingSpaceOverride.woff2
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/inc:
+total 68
+drwxr-xr-x+ 2 hostersepx users     8 Jan  9 18:32 .
+drwxr-xr-x+ 8 hostersepx users    33 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  2359 Nov 12 23:20 back-compat.php
+-rw-r--r--+ 1 hostersepx users 11165 Dec 15 11:06 color-patterns.php
+-rw-r--r--+ 1 hostersepx users  4016 Jan  7 18:40 customizer.php
+-rw-r--r--+ 1 hostersepx users  1594 Oct 30 02:15 icon-functions.php
+-rw-r--r--+ 1 hostersepx users 12716 Jan  7 16:00 template-functions.php
+-rw-r--r--+ 1 hostersepx users  6962 Dec 15 11:09 template-tags.php
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/js:
+total 52
+drwxr-xr-x+ 2 hostersepx users    7 Jan  9 18:32 .
+drwxr-xr-x+ 8 hostersepx users   33 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  710 Nov 19 21:27 customize-controls.js
+-rw-r--r--+ 1 hostersepx users 1668 Nov 19 21:27 customize-preview.js
+-rw-r--r--+ 1 hostersepx users 5355 Nov 19 21:27 priority-menu.js
+-rw-r--r--+ 1 hostersepx users  794 Dec 15 11:09 skip-link-focus-fix.js
+-rw-r--r--+ 1 hostersepx users 9427 Jan  7 16:00 touch-keyboard-navigation.js
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass:
+total 55
+drwxr-xr-x+ 13 hostersepx users   14 Jan  9 18:32 .
+drwxr-xr-x+  8 hostersepx users   33 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 5986 Oct 23 15:53 _normalize.scss
+drwxr-xr-x+  2 hostersepx users    3 Jan  9 18:32 blocks
+drwxr-xr-x+  2 hostersepx users    5 Jan  9 18:32 elements
+drwxr-xr-x+  2 hostersepx users    5 Jan  9 18:32 forms
+drwxr-xr-x+  2 hostersepx users    3 Jan  9 18:32 layout
+drwxr-xr-x+  2 hostersepx users    5 Jan  9 18:32 media
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 mixins
+drwxr-xr-x+  2 hostersepx users    5 Jan  9 18:32 modules
+drwxr-xr-x+  2 hostersepx users    8 Jan  9 18:32 navigation
+drwxr-xr-x+  6 hostersepx users    7 Jan  9 18:32 site
+drwxr-xr-x+  2 hostersepx users    5 Jan  9 18:32 typography
+drwxr-xr-x+  2 hostersepx users    8 Jan  9 18:32 variables-site
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/blocks:
+total 30
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users    14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 17175 Jan  7 16:06 _blocks.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/elements:
+total 23
+drwxr-xr-x+  2 hostersepx users    5 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 1039 Nov 16 00:14 _elements.scss
+-rw-r--r--+  1 hostersepx users  350 Oct 23 15:53 _lists.scss
+-rw-r--r--+  1 hostersepx users  214 Nov 16 00:14 _tables.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/forms:
+total 23
+drwxr-xr-x+  2 hostersepx users   5 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users  14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 761 Nov 16 00:14 _buttons.scss
+-rw-r--r--+  1 hostersepx users 994 Nov 16 00:14 _fields.scss
+-rw-r--r--+  1 hostersepx users  38 Oct 23 15:53 _forms.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/layout:
+total 14
+drwxr-xr-x+  2 hostersepx users  3 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users 14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 87 Oct 23 15:53 _layout.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/media:
+total 23
+drwxr-xr-x+  2 hostersepx users   5 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users  14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 637 Nov 12 23:20 _captions.scss
+-rw-r--r--+  1 hostersepx users 922 Nov 19 21:27 _galleries.scss
+-rw-r--r--+  1 hostersepx users 811 Oct 23 15:53 _media.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/mixins:
+total 22
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 5283 Nov 19 21:27 _mixins-master.scss
+-rw-r--r--+  1 hostersepx users  860 Nov 12 23:20 _utilities.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/modules:
+total 23
+drwxr-xr-x+  2 hostersepx users   5 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users  14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 924 Oct 23 15:53 _accessibility.scss
+-rw-r--r--+  1 hostersepx users 445 Nov 12 23:20 _alignments.scss
+-rw-r--r--+  1 hostersepx users 422 Oct 23 15:53 _clearings.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/navigation:
+total 52
+drwxr-xr-x+  2 hostersepx users    8 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  267 Oct 30 02:15 _links.scss
+-rw-r--r--+  1 hostersepx users  218 Nov 12 23:20 _menu-footer-navigation.scss
+-rw-r--r--+  1 hostersepx users 8648 Jan  7 16:02 _menu-main-navigation.scss
+-rw-r--r--+  1 hostersepx users 1181 Dec 15 11:03 _menu-social-navigation.scss
+-rw-r--r--+  1 hostersepx users  571 Nov 12 23:20 _navigation.scss
+-rw-r--r--+  1 hostersepx users 2715 Nov 12 23:20 _next-previous.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/site:
+total 24
+drwxr-xr-x+  6 hostersepx users   7 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users  14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 908 Oct 23 15:53 _site.scss
+drwxr-xr-x+  2 hostersepx users   3 Jan  9 18:32 footer
+drwxr-xr-x+  2 hostersepx users   4 Jan  9 18:32 header
+drwxr-xr-x+  2 hostersepx users   5 Jan  9 18:32 primary
+drwxr-xr-x+  2 hostersepx users   3 Jan  9 18:32 secondary
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/site/footer:
+total 14
+drwxr-xr-x+ 2 hostersepx users   3 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users   7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 683 Nov 19 21:27 _site-footer.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/site/header:
+total 22
+drwxr-xr-x+ 2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 6039 Jan  7 16:02 _site-featured-image.scss
+-rw-r--r--+ 1 hostersepx users 1988 Nov 19 21:27 _site-header.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/site/primary:
+total 31
+drwxr-xr-x+ 2 hostersepx users    5 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1208 Nov 12 23:20 _archives.scss
+-rw-r--r--+ 1 hostersepx users 6247 Nov 12 23:20 _comments.scss
+-rw-r--r--+ 1 hostersepx users 4936 Jan  7 15:45 _posts-and-pages.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/site/secondary:
+total 14
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1146 Nov 19 21:27 _widgets.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/typography:
+total 23
+drwxr-xr-x+  2 hostersepx users    5 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  703 Nov 12 23:20 _copy.scss
+-rw-r--r--+  1 hostersepx users 2407 Nov 12 23:20 _headings.scss
+-rw-r--r--+  1 hostersepx users  566 Nov 12 23:20 _typography.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/sass/variables-site:
+total 48
+drwxr-xr-x+  2 hostersepx users    8 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   14 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 1055 Oct 23 15:53 _colors.scss
+-rw-r--r--+  1 hostersepx users  396 Oct 23 15:53 _columns.scss
+-rw-r--r--+  1 hostersepx users 4405 Dec  4 04:10 _fonts.scss
+-rw-r--r--+  1 hostersepx users  372 Nov 12 23:20 _structure.scss
+-rw-r--r--+  1 hostersepx users  132 Oct 23 15:53 _transitions.scss
+-rw-r--r--+  1 hostersepx users   98 Oct 23 15:53 _variables-site.scss
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/template-parts:
+total 19
+drwxr-xr-x+ 6 hostersepx users  6 Jan  9 18:32 .
+drwxr-xr-x+ 8 hostersepx users 33 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users  7 Jan  9 18:32 content
+drwxr-xr-x+ 2 hostersepx users  3 Jan  9 18:32 footer
+drwxr-xr-x+ 2 hostersepx users  4 Jan  9 18:32 header
+drwxr-xr-x+ 2 hostersepx users  4 Jan  9 18:32 post
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/template-parts/content:
+total 32
+drwxr-xr-x+ 2 hostersepx users    7 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users    6 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  917 Nov  2 23:53 content-excerpt.php
+-rw-r--r--+ 1 hostersepx users 1313 Nov 12 23:20 content-none.php
+-rw-r--r--+ 1 hostersepx users 1279 Nov 12 23:20 content-page.php
+-rw-r--r--+ 1 hostersepx users 1284 Nov 12 23:20 content-single.php
+-rw-r--r--+ 1 hostersepx users 1447 Nov 12 23:20 content.php
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/template-parts/footer:
+total 6
+drwxr-xr-x+ 2 hostersepx users   3 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users   6 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 518 Oct 30 02:15 footer-widgets.php
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/template-parts/header:
+total 10
+drwxr-xr-x+ 2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users    6 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1109 Oct 30 02:15 entry-header.php
+-rw-r--r--+ 1 hostersepx users 1858 Jan  7 16:00 site-branding.php
+
+/home/hostersepx/www/wp-content/themes/twentynineteen/template-parts/post:
+total 10
+drwxr-xr-x+ 2 hostersepx users   4 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users   6 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 778 Dec 15 11:14 author-bio.php
+-rw-r--r--+ 1 hostersepx users 875 Dec 15 11:12 discussion-meta.php
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen:
+total 607
+drwxr-xr-x+ 5 hostersepx users     22 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users      6 Mar 26 07:02 ..
+-rw-r--r--+ 1 hostersepx users    909 Oct 20  2016 404.php
+-rw-r--r--+ 1 hostersepx users   3989 Jan  7 19:01 README.txt
+-rw-r--r--+ 1 hostersepx users   1761 Nov  1  2016 archive.php
+drwxr-xr-x+ 5 hostersepx users      5 Jan  9 18:32 assets
+-rw-r--r--+ 1 hostersepx users   2351 Dec 16  2016 comments.php
+-rw-r--r--+ 1 hostersepx users   1298 Apr 18  2017 footer.php
+-rw-r--r--+ 1 hostersepx users   1511 Jan 12  2018 front-page.php
+-rw-r--r--+ 1 hostersepx users  20491 Jan  7 18:40 functions.php
+-rw-r--r--+ 1 hostersepx users   1832 Dec 20  2016 header.php
+drwxr-xr-x+ 2 hostersepx users      9 Jan  9 18:32 inc
+-rw-r--r--+ 1 hostersepx users   2076 Nov  1  2016 index.php
+-rw-r--r--+ 1 hostersepx users    965 Oct 23  2016 page.php
+-rw-r--r--+ 1 hostersepx users   9643 May  2  2018 rtl.css
+-rw-r--r--+ 1 hostersepx users 363833 Oct 20  2016 screenshot.png
+-rw-r--r--+ 1 hostersepx users   1963 Nov  1  2016 search.php
+-rw-r--r--+ 1 hostersepx users    967 Jan  6 20:19 searchform.php
+-rw-r--r--+ 1 hostersepx users    505 Oct  2  2017 sidebar.php
+-rw-r--r--+ 1 hostersepx users   1604 Dec 16  2016 single.php
+-rw-r--r--+ 1 hostersepx users  83490 Jan  7 19:01 style.css
+drwxr-xr-x+ 7 hostersepx users      7 Jan  9 18:32 template-parts
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/assets:
+total 35
+drwxr-xr-x+ 5 hostersepx users  5 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users 22 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users  8 Jan  9 18:32 css
+drwxr-xr-x+ 2 hostersepx users  7 Jan  9 18:32 images
+drwxr-xr-x+ 2 hostersepx users  9 Jan  9 18:32 js
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/assets/css:
+total 88
+drwxr-xr-x+ 2 hostersepx users     8 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users     5 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 10207 Jan  7 16:18 blocks.css
+-rw-r--r--+ 1 hostersepx users 18187 Mar 20  2018 colors-dark.css
+-rw-r--r--+ 1 hostersepx users 21706 Jan  7 16:18 editor-blocks.css
+-rw-r--r--+ 1 hostersepx users  8818 Dec 15 11:16 editor-style.css
+-rw-r--r--+ 1 hostersepx users  3646 Dec  2  2016 ie8.css
+-rw-r--r--+ 1 hostersepx users  1281 Dec  2  2016 ie9.css
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/assets/images:
+total 644
+drwxr-xr-x+ 2 hostersepx users      7 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users      5 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 117713 Nov 23  2016 coffee.jpg
+-rw-r--r--+ 1 hostersepx users  93540 Nov 23  2016 espresso.jpg
+-rw-r--r--+ 1 hostersepx users 114854 Nov 17  2016 header.jpg
+-rw-r--r--+ 1 hostersepx users 171858 Nov 23  2016 sandwich.jpg
+-rw-r--r--+ 1 hostersepx users  42656 Sep 25  2017 svg-icons.svg
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/assets/js:
+total 61
+drwxr-xr-x+ 2 hostersepx users     9 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users     5 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  1137 Dec 20  2016 customize-controls.js
+-rw-r--r--+ 1 hostersepx users  4480 Dec  2  2016 customize-preview.js
+-rw-r--r--+ 1 hostersepx users  7682 Dec  2  2016 global.js
+-rw-r--r--+ 1 hostersepx users 10330 Oct 20  2016 html5.js
+-rw-r--r--+ 1 hostersepx users  5836 Oct 20  2016 jquery.scrollTo.js
+-rw-r--r--+ 1 hostersepx users  3754 Dec  3  2016 navigation.js
+-rw-r--r--+ 1 hostersepx users   683 Nov 14  2016 skip-link-focus-fix.js
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/inc:
+total 85
+drwxr-xr-x+ 2 hostersepx users     9 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users    22 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  2356 Oct 20  2016 back-compat.php
+-rw-r--r--+ 1 hostersepx users 22429 Mar 20  2018 color-patterns.php
+-rw-r--r--+ 1 hostersepx users  4380 Oct  6  2017 custom-header.php
+-rw-r--r--+ 1 hostersepx users  6669 Mar 10  2017 customizer.php
+-rw-r--r--+ 1 hostersepx users  7130 Jan  6 20:19 icon-functions.php
+-rw-r--r--+ 1 hostersepx users  2556 Jan  6  2017 template-functions.php
+-rw-r--r--+ 1 hostersepx users  6590 Oct  4  2017 template-tags.php
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/template-parts:
+total 28
+drwxr-xr-x+ 7 hostersepx users  7 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users 22 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users  4 Jan  9 18:32 footer
+drwxr-xr-x+ 2 hostersepx users  4 Jan  9 18:32 header
+drwxr-xr-x+ 2 hostersepx users  3 Jan  9 18:32 navigation
+drwxr-xr-x+ 2 hostersepx users  5 Jan  9 18:32 page
+drwxr-xr-x+ 2 hostersepx users  9 Jan  9 18:32 post
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/template-parts/footer:
+total 18
+drwxr-xr-x+ 2 hostersepx users   4 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users   7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 727 Oct  2  2017 footer-widgets.php
+-rw-r--r--+ 1 hostersepx users 533 May 17  2018 site-info.php
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/template-parts/header:
+total 18
+drwxr-xr-x+ 2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  349 Dec  2  2016 header-image.php
+-rw-r--r--+ 1 hostersepx users 1243 Dec 16  2016 site-branding.php
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/template-parts/navigation:
+total 14
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1014 Apr 18  2017 navigation-top.php
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/template-parts/page:
+total 23
+drwxr-xr-x+ 2 hostersepx users    5 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 2229 Nov 18  2016 content-front-page-panels.php
+-rw-r--r--+ 1 hostersepx users 1335 Jun 15  2017 content-front-page.php
+-rw-r--r--+ 1 hostersepx users  722 Oct 23  2016 content-page.php
+
+/home/hostersepx/www/wp-content/themes/twentyseventeen/template-parts/post:
+total 49
+drwxr-xr-x+ 2 hostersepx users    9 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 2618 Apr 18  2017 content-audio.php
+-rw-r--r--+ 1 hostersepx users 1335 Apr 18  2017 content-excerpt.php
+-rw-r--r--+ 1 hostersepx users 2265 Apr 18  2017 content-gallery.php
+-rw-r--r--+ 1 hostersepx users 2136 Apr 18  2017 content-image.php
+-rw-r--r--+ 1 hostersepx users  924 Oct 23  2016 content-none.php
+-rw-r--r--+ 1 hostersepx users 2642 Apr 18  2017 content-video.php
+-rw-r--r--+ 1 hostersepx users 1961 Apr 18  2017 content.php
+
+/home/hostersepx/www/wp-content/themes/twentysixteen:
+total 749
+drwxr-xr-x+ 7 hostersepx users     25 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users      6 Mar 26 07:02 ..
+-rw-r--r--+ 1 hostersepx users    879 May 30  2017 404.php
+-rw-r--r--+ 1 hostersepx users   1960 May 30  2017 archive.php
+-rw-r--r--+ 1 hostersepx users   1974 Oct  4  2017 comments.php
+drwxr-xr-x+ 2 hostersepx users      8 Jan  9 18:32 css
+-rw-r--r--+ 1 hostersepx users   2065 May 17  2018 footer.php
+-rw-r--r--+ 1 hostersepx users  17128 Jan  7 18:40 functions.php
+drwxr-xr-x+ 2 hostersepx users     10 Jan  9 18:32 genericons
+-rw-r--r--+ 1 hostersepx users   4148 May 30  2017 header.php
+-rw-r--r--+ 1 hostersepx users   3554 May 30  2017 image.php
+drwxr-xr-x+ 2 hostersepx users      5 Jan  9 18:32 inc
+-rw-r--r--+ 1 hostersepx users   1805 Jun 25  2017 index.php
+drwxr-xr-x+ 2 hostersepx users      8 Jan  9 18:32 js
+-rw-r--r--+ 1 hostersepx users    980 May 30  2017 page.php
+-rw-r--r--+ 1 hostersepx users   3751 Jan  7 19:01 readme.txt
+-rw-r--r--+ 1 hostersepx users  13036 May 17  2018 rtl.css
+-rw-r--r--+ 1 hostersepx users 463555 May 30  2017 screenshot.png
+-rw-r--r--+ 1 hostersepx users   1481 May 30  2017 search.php
+-rw-r--r--+ 1 hostersepx users    744 May 30  2017 searchform.php
+-rw-r--r--+ 1 hostersepx users    794 May 30  2017 sidebar-content-bottom.php
+-rw-r--r--+ 1 hostersepx users    390 May 30  2017 sidebar.php
+-rw-r--r--+ 1 hostersepx users   1714 May 30  2017 single.php
+-rw-r--r--+ 1 hostersepx users  70311 Jan  7 19:01 style.css
+drwxr-xr-x+ 2 hostersepx users      8 Jan  9 18:32 template-parts
+
+/home/hostersepx/www/wp-content/themes/twentysixteen/css:
+total 68
+drwxr-xr-x+ 2 hostersepx users     8 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    25 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  8507 Jan  7 16:18 blocks.css
+-rw-r--r--+ 1 hostersepx users 13788 Jan  7 16:18 editor-blocks.css
+-rw-r--r--+ 1 hostersepx users  6649 Dec 15 17:14 editor-style.css
+-rw-r--r--+ 1 hostersepx users   748 May 30  2017 ie.css
+-rw-r--r--+ 1 hostersepx users  2565 May 30  2017 ie7.css
+-rw-r--r--+ 1 hostersepx users  3475 May 30  2017 ie8.css
+
+/home/hostersepx/www/wp-content/themes/twentysixteen/genericons:
+total 225
+drwxr-xr-x+ 2 hostersepx users    10 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    25 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  1424 May 30  2017 COPYING.txt
+-rw-r--r--+ 1 hostersepx users 22374 May 30  2017 Genericons.eot
+-rw-r--r--+ 1 hostersepx users 76980 May 30  2017 Genericons.svg
+-rw-r--r--+ 1 hostersepx users 22188 May 30  2017 Genericons.ttf
+-rw-r--r--+ 1 hostersepx users 13988 May 30  2017 Genericons.woff
+-rw-r--r--+ 1 hostersepx users 18092 May 30  2017 LICENSE.txt
+-rw-r--r--+ 1 hostersepx users 10630 May 30  2017 README.md
+-rw-r--r--+ 1 hostersepx users 28266 May 30  2017 genericons.css
+
+/home/hostersepx/www/wp-content/themes/twentysixteen/inc:
+total 59
+drwxr-xr-x+ 2 hostersepx users     5 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    25 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  2328 May 30  2017 back-compat.php
+-rw-r--r--+ 1 hostersepx users 31239 May 30  2017 customizer.php
+-rw-r--r--+ 1 hostersepx users  8224 Oct  4  2017 template-tags.php
+
+/home/hostersepx/www/wp-content/themes/twentysixteen/js:
+total 56
+drwxr-xr-x+ 2 hostersepx users     8 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    25 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  2951 May 30  2017 color-scheme-control.js
+-rw-r--r--+ 1 hostersepx users  1061 May 30  2017 customize-preview.js
+-rw-r--r--+ 1 hostersepx users  7341 Nov 21 01:05 functions.js
+-rw-r--r--+ 1 hostersepx users 10330 May 30  2017 html5.js
+-rw-r--r--+ 1 hostersepx users   527 May 30  2017 keyboard-image-navigation.js
+-rw-r--r--+ 1 hostersepx users  1059 May 30  2017 skip-link-focus-fix.js
+
+/home/hostersepx/www/wp-content/themes/twentysixteen/template-parts:
+total 44
+drwxr-xr-x+ 2 hostersepx users    8 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users   25 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1166 May 30  2017 biography.php
+-rw-r--r--+ 1 hostersepx users 1091 May 30  2017 content-none.php
+-rw-r--r--+ 1 hostersepx users 1223 May 30  2017 content-page.php
+-rw-r--r--+ 1 hostersepx users 1300 May 30  2017 content-search.php
+-rw-r--r--+ 1 hostersepx users 1436 May 30  2017 content-single.php
+-rw-r--r--+ 1 hostersepx users 1721 May 30  2017 content.php
+
+/home/hostersepx/www/wp-content/upgrade:
+total 9
+drwxr-xr-x+ 2 hostersepx users 2 Mar 25 15:56 .
+drwxr-xr-x+ 7 hostersepx users 8 Mar 26 15:04 ..
+
+/home/hostersepx/www/wp-content/uploads:
+total 10
+drwxr-xr-x+ 3 hostersepx users 3 Mar 25 15:56 .
+drwxr-xr-x+ 7 hostersepx users 8 Mar 26 15:04 ..
+drwxr-xr-x+ 3 hostersepx users 3 Mar 25 15:56 2019
+
+/home/hostersepx/www/wp-content/uploads/2019:
+total 2
+drwxr-xr-x+ 3 hostersepx users 3 Mar 25 15:56 .
+drwxr-xr-x+ 3 hostersepx users 3 Mar 25 15:56 ..
+drwxr-xr-x+ 2 hostersepx users 2 Mar 25 15:56 03
+
+/home/hostersepx/www/wp-content/uploads/2019/03:
+total 1
+drwxr-xr-x+ 2 hostersepx users 2 Mar 25 15:56 .
+drwxr-xr-x+ 3 hostersepx users 3 Mar 25 15:56 ..
+
+/home/hostersepx/www/wp-includes:
+total 7001
+drwxr-xr-x+ 19 hostersepx users    193 Jan  9 18:32 .
+drwxr-xr-x+  5 hostersepx users     25 Mar 26 15:16 ..
+drwxr-xr-x+  2 hostersepx users     21 Jan  9 18:32 ID3
+drwxr-xr-x+  2 hostersepx users     12 Jan  9 18:32 IXR
+drwxr-xr-x+  9 hostersepx users     22 Jan  9 18:32 Requests
+drwxr-xr-x+  9 hostersepx users     30 Jan  9 18:32 SimplePie
+drwxr-xr-x+  3 hostersepx users      4 Jan  9 18:32 Text
+-rw-r--r--+  1 hostersepx users  28868 Oct 26 07:38 admin-bar.php
+-rw-r--r--+  1 hostersepx users  11839 Dec 13  2016 atomlib.php
+-rw-r--r--+  1 hostersepx users  16354 Oct 26 07:38 author-template.php
+drwxr-xr-x+  2 hostersepx users      8 Jan  9 18:32 blocks
+-rw-r--r--+  1 hostersepx users   8326 Nov 21 19:39 blocks.php
+-rw-r--r--+  1 hostersepx users  11699 May 22  2016 bookmark-template.php
+-rw-r--r--+  1 hostersepx users  13672 Dec 14  2016 bookmark.php
+-rw-r--r--+  1 hostersepx users  21601 Oct  2  2017 cache.php
+-rw-r--r--+  1 hostersepx users  27583 Oct 24  2017 canonical.php
+-rw-r--r--+  1 hostersepx users  28649 Oct 23 06:53 capabilities.php
+-rw-r--r--+  1 hostersepx users  51758 Oct 26 07:38 category-template.php
+-rw-r--r--+  1 hostersepx users  11984 Jan 29  2017 category.php
+drwxr-xr-x+  2 hostersepx users      3 Jan  9 18:32 certificates
+-rw-r--r--+  1 hostersepx users   2573 Aug 31  2016 class-IXR.php
+-rw-r--r--+  1 hostersepx users    522 Dec  3  2016 class-feed.php
+-rw-r--r--+  1 hostersepx users  36164 Oct 18  2017 class-http.php
+-rw-r--r--+  1 hostersepx users  40472 Dec  6  2015 class-json.php
+-rw-r--r--+  1 hostersepx users  33148 Oct 23 17:48 class-oembed.php
+-rw-r--r--+  1 hostersepx users   7317 Oct  6  2015 class-phpass.php
+-rw-r--r--+  1 hostersepx users 146784 Jan 11  2017 class-phpmailer.php
+-rw-r--r--+  1 hostersepx users  20919 Oct 31  2016 class-pop3.php
+-rw-r--r--+  1 hostersepx users  29790 Oct  5  2016 class-requests.php
+-rw-r--r--+  1 hostersepx users  89264 Jun  6  2016 class-simplepie.php
+-rw-r--r--+  1 hostersepx users  39478 Jan 11  2017 class-smtp.php
+-rw-r--r--+  1 hostersepx users  37785 Jul  6  2016 class-snoopy.php
+-rw-r--r--+  1 hostersepx users   2099 Oct  2  2017 class-walker-category-dropdown.php
+-rw-r--r--+  1 hostersepx users   6646 Oct 11 04:42 class-walker-category.php
+-rw-r--r--+  1 hostersepx users  11173 Oct  2  2017 class-walker-comment.php
+-rw-r--r--+  1 hostersepx users   8392 Oct 20  2017 class-walker-nav-menu.php
+-rw-r--r--+  1 hostersepx users   2279 Jul 27  2017 class-walker-page-dropdown.php
+-rw-r--r--+  1 hostersepx users   6713 Oct  2  2017 class-walker-page.php
+-rw-r--r--+  1 hostersepx users  16969 Jul 27  2017 class-wp-admin-bar.php
+-rw-r--r--+  1 hostersepx users   5024 Jul 27  2017 class-wp-ajax-response.php
+-rw-r--r--+  1 hostersepx users  15210 Jan  4 20:19 class-wp-block-parser.php
+-rw-r--r--+  1 hostersepx users   4744 Oct 18 01:31 class-wp-block-type-registry.php
+-rw-r--r--+  1 hostersepx users   4815 Nov 21 14:44 class-wp-block-type.php
+-rw-r--r--+  1 hostersepx users  41780 Oct 24 16:33 class-wp-comment-query.php
+-rw-r--r--+  1 hostersepx users   8936 Jul 27  2017 class-wp-comment.php
+-rw-r--r--+  1 hostersepx users  24984 Oct 28  2017 class-wp-customize-control.php
+-rw-r--r--+  1 hostersepx users 197286 Jan  4 20:30 class-wp-customize-manager.php
+-rw-r--r--+  1 hostersepx users  53561 Jul 17  2018 class-wp-customize-nav-menus.php
+-rw-r--r--+  1 hostersepx users   9576 Sep 24  2017 class-wp-customize-panel.php
+-rw-r--r--+  1 hostersepx users  10197 Oct 28  2017 class-wp-customize-section.php
+-rw-r--r--+  1 hostersepx users  28132 Jul 27  2017 class-wp-customize-setting.php
+-rw-r--r--+  1 hostersepx users  65752 Jan  3 18:55 class-wp-customize-widgets.php
+-rw-r--r--+  1 hostersepx users   1992 Nov  1 13:51 class-wp-dependency.php
+-rw-r--r--+  1 hostersepx users  61023 Jan  5 04:14 class-wp-editor.php
+-rw-r--r--+  1 hostersepx users  14509 Oct 24  2017 class-wp-embed.php
+-rw-r--r--+  1 hostersepx users   4585 Jul 27  2017 class-wp-error.php
+-rw-r--r--+  1 hostersepx users   2537 Jul 27  2017 class-wp-feed-cache-transient.php
+-rw-r--r--+  1 hostersepx users    745 Jul 27  2017 class-wp-feed-cache.php
+-rw-r--r--+  1 hostersepx users  14052 Sep 21  2017 class-wp-hook.php
+-rw-r--r--+  1 hostersepx users   6456 Jul 27  2017 class-wp-http-cookie.php
+-rw-r--r--+  1 hostersepx users  11679 Oct 18  2017 class-wp-http-curl.php
+-rw-r--r--+  1 hostersepx users   6444 Jun 10  2016 class-wp-http-encoding.php
+-rw-r--r--+  1 hostersepx users   3250 May 22  2016 class-wp-http-ixr-client.php
+-rw-r--r--+  1 hostersepx users   5957 May 22  2016 class-wp-http-proxy.php
+-rw-r--r--+  1 hostersepx users   1872 Jul  1  2017 class-wp-http-requests-hooks.php
+-rw-r--r--+  1 hostersepx users   4273 Jul 27  2017 class-wp-http-requests-response.php
+-rw-r--r--+  1 hostersepx users   2871 Oct  3  2017 class-wp-http-response.php
+-rw-r--r--+  1 hostersepx users  14995 Oct 18  2017 class-wp-http-streams.php
+-rw-r--r--+  1 hostersepx users  12921 Aug 22  2017 class-wp-image-editor-gd.php
+-rw-r--r--+  1 hostersepx users  21676 Aug 22  2017 class-wp-image-editor-imagick.php
+-rw-r--r--+  1 hostersepx users  11730 Oct 11 08:11 class-wp-image-editor.php
+-rw-r--r--+  1 hostersepx users   6369 Jul 27  2017 class-wp-list-util.php
+-rw-r--r--+  1 hostersepx users   5005 Oct 21 15:03 class-wp-locale-switcher.php
+-rw-r--r--+  1 hostersepx users  14547 Jul 27  2017 class-wp-locale.php
+-rw-r--r--+  1 hostersepx users   1796 Jul 27  2017 class-wp-matchesmapregex.php
+-rw-r--r--+  1 hostersepx users  22254 Oct  2  2017 class-wp-meta-query.php
+-rw-r--r--+  1 hostersepx users   5372 Jul 27  2017 class-wp-metadata-lazyloader.php
+-rw-r--r--+  1 hostersepx users  17160 Oct 26 20:18 class-wp-network-query.php
+-rw-r--r--+  1 hostersepx users  12129 Oct 30  2017 class-wp-network.php
+-rw-r--r--+  1 hostersepx users   5944 Oct 23 17:48 class-wp-oembed-controller.php
+-rw-r--r--+  1 hostersepx users  18236 Jul 27  2017 class-wp-post-type.php
+-rw-r--r--+  1 hostersepx users   6355 Jul 27  2017 class-wp-post.php
+-rw-r--r--+  1 hostersepx users 124203 Nov 23 00:42 class-wp-query.php
+-rw-r--r--+  1 hostersepx users  58908 Oct  2  2017 class-wp-rewrite.php
+-rw-r--r--+  1 hostersepx users   2614 Jul 27  2017 class-wp-role.php
+-rw-r--r--+  1 hostersepx users   8187 Sep 27  2017 class-wp-roles.php
+-rw-r--r--+  1 hostersepx users   7338 Jul 27  2017 class-wp-session-tokens.php
+-rw-r--r--+  1 hostersepx users   2272 Jul 27  2017 class-wp-simplepie-file.php
+-rw-r--r--+  1 hostersepx users   1774 Jul 27  2017 class-wp-simplepie-sanitize-kses.php
+-rw-r--r--+  1 hostersepx users  23221 Oct 26 20:18 class-wp-site-query.php
+-rw-r--r--+  1 hostersepx users   7318 Oct 16  2017 class-wp-site.php
+-rw-r--r--+  1 hostersepx users  19199 Oct  2  2017 class-wp-tax-query.php
+-rw-r--r--+  1 hostersepx users   9993 Jul 27  2017 class-wp-taxonomy.php
+-rw-r--r--+  1 hostersepx users  34167 Oct 10 04:16 class-wp-term-query.php
+-rw-r--r--+  1 hostersepx users   5273 Jul 27  2017 class-wp-term.php
+-rw-r--r--+  1 hostersepx users    712 Aug 25  2016 class-wp-text-diff-renderer-inline.php
+-rw-r--r--+  1 hostersepx users  16180 Oct 20 08:36 class-wp-text-diff-renderer-table.php
+-rw-r--r--+  1 hostersepx users  47921 Oct 23 16:51 class-wp-theme.php
+-rw-r--r--+  1 hostersepx users   2916 Jul 27  2017 class-wp-user-meta-session-tokens.php
+-rw-r--r--+  1 hostersepx users  29525 Jul 27  2017 class-wp-user-query.php
+-rw-r--r--+  1 hostersepx users  20679 Sep 27  2017 class-wp-user.php
+-rw-r--r--+  1 hostersepx users  12378 Oct  2  2017 class-wp-walker.php
+-rw-r--r--+  1 hostersepx users   3746 Jul 27  2017 class-wp-widget-factory.php
+-rw-r--r--+  1 hostersepx users  17658 Oct  2  2017 class-wp-widget.php
+-rw-r--r--+  1 hostersepx users 201627 Oct 24 16:33 class-wp-xmlrpc-server.php
+-rw-r--r--+  1 hostersepx users  23983 Dec 13 01:30 class-wp.php
+-rw-r--r--+  1 hostersepx users  11185 Jul 27  2017 class.wp-dependencies.php
+-rw-r--r--+  1 hostersepx users  16749 Jan  6 17:06 class.wp-scripts.php
+-rw-r--r--+  1 hostersepx users   9794 Oct  2  2017 class.wp-styles.php
+-rw-r--r--+  1 hostersepx users  88668 Oct 26 07:38 comment-template.php
+-rw-r--r--+  1 hostersepx users 111411 Mar 25 15:56 comment.php
+-rw-r--r--+  1 hostersepx users  16226 May 10  2018 compat.php
+-rw-r--r--+  1 hostersepx users  16467 Jun 30  2017 cron.php
+drwxr-xr-x+  3 hostersepx users     41 Jan  9 18:32 css
+drwxr-xr-x+  2 hostersepx users     37 Jan  9 18:32 customize
+-rw-r--r--+  1 hostersepx users  35000 Jul 27  2017 date.php
+-rw-r--r--+  1 hostersepx users   9561 Oct 23 16:51 default-constants.php
+-rw-r--r--+  1 hostersepx users  28942 Nov 22 00:24 default-filters.php
+-rw-r--r--+  1 hostersepx users   2180 Sep 25  2017 default-widgets.php
+-rw-r--r--+  1 hostersepx users 113686 Oct 26 07:38 deprecated.php
+-rw-r--r--+  1 hostersepx users    344 Jul  6  2016 embed-template.php
+-rw-r--r--+  1 hostersepx users  44845 Oct 23 17:48 embed.php
+-rw-r--r--+  1 hostersepx users   5357 Dec 16  2016 feed-atom-comments.php
+-rw-r--r--+  1 hostersepx users   3090 Dec 16  2016 feed-atom.php
+-rw-r--r--+  1 hostersepx users   2670 Oct 25  2016 feed-rdf.php
+-rw-r--r--+  1 hostersepx users   1246 Oct 25  2016 feed-rss.php
+-rw-r--r--+  1 hostersepx users   4064 Dec 16  2016 feed-rss2-comments.php
+-rw-r--r--+  1 hostersepx users   3773 Dec 16  2016 feed-rss2.php
+-rw-r--r--+  1 hostersepx users  19550 Nov 29  2017 feed.php
+drwxr-xr-x+  2 hostersepx users      6 Jan  9 18:32 fonts
+-rw-r--r--+  1 hostersepx users 271353 Mar 25 15:56 formatting.php
+-rw-r--r--+  1 hostersepx users 190677 Jan  7 22:23 functions.php
+-rw-r--r--+  1 hostersepx users  12538 Nov  1 13:51 functions.wp-scripts.php
+-rw-r--r--+  1 hostersepx users   8080 Sep  4  2016 functions.wp-styles.php
+-rw-r--r--+  1 hostersepx users 140624 Dec 13 00:28 general-template.php
+-rw-r--r--+  1 hostersepx users  22174 Apr  3  2018 http.php
+drwxr-xr-x+  6 hostersepx users     30 Jan  9 18:32 images
+drwxr-xr-x+ 13 hostersepx users    110 Jan  9 18:32 js
+-rw-r--r--+  1 hostersepx users  54135 Dec 13 00:00 kses.php
+-rw-r--r--+  1 hostersepx users  50859 Jan  7 14:42 l10n.php
+-rw-r--r--+  1 hostersepx users 136453 Jul 18  2018 link-template.php
+-rw-r--r--+  1 hostersepx users  34885 Oct 26 07:38 load.php
+-rw-r--r--+  1 hostersepx users    141 Dec  3  2016 locale.php
+-rw-r--r--+  1 hostersepx users  46450 Oct 26 07:41 media-template.php
+-rw-r--r--+  1 hostersepx users 140360 May  3  2018 media.php
+-rw-r--r--+  1 hostersepx users  45501 Oct 15 11:46 meta.php
+-rw-r--r--+  1 hostersepx users  39181 Oct 18  2017 ms-blogs.php
+-rw-r--r--+  1 hostersepx users   4715 Oct  2  2017 ms-default-constants.php
+-rw-r--r--+  1 hostersepx users   4653 Oct  2  2017 ms-default-filters.php
+-rw-r--r--+  1 hostersepx users  16158 Dec 13 01:30 ms-deprecated.php
+-rw-r--r--+  1 hostersepx users   2620 Sep 27  2016 ms-files.php
+-rw-r--r--+  1 hostersepx users  91131 Jan 23  2018 ms-functions.php
+-rw-r--r--+  1 hostersepx users  19248 Oct  3  2017 ms-load.php
+-rw-r--r--+  1 hostersepx users   4088 Oct 16  2017 ms-settings.php
+-rw-r--r--+  1 hostersepx users  20871 Jul  5  2017 nav-menu-template.php
+-rw-r--r--+  1 hostersepx users  39756 Nov 15 23:20 nav-menu.php
+-rw-r--r--+  1 hostersepx users  67744 Oct 24  2017 option.php
+-rw-r--r--+  1 hostersepx users   6262 Jul  6  2016 pluggable-deprecated.php
+-rw-r--r--+  1 hostersepx users  92350 Oct 26 07:38 pluggable.php
+-rw-r--r--+  1 hostersepx users  31677 Oct  4  2017 plugin.php
+drwxr-xr-x+  2 hostersepx users      8 Jan  9 18:32 pomo
+-rw-r--r--+  1 hostersepx users   6976 Aug 20  2017 post-formats.php
+-rw-r--r--+  1 hostersepx users  59278 Oct 26 07:38 post-template.php
+-rw-r--r--+  1 hostersepx users   8444 Oct 26 07:38 post-thumbnail-template.php
+-rw-r--r--+  1 hostersepx users 224537 Oct 31 18:16 post.php
+-rw-r--r--+  1 hostersepx users  31500 Oct 26 07:38 query.php
+drwxr-xr-x+  2 hostersepx users     13 Jan  9 18:32 random_compat
+-rw-r--r--+  1 hostersepx users    178 Jul  6  2016 registration-functions.php
+-rw-r--r--+  1 hostersepx users    178 Jul  6  2016 registration.php
+drwxr-xr-x+  5 hostersepx users      8 Jan  9 18:32 rest-api
+-rw-r--r--+  1 hostersepx users  41203 Oct 29 00:49 rest-api.php
+-rw-r--r--+  1 hostersepx users  21305 Nov  9  2016 revision.php
+-rw-r--r--+  1 hostersepx users  17502 Oct  6  2017 rewrite.php
+-rw-r--r--+  1 hostersepx users    191 Jul  6  2016 rss-functions.php
+-rw-r--r--+  1 hostersepx users  23208 Oct 31  2016 rss.php
+-rw-r--r--+  1 hostersepx users 103357 Jan  4 20:39 script-loader.php
+-rw-r--r--+  1 hostersepx users    242 Dec  3  2016 session.php
+-rw-r--r--+  1 hostersepx users  20441 Aug 20  2017 shortcodes.php
+-rw-r--r--+  1 hostersepx users   2574 Jul 28  2017 spl-autoload-compat.php
+-rw-r--r--+  1 hostersepx users 150943 Oct 26 07:38 taxonomy.php
+-rw-r--r--+  1 hostersepx users   2896 Oct  7  2016 template-loader.php
+-rw-r--r--+  1 hostersepx users  19792 Jun 29  2017 template.php
+drwxr-xr-x+  2 hostersepx users     11 Jan  9 18:32 theme-compat
+-rw-r--r--+  1 hostersepx users 100092 Oct 24 04:16 theme.php
+-rw-r--r--+  1 hostersepx users  24691 Feb  6  2018 update.php
+-rw-r--r--+  1 hostersepx users 121474 Oct 26 07:38 user.php
+-rw-r--r--+  1 hostersepx users   5582 Jun 15  2017 vars.php
+-rw-r--r--+  1 hostersepx users    650 Mar 25 15:56 version.php
+drwxr-xr-x+  2 hostersepx users     21 Jan  9 18:32 widgets
+-rw-r--r--+  1 hostersepx users  56140 Oct 26 07:38 widgets.php
+-rw-r--r--+  1 hostersepx users   1045 Dec 11  2013 wlwmanifest.xml
+-rw-r--r--+  1 hostersepx users  99564 Nov 22 03:59 wp-db.php
+-rw-r--r--+  1 hostersepx users    661 Aug 31  2016 wp-diff.php
+
+/home/hostersepx/www/wp-includes/ID3:
+total 1343
+drwxr-xr-x+  2 hostersepx users     21 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users    193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  46835 Jul 31  2017 getid3.lib.php
+-rw-r--r--+  1 hostersepx users  66574 Jul 31  2017 getid3.php
+-rw-r--r--+  1 hostersepx users   1307 Jun 28  2015 license.commercial.txt
+-rw-r--r--+  1 hostersepx users   1356 Jun 28  2015 license.txt
+-rw-r--r--+  1 hostersepx users 126954 Jul 31  2017 module.audio-video.asf.php
+-rw-r--r--+  1 hostersepx users  25397 Jul 31  2017 module.audio-video.flv.php
+-rw-r--r--+  1 hostersepx users 104518 Jul 31  2017 module.audio-video.matroska.php
+-rw-r--r--+  1 hostersepx users 140797 Jul 31  2017 module.audio-video.quicktime.php
+-rw-r--r--+  1 hostersepx users 122668 Jul 31  2017 module.audio-video.riff.php
+-rw-r--r--+  1 hostersepx users  38147 Jul 31  2017 module.audio.ac3.php
+-rw-r--r--+  1 hostersepx users  10467 Jun 28  2015 module.audio.dts.php
+-rw-r--r--+  1 hostersepx users  18517 Jun 28  2015 module.audio.flac.php
+-rw-r--r--+  1 hostersepx users  99778 Jul 31  2017 module.audio.mp3.php
+-rw-r--r--+  1 hostersepx users  39882 Jul 31  2017 module.audio.ogg.php
+-rw-r--r--+  1 hostersepx users  18446 Jul 31  2017 module.tag.apetag.php
+-rw-r--r--+  1 hostersepx users  12703 Jul 31  2017 module.tag.id3v1.php
+-rw-r--r--+  1 hostersepx users 150330 Jul 31  2017 module.tag.id3v2.php
+-rw-r--r--+  1 hostersepx users  11183 Jul 31  2017 module.tag.lyrics3.php
+-rw-r--r--+  1 hostersepx users  24652 Sep 11  2014 readme.txt
+
+/home/hostersepx/www/wp-includes/IXR:
+total 78
+drwxr-xr-x+  2 hostersepx users   12 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users  193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  414 Aug 26  2016 class-IXR-base64.php
+-rw-r--r--+  1 hostersepx users 4643 Aug 26  2016 class-IXR-client.php
+-rw-r--r--+  1 hostersepx users  963 Aug 26  2016 class-IXR-clientmulticall.php
+-rw-r--r--+  1 hostersepx users 1679 Aug 26  2016 class-IXR-date.php
+-rw-r--r--+  1 hostersepx users  854 Aug 26  2016 class-IXR-error.php
+-rw-r--r--+  1 hostersepx users 5323 Aug 26  2016 class-IXR-introspectionserver.php
+-rw-r--r--+  1 hostersepx users 8070 Mar  8  2018 class-IXR-message.php
+-rw-r--r--+  1 hostersepx users  927 Aug 26  2016 class-IXR-request.php
+-rw-r--r--+  1 hostersepx users 6930 Aug 26  2016 class-IXR-server.php
+-rw-r--r--+  1 hostersepx users 3790 Aug 26  2016 class-IXR-value.php
+
+/home/hostersepx/www/wp-includes/Requests:
+total 131
+drwxr-xr-x+  9 hostersepx users    22 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 Auth
+-rw-r--r--+  1 hostersepx users   810 May 13  2016 Auth.php
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 Cookie
+-rw-r--r--+  1 hostersepx users 12854 May 13  2016 Cookie.php
+drwxr-xr-x+  4 hostersepx users     6 Jan  9 18:32 Exception
+-rw-r--r--+  1 hostersepx users  1026 May 13  2016 Exception.php
+-rw-r--r--+  1 hostersepx users   708 May 13  2016 Hooker.php
+-rw-r--r--+  1 hostersepx users  1399 May 13  2016 Hooks.php
+-rw-r--r--+  1 hostersepx users 11325 Jun 10  2016 IDNAEncoder.php
+-rw-r--r--+  1 hostersepx users  4927 May 13  2016 IPv6.php
+-rw-r--r--+  1 hostersepx users 28467 Oct  5  2016 IRI.php
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 Proxy
+-rw-r--r--+  1 hostersepx users   813 May 13  2016 Proxy.php
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 Response
+-rw-r--r--+  1 hostersepx users  2505 May 13  2016 Response.php
+-rw-r--r--+  1 hostersepx users  4022 Jun 10  2016 SSL.php
+-rw-r--r--+  1 hostersepx users  7153 Jun 10  2016 Session.php
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 Transport
+-rw-r--r--+  1 hostersepx users  1220 May 13  2016 Transport.php
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 Utility
+
+/home/hostersepx/www/wp-includes/Requests/Auth:
+total 14
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   22 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1941 May 13  2016 Basic.php
+
+/home/hostersepx/www/wp-includes/Requests/Cookie:
+total 14
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   22 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 3818 May 13  2016 Jar.php
+
+/home/hostersepx/www/wp-includes/Requests/Exception:
+total 27
+drwxr-xr-x+ 4 hostersepx users    6 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   22 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users   35 Jan  9 18:32 HTTP
+-rw-r--r--+ 1 hostersepx users 1419 May 13  2016 HTTP.php
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 Transport
+-rw-r--r--+ 1 hostersepx users   74 May 13  2016 Transport.php
+
+/home/hostersepx/www/wp-includes/Requests/Exception/HTTP:
+total 158
+drwxr-xr-x+ 2 hostersepx users  35 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users   6 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 390 May 13  2016 304.php
+-rw-r--r--+ 1 hostersepx users 382 May 13  2016 305.php
+-rw-r--r--+ 1 hostersepx users 391 May 13  2016 306.php
+-rw-r--r--+ 1 hostersepx users 387 May 13  2016 400.php
+-rw-r--r--+ 1 hostersepx users 390 May 13  2016 401.php
+-rw-r--r--+ 1 hostersepx users 402 May 13  2016 402.php
+-rw-r--r--+ 1 hostersepx users 381 May 13  2016 403.php
+-rw-r--r--+ 1 hostersepx users 381 May 13  2016 404.php
+-rw-r--r--+ 1 hostersepx users 408 May 13  2016 405.php
+-rw-r--r--+ 1 hostersepx users 396 May 13  2016 406.php
+-rw-r--r--+ 1 hostersepx users 441 May 13  2016 407.php
+-rw-r--r--+ 1 hostersepx users 399 May 13  2016 408.php
+-rw-r--r--+ 1 hostersepx users 378 May 13  2016 409.php
+-rw-r--r--+ 1 hostersepx users 366 May 13  2016 410.php
+-rw-r--r--+ 1 hostersepx users 399 May 13  2016 411.php
+-rw-r--r--+ 1 hostersepx users 411 May 13  2016 412.php
+-rw-r--r--+ 1 hostersepx users 426 May 13  2016 413.php
+-rw-r--r--+ 1 hostersepx users 417 May 13  2016 414.php
+-rw-r--r--+ 1 hostersepx users 420 May 13  2016 415.php
+-rw-r--r--+ 1 hostersepx users 447 May 13  2016 416.php
+-rw-r--r--+ 1 hostersepx users 408 May 13  2016 417.php
+-rw-r--r--+ 1 hostersepx users 478 Jun 10  2016 418.php
+-rw-r--r--+ 1 hostersepx users 505 Jun 10  2016 428.php
+-rw-r--r--+ 1 hostersepx users 549 Jun 10  2016 429.php
+-rw-r--r--+ 1 hostersepx users 535 Jun 10  2016 431.php
+-rw-r--r--+ 1 hostersepx users 417 May 13  2016 500.php
+-rw-r--r--+ 1 hostersepx users 399 May 13  2016 501.php
+-rw-r--r--+ 1 hostersepx users 387 May 13  2016 502.php
+-rw-r--r--+ 1 hostersepx users 411 May 13  2016 503.php
+-rw-r--r--+ 1 hostersepx users 399 May 13  2016 504.php
+-rw-r--r--+ 1 hostersepx users 432 May 13  2016 505.php
+-rw-r--r--+ 1 hostersepx users 535 Jun 10  2016 511.php
+-rw-r--r--+ 1 hostersepx users 867 May 13  2016 Unknown.php
+
+/home/hostersepx/www/wp-includes/Requests/Exception/Transport:
+total 6
+drwxr-xr-x+ 2 hostersepx users   3 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users   6 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 918 May 13  2016 cURL.php
+
+/home/hostersepx/www/wp-includes/Requests/Proxy:
+total 14
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   22 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 3471 May 13  2016 HTTP.php
+
+/home/hostersepx/www/wp-includes/Requests/Response:
+total 14
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   22 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 2125 May 13  2016 Headers.php
+
+/home/hostersepx/www/wp-includes/Requests/Transport:
+total 42
+drwxr-xr-x+ 2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    22 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 15325 Oct  5  2016 cURL.php
+-rw-r--r--+ 1 hostersepx users 12436 Oct  5  2016 fsockopen.php
+
+/home/hostersepx/www/wp-includes/Requests/Utility:
+total 18
+drwxr-xr-x+ 2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   22 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1993 May 13  2016 CaseInsensitiveDictionary.php
+-rw-r--r--+ 1 hostersepx users  829 May 13  2016 FilteredIterator.php
+
+/home/hostersepx/www/wp-includes/SimplePie:
+total 387
+drwxr-xr-x+  9 hostersepx users    30 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  3592 Nov 21  2012 Author.php
+drwxr-xr-x+  2 hostersepx users     7 Jan  9 18:32 Cache
+-rw-r--r--+  1 hostersepx users  4296 Nov 21  2012 Cache.php
+-rw-r--r--+  1 hostersepx users  4510 Nov 21  2012 Caption.php
+-rw-r--r--+  1 hostersepx users  3707 Nov 21  2012 Category.php
+drwxr-xr-x+  3 hostersepx users     3 Jan  9 18:32 Content
+-rw-r--r--+  1 hostersepx users  3367 Nov 21  2012 Copyright.php
+-rw-r--r--+  1 hostersepx users  2268 Nov 21  2012 Core.php
+-rw-r--r--+  1 hostersepx users  3721 Nov 21  2012 Credit.php
+drwxr-xr-x+  3 hostersepx users     3 Jan  9 18:32 Decode
+-rw-r--r--+  1 hostersepx users 27487 Nov 21  2012 Enclosure.php
+-rw-r--r--+  1 hostersepx users  2187 Nov  8  2012 Exception.php
+-rw-r--r--+  1 hostersepx users  9678 Nov 21  2012 File.php
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 HTTP
+-rw-r--r--+  1 hostersepx users 28359 Nov 21  2012 IRI.php
+-rw-r--r--+  1 hostersepx users 98299 Nov 21  2012 Item.php
+-rw-r--r--+  1 hostersepx users 11185 Nov 21  2012 Locator.php
+-rw-r--r--+  1 hostersepx users 51550 Jul  8  2013 Misc.php
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 Net
+drwxr-xr-x+  2 hostersepx users     3 Jan  9 18:32 Parse
+-rw-r--r--+  1 hostersepx users 11851 Nov 21  2012 Parser.php
+-rw-r--r--+  1 hostersepx users  3451 Nov 21  2012 Rating.php
+-rw-r--r--+  1 hostersepx users  5991 Nov 21  2012 Registry.php
+-rw-r--r--+  1 hostersepx users  3800 Nov 21  2012 Restriction.php
+-rw-r--r--+  1 hostersepx users 15698 Sep 11  2013 Sanitize.php
+-rw-r--r--+  1 hostersepx users 20539 Nov 21  2012 Source.php
+drwxr-xr-x+  3 hostersepx users     3 Jan  9 18:32 XML
+-rw-r--r--+  1 hostersepx users  8572 Nov 21  2012 gzdecode.php
+
+/home/hostersepx/www/wp-includes/SimplePie/Cache:
+total 60
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  3452 Nov 21  2012 Base.php
+-rw-r--r--+ 1 hostersepx users  4726 Nov 21  2012 DB.php
+-rw-r--r--+ 1 hostersepx users  4424 Nov 21  2012 File.php
+-rw-r--r--+ 1 hostersepx users  5141 Nov 21  2012 Memcache.php
+-rw-r--r--+ 1 hostersepx users 12280 Nov 21  2012 MySQL.php
+
+/home/hostersepx/www/wp-includes/SimplePie/Content:
+total 10
+drwxr-xr-x+ 3 hostersepx users  3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users 30 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users  3 Jan  9 18:32 Type
+
+/home/hostersepx/www/wp-includes/SimplePie/Content/Type:
+total 10
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    3 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 8137 Nov 21  2012 Sniffer.php
+
+/home/hostersepx/www/wp-includes/SimplePie/Decode:
+total 10
+drwxr-xr-x+ 3 hostersepx users  3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users 30 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users  3 Jan  9 18:32 HTML
+
+/home/hostersepx/www/wp-includes/SimplePie/Decode/HTML:
+total 22
+drwxr-xr-x+ 2 hostersepx users     3 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users     3 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 17321 Nov 21  2012 Entities.php
+
+/home/hostersepx/www/wp-includes/SimplePie/HTTP:
+total 22
+drwxr-xr-x+ 2 hostersepx users     3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 10882 Nov 21  2012 Parser.php
+
+/home/hostersepx/www/wp-includes/SimplePie/Net:
+total 18
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 7576 Nov 21  2012 IPv6.php
+
+/home/hostersepx/www/wp-includes/SimplePie/Parse:
+total 30
+drwxr-xr-x+ 2 hostersepx users     3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 19701 Oct 20  2015 Date.php
+
+/home/hostersepx/www/wp-includes/SimplePie/XML:
+total 10
+drwxr-xr-x+ 3 hostersepx users  3 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users 30 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users  3 Jan  9 18:32 Declaration
+
+/home/hostersepx/www/wp-includes/SimplePie/XML/Declaration:
+total 10
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    3 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 7149 Nov 21  2012 Parser.php
+
+/home/hostersepx/www/wp-includes/Text:
+total 26
+drwxr-xr-x+  3 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+drwxr-xr-x+  4 hostersepx users     5 Jan  9 18:32 Diff
+-rw-r--r--+  1 hostersepx users 12950 Jun 28  2015 Diff.php
+
+/home/hostersepx/www/wp-includes/Text/Diff:
+total 11
+drwxr-xr-x+ 4 hostersepx users    5 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    4 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users    6 Jan  9 18:32 Engine
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 Renderer
+-rw-r--r--+ 1 hostersepx users 6813 Jun 28  2015 Renderer.php
+
+/home/hostersepx/www/wp-includes/Text/Diff/Engine:
+total 43
+drwxr-xr-x+ 2 hostersepx users     6 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users     5 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 15888 Oct 26  2017 native.php
+-rw-r--r--+ 1 hostersepx users  5212 Oct  2  2017 shell.php
+-rw-r--r--+ 1 hostersepx users  8354 Oct 24  2015 string.php
+-rw-r--r--+ 1 hostersepx users  2210 May 25  2013 xdiff.php
+
+/home/hostersepx/www/wp-includes/Text/Diff/Renderer:
+total 10
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users    5 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 5535 Feb 19  2010 inline.php
+
+/home/hostersepx/www/wp-includes/blocks:
+total 48
+drwxr-xr-x+  2 hostersepx users    8 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users  193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 3321 Nov 30 13:24 archives.php
+-rw-r--r--+  1 hostersepx users  859 Dec 15 10:59 block.php
+-rw-r--r--+  1 hostersepx users 2593 Dec 15 10:59 categories.php
+-rw-r--r--+  1 hostersepx users 5462 Dec 15 10:59 latest-comments.php
+-rw-r--r--+  1 hostersepx users 3112 Nov 30 13:24 latest-posts.php
+-rw-r--r--+  1 hostersepx users  678 Nov 30 09:59 shortcode.php
+
+/home/hostersepx/www/wp-includes/certificates:
+total 402
+drwxr-xr-x+  2 hostersepx users      3 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users    193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 279564 May 13  2016 ca-bundle.crt
+
+/home/hostersepx/www/wp-includes/css:
+total 685
+drwxr-xr-x+  3 hostersepx users    41 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 25099 Sep 29  2017 admin-bar-rtl.css
+-rw-r--r--+  1 hostersepx users 20580 Oct  9 02:52 admin-bar-rtl.min.css
+-rw-r--r--+  1 hostersepx users 25094 Sep 29  2017 admin-bar.css
+-rw-r--r--+  1 hostersepx users 20575 Oct  9 02:52 admin-bar.min.css
+-rw-r--r--+  1 hostersepx users  9410 Oct 22 05:04 buttons-rtl.css
+-rw-r--r--+  1 hostersepx users  6078 Oct 22 05:04 buttons-rtl.min.css
+-rw-r--r--+  1 hostersepx users  9409 Oct 22 05:04 buttons.css
+-rw-r--r--+  1 hostersepx users  6077 Oct 22 05:04 buttons.min.css
+-rw-r--r--+  1 hostersepx users  3665 Oct 22 05:04 customize-preview-rtl.css
+-rw-r--r--+  1 hostersepx users  2861 Oct 22 05:04 customize-preview-rtl.min.css
+-rw-r--r--+  1 hostersepx users  3660 Oct 22 05:04 customize-preview.css
+-rw-r--r--+  1 hostersepx users  2856 Oct 22 05:04 customize-preview.min.css
+-rw-r--r--+  1 hostersepx users 48813 Jul 16  2017 dashicons.css
+-rw-r--r--+  1 hostersepx users 46360 Aug 19  2017 dashicons.min.css
+drwxr-xr-x+  9 hostersepx users     9 Jan  9 18:32 dist
+-rw-r--r--+  1 hostersepx users 32208 Nov 12 10:35 editor-rtl.css
+-rw-r--r--+  1 hostersepx users 26518 Nov 12 10:35 editor-rtl.min.css
+-rw-r--r--+  1 hostersepx users 32204 Nov 12 10:35 editor.css
+-rw-r--r--+  1 hostersepx users 26514 Nov 12 10:35 editor.min.css
+-rw-r--r--+  1 hostersepx users  5699 Oct 22 05:04 jquery-ui-dialog-rtl.css
+-rw-r--r--+  1 hostersepx users  4402 Oct 22 05:04 jquery-ui-dialog-rtl.min.css
+-rw-r--r--+  1 hostersepx users  5695 Oct 22 05:04 jquery-ui-dialog.css
+-rw-r--r--+  1 hostersepx users  4398 Oct 22 05:04 jquery-ui-dialog.min.css
+-rw-r--r--+  1 hostersepx users 47837 Oct 22 05:04 media-views-rtl.css
+-rw-r--r--+  1 hostersepx users 40167 Oct 22 05:04 media-views-rtl.min.css
+-rw-r--r--+  1 hostersepx users 47838 Oct 22 05:04 media-views.css
+-rw-r--r--+  1 hostersepx users 40168 Oct 22 05:04 media-views.min.css
+-rw-r--r--+  1 hostersepx users  2514 Oct 22 05:04 wp-auth-check-rtl.css
+-rw-r--r--+  1 hostersepx users  1943 Oct 22 05:04 wp-auth-check-rtl.min.css
+-rw-r--r--+  1 hostersepx users  2512 Oct 22 05:04 wp-auth-check.css
+-rw-r--r--+  1 hostersepx users  1941 Oct 22 05:04 wp-auth-check.min.css
+-rw-r--r--+  1 hostersepx users  1477 Oct 31  2015 wp-embed-template-ie.css
+-rw-r--r--+  1 hostersepx users  1473 Aug 19  2017 wp-embed-template-ie.min.css
+-rw-r--r--+  1 hostersepx users  7911 Oct 22 05:04 wp-embed-template.css
+-rw-r--r--+  1 hostersepx users  6943 Oct 22 05:04 wp-embed-template.min.css
+-rw-r--r--+  1 hostersepx users  4026 May 14  2018 wp-pointer-rtl.css
+-rw-r--r--+  1 hostersepx users  3239 Oct  9 02:52 wp-pointer-rtl.min.css
+-rw-r--r--+  1 hostersepx users  4021 May 14  2018 wp-pointer.css
+-rw-r--r--+  1 hostersepx users  3234 Oct  9 02:52 wp-pointer.min.css
+
+/home/hostersepx/www/wp-includes/css/dist:
+total 37
+drwxr-xr-x+ 9 hostersepx users  9 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users 41 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users 14 Jan  9 18:32 block-library
+drwxr-xr-x+ 2 hostersepx users  6 Jan  9 18:32 components
+drwxr-xr-x+ 2 hostersepx users  6 Jan  9 18:32 edit-post
+drwxr-xr-x+ 2 hostersepx users 10 Jan  9 18:32 editor
+drwxr-xr-x+ 2 hostersepx users  6 Jan  9 18:32 format-library
+drwxr-xr-x+ 2 hostersepx users  6 Jan  9 18:32 list-reusable-blocks
+drwxr-xr-x+ 2 hostersepx users  6 Jan  9 18:32 nux
+
+/home/hostersepx/www/wp-includes/css/dist/block-library:
+total 295
+drwxr-xr-x+ 2 hostersepx users    14 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users     9 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 36427 Dec 15 10:59 editor-rtl.css
+-rw-r--r--+ 1 hostersepx users 30815 Dec 15 10:59 editor-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 36513 Dec 15 10:59 editor.css
+-rw-r--r--+ 1 hostersepx users 30822 Dec 15 10:59 editor.min.css
+-rw-r--r--+ 1 hostersepx users 30994 Jan  4 20:19 style-rtl.css
+-rw-r--r--+ 1 hostersepx users 25643 Jan  4 20:19 style-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 31191 Jan  4 20:19 style.css
+-rw-r--r--+ 1 hostersepx users 25658 Jan  4 20:19 style.min.css
+-rw-r--r--+ 1 hostersepx users  1846 Nov 22 03:21 theme-rtl.css
+-rw-r--r--+ 1 hostersepx users  1104 Nov 22 03:21 theme-rtl.min.css
+-rw-r--r--+ 1 hostersepx users  1844 Nov 22 03:21 theme.css
+-rw-r--r--+ 1 hostersepx users  1102 Nov 22 03:21 theme.min.css
+
+/home/hostersepx/www/wp-includes/css/dist/components:
+total 371
+drwxr-xr-x+ 2 hostersepx users     6 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users     9 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 98923 Jan  4 20:19 style-rtl.css
+-rw-r--r--+ 1 hostersepx users 79699 Jan  4 20:19 style-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 99078 Jan  4 20:19 style.css
+-rw-r--r--+ 1 hostersepx users 79756 Jan  4 20:19 style.min.css
+
+/home/hostersepx/www/wp-includes/css/dist/edit-post:
+total 235
+drwxr-xr-x+ 2 hostersepx users     6 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users     9 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 59999 Dec 15 10:59 style-rtl.css
+-rw-r--r--+ 1 hostersepx users 50359 Dec 15 10:59 style-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 59974 Dec 15 10:59 style.css
+-rw-r--r--+ 1 hostersepx users 50334 Dec 15 10:59 style.min.css
+
+/home/hostersepx/www/wp-includes/css/dist/editor:
+total 365
+drwxr-xr-x+ 2 hostersepx users    10 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users     9 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users   847 Nov 22 03:21 editor-styles-rtl.css
+-rw-r--r--+ 1 hostersepx users   259 Nov 22 03:21 editor-styles-rtl.min.css
+-rw-r--r--+ 1 hostersepx users   847 Nov 22 03:21 editor-styles.css
+-rw-r--r--+ 1 hostersepx users   259 Nov 22 03:21 editor-styles.min.css
+-rw-r--r--+ 1 hostersepx users 89017 Jan  4 20:19 style-rtl.css
+-rw-r--r--+ 1 hostersepx users 75476 Jan  4 20:19 style-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 89278 Jan  4 20:19 style.css
+-rw-r--r--+ 1 hostersepx users 75637 Jan  4 20:19 style.min.css
+
+/home/hostersepx/www/wp-includes/css/dist/format-library:
+total 27
+drwxr-xr-x+ 2 hostersepx users   6 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   9 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 868 Nov 22 03:21 style-rtl.css
+-rw-r--r--+ 1 hostersepx users 308 Nov 16 00:23 style-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 868 Nov 22 03:21 style.css
+-rw-r--r--+ 1 hostersepx users 308 Nov 16 00:23 style.min.css
+
+/home/hostersepx/www/wp-includes/css/dist/list-reusable-blocks:
+total 27
+drwxr-xr-x+ 2 hostersepx users   6 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users   9 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 979 Nov 22 03:21 style-rtl.css
+-rw-r--r--+ 1 hostersepx users 412 Nov 16 00:23 style-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 980 Nov 22 03:21 style.css
+-rw-r--r--+ 1 hostersepx users 413 Nov 16 00:23 style.min.css
+
+/home/hostersepx/www/wp-includes/css/dist/nux:
+total 27
+drwxr-xr-x+ 2 hostersepx users    6 Jan  9 18:32 .
+drwxr-xr-x+ 9 hostersepx users    9 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 3028 Nov 22 03:21 style-rtl.css
+-rw-r--r--+ 1 hostersepx users 2158 Nov 22 03:21 style-rtl.min.css
+-rw-r--r--+ 1 hostersepx users 3097 Nov 22 03:21 style.css
+-rw-r--r--+ 1 hostersepx users 2215 Nov 22 03:21 style.min.css
+
+/home/hostersepx/www/wp-includes/customize:
+total 295
+drwxr-xr-x+  2 hostersepx users    37 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  1178 Oct 26  2016 class-wp-customize-background-image-control.php
+-rw-r--r--+  1 hostersepx users   508 Oct 24  2015 class-wp-customize-background-image-setting.php
+-rw-r--r--+  1 hostersepx users  2807 Jul 27  2017 class-wp-customize-background-position-control.php
+-rw-r--r--+  1 hostersepx users  2267 Oct 20  2017 class-wp-customize-code-editor-control.php
+-rw-r--r--+  1 hostersepx users  2868 Sep  3  2017 class-wp-customize-color-control.php
+-rw-r--r--+  1 hostersepx users  1460 Jul 27  2017 class-wp-customize-cropped-image-control.php
+-rw-r--r--+  1 hostersepx users  4876 Sep 13  2017 class-wp-customize-custom-css-setting.php
+-rw-r--r--+  1 hostersepx users  8507 Nov  6  2017 class-wp-customize-date-time-control.php
+-rw-r--r--+  1 hostersepx users   588 Jul 27  2017 class-wp-customize-filter-setting.php
+-rw-r--r--+  1 hostersepx users  7563 Oct 19  2017 class-wp-customize-header-image-control.php
+-rw-r--r--+  1 hostersepx users  1590 Dec  2  2016 class-wp-customize-header-image-setting.php
+-rw-r--r--+  1 hostersepx users  1077 Sep 20  2017 class-wp-customize-image-control.php
+-rw-r--r--+  1 hostersepx users  9244 Oct 27  2017 class-wp-customize-media-control.php
+-rw-r--r--+  1 hostersepx users  1122 Oct  5  2017 class-wp-customize-nav-menu-auto-add-control.php
+-rw-r--r--+  1 hostersepx users  2035 Jan 23  2018 class-wp-customize-nav-menu-control.php
+-rw-r--r--+  1 hostersepx users  6450 Jul 27  2017 class-wp-customize-nav-menu-item-control.php
+-rw-r--r--+  1 hostersepx users 26898 Oct 18  2017 class-wp-customize-nav-menu-item-setting.php
+-rw-r--r--+  1 hostersepx users  2139 Oct 18  2017 class-wp-customize-nav-menu-location-control.php
+-rw-r--r--+  1 hostersepx users  2804 Oct 11  2017 class-wp-customize-nav-menu-locations-control.php
+-rw-r--r--+  1 hostersepx users  1131 Oct  5  2017 class-wp-customize-nav-menu-name-control.php
+-rw-r--r--+  1 hostersepx users   709 Jul 27  2017 class-wp-customize-nav-menu-section.php
+-rw-r--r--+  1 hostersepx users 18728 Jul 27  2017 class-wp-customize-nav-menu-setting.php
+-rw-r--r--+  1 hostersepx users  3081 Oct  5  2017 class-wp-customize-nav-menus-panel.php
+-rw-r--r--+  1 hostersepx users  1373 Nov 12 04:23 class-wp-customize-new-menu-control.php
+-rw-r--r--+  1 hostersepx users  1673 Nov 12 04:23 class-wp-customize-new-menu-section.php
+-rw-r--r--+  1 hostersepx users  8852 Sep  9  2017 class-wp-customize-partial.php
+-rw-r--r--+  1 hostersepx users 15072 Jul 27  2017 class-wp-customize-selective-refresh.php
+-rw-r--r--+  1 hostersepx users  1046 Jul 27  2017 class-wp-customize-sidebar-section.php
+-rw-r--r--+  1 hostersepx users  3262 Jul 27  2017 class-wp-customize-site-icon-control.php
+-rw-r--r--+  1 hostersepx users  4459 May  4  2018 class-wp-customize-theme-control.php
+-rw-r--r--+  1 hostersepx users  3225 Oct  7  2017 class-wp-customize-themes-panel.php
+-rw-r--r--+  1 hostersepx users  6579 Jan 15  2018 class-wp-customize-themes-section.php
+-rw-r--r--+  1 hostersepx users   977 Oct 24  2015 class-wp-customize-upload-control.php
+-rw-r--r--+  1 hostersepx users  1657 Jul 27  2017 class-wp-widget-area-customize-control.php
+-rw-r--r--+  1 hostersepx users  1996 Jul 27  2017 class-wp-widget-form-customize-control.php
+
+/home/hostersepx/www/wp-includes/fonts:
+total 203
+drwxr-xr-x+  2 hostersepx users     6 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 22449 Mar 18  2016 dashicons.eot
+-rw-r--r--+  1 hostersepx users 95916 Mar 18  2016 dashicons.svg
+-rw-r--r--+  1 hostersepx users 41728 Mar 18  2016 dashicons.ttf
+-rw-r--r--+  1 hostersepx users 26124 Mar 18  2016 dashicons.woff
+
+/home/hostersepx/www/wp-includes/images:
+total 179
+drwxr-xr-x+  6 hostersepx users    30 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  3999 Oct 28  2014 admin-bar-sprite-2x.png
+-rw-r--r--+  1 hostersepx users  2467 Feb 13  2014 admin-bar-sprite.png
+-rw-r--r--+  1 hostersepx users  1666 Oct 28  2014 arrow-pointer-blue-2x.png
+-rw-r--r--+  1 hostersepx users   793 Nov  7  2012 arrow-pointer-blue.png
+-rw-r--r--+  1 hostersepx users    43 Nov 25  2014 blank.gif
+drwxr-xr-x+  2 hostersepx users    12 Jan  9 18:32 crystal
+-rw-r--r--+  1 hostersepx users    84 Oct 28  2014 down_arrow-2x.gif
+-rw-r--r--+  1 hostersepx users    59 Oct 28  2014 down_arrow.gif
+-rw-r--r--+  1 hostersepx users  1369 Sep 27  2012 icon-pointer-flag-2x.png
+-rw-r--r--+  1 hostersepx users   783 Dec  5  2011 icon-pointer-flag.png
+drwxr-xr-x+  2 hostersepx users    11 Jan  9 18:32 media
+-rw-r--r--+  1 hostersepx users  1306 Nov  7  2012 rss-2x.png
+-rw-r--r--+  1 hostersepx users   608 Nov  7  2012 rss.png
+drwxr-xr-x+  2 hostersepx users    28 Jan  9 18:32 smilies
+-rw-r--r--+  1 hostersepx users  7536 Oct 22 05:06 spinner-2x.gif
+-rw-r--r--+  1 hostersepx users  3656 Oct 22 05:06 spinner.gif
+-rw-r--r--+  1 hostersepx users   354 Nov  7  2012 toggle-arrow-2x.png
+-rw-r--r--+  1 hostersepx users   289 Oct 28  2014 toggle-arrow.png
+-rw-r--r--+  1 hostersepx users  3542 Oct 28  2014 uploader-icons-2x.png
+-rw-r--r--+  1 hostersepx users  1556 Feb 13  2014 uploader-icons.png
+-rw-r--r--+  1 hostersepx users  3113 Feb 23  2016 w-logo-blue.png
+drwxr-xr-x+  2 hostersepx users     5 Jan  9 18:32 wlw
+-rw-r--r--+  1 hostersepx users 14931 Nov 25  2014 wpicons-2x.png
+-rw-r--r--+  1 hostersepx users  7086 Nov 25  2014 wpicons.png
+-rw-r--r--+  1 hostersepx users  8875 Oct 22 05:06 wpspin-2x.gif
+-rw-r--r--+  1 hostersepx users  2052 Oct 22 05:06 wpspin.gif
+-rw-r--r--+  1 hostersepx users   825 Oct 28  2014 xit-2x.gif
+-rw-r--r--+  1 hostersepx users   181 Oct 28  2014 xit.gif
+
+/home/hostersepx/www/wp-includes/images/crystal:
+total 62
+drwxr-xr-x+ 2 hostersepx users   12 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users   30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 2454 Oct 28  2014 archive.png
+-rw-r--r--+ 1 hostersepx users 2184 Oct 28  2014 audio.png
+-rw-r--r--+ 1 hostersepx users 1604 Nov  7  2012 code.png
+-rw-r--r--+ 1 hostersepx users  453 Feb 13  2014 default.png
+-rw-r--r--+ 1 hostersepx users 2063 Oct 28  2014 document.png
+-rw-r--r--+ 1 hostersepx users 2217 Oct 28  2014 interactive.png
+-rw-r--r--+ 1 hostersepx users  149 Mar  3  2014 license.txt
+-rw-r--r--+ 1 hostersepx users 2408 Oct 28  2014 spreadsheet.png
+-rw-r--r--+ 1 hostersepx users  670 Feb 13  2014 text.png
+-rw-r--r--+ 1 hostersepx users 1339 Nov  7  2012 video.png
+
+/home/hostersepx/www/wp-includes/images/media:
+total 58
+drwxr-xr-x+ 2 hostersepx users  11 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users  30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 417 Mar 27  2014 archive.png
+-rw-r--r--+ 1 hostersepx users 382 Mar 27  2014 audio.png
+-rw-r--r--+ 1 hostersepx users 274 Mar 25  2014 code.png
+-rw-r--r--+ 1 hostersepx users 168 Mar 25  2014 default.png
+-rw-r--r--+ 1 hostersepx users 200 Mar 25  2014 document.png
+-rw-r--r--+ 1 hostersepx users 319 Mar 25  2014 interactive.png
+-rw-r--r--+ 1 hostersepx users 188 Mar 25  2014 spreadsheet.png
+-rw-r--r--+ 1 hostersepx users 188 Mar 25  2014 text.png
+-rw-r--r--+ 1 hostersepx users 283 Mar 25  2014 video.png
+
+/home/hostersepx/www/wp-includes/images/smilies:
+total 134
+drwxr-xr-x+ 2 hostersepx users   28 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users   30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1007 Apr 10  2015 frownie.png
+-rw-r--r--+ 1 hostersepx users  169 Oct 28  2014 icon_arrow.gif
+-rw-r--r--+ 1 hostersepx users  173 Oct 28  2014 icon_biggrin.gif
+-rw-r--r--+ 1 hostersepx users  170 Oct 28  2014 icon_confused.gif
+-rw-r--r--+ 1 hostersepx users  172 Oct 28  2014 icon_cool.gif
+-rw-r--r--+ 1 hostersepx users  412 Oct 22 05:06 icon_cry.gif
+-rw-r--r--+ 1 hostersepx users  170 Oct 28  2014 icon_eek.gif
+-rw-r--r--+ 1 hostersepx users  193 Oct 22 05:06 icon_evil.gif
+-rw-r--r--+ 1 hostersepx users  236 Oct 28  2014 icon_exclaim.gif
+-rw-r--r--+ 1 hostersepx users  174 Oct 28  2014 icon_idea.gif
+-rw-r--r--+ 1 hostersepx users  331 Oct 22 05:06 icon_lol.gif
+-rw-r--r--+ 1 hostersepx users  172 Oct 28  2014 icon_mad.gif
+-rw-r--r--+ 1 hostersepx users  348 Oct 28  2014 icon_mrgreen.gif
+-rw-r--r--+ 1 hostersepx users  167 Oct 28  2014 icon_neutral.gif
+-rw-r--r--+ 1 hostersepx users  247 Oct 28  2014 icon_question.gif
+-rw-r--r--+ 1 hostersepx users  175 Oct 28  2014 icon_razz.gif
+-rw-r--r--+ 1 hostersepx users  639 Oct 22 05:06 icon_redface.gif
+-rw-r--r--+ 1 hostersepx users  471 Oct 22 05:06 icon_rolleyes.gif
+-rw-r--r--+ 1 hostersepx users  167 Oct 28  2014 icon_sad.gif
+-rw-r--r--+ 1 hostersepx users  173 Oct 28  2014 icon_smile.gif
+-rw-r--r--+ 1 hostersepx users  174 Oct 28  2014 icon_surprised.gif
+-rw-r--r--+ 1 hostersepx users  241 Oct 28  2014 icon_twisted.gif
+-rw-r--r--+ 1 hostersepx users  168 Oct 28  2014 icon_wink.gif
+-rw-r--r--+ 1 hostersepx users 1486 Apr 10  2015 mrgreen.png
+-rw-r--r--+ 1 hostersepx users 1233 Apr 10  2015 rolleyes.png
+-rw-r--r--+ 1 hostersepx users 1008 Apr 10  2015 simple-smile.png
+
+/home/hostersepx/www/wp-includes/images/wlw:
+total 23
+drwxr-xr-x+ 2 hostersepx users    5 Jan  9 18:32 .
+drwxr-xr-x+ 6 hostersepx users   30 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 1373 Nov  7  2012 wp-comments.png
+-rw-r--r--+ 1 hostersepx users  664 Nov  7  2012 wp-icon.png
+-rw-r--r--+ 1 hostersepx users 2376 Oct 28  2014 wp-watermark.png
+
+/home/hostersepx/www/wp-includes/js:
+total 2571
+drwxr-xr-x+ 13 hostersepx users    110 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users    193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  11809 Jul 20  2015 admin-bar.js
+-rw-r--r--+  1 hostersepx users   7188 Oct 10 04:11 admin-bar.min.js
+-rw-r--r--+  1 hostersepx users   2618 Oct 19 18:33 api-request.js
+-rw-r--r--+  1 hostersepx users    771 Oct 19 18:33 api-request.min.js
+-rw-r--r--+  1 hostersepx users  21621 Sep  8  2017 autosave.js
+-rw-r--r--+  1 hostersepx users   5646 Oct 10 04:11 autosave.min.js
+-rw-r--r--+  1 hostersepx users  23318 Jun 16  2016 backbone.min.js
+drwxr-xr-x+  2 hostersepx users      9 Jan  9 18:32 codemirror
+-rw-r--r--+  1 hostersepx users  29083 Nov 17  2012 colorpicker.js
+-rw-r--r--+  1 hostersepx users  16675 Oct 10 04:11 colorpicker.min.js
+-rw-r--r--+  1 hostersepx users   3449 Aug 24  2017 comment-reply.js
+-rw-r--r--+  1 hostersepx users   1078 Oct 10 04:11 comment-reply.min.js
+drwxr-xr-x+  2 hostersepx users      6 Jan  9 18:32 crop
+-rw-r--r--+  1 hostersepx users  25614 Oct 10  2017 customize-base.js
+-rw-r--r--+  1 hostersepx users   7959 Oct 10 04:11 customize-base.min.js
+-rw-r--r--+  1 hostersepx users   7844 Oct  9  2017 customize-loader.js
+-rw-r--r--+  1 hostersepx users   3522 Oct 10 04:11 customize-loader.min.js
+-rw-r--r--+  1 hostersepx users   6761 Oct  4  2017 customize-models.js
+-rw-r--r--+  1 hostersepx users   3682 Oct 10 04:11 customize-models.min.js
+-rw-r--r--+  1 hostersepx users  14960 Sep  8  2017 customize-preview-nav-menus.js
+-rw-r--r--+  1 hostersepx users   5050 Oct 10 04:11 customize-preview-nav-menus.min.js
+-rw-r--r--+  1 hostersepx users  21079 Oct 16  2017 customize-preview-widgets.js
+-rw-r--r--+  1 hostersepx users   7899 Oct 10 04:11 customize-preview-widgets.min.js
+-rw-r--r--+  1 hostersepx users  27836 Nov  2  2017 customize-preview.js
+-rw-r--r--+  1 hostersepx users  10900 Oct 10 04:11 customize-preview.min.js
+-rw-r--r--+  1 hostersepx users  33260 Jan 30  2018 customize-selective-refresh.js
+-rw-r--r--+  1 hostersepx users  10812 Oct 10 04:11 customize-selective-refresh.min.js
+-rw-r--r--+  1 hostersepx users   5011 Sep  8  2017 customize-views.js
+-rw-r--r--+  1 hostersepx users   2422 Oct 10 04:11 customize-views.min.js
+drwxr-xr-x+  3 hostersepx users     77 Jan  9 18:32 dist
+-rw-r--r--+  1 hostersepx users  21117 Nov 22 19:40 heartbeat.js
+-rw-r--r--+  1 hostersepx users   6017 Nov 22 19:40 heartbeat.min.js
+-rw-r--r--+  1 hostersepx users   4949 Mar 11  2015 hoverIntent.js
+-rw-r--r--+  1 hostersepx users   1115 Oct 10 04:11 hoverIntent.min.js
+-rw-r--r--+  1 hostersepx users   7994 Oct 10 04:11 imagesloaded.min.js
+drwxr-xr-x+  2 hostersepx users      7 Jan  9 18:32 imgareaselect
+drwxr-xr-x+  2 hostersepx users      5 Jan  9 18:32 jcrop
+drwxr-xr-x+  3 hostersepx users     20 Jan  9 18:32 jquery
+-rw-r--r--+  1 hostersepx users  18422 Oct  6  2015 json2.js
+-rw-r--r--+  1 hostersepx users   3133 Oct 10 04:11 json2.min.js
+-rw-r--r--+  1 hostersepx users  28954 Jun 28  2016 masonry.min.js
+-rw-r--r--+  1 hostersepx users  25721 Dec 13  2017 mce-view.js
+-rw-r--r--+  1 hostersepx users   9744 Oct 10 04:11 mce-view.min.js
+-rw-r--r--+  1 hostersepx users  27401 Oct 10 04:16 media-audiovideo.js
+-rw-r--r--+  1 hostersepx users  12824 Oct 10 04:16 media-audiovideo.min.js
+-rw-r--r--+  1 hostersepx users  28906 Sep  8  2017 media-editor.js
+-rw-r--r--+  1 hostersepx users  10905 Oct 10 04:11 media-editor.min.js
+-rw-r--r--+  1 hostersepx users  28905 Oct 10 04:16 media-grid.js
+-rw-r--r--+  1 hostersepx users  14115 Oct 10 04:16 media-grid.min.js
+-rw-r--r--+  1 hostersepx users  45254 Oct 10 04:16 media-models.js
+-rw-r--r--+  1 hostersepx users  14009 Oct 10 04:16 media-models.min.js
+-rw-r--r--+  1 hostersepx users 241505 Oct 10 04:16 media-views.js
+-rw-r--r--+  1 hostersepx users 101167 Oct 10 04:16 media-views.min.js
+drwxr-xr-x+  3 hostersepx users     21 Jan  9 18:32 mediaelement
+drwxr-xr-x+  2 hostersepx users     11 Jan  9 18:32 plupload
+-rw-r--r--+  1 hostersepx users  22391 May 11  2017 quicktags.js
+-rw-r--r--+  1 hostersepx users  11149 Oct 10 04:11 quicktags.min.js
+-rw-r--r--+  1 hostersepx users  10519 Sep  8  2017 shortcode.js
+-rw-r--r--+  1 hostersepx users   2613 Oct 10 04:11 shortcode.min.js
+-rw-r--r--+  1 hostersepx users  10231 Apr 17  2012 swfobject.js
+drwxr-xr-x+  2 hostersepx users      6 Jan  9 18:32 swfupload
+drwxr-xr-x+  2 hostersepx users      6 Jan  9 18:32 thickbox
+drwxr-xr-x+  7 hostersepx users     12 Jan  9 18:32 tinymce
+-rw-r--r--+  1 hostersepx users   4969 Aug 23  2012 tw-sack.js
+-rw-r--r--+  1 hostersepx users   3283 Oct 10 04:11 tw-sack.min.js
+-rw-r--r--+  1 hostersepx users  25798 Jul 13  2018 twemoji.js
+-rw-r--r--+  1 hostersepx users   9118 Oct 10 04:11 twemoji.min.js
+-rw-r--r--+  1 hostersepx users  16410 Feb 17  2016 underscore.min.js
+-rw-r--r--+  1 hostersepx users   4521 Jul 15  2017 utils.js
+-rw-r--r--+  1 hostersepx users   1825 Oct 10 04:11 utils.min.js
+-rw-r--r--+  1 hostersepx users   2574 Oct  4  2017 wp-a11y.js
+-rw-r--r--+  1 hostersepx users    653 Oct 10 04:11 wp-a11y.min.js
+-rw-r--r--+  1 hostersepx users   3121 Mar  9  2018 wp-ajax-response.js
+-rw-r--r--+  1 hostersepx users   2067 Oct 10 04:11 wp-ajax-response.min.js
+-rw-r--r--+  1 hostersepx users  46706 Oct 18 20:49 wp-api.js
+-rw-r--r--+  1 hostersepx users  14690 Oct 18 20:49 wp-api.min.js
+-rw-r--r--+  1 hostersepx users   3306 Jan 13  2016 wp-auth-check.js
+-rw-r--r--+  1 hostersepx users   1783 Oct 10 04:11 wp-auth-check.min.js
+-rw-r--r--+  1 hostersepx users  10489 Sep  8  2017 wp-backbone.js
+-rw-r--r--+  1 hostersepx users   3020 Oct 10 04:11 wp-backbone.min.js
+-rw-r--r--+  1 hostersepx users  10392 Sep  8  2017 wp-custom-header.js
+-rw-r--r--+  1 hostersepx users   4462 Oct 10 04:11 wp-custom-header.min.js
+-rw-r--r--+  1 hostersepx users   6190 Jul  5  2016 wp-embed-template.js
+-rw-r--r--+  1 hostersepx users   3117 Oct 10 04:11 wp-embed-template.min.js
+-rw-r--r--+  1 hostersepx users   3176 Oct 11 04:00 wp-embed.js
+-rw-r--r--+  1 hostersepx users   1403 Oct 11 04:00 wp-embed.min.js
+-rw-r--r--+  1 hostersepx users   5235 Jul 13  2018 wp-emoji-loader.js
+-rw-r--r--+  1 hostersepx users   1779 Oct 10 04:11 wp-emoji-loader.min.js
+-rw-r--r--+  1 hostersepx users  12026 Oct 10 04:11 wp-emoji-release.min.js
+-rw-r--r--+  1 hostersepx users   6760 Aug  4  2016 wp-emoji.js
+-rw-r--r--+  1 hostersepx users   2824 Oct 10 04:11 wp-emoji.min.js
+-rw-r--r--+  1 hostersepx users    914 Nov 15  2013 wp-list-revisions.js
+-rw-r--r--+  1 hostersepx users    569 Oct 10 04:11 wp-list-revisions.min.js
+-rw-r--r--+  1 hostersepx users  25235 Oct  3  2016 wp-lists.js
+-rw-r--r--+  1 hostersepx users   7413 Oct 10 04:11 wp-lists.min.js
+-rw-r--r--+  1 hostersepx users   6692 Sep  8  2017 wp-pointer.js
+-rw-r--r--+  1 hostersepx users   3639 Oct 10 04:11 wp-pointer.min.js
+-rw-r--r--+  1 hostersepx users    993 Oct  4  2017 wp-sanitize.js
+-rw-r--r--+  1 hostersepx users    397 Oct 10 04:11 wp-sanitize.min.js
+-rw-r--r--+  1 hostersepx users   3922 Sep  8  2017 wp-util.js
+-rw-r--r--+  1 hostersepx users   1046 Oct 10 04:11 wp-util.min.js
+-rw-r--r--+  1 hostersepx users    435 Dec 28  2013 wpdialog.js
+-rw-r--r--+  1 hostersepx users    237 Oct 10 04:11 wpdialog.min.js
+-rw-r--r--+  1 hostersepx users  21036 Jan  6 19:43 wplink.js
+-rw-r--r--+  1 hostersepx users  11317 Jan  6 19:43 wplink.min.js
+-rw-r--r--+  1 hostersepx users    502 Nov 12  2013 zxcvbn-async.js
+-rw-r--r--+  1 hostersepx users    324 Oct 10 04:11 zxcvbn-async.min.js
+-rw-r--r--+  1 hostersepx users 822202 Dec 13  2016 zxcvbn.min.js
+
+/home/hostersepx/www/wp-includes/js/codemirror:
+total 1509
+drwxr-xr-x+  2 hostersepx users      9 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users    110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  15899 Sep 13  2017 codemirror.min.css
+-rw-r--r--+  1 hostersepx users 585414 Sep 13  2017 codemirror.min.js
+-rw-r--r--+  1 hostersepx users 377627 Nov  2  2017 csslint.js
+-rw-r--r--+  1 hostersepx users    984 Sep 13  2017 htmlhint-kses.js
+-rw-r--r--+  1 hostersepx users  17735 Sep 13  2017 htmlhint.js
+-rw-r--r--+  1 hostersepx users 284153 Jan 23  2018 jshint.js
+-rw-r--r--+  1 hostersepx users  16189 Sep 13  2017 jsonlint.js
+
+/home/hostersepx/www/wp-includes/js/crop:
+total 43
+drwxr-xr-x+  2 hostersepx users     6 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  2949 Dec 20  2012 cropper.css
+-rw-r--r--+  1 hostersepx users 16485 May  4  2007 cropper.js
+-rw-r--r--+  1 hostersepx users   277 Nov  7  2012 marqueeHoriz.gif
+-rw-r--r--+  1 hostersepx users   293 Nov  7  2012 marqueeVert.gif
+
+/home/hostersepx/www/wp-includes/js/dist:
+total 8871
+drwxr-xr-x+  3 hostersepx users      77 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users     110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users    8280 Nov 22 03:12 a11y.js
+-rw-r--r--+  1 hostersepx users    2232 Nov 21 15:09 a11y.min.js
+-rw-r--r--+  1 hostersepx users   42320 Dec 15 10:59 annotations.js
+-rw-r--r--+  1 hostersepx users   10524 Dec 15 10:59 annotations.min.js
+-rw-r--r--+  1 hostersepx users   24446 Nov 22 03:12 api-fetch.js
+-rw-r--r--+  1 hostersepx users    7013 Nov 21 15:09 api-fetch.min.js
+-rw-r--r--+  1 hostersepx users   20055 Nov 22 03:12 autop.js
+-rw-r--r--+  1 hostersepx users    7011 Nov 21 15:09 autop.min.js
+-rw-r--r--+  1 hostersepx users    5515 Nov 22 03:12 blob.js
+-rw-r--r--+  1 hostersepx users    1396 Nov 21 15:09 blob.min.js
+-rw-r--r--+  1 hostersepx users  522681 Jan  4 20:19 block-library.js
+-rw-r--r--+  1 hostersepx users  211247 Jan  4 20:19 block-library.min.js
+-rw-r--r--+  1 hostersepx users   15361 Nov 30 20:58 block-serialization-default-parser.js
+-rw-r--r--+  1 hostersepx users    3706 Nov 30 20:58 block-serialization-default-parser.min.js
+-rw-r--r--+  1 hostersepx users  399906 Jan  4 20:19 blocks.js
+-rw-r--r--+  1 hostersepx users  144322 Jan  4 20:19 blocks.min.js
+-rw-r--r--+  1 hostersepx users 1225359 Jan  4 20:19 components.js
+-rw-r--r--+  1 hostersepx users  534066 Jan  4 20:19 components.min.js
+-rw-r--r--+  1 hostersepx users   28548 Nov 30 09:59 compose.js
+-rw-r--r--+  1 hostersepx users    8271 Nov 30 09:59 compose.min.js
+-rw-r--r--+  1 hostersepx users  101982 Jan  4 20:19 core-data.js
+-rw-r--r--+  1 hostersepx users   26506 Jan  4 20:19 core-data.min.js
+-rw-r--r--+  1 hostersepx users  103155 Jan  4 20:19 data.js
+-rw-r--r--+  1 hostersepx users   26335 Jan  4 20:19 data.min.js
+-rw-r--r--+  1 hostersepx users  963748 Dec 15 10:59 date.js
+-rw-r--r--+  1 hostersepx users  937044 Dec 15 10:59 date.min.js
+-rw-r--r--+  1 hostersepx users    7036 Nov 22 03:12 deprecated.js
+-rw-r--r--+  1 hostersepx users    1641 Nov 21 15:09 deprecated.min.js
+-rw-r--r--+  1 hostersepx users    4498 Nov 22 03:12 dom-ready.js
+-rw-r--r--+  1 hostersepx users    1163 Nov 21 15:09 dom-ready.min.js
+-rw-r--r--+  1 hostersepx users   33357 Jan  4 20:19 dom.js
+-rw-r--r--+  1 hostersepx users    7888 Jan  4 20:19 dom.min.js
+-rw-r--r--+  1 hostersepx users  211677 Jan  4 20:19 edit-post.js
+-rw-r--r--+  1 hostersepx users   75274 Jan  4 20:19 edit-post.min.js
+-rw-r--r--+  1 hostersepx users 1253557 Jan  4 20:19 editor.js
+-rw-r--r--+  1 hostersepx users  379108 Jan  4 20:19 editor.min.js
+-rw-r--r--+  1 hostersepx users   33407 Dec 15 10:59 element.js
+-rw-r--r--+  1 hostersepx users    8428 Dec 15 10:59 element.min.js
+-rw-r--r--+  1 hostersepx users    7334 Nov 22 03:12 escape-html.js
+-rw-r--r--+  1 hostersepx users    1587 Oct 31 18:15 escape-html.min.js
+-rw-r--r--+  1 hostersepx users   45117 Dec 15 10:59 format-library.js
+-rw-r--r--+  1 hostersepx users   16244 Dec 15 10:59 format-library.min.js
+-rw-r--r--+  1 hostersepx users   21748 Jan  4 20:19 hooks.js
+-rw-r--r--+  1 hostersepx users    4905 Jan  4 20:19 hooks.min.js
+-rw-r--r--+  1 hostersepx users    4632 Nov 22 03:12 html-entities.js
+-rw-r--r--+  1 hostersepx users    1371 Oct 31 18:15 html-entities.min.js
+-rw-r--r--+  1 hostersepx users   33123 Nov 22 03:12 i18n.js
+-rw-r--r--+  1 hostersepx users    8603 Nov 21 15:09 i18n.min.js
+-rw-r--r--+  1 hostersepx users    5913 Nov 22 03:12 is-shallow-equal.js
+-rw-r--r--+  1 hostersepx users    1563 Nov 16 00:10 is-shallow-equal.min.js
+-rw-r--r--+  1 hostersepx users   16408 Dec 15 10:59 keycodes.js
+-rw-r--r--+  1 hostersepx users    4809 Dec 15 10:59 keycodes.min.js
+-rw-r--r--+  1 hostersepx users   24302 Nov 30 09:59 list-reusable-blocks.js
+-rw-r--r--+  1 hostersepx users    8579 Nov 30 09:59 list-reusable-blocks.min.js
+-rw-r--r--+  1 hostersepx users   21307 Nov 22 03:12 notices.js
+-rw-r--r--+  1 hostersepx users    5597 Nov 21 15:09 notices.min.js
+-rw-r--r--+  1 hostersepx users   28940 Dec 15 10:59 nux.js
+-rw-r--r--+  1 hostersepx users    7471 Dec 15 10:59 nux.min.js
+-rw-r--r--+  1 hostersepx users   20693 Nov 30 09:59 plugins.js
+-rw-r--r--+  1 hostersepx users    6881 Nov 30 09:59 plugins.min.js
+-rw-r--r--+  1 hostersepx users   26827 Nov 30 09:59 redux-routine.js
+-rw-r--r--+  1 hostersepx users   10403 Nov 30 09:59 redux-routine.min.js
+-rw-r--r--+  1 hostersepx users  100026 Dec 15 10:59 rich-text.js
+-rw-r--r--+  1 hostersepx users   26482 Dec 15 10:59 rich-text.min.js
+-rw-r--r--+  1 hostersepx users   18087 Nov 22 03:12 shortcode.js
+-rw-r--r--+  1 hostersepx users    4034 Nov 21 15:09 shortcode.min.js
+-rw-r--r--+  1 hostersepx users   12494 Nov 22 03:12 token-list.js
+-rw-r--r--+  1 hostersepx users    3167 Nov 21 15:09 token-list.min.js
+-rw-r--r--+  1 hostersepx users   32126 Jan  4 20:19 url.js
+-rw-r--r--+  1 hostersepx users   10839 Jan  4 20:19 url.min.js
+drwxr-xr-x+  2 hostersepx users      20 Jan  9 18:32 vendor
+-rw-r--r--+  1 hostersepx users   11286 Jan  4 20:19 viewport.js
+-rw-r--r--+  1 hostersepx users    2694 Jan  4 20:19 viewport.min.js
+-rw-r--r--+  1 hostersepx users   13995 Nov 22 03:12 wordcount.js
+-rw-r--r--+  1 hostersepx users    3000 Nov 16 00:10 wordcount.min.js
+
+/home/hostersepx/www/wp-includes/js/dist/vendor:
+total 2462
+drwxr-xr-x+ 2 hostersepx users     20 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users     77 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 539857 Oct 24 11:48 lodash.js
+-rw-r--r--+ 1 hostersepx users  73229 Oct 19 06:06 lodash.min.js
+-rw-r--r--+ 1 hostersepx users 146860 Oct 24 11:48 moment.js
+-rw-r--r--+ 1 hostersepx users  51679 Oct 19 06:06 moment.min.js
+-rw-r--r--+ 1 hostersepx users 726443 Nov 16 00:10 react-dom.js
+-rw-r--r--+ 1 hostersepx users 100002 Nov 16 00:10 react-dom.min.js
+-rw-r--r--+ 1 hostersepx users  98230 Nov 16 00:10 react.js
+-rw-r--r--+ 1 hostersepx users  11814 Nov 16 00:10 react.min.js
+-rw-r--r--+ 1 hostersepx users    895 Oct 24 11:48 wp-polyfill-element-closest.js
+-rw-r--r--+ 1 hostersepx users    417 Oct 19 06:06 wp-polyfill-element-closest.min.js
+-rw-r--r--+ 1 hostersepx users  14805 Oct 24 11:48 wp-polyfill-fetch.js
+-rw-r--r--+ 1 hostersepx users   7928 Oct 19 06:06 wp-polyfill-fetch.min.js
+-rw-r--r--+ 1 hostersepx users   9455 Oct 24 11:48 wp-polyfill-formdata.js
+-rw-r--r--+ 1 hostersepx users   7167 Oct 19 06:06 wp-polyfill-formdata.min.js
+-rw-r--r--+ 1 hostersepx users    531 Oct 24 11:48 wp-polyfill-node-contains.js
+-rw-r--r--+ 1 hostersepx users    353 Oct 19 06:06 wp-polyfill-node-contains.min.js
+-rw-r--r--+ 1 hostersepx users 218031 Nov 12 03:38 wp-polyfill.js
+-rw-r--r--+ 1 hostersepx users  91750 Nov 12 02:27 wp-polyfill.min.js
+
+/home/hostersepx/www/wp-includes/js/imgareaselect:
+total 84
+drwxr-xr-x+  2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users   178 Nov  7  2012 border-anim-h.gif
+-rw-r--r--+  1 hostersepx users   178 Nov  7  2012 border-anim-v.gif
+-rw-r--r--+  1 hostersepx users   790 Apr 25  2012 imgareaselect.css
+-rw-r--r--+  1 hostersepx users 38132 Mar 24  2018 jquery.imgareaselect.js
+-rw-r--r--+  1 hostersepx users  9887 Apr  3  2018 jquery.imgareaselect.min.js
+
+/home/hostersepx/www/wp-includes/js/jcrop:
+total 35
+drwxr-xr-x+  2 hostersepx users     5 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users   323 Nov  7  2012 Jcrop.gif
+-rw-r--r--+  1 hostersepx users  2124 Sep 21  2013 jquery.Jcrop.min.css
+-rw-r--r--+  1 hostersepx users 15893 Sep 21  2013 jquery.Jcrop.min.js
+
+/home/hostersepx/www/wp-includes/js/jquery:
+total 294
+drwxr-xr-x+  3 hostersepx users    20 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 23497 May 20  2016 jquery-migrate.js
+-rw-r--r--+  1 hostersepx users 10056 May 20  2016 jquery-migrate.min.js
+-rw-r--r--+  1 hostersepx users  9295 Apr 10  2013 jquery.color.min.js
+-rw-r--r--+  1 hostersepx users 41023 Aug  5  2017 jquery.form.js
+-rw-r--r--+  1 hostersepx users 16598 Aug  5  2017 jquery.form.min.js
+-rw-r--r--+  1 hostersepx users  5612 Jan  2  2014 jquery.hotkeys.js
+-rw-r--r--+  1 hostersepx users  1793 Aug 23  2012 jquery.hotkeys.min.js
+-rw-r--r--+  1 hostersepx users 97184 May 23  2016 jquery.js
+-rw-r--r--+  1 hostersepx users  1819 Aug 18  2016 jquery.masonry.min.js
+-rw-r--r--+  1 hostersepx users  3785 Jan 29  2013 jquery.query.js
+-rw-r--r--+  1 hostersepx users  3457 Jan 10  2008 jquery.schedule.js
+-rw-r--r--+  1 hostersepx users   783 Jan 20  2011 jquery.serialize-object.js
+-rw-r--r--+  1 hostersepx users  3730 Nov 15  2013 jquery.table-hotkeys.js
+-rw-r--r--+  1 hostersepx users  2295 Aug 23  2012 jquery.table-hotkeys.min.js
+-rw-r--r--+  1 hostersepx users  1179 Apr 11  2012 jquery.ui.touch-punch.js
+-rw-r--r--+  1 hostersepx users  6991 Jan 13  2016 suggest.js
+-rw-r--r--+  1 hostersepx users  2993 Jan 13  2016 suggest.min.js
+drwxr-xr-x+  2 hostersepx users    39 Jan  9 18:32 ui
+
+/home/hostersepx/www/wp-includes/js/jquery/ui:
+total 368
+drwxr-xr-x+ 2 hostersepx users    39 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    20 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  8584 Oct 10 04:11 accordion.min.js
+-rw-r--r--+ 1 hostersepx users  8283 Oct 10 04:11 autocomplete.min.js
+-rw-r--r--+ 1 hostersepx users  7236 Oct 10 04:11 button.min.js
+-rw-r--r--+ 1 hostersepx users  4000 Oct 10 04:11 core.min.js
+-rw-r--r--+ 1 hostersepx users 36508 Oct 10 04:11 datepicker.min.js
+-rw-r--r--+ 1 hostersepx users 12139 Oct 10 04:11 dialog.min.js
+-rw-r--r--+ 1 hostersepx users 18905 Oct 10 04:11 draggable.min.js
+-rw-r--r--+ 1 hostersepx users  6267 Oct 10 04:11 droppable.min.js
+-rw-r--r--+ 1 hostersepx users  1139 Oct 10 04:11 effect-blind.min.js
+-rw-r--r--+ 1 hostersepx users  1247 Oct 10 04:11 effect-bounce.min.js
+-rw-r--r--+ 1 hostersepx users   918 Oct 10 04:11 effect-clip.min.js
+-rw-r--r--+ 1 hostersepx users   997 Oct 10 04:11 effect-drop.min.js
+-rw-r--r--+ 1 hostersepx users  1176 Oct 10 04:11 effect-explode.min.js
+-rw-r--r--+ 1 hostersepx users   515 Oct 10 04:11 effect-fade.min.js
+-rw-r--r--+ 1 hostersepx users  1030 Oct 10 04:11 effect-fold.min.js
+-rw-r--r--+ 1 hostersepx users   789 Oct 10 04:11 effect-highlight.min.js
+-rw-r--r--+ 1 hostersepx users   783 Oct 10 04:11 effect-puff.min.js
+-rw-r--r--+ 1 hostersepx users   798 Oct 10 04:11 effect-pulsate.min.js
+-rw-r--r--+ 1 hostersepx users  1122 Oct 10 04:11 effect-scale.min.js
+-rw-r--r--+ 1 hostersepx users  1101 Oct 10 04:11 effect-shake.min.js
+-rw-r--r--+ 1 hostersepx users  3351 Oct 10 04:11 effect-size.min.js
+-rw-r--r--+ 1 hostersepx users   962 Oct 10 04:11 effect-slide.min.js
+-rw-r--r--+ 1 hostersepx users   857 Oct 10 04:11 effect-transfer.min.js
+-rw-r--r--+ 1 hostersepx users 13420 Oct 10 04:11 effect.min.js
+-rw-r--r--+ 1 hostersepx users  9600 Oct 10 04:11 menu.min.js
+-rw-r--r--+ 1 hostersepx users  3148 Oct 10 04:11 mouse.min.js
+-rw-r--r--+ 1 hostersepx users  6527 Oct 10 04:11 position.min.js
+-rw-r--r--+ 1 hostersepx users  2472 Oct 10 04:11 progressbar.min.js
+-rw-r--r--+ 1 hostersepx users 18426 Oct 10 04:11 resizable.min.js
+-rw-r--r--+ 1 hostersepx users  4258 Oct 10 04:11 selectable.min.js
+-rw-r--r--+ 1 hostersepx users  8384 Oct 10 04:11 selectmenu.min.js
+-rw-r--r--+ 1 hostersepx users 10987 Oct 10 04:11 slider.min.js
+-rw-r--r--+ 1 hostersepx users 24899 Oct 10 04:11 sortable.min.js
+-rw-r--r--+ 1 hostersepx users  7104 Oct 10 04:11 spinner.min.js
+-rw-r--r--+ 1 hostersepx users 12110 Oct 10 04:11 tabs.min.js
+-rw-r--r--+ 1 hostersepx users  5705 Oct 10 04:11 tooltip.min.js
+-rw-r--r--+ 1 hostersepx users  6908 Oct 10 04:11 widget.min.js
+
+/home/hostersepx/www/wp-includes/js/mediaelement:
+total 983
+drwxr-xr-x+  3 hostersepx users     21 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users    110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 263483 Oct 16  2017 mediaelement-and-player.js
+-rw-r--r--+  1 hostersepx users 156559 Oct 16  2017 mediaelement-and-player.min.js
+-rw-r--r--+  1 hostersepx users   2841 Oct 16  2017 mediaelement-migrate.js
+-rw-r--r--+  1 hostersepx users   1193 Oct 10 04:11 mediaelement-migrate.min.js
+-rw-r--r--+  1 hostersepx users 120696 Oct 16  2017 mediaelement.js
+-rw-r--r--+  1 hostersepx users  67186 Oct 16  2017 mediaelement.min.js
+-rw-r--r--+  1 hostersepx users  15722 Aug 28  2017 mediaelementplayer-legacy.css
+-rw-r--r--+  1 hostersepx users  11232 Aug 28  2017 mediaelementplayer-legacy.min.css
+-rw-r--r--+  1 hostersepx users  15871 Aug 28  2017 mediaelementplayer.css
+-rw-r--r--+  1 hostersepx users  11383 Aug 28  2017 mediaelementplayer.min.css
+-rw-r--r--+  1 hostersepx users   2883 Aug  1  2017 mejs-controls.png
+-rw-r--r--+  1 hostersepx users   4598 Aug  1  2017 mejs-controls.svg
+drwxr-xr-x+  2 hostersepx users      4 Jan  9 18:32 renderers
+-rw-r--r--+  1 hostersepx users   4877 Oct 16  2017 wp-mediaelement.css
+-rw-r--r--+  1 hostersepx users   2272 Jan 24  2018 wp-mediaelement.js
+-rw-r--r--+  1 hostersepx users   4163 Oct  9 02:52 wp-mediaelement.min.css
+-rw-r--r--+  1 hostersepx users    914 Oct 10 04:11 wp-mediaelement.min.js
+-rw-r--r--+  1 hostersepx users   5163 Jan 30  2018 wp-playlist.js
+-rw-r--r--+  1 hostersepx users   3435 Oct 10 04:11 wp-playlist.min.js
+
+/home/hostersepx/www/wp-includes/js/mediaelement/renderers:
+total 30
+drwxr-xr-x+ 2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    21 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 11889 Oct 16  2017 vimeo.js
+-rw-r--r--+ 1 hostersepx users  6170 Oct 16  2017 vimeo.min.js
+
+/home/hostersepx/www/wp-includes/js/plupload:
+total 522
+drwxr-xr-x+  2 hostersepx users     11 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users    110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  16189 May 16  2017 handlers.js
+-rw-r--r--+  1 hostersepx users  10551 Oct 10 04:11 handlers.min.js
+-rw-r--r--+  1 hostersepx users  17987 Jul 29  2011 license.txt
+-rw-r--r--+  1 hostersepx users 254084 Sep 22  2017 moxie.js
+-rw-r--r--+  1 hostersepx users  89142 Oct 10 04:11 moxie.min.js
+-rw-r--r--+  1 hostersepx users  60314 Sep  1  2017 plupload.js
+-rw-r--r--+  1 hostersepx users  15742 Oct 10 04:11 plupload.min.js
+-rw-r--r--+  1 hostersepx users  12726 Sep  8  2017 wp-plupload.js
+-rw-r--r--+  1 hostersepx users   4920 Oct 10 04:11 wp-plupload.min.js
+
+/home/hostersepx/www/wp-includes/js/swfupload:
+total 39
+drwxr-xr-x+  2 hostersepx users    6 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users  110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 1460 Sep 21  2017 handlers.js
+-rw-r--r--+  1 hostersepx users 1276 Sep 21  2017 handlers.min.js
+-rw-r--r--+  1 hostersepx users 1540 Jul 29  2011 license.txt
+-rw-r--r--+  1 hostersepx users 4439 Sep 21  2017 swfupload.js
+
+/home/hostersepx/www/wp-includes/js/thickbox:
+total 59
+drwxr-xr-x+  2 hostersepx users     6 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users   110 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 15238 Nov  5  2012 loadingAnimation.gif
+-rw-r--r--+  1 hostersepx users    94 Nov  7  2012 macFFBgHack.png
+-rw-r--r--+  1 hostersepx users  2658 Sep  9  2017 thickbox.css
+-rw-r--r--+  1 hostersepx users 13163 May 23  2016 thickbox.js
+
+/home/hostersepx/www/wp-includes/js/tinymce:
+total 742
+drwxr-xr-x+  7 hostersepx users     12 Jan  9 18:32 .
+drwxr-xr-x+ 13 hostersepx users    110 Jan  9 18:32 ..
+drwxr-xr-x+  2 hostersepx users      3 Jan  9 18:32 langs
+-rw-r--r--+  1 hostersepx users  26441 May  8  2017 license.txt
+drwxr-xr-x+ 24 hostersepx users     24 Jan  9 18:32 plugins
+drwxr-xr-x+  4 hostersepx users      4 Jan  9 18:32 skins
+drwxr-xr-x+  4 hostersepx users      4 Jan  9 18:32 themes
+-rw-r--r--+  1 hostersepx users  15988 Sep 26  2017 tiny_mce_popup.js
+-rw-r--r--+  1 hostersepx users 350907 Jul 17  2018 tinymce.min.js
+drwxr-xr-x+  2 hostersepx users      6 Jan  9 18:32 utils
+-rw-r--r--+  1 hostersepx users 208317 Nov 21 12:28 wp-tinymce.js.gz
+-rw-r--r--+  1 hostersepx users   1126 Jan  3  2015 wp-tinymce.php
+
+/home/hostersepx/www/wp-includes/js/tinymce/langs:
+total 26
+drwxr-xr-x+ 2 hostersepx users     3 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users    12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 15599 Dec 16  2014 wp-langs-en.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins:
+total 28
+drwxr-xr-x+ 24 hostersepx users 24 Jan  9 18:32 .
+drwxr-xr-x+  7 hostersepx users 12 Jan  9 18:32 ..
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 charmap
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 colorpicker
+drwxr-xr-x+  3 hostersepx users  5 Jan  9 18:32 compat3x
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 directionality
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 fullscreen
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 hr
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 image
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 link
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 lists
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 media
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 paste
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 tabfocus
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 textcolor
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wordpress
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wpautoresize
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wpdialogs
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wpeditimage
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wpemoji
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wpgallery
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wplink
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wptextpattern
+drwxr-xr-x+  2 hostersepx users  4 Jan  9 18:32 wpview
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/charmap:
+total 46
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 20932 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users  8601 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/colorpicker:
+total 18
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 3353 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 1349 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/compat3x:
+total 31
+drwxr-xr-x+  3 hostersepx users    5 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+drwxr-xr-x+  2 hostersepx users    3 Jan  9 18:32 css
+-rw-r--r--+  1 hostersepx users 9450 May  1  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 4129 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/compat3x/css:
+total 10
+drwxr-xr-x+ 2 hostersepx users    3 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    5 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 8030 Jul 26  2016 dialog.css
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/directionality:
+total 18
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 1853 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users  857 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/fullscreen:
+total 22
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 5310 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 2161 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/hr:
+total 18
+drwxr-xr-x+  2 hostersepx users   4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users  24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 903 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 428 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/image:
+total 66
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 38531 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 16029 Jul 17  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/link:
+total 46
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 23141 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users  8919 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/lists:
+total 66
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 38598 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 14256 Jul 17  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/media:
+total 62
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 36311 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 15064 May  1  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/paste:
+total 86
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 50839 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 20833 Jul 17  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/tabfocus:
+total 18
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 3519 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 1605 Jul 17  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/textcolor:
+total 30
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 10837 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users  4924 Jul 17  2018 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wordpress:
+total 58
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 31229 Nov 21 12:28 plugin.js
+-rw-r--r--+  1 hostersepx users 15971 Nov 21 12:28 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wpautoresize:
+total 22
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 5966 Apr  9  2015 plugin.js
+-rw-r--r--+  1 hostersepx users 2399 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wpdialogs:
+total 18
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 2436 Apr  8  2014 plugin.js
+-rw-r--r--+  1 hostersepx users 1345 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wpeditimage:
+total 50
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 25161 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 12198 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wpemoji:
+total 18
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 3546 Mar 10  2016 plugin.js
+-rw-r--r--+  1 hostersepx users 1564 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wpgallery:
+total 18
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 3180 Nov  7  2015 plugin.js
+-rw-r--r--+  1 hostersepx users 1661 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wplink:
+total 42
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users    24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 18170 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users  9119 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wptextpattern:
+total 26
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 8806 Nov  6  2016 plugin.js
+-rw-r--r--+  1 hostersepx users 3162 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/plugins/wpview:
+total 22
+drwxr-xr-x+  2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 24 hostersepx users   24 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 5434 Jul 17  2018 plugin.js
+-rw-r--r--+  1 hostersepx users 2635 Oct 10 04:11 plugin.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/skins:
+total 18
+drwxr-xr-x+ 4 hostersepx users  4 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users 12 Jan  9 18:32 ..
+drwxr-xr-x+ 4 hostersepx users  7 Jan  9 18:32 lightgray
+drwxr-xr-x+ 3 hostersepx users  4 Jan  9 18:32 wordpress
+
+/home/hostersepx/www/wp-includes/js/tinymce/skins/lightgray:
+total 72
+drwxr-xr-x+ 4 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users     4 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  3526 Jul 17  2018 content.inline.min.css
+-rw-r--r--+ 1 hostersepx users  3932 Jul 17  2018 content.min.css
+drwxr-xr-x+ 2 hostersepx users    10 Jan  9 18:32 fonts
+drwxr-xr-x+ 2 hostersepx users     6 Jan  9 18:32 img
+-rw-r--r--+ 1 hostersepx users 43911 Oct 22 06:05 skin.min.css
+
+/home/hostersepx/www/wp-includes/js/tinymce/skins/lightgray/fonts:
+total 193
+drwxr-xr-x+ 2 hostersepx users    10 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users     7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  9492 Jan 20  2016 tinymce-small.eot
+-rw-r--r--+ 1 hostersepx users 24727 Jun 29  2016 tinymce-small.svg
+-rw-r--r--+ 1 hostersepx users  9304 Jan 20  2016 tinymce-small.ttf
+-rw-r--r--+ 1 hostersepx users  9380 Jan 20  2016 tinymce-small.woff
+-rw-r--r--+ 1 hostersepx users 18808 May  1  2018 tinymce.eot
+-rw-r--r--+ 1 hostersepx users 45989 May  1  2018 tinymce.svg
+-rw-r--r--+ 1 hostersepx users 18644 May  1  2018 tinymce.ttf
+-rw-r--r--+ 1 hostersepx users 18720 May  1  2018 tinymce.woff
+
+/home/hostersepx/www/wp-includes/js/tinymce/skins/lightgray/img:
+total 27
+drwxr-xr-x+ 2 hostersepx users    6 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users    7 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users   53 Dec 28  2013 anchor.gif
+-rw-r--r--+ 1 hostersepx users 2608 Dec 28  2013 loader.gif
+-rw-r--r--+ 1 hostersepx users  152 Dec 28  2013 object.gif
+-rw-r--r--+ 1 hostersepx users   43 Dec 28  2013 trans.gif
+
+/home/hostersepx/www/wp-includes/js/tinymce/skins/wordpress:
+total 22
+drwxr-xr-x+ 3 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users    4 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users   15 Jan  9 18:32 images
+-rw-r--r--+ 1 hostersepx users 8787 Jul 17  2018 wp-content.css
+
+/home/hostersepx/www/wp-includes/js/tinymce/skins/wordpress/images:
+total 72
+drwxr-xr-x+ 2 hostersepx users   15 Jan  9 18:32 .
+drwxr-xr-x+ 3 hostersepx users    4 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users  412 Feb 13  2014 audio.png
+-rw-r--r--+ 1 hostersepx users  368 Dec  2  2014 dashicon-edit.png
+-rw-r--r--+ 1 hostersepx users  339 Dec  2  2014 dashicon-no.png
+-rw-r--r--+ 1 hostersepx users 8177 Nov 25  2014 embedded.png
+-rw-r--r--+ 1 hostersepx users  447 Feb 13  2014 gallery-2x.png
+-rw-r--r--+ 1 hostersepx users  379 Feb 13  2014 gallery.png
+-rw-r--r--+ 1 hostersepx users  603 Oct 28  2014 more-2x.png
+-rw-r--r--+ 1 hostersepx users  414 Oct 28  2014 more.png
+-rw-r--r--+ 1 hostersepx users  835 Apr  4  2014 pagebreak-2x.png
+-rw-r--r--+ 1 hostersepx users 1140 Oct 28  2014 pagebreak.png
+-rw-r--r--+ 1 hostersepx users  440 Mar  5  2014 playlist-audio.png
+-rw-r--r--+ 1 hostersepx users  290 Mar  5  2014 playlist-video.png
+-rw-r--r--+ 1 hostersepx users  363 Feb 13  2014 video.png
+
+/home/hostersepx/www/wp-includes/js/tinymce/themes:
+total 10
+drwxr-xr-x+ 4 hostersepx users  4 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users 12 Jan  9 18:32 ..
+drwxr-xr-x+ 2 hostersepx users  4 Jan  9 18:32 inlite
+drwxr-xr-x+ 2 hostersepx users  4 Jan  9 18:32 modern
+
+/home/hostersepx/www/wp-includes/js/tinymce/themes/inlite:
+total 658
+drwxr-xr-x+ 2 hostersepx users      4 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users      4 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 317345 Jul 17  2018 theme.js
+-rw-r--r--+ 1 hostersepx users 132626 Jul 17  2018 theme.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/themes/modern:
+total 658
+drwxr-xr-x+ 2 hostersepx users      4 Jan  9 18:32 .
+drwxr-xr-x+ 4 hostersepx users      4 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 311460 Jul 17  2018 theme.js
+-rw-r--r--+ 1 hostersepx users 131421 Jul 17  2018 theme.min.js
+
+/home/hostersepx/www/wp-includes/js/tinymce/utils:
+total 47
+drwxr-xr-x+ 2 hostersepx users    6 Jan  9 18:32 .
+drwxr-xr-x+ 7 hostersepx users   12 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 2125 May  8  2017 editable_selects.js
+-rw-r--r--+ 1 hostersepx users 6071 May  8  2017 form_utils.js
+-rw-r--r--+ 1 hostersepx users 4160 Sep 26  2017 mctabs.js
+-rw-r--r--+ 1 hostersepx users 6466 May  1  2018 validate.js
+
+/home/hostersepx/www/wp-includes/pomo:
+total 80
+drwxr-xr-x+  2 hostersepx users     8 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  2887 Nov 20  2015 entry.php
+-rw-r--r--+  1 hostersepx users  8462 Oct 26  2016 mo.php
+-rw-r--r--+  1 hostersepx users  6938 Oct 18 03:42 plural-forms.php
+-rw-r--r--+  1 hostersepx users 13492 Oct  2  2017 po.php
+-rw-r--r--+  1 hostersepx users  5948 Nov 20  2015 streams.php
+-rw-r--r--+  1 hostersepx users  8857 Oct  4  2017 translations.php
+
+/home/hostersepx/www/wp-includes/random_compat:
+total 83
+drwxr-xr-x+  2 hostersepx users   13 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users  193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 5651 Mar  8  2016 byte_safe_strings.php
+-rw-r--r--+  1 hostersepx users 2461 Mar  8  2016 cast_to_int.php
+-rw-r--r--+  1 hostersepx users 1533 Oct 23  2015 error_polyfill.php
+-rw-r--r--+  1 hostersepx users 7694 Mar  8  2016 random.php
+-rw-r--r--+  1 hostersepx users 2587 Dec  1  2017 random_bytes_com_dotnet.php
+-rw-r--r--+  1 hostersepx users 4590 Dec  1  2017 random_bytes_dev_urandom.php
+-rw-r--r--+  1 hostersepx users 2623 Dec  1  2017 random_bytes_libsodium.php
+-rw-r--r--+  1 hostersepx users 2623 Dec  1  2017 random_bytes_libsodium_legacy.php
+-rw-r--r--+  1 hostersepx users 2353 Dec  1  2017 random_bytes_mcrypt.php
+-rw-r--r--+  1 hostersepx users 2621 Dec  1  2017 random_bytes_openssl.php
+-rw-r--r--+  1 hostersepx users 5742 Dec  1  2017 random_int.php
+
+/home/hostersepx/www/wp-includes/rest-api:
+total 108
+drwxr-xr-x+  5 hostersepx users     8 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 23903 Jul 30  2017 class-wp-rest-request.php
+-rw-r--r--+  1 hostersepx users  7339 Jul 27  2017 class-wp-rest-response.php
+-rw-r--r--+  1 hostersepx users 38441 Dec 30  2017 class-wp-rest-server.php
+drwxr-xr-x+  2 hostersepx users    18 Jan  9 18:32 endpoints
+drwxr-xr-x+  2 hostersepx users     7 Jan  9 18:32 fields
+drwxr-xr-x+  2 hostersepx users     4 Jan  9 18:32 search
+
+/home/hostersepx/www/wp-includes/rest-api/endpoints:
+total 409
+drwxr-xr-x+ 2 hostersepx users    18 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users     8 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 26659 Dec 15 11:17 class-wp-rest-attachments-controller.php
+-rw-r--r--+ 1 hostersepx users 12846 Nov 15 12:57 class-wp-rest-autosaves-controller.php
+-rw-r--r--+ 1 hostersepx users  4566 Nov 21 14:44 class-wp-rest-block-renderer-controller.php
+-rw-r--r--+ 1 hostersepx users  2702 Nov 21 14:35 class-wp-rest-blocks-controller.php
+-rw-r--r--+ 1 hostersepx users 55101 Oct 17 11:20 class-wp-rest-comments-controller.php
+-rw-r--r--+ 1 hostersepx users 19443 Nov 19 14:10 class-wp-rest-controller.php
+-rw-r--r--+ 1 hostersepx users  9548 Oct 18 20:26 class-wp-rest-post-statuses-controller.php
+-rw-r--r--+ 1 hostersepx users  9803 Jul 13  2018 class-wp-rest-post-types-controller.php
+-rw-r--r--+ 1 hostersepx users 82113 Nov  3 14:14 class-wp-rest-posts-controller.php
+-rw-r--r--+ 1 hostersepx users 23560 Oct 11 07:16 class-wp-rest-revisions-controller.php
+-rw-r--r--+ 1 hostersepx users 10252 Oct 17 22:20 class-wp-rest-search-controller.php
+-rw-r--r--+ 1 hostersepx users 10155 Oct 24  2017 class-wp-rest-settings-controller.php
+-rw-r--r--+ 1 hostersepx users 11190 Oct  8 13:50 class-wp-rest-taxonomies-controller.php
+-rw-r--r--+ 1 hostersepx users 31332 Oct 18 20:32 class-wp-rest-terms-controller.php
+-rw-r--r--+ 1 hostersepx users  7034 Oct 23 06:08 class-wp-rest-themes-controller.php
+-rw-r--r--+ 1 hostersepx users 44914 Oct 17 11:20 class-wp-rest-users-controller.php
+
+/home/hostersepx/www/wp-includes/rest-api/fields:
+total 52
+drwxr-xr-x+ 2 hostersepx users     7 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users     8 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users   893 Jul 19  2018 class-wp-rest-comment-meta-fields.php
+-rw-r--r--+ 1 hostersepx users 13707 Oct 17 20:10 class-wp-rest-meta-fields.php
+-rw-r--r--+ 1 hostersepx users  1248 Jul 19  2018 class-wp-rest-post-meta-fields.php
+-rw-r--r--+ 1 hostersepx users  1245 Jul 19  2018 class-wp-rest-term-meta-fields.php
+-rw-r--r--+ 1 hostersepx users   860 Jul 19  2018 class-wp-rest-user-meta-fields.php
+
+/home/hostersepx/www/wp-includes/rest-api/search:
+total 22
+drwxr-xr-x+ 2 hostersepx users    4 Jan  9 18:32 .
+drwxr-xr-x+ 5 hostersepx users    8 Jan  9 18:32 ..
+-rw-r--r--+ 1 hostersepx users 5183 Oct 17 17:03 class-wp-rest-post-search-handler.php
+-rw-r--r--+ 1 hostersepx users 2130 Oct 17 17:03 class-wp-rest-search-handler.php
+
+/home/hostersepx/www/wp-includes/theme-compat:
+total 58
+drwxr-xr-x+  2 hostersepx users   11 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users  193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users 2112 Jul  6  2016 comments.php
+-rw-r--r--+  1 hostersepx users  970 Mar 28  2016 embed-404.php
+-rw-r--r--+  1 hostersepx users 3446 Oct 18  2017 embed-content.php
+-rw-r--r--+  1 hostersepx users  479 Mar 28  2016 embed.php
+-rw-r--r--+  1 hostersepx users  438 May 25  2016 footer-embed.php
+-rw-r--r--+  1 hostersepx users 1059 Jul  6  2016 footer.php
+-rw-r--r--+  1 hostersepx users  704 May 25  2016 header-embed.php
+-rw-r--r--+  1 hostersepx users 1893 Jul  6  2016 header.php
+-rw-r--r--+  1 hostersepx users 4060 Jul  6  2016 sidebar.php
+
+/home/hostersepx/www/wp-includes/widgets:
+total 195
+drwxr-xr-x+  2 hostersepx users    21 Jan  9 18:32 .
+drwxr-xr-x+ 19 hostersepx users   193 Jan  9 18:32 ..
+-rw-r--r--+  1 hostersepx users  5339 Oct 15  2017 class-wp-nav-menu-widget.php
+-rw-r--r--+  1 hostersepx users  5429 Oct 15  2017 class-wp-widget-archives.php
+-rw-r--r--+  1 hostersepx users  2872 Oct 15  2017 class-wp-widget-calendar.php
+-rw-r--r--+  1 hostersepx users  5951 Oct 15  2017 class-wp-widget-categories.php
+-rw-r--r--+  1 hostersepx users 11831 Nov 15  2017 class-wp-widget-custom-html.php
+-rw-r--r--+  1 hostersepx users  6903 Oct  2  2017 class-wp-widget-links.php
+-rw-r--r--+  1 hostersepx users  5937 Sep 29  2017 class-wp-widget-media-audio.php
+-rw-r--r--+  1 hostersepx users  6194 Oct 19  2017 class-wp-widget-media-gallery.php
+-rw-r--r--+  1 hostersepx users 11239 Jan 22  2018 class-wp-widget-media-image.php
+-rw-r--r--+  1 hostersepx users  8155 Oct 19  2017 class-wp-widget-media-video.php
+-rw-r--r--+  1 hostersepx users 13815 Oct 19  2017 class-wp-widget-media.php
+-rw-r--r--+  1 hostersepx users  3593 Oct 15  2017 class-wp-widget-meta.php
+-rw-r--r--+  1 hostersepx users  4883 Oct 15  2017 class-wp-widget-pages.php
+-rw-r--r--+  1 hostersepx users  5827 Oct  2  2017 class-wp-widget-recent-comments.php
+-rw-r--r--+  1 hostersepx users  4973 Oct 18  2017 class-wp-widget-recent-posts.php
+-rw-r--r--+  1 hostersepx users  3687 Oct 15  2017 class-wp-widget-rss.php
+-rw-r--r--+  1 hostersepx users  2608 Oct 15  2017 class-wp-widget-search.php
+-rw-r--r--+  1 hostersepx users  5668 Oct 15  2017 class-wp-widget-tag-cloud.php
+-rw-r--r--+  1 hostersepx users 20735 Jan 30  2018 class-wp-widget-text.php
+#################################
+#################################
+ TEST CASE NAME : test_ls
+ COMMAND : ls
+ URL : https://hostersecurity.online/
+#################################
+index.html.ovh.old
+index.php
+license.txt
+magic_hostersecurity.php
+malware.txt
+readme.html
+wp-activate.php
+wp-admin
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
+wp-content
+wp-cron.php
+wp-includes
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+#################################
+#################################
+ TEST CASE NAME : test_ls_var
+ COMMAND : ls -lR /var/
+ URL : https://hostersecurity.online/
+#################################
+#################################
+#################################
+ TEST CASE NAME : test_my_groups
+ COMMAND : groups
+ URL : https://hostersecurity.online/
+#################################
+users
+#################################
+#################################
+ TEST CASE NAME : test_process
+ COMMAND : ps -fix
+ URL : https://hostersecurity.online/
+#################################
+#################################
+#################################
+ TEST CASE NAME : test_uname
+ COMMAND : uname -a
+ URL : https://hostersecurity.online/
+#################################
+Linux webm192.cluster027.gra.hosting.ovh.net 4.14.66-ovh-vps-grsec-zfs-classid #1 SMP Thu Aug 23 15:15:40 CEST 2018 x86_64 GNU/Linux
+#################################
+#################################
+ TEST CASE NAME : test_whoami
+ COMMAND : whoami
+ URL : https://hostersecurity.online/
+#################################
+hostersepx
+#################################
